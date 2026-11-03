@@ -9,7 +9,8 @@ python3 -I prepara_logo.py
 [ -n "$LUCIDE" ] && python3 -I estrai_icone.py "$LUCIDE"   # opzionale: cartella lucide-static/package
 node build.js "$RAW"                                   # icone, card, pulsanti, sfondi (PNG alle misure originali)
 python3 -I ricolora.py "$BK/res/ui" "$RAW" ../../layout                # immagini originali rimaste: portate ai colori del tema
-python3 -I dash_bg.py "$BK/res/ui/dash" "$RAW/dash" logo/logo_m.webp    # cruscotto: finestre trasparenti identiche all'originale
+node dash_cluster.js "$RAW/dash" $FONT_NUMERI      # cruscotto da riferimento: finestre-binario (FONT_NUMERI=file .ttf opzionale)
+python3 -I dash_fill.py "$RAW/dash"                    # riempimenti delle barre
 python3 -I ottimizza.py "$RAW" ../res/ui "$BK/res/ui"  # palette + dimensioni, controlla le misure
 python3 -I font_merge.py "$BK/res/ui/font.ttf" /usr/share/fonts/opentype/inter/InterDisplay-Regular.otf ../res/ui/font.ttf
 python3 -I layout_mod.py "$BK/res/ui/dash.ftu"         # layout del cruscotto (.ftu)

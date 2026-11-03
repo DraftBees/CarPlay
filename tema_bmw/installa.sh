@@ -5,6 +5,7 @@
 # 1) Collega il Mac alla WiFi lylink_DBF07ACC   2) lancia lo script
 # Prima di sovrascrivere ogni file esistente viene copiato dal display in backup_prima_<data>/ (serve a ripristina.sh).
 cd "$(dirname "$0")"
+FONT_SRC="res/ui/font.ttf"; [ -f personale/font.ttf ] && FONT_SRC="personale/font.ttf"   # font personale, se presente
 SOLO_IMG=0; [ "$1" = "--solo-immagini" ] && SOLO_IMG=1
 ADB="./platform-tools/adb"; [ -x "$ADB" ] || ADB="$(command -v adb)"
 [ -n "$ADB" ] || { echo "adb non trovato: copia la cartella platform-tools qui accanto"; exit 1; }
@@ -575,7 +576,7 @@ ERR=0
 if [ $SOLO_IMG = 0 ]; then
   echo "=== 3. invio: layout e font ==="
   "$ADB" -s $IP push "res/ui/dash.ftu" "/res/ui/dash.ftu" >/dev/null || { echo "Invio fallito: /res/ui/dash.ftu"; ERR=1; }
-  "$ADB" -s $IP push "res/ui/font.ttf" "/res/ui/font.ttf" >/dev/null || { echo "Invio fallito: /res/ui/font.ttf"; ERR=1; }
+  "$ADB" -s $IP push "$FONT_SRC" "/res/ui/font.ttf" >/dev/null || { echo "Invio fallito: /res/ui/font.ttf"; ERR=1; }
 fi
 "$ADB" -s $IP shell sync >/dev/null 2>&1 || true
 if [ $ERR = 1 ]; then echo "Qualcosa non è andato: rimetti gli originali con  bash ripristina.sh $BK"; exit 1; fi

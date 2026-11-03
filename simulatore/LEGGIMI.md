@@ -55,3 +55,6 @@ Il simulatore ora riproduce il meccanismo vero: le barre salgono **dietro** lo s
 ## Accensione con il video
 Con il tema attivo, ogni accensione (apertura della pagina, "Riavvia display") riproduce il video di avvio del tema (`tema/avvio.mp4`).
 All'apertura parte muto; con "Riavvia display" parte con l'audio. Il font del tema (`tema/font.ttf`) è usato nell'anteprima.
+
+## Font personale
+Se in `tema/` c'è `font_personale.ttf` (generato da `font_merge.py` con un tuo font; non è nel repository) il simulatore lo usa; altrimenti usa `tema/font.ttf`.

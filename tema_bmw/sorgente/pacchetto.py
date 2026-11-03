@@ -1,7 +1,7 @@
 """Crea il pacchetto installabile del tema e i dati per il simulatore.
 Uso: python3 -I pacchetto.py <backup/res>   (es. .../backup_20261103_214808/res)
 Scrive: tema_bmw/res/tr/<file italiano>, tema_bmw/installa.sh, tema_bmw/ripristina.sh, simulatore/data/tema.js"""
-import sys, os, json, glob, base64
+import sys, os, json, glob, base64, shutil
 
 HERE = os.path.dirname(os.path.abspath(__file__))
 TEMA = os.path.dirname(HERE)
@@ -37,7 +37,9 @@ print('nuovi sul display (senza backup):', nuovi_f)
 q = lambda s: '"' + s.replace('\\', '\\\\').replace('"', '\\"').replace('$', '\\$').replace('`', '\\`') + '"'
 dirs = sorted({os.path.dirname(f) for f in esistenti})
 pull = lambda f: f'"$ADB" -s $IP pull {q("/" + f)} "$BK/{f}" >/dev/null || {{ echo "Backup fallito: /{f}. Interrompo senza toccare nulla."; exit 1; }}'
-push = lambda f: f'"$ADB" -s $IP push {q(f)} {q("/" + f)} >/dev/null || {{ echo "Invio fallito: /{f}"; ERR=1; }}'
+def push(f):
+    src = '"$FONT_SRC"' if f == 'res/ui/font.ttf' else q(f)   # il font personale (non versionato) ha la precedenza
+    return f'"$ADB" -s $IP push {src} {q("/" + f)} >/dev/null || {{ echo "Invio fallito: /{f}"; ERR=1; }}'
 
 inst = f'''#!/bin/bash
 # Installa il tema sul display: {len(txt_files)} file di testi + {len(img_files)} immagini + {len(ftu_files)} file di sistema (layout .ftu e font).
@@ -46,6 +48,7 @@ inst = f'''#!/bin/bash
 # 1) Collega il Mac alla WiFi lylink_DBF07ACC   2) lancia lo script
 # Prima di sovrascrivere ogni file esistente viene copiato dal display in backup_prima_<data>/ (serve a ripristina.sh).
 cd "$(dirname "$0")"
+FONT_SRC="res/ui/font.ttf"; [ -f personale/font.ttf ] && FONT_SRC="personale/font.ttf"   # font personale, se presente
 SOLO_IMG=0; [ "$1" = "--solo-immagini" ] && SOLO_IMG=1
 ADB="./platform-tools/adb"; [ -x "$ADB" ] || ADB="$(command -v adb)"
 [ -n "$ADB" ] || {{ echo "adb non trovato: copia la cartella platform-tools qui accanto"; exit 1; }}
@@ -114,6 +117,9 @@ with open(os.path.join(SIM, 'data', 'tema.js'), 'w', encoding='utf-8') as f:
 tot = sum(os.path.getsize(os.path.join(RES_UI, p)) for p in imgs)
 print(f'{len(imgs)} immagini ({tot // 1024} KB), {len(ftus)} layout, {len(cambiati)} testi cambiati, tema.js {os.path.getsize(os.path.join(SIM, "data", "tema.js")) // 1024} KB')
 
+# font personale (non versionato) per l'anteprima del simulatore
+if os.path.exists(os.path.join(TEMA, 'personale', 'font.ttf')):
+    os.makedirs(os.path.join(SIM, 'tema'), exist_ok=True); shutil.copy2(os.path.join(TEMA, 'personale', 'font.ttf'), os.path.join(SIM, 'tema', 'font_personale.ttf'))
 # font per l'anteprima del simulatore
 import shutil
 if os.path.exists(os.path.join(RES_UI, 'font.ttf')):

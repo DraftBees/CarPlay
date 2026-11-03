@@ -25,9 +25,24 @@ def by_caption(o, cap):
 m['backgroundColor'] = rgb('#020405')                                   # fondo dietro le finestre (barra a riposo)
 by_caption(m, 'RotateDisplayTextView')['backgroundPic'] = '/dash/press_bg_red.png'   # barra giri rossa (la velocità resta blu)
 by_caption(m, 'headWindow')['backgroundPic'] = ''                       # testata trasparente: il neon in alto resta visibile
-for cap, col in [('speedTextView', '#e8fcff'), ('speedRemindTextView', '#3de4ff'), ('rotateTextView', '#ffecee'), ('rotateRemindTextView', '#ff3345'),
-                 ('tempTextView', '#d7fbff'), ('consumptionTextView', '#d7fbff')]:
-    by_caption(m, cap)['colorTab']['color0'] = rgb(col)
+
+# --- posizioni e testi: cruscotto "cluster" (coordinate dello schermo 1920×720; HomeBgWindow a schermo intero, PNG 1:1)
+by_caption(m, 'HomeBgWindow')['position'] = {'left': 0, 'top': 0, 'width': 1920, 'height': 720}
+def put(cap, left, top, w, h, **kw):
+    o = by_caption(m, cap); o['position'] = {'left': left, 'top': top, 'width': w, 'height': h}
+    for k, v in kw.items():
+        if k == 'color': o['colorTab']['color0'] = rgb(v)
+        else: o[k] = v
+CX_L, CX_R = 496, 1424                                   # centri dei due indicatori (come nel riferimento)
+put('speedTextView', CX_L - 150, 322, 300, 136, alignment=37, color='#ffffff')
+put('speedRemindTextView', CX_L - 60, 456, 120, 40, alignment=37, fontSize=30, color='#eaf4ff')
+put('rotateTextView', CX_R - 150, 322, 300, 136, alignment=37, color='#ff5b54')
+put('rotateRemindTextView', CX_R - 120, 456, 240, 40, alignment=37, fontSize=28, text='1/min x1000', color='#ffd8d5')
+put('consumptionIconTextView', 140, 680, 36, 36)
+put('consumptionTextView', 184, 680, 200, 36, alignment=36, fontSize=28, color='#eaf4ff')
+put('safetyTextView', 600, 680, 36, 36)
+put('pTextView', 1284, 680, 36, 36)
+put('tempTextView', 1560, 680, 260, 36, alignment=38, fontSize=30, color='#eaf4ff')
 
 # controllo: solo i campi ammessi sono cambiati
 def diff(a, b, path=''):
@@ -38,7 +53,7 @@ def diff(a, b, path=''):
             else: out += diff(a[k], b[k], path + '/' + k)
     elif a != b: out.append((path, a, b))
     return out
-ALLOWED = ('backgroundColor', 'backgroundPic', 'color0')
+ALLOWED = ('backgroundColor', 'backgroundPic', 'color0', 'left', 'top', 'width', 'height', 'alignment', 'fontSize', 'text')
 ch = diff(d, m)
 bad = [c for c in ch if isinstance(c, str) or c[0].split('/')[-1] not in ALLOWED]
 assert not bad, bad

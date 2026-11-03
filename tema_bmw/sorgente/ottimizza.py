@@ -11,16 +11,9 @@ for f in sorted(glob.glob(raw + '/**/*.png', recursive=True)):
     op = os.path.join(orig, rel)
     if os.path.exists(op):
         assert Image.open(op).size == im.size, (rel, Image.open(op).size, im.size)
-    if rel.startswith('dash/dash_bg'):   # finestre trasparenti: palette a 255 colori con dithering + indice 255 trasparente
-        import numpy as np
-        a = np.asarray(im)[..., 3] >= 128
-        rgb = im.convert('RGB'); pal = rgb.quantize(255, method=Image.Quantize.MEDIANCUT)
-        qq = rgb.quantize(palette=pal, dither=Image.Dither.FLOYDSTEINBERG)
-        arr = np.asarray(qq).copy(); arr[~a] = 255
-        q = Image.fromarray(arr, 'P'); pl = qq.getpalette()[:765]; pl += [0] * (768 - len(pl)); q.putpalette(pl)
-        q.info['transparency'] = 255
+    if rel.startswith('dash/dash_bg'):   # finestre con trasparenza parziale e bordi morbidi: RGBA, senza palette
         out = os.path.join(dst, rel); os.makedirs(os.path.dirname(out), exist_ok=True)
-        q.save(out, optimize=True, transparency=255)
+        im.save(out, optimize=True)
         so = os.path.getsize(op) if os.path.exists(op) else 0; sn = os.path.getsize(out); tot_o += so; tot_n += sn; rows.append((rel, so, sn)); continue
     # libimagequant: palette 256 colori con dithering di qualità e alfa (niente aloni a gradini, niente bande)
     import imagequant
