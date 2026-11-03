@@ -22,11 +22,9 @@ for f in sorted(glob.glob(raw + '/**/*.png', recursive=True)):
         out = os.path.join(dst, rel); os.makedirs(os.path.dirname(out), exist_ok=True)
         q.save(out, optimize=True, transparency=255)
         so = os.path.getsize(op) if os.path.exists(op) else 0; sn = os.path.getsize(out); tot_o += so; tot_n += sn; rows.append((rel, so, sn)); continue
-    if im.getextrema()[3][0] == 255:  # opaca: palette con dithering
-        rgb = im.convert('RGB'); pal = rgb.quantize(256, method=Image.Quantize.MEDIANCUT)
-        q = rgb.quantize(palette=pal, dither=Image.Dither.FLOYDSTEINBERG)
-    else:
-        q = im.quantize(256, method=Image.Quantize.FASTOCTREE)
+    # libimagequant: palette 256 colori con dithering di qualità e alfa (niente aloni a gradini, niente bande)
+    import imagequant
+    q = imagequant.quantize_pil_image(im if im.getextrema()[3][0] < 255 else im.convert('RGB').convert('RGBA'), dithering_level=1.0, max_colors=256, min_quality=80, max_quality=100)
     out = os.path.join(dst, rel); os.makedirs(os.path.dirname(out), exist_ok=True)
     q.save(out, optimize=True)
     # se la palette peggiora troppo un'icona piccola, tieni RGBA (pesa poco comunque)

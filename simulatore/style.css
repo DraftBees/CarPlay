@@ -21,6 +21,7 @@
   color-scheme: dark;
 }
 @font-face { font-family: "DeviceFont"; src: url("res/ui/font.ttf") format("truetype"); font-display: swap; }
+@font-face { font-family: "DeviceFontTema"; src: url("tema/font.ttf") format("truetype"); font-display: swap; }
 
 * { box-sizing: border-box; }
 html, body { height: 100%; }
@@ -255,3 +256,8 @@ details.grp > summary { cursor: pointer; font: 600 13px var(--f-cond); letter-sp
 @media (prefers-reduced-motion: reduce) {
   #screen.anim.enter > *, #screen.anim.enter-home [data-kind="button"], .eqbars i, .boot2, .boot2 * { animation-duration: .01s !important; animation-delay: 0s !important; }
 }
+
+/* tema: font del tema (Inter Display per il latino, il resto dal font originale) e video di avvio */
+#screen.bmw { font-family: "DeviceFontTema", "DeviceFont", "Roboto", Arial, sans-serif; }
+.boot2.bootv { animation: bootOut .45s ease 5.1s forwards; }
+.bootvid { position: absolute; inset: 0; width: 100%; height: 100%; object-fit: contain; background: #000; }

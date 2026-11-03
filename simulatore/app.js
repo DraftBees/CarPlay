@@ -547,11 +547,16 @@ $('#simbar').addEventListener('click', (e) => {
 
 function bootHtml() {
   if (!S.booting) return '';
+  if (S.theme) return '<div class="boot2 bootv"><video class="bootvid" src="tema/avvio.mp4" playsinline autoplay muted preload="auto"></video></div>';   // video di avvio del tema
   if (!S.anim) return '<div class="boot">ZKOS</div>';
-  return `<div class="boot2"><div class="b-photo" style="background-image:url('${src('bg/bg6.png')}')"></div><div class="b-shade"></div>
-    <div class="b-stripes"><i></i><i></i><i></i></div><div class="b-line"></div></div>`;
+  return `<div class="boot2"><div class="b-shade"></div><div class="b-stripes"><i></i><i></i><i></i></div><div class="b-line"></div></div>`;
 }
-function reboot() { S.booting = true; S.history = []; S.screen = { name: 'home' }; S._key = null; render(); setTimeout(() => { S.booting = false; S._key = null; render(); }, S.anim ? 3700 : 2700); }
+function reboot(muted = false) {
+  S.booting = true; S.history = []; S.screen = { name: 'home' }; S._key = null; render();
+  const v = $('.bootvid', screenEl);
+  if (v) { v.muted = muted; v.play().catch(() => { v.muted = true; v.play().catch(() => {}); }); }   // l'audio parte solo dopo un clic
+  setTimeout(() => { S.booting = false; S._key = null; render(); }, S.theme ? 5500 : (S.anim ? 3700 : 2700));
+}
 
 /* ------------------------------------------------------------------ interazione */
 let pressed = null;
@@ -1069,6 +1074,7 @@ function exportSingles(files, script) {
   if (S.bg === 'custom' && !S.customBg) S.bg = (CFG.screen_bg | 0) + 1;
   if (!window.THEME) S.theme = false;
   syncThemeUi(); syncAnimUi();
+  if (S.theme) setTimeout(() => reboot(true), 50);   // all'apertura: accensione con il video (muto finché non clicchi)
   updateCounts(); render(); renderPane();
 })();
 })();

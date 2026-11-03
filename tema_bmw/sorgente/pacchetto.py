@@ -25,6 +25,7 @@ with open(os.path.join(TEMA, 'res', 'tr', IT), 'w', encoding='utf-8') as f:
 RES_UI = os.path.join(TEMA, 'res', 'ui')
 imgs = sorted(os.path.relpath(p, RES_UI) for p in glob.glob(os.path.join(RES_UI, '**', '*.png'), recursive=True))
 ftus = sorted(os.path.relpath(p, RES_UI) for p in glob.glob(os.path.join(RES_UI, '*.ftu')))
+if os.path.exists(os.path.join(RES_UI, 'font.ttf')): ftus.append('font.ttf')   # font: file di sistema, solo nell'installazione completa
 img_files = [f'res/ui/{p}' for p in imgs]
 ftu_files = [f'res/ui/{p}' for p in ftus]
 txt_files = [f'res/tr/{IT}']
@@ -39,9 +40,9 @@ pull = lambda f: f'"$ADB" -s $IP pull {q("/" + f)} "$BK/{f}" >/dev/null || {{ ec
 push = lambda f: f'"$ADB" -s $IP push {q(f)} {q("/" + f)} >/dev/null || {{ echo "Invio fallito: /{f}"; ERR=1; }}'
 
 inst = f'''#!/bin/bash
-# Installa il tema sul display: {len(txt_files)} file di testi + {len(img_files)} immagini + {len(ftu_files)} layout (.ftu).
-#   bash installa.sh                    tema completo (con il layout del cruscotto)
-#   bash installa.sh --solo-immagini    solo testi e immagini, nessun layout (.ftu): il rischio minore
+# Installa il tema sul display: {len(txt_files)} file di testi + {len(img_files)} immagini + {len(ftu_files)} file di sistema (layout .ftu e font).
+#   bash installa.sh                    tema completo (con layout del cruscotto e font)
+#   bash installa.sh --solo-immagini    solo testi e immagini, niente layout né font: il rischio minore
 # 1) Collega il Mac alla WiFi lylink_DBF07ACC   2) lancia lo script
 # Prima di sovrascrivere ogni file esistente viene copiato dal display in backup_prima_<data>/ (serve a ripristina.sh).
 cd "$(dirname "$0")"
@@ -58,7 +59,7 @@ exec > >(tee "installa_log_$STAMP.txt") 2>&1
 "$ADB" -s $IP wait-for-device || {{ echo "Display non raggiungibile"; exit 1; }}
 
 if [ $SOLO_IMG = 0 ]; then
-  echo "Questo installa anche {len(ftu_files)} layout (.ftu) del cruscotto. Se il display non dovesse partire:"
+  echo "Questo installa anche {len(ftu_files)} file di sistema (layout del cruscotto e font). Se il display non dovesse partire:"
   echo "  bash ripristina.sh $BK   (se adb resta raggiungibile) oppure dal menu Sistema -> di Fabbrica."
   read -r -p "Digita si per continuare, qualsiasi altro tasto per annullare: " OK
   [ "$OK" = "si" ] || {{ echo "Annullato. Puoi usare:  bash installa.sh --solo-immagini"; exit 0; }}
@@ -75,7 +76,7 @@ echo "=== 2. invio: testi e immagini ==="
 ERR=0
 ''' + '\n'.join(push(f) for f in txt_files + img_files) + '''
 if [ $SOLO_IMG = 0 ]; then
-  echo "=== 3. invio: layout (.ftu) ==="
+  echo "=== 3. invio: layout e font ==="
 ''' + '\n'.join('  ' + push(f) for f in ftu_files) + '''
 fi
 "$ADB" -s $IP shell sync >/dev/null 2>&1 || true
@@ -112,3 +113,8 @@ with open(os.path.join(SIM, 'data', 'tema.js'), 'w', encoding='utf-8') as f:
     f.write('window.THEME=' + json.dumps({'name': 'Cluster', 'images': data, 'strings': {'yi_IT': cambiati}, 'layouts': layouts}, ensure_ascii=False, separators=(',', ':')) + ';\n')
 tot = sum(os.path.getsize(os.path.join(RES_UI, p)) for p in imgs)
 print(f'{len(imgs)} immagini ({tot // 1024} KB), {len(ftus)} layout, {len(cambiati)} testi cambiati, tema.js {os.path.getsize(os.path.join(SIM, "data", "tema.js")) // 1024} KB')
+
+# font per l'anteprima del simulatore
+import shutil
+if os.path.exists(os.path.join(RES_UI, 'font.ttf')):
+    os.makedirs(os.path.join(SIM, 'tema'), exist_ok=True); shutil.copy2(os.path.join(RES_UI, 'font.ttf'), os.path.join(SIM, 'tema', 'font.ttf'))

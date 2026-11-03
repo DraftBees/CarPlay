@@ -5,13 +5,14 @@ Le due barre (SpeedDisplayTextView / RotateDisplayTextView, immagine press_bg_*.
 e si vedono solo attraverso le finestre trasparenti dello sfondo. Perciò la forma e la posizione delle finestre
 (canale alfa) restano identiche all'originale; cambiano solo i pixel opachi intorno.
 
-Uso: python3 -I dash_bg.py <backup/res/ui/dash> <uscita res/ui/dash>"""
+Uso: python3 -I dash_bg.py <backup/res/ui/dash> <uscita res/ui/dash> [logo.webp]"""
 import sys, os
 import numpy as np
 from scipy import ndimage as ndi
 from PIL import Image, ImageDraw, ImageFont
 
 SRC, DST = sys.argv[1], sys.argv[2]
+LOGO = sys.argv[3] if len(sys.argv) > 3 else None   # logo su sfondo nero (opzionale)
 os.makedirs(DST, exist_ok=True)
 W, H = 1920, 720
 STRETCH = 720 / 620   # HomeBgWindow del layout è 1920×620: il PNG viene compresso in verticale
@@ -100,25 +101,18 @@ def build(variant, labels_left, top_left, labels_right, top_right):
                 tick_col[m_g] = (RED_HOT if side == 'R' else CYAN_HOT)
         jobs.append((side, majors[::-1], top, bot, minx))
 
-    # --- emblema centrale: tre barre inclinate con gradiente + scie luminose (nessun logo)
-    em = np.zeros((H, W, 3)); cx, cy = 960, 238
-    sl = 0.40
-    def bar(x0, wd, h, c_top, c_bot):
-        pts = [(cx + x0 + (h - y) * sl * 0 + y * -sl, cy + y) for y in (-h, h)]
-        mask = Image.new('L', (W, H), 0); d = ImageDraw.Draw(mask)
-        d.polygon([(cx + x0 - (-h) * sl, cy - h), (cx + x0 + wd - (-h) * sl, cy - h), (cx + x0 + wd - h * sl, cy + h), (cx + x0 - h * sl, cy + h)], fill=255)
-        m = np.asarray(mask, float) / 255.0
-        t = np.clip((yy - (cy - h)) / (2 * h), 0, 1)[..., None]
-        col = np.asarray(c_top)[None, None, :] * (1 - t) + np.asarray(c_bot)[None, None, :] * t
-        return m, col
-    parts = [bar(-70, 34, 62, CYAN, CYAN * 0.55), bar(-22, 34, 62, BLUE * 1.15, BLUE * 0.55), bar(26, 34, 62, RED, RED * 0.55)]
-    for m, col in parts:
-        em += m[..., None] * col
-        glow += (g(m, 6)[..., None] * col) * 0.9 + (g(m, 20)[..., None] * col) * 0.55
-    for (x0, y0, x1, y1, w0, w1, col, a0) in [
-        (cx - 150, cy + 128, cx + 80, cy - 170, 3.0, 0.3, CYAN, 1.0), (cx - 60, cy + 160, cx + 160, cy - 140, 3.0, 0.3, BLUE * 1.2, 1.0),
-        (cx + 8, cy + 160, cx + 175, cy - 50, 3.0, 0.3, RED, 1.0), (cx - 20, cy - 150, cx - 140, cy + 60, 1.6, 0.2, CYAN, 0.55), (cx + 100, cy - 130, cx + 30, cy + 140, 1.6, 0.2, RED, 0.45)]:
-        streak(em, x0, y0, x1, y1, w0, w1, col, a0)
+    # --- emblema centrale: il logo fornito dall'utente (sfondo nero -> si somma alla luce), con bordi sfumati
+    em = np.zeros((H, W, 3))
+    if LOGO:
+        lg = Image.open(LOGO).convert('RGB')
+        crop = lg.crop((120, 230, 1120, 780))                       # barre + lettera, senza le scie più lontane
+        tw = 380; th = int(crop.height * tw / crop.width * STRETCH)   # pre-allungato: la finestra comprime in verticale
+        crop = crop.resize((tw, th), Image.LANCZOS)
+        a = np.asarray(crop, float) / 255.0
+        yy2, xx2 = np.mgrid[0:th, 0:tw]
+        mask = np.clip(1.25 - (((xx2 - tw / 2) / (tw / 2)) ** 2 + ((yy2 - th / 2) / (th / 2)) ** 2) ** 1.5, 0, 1)[..., None]
+        x0, y0 = 960 - tw // 2, 168 - th // 2                         # sopra la riga dei numeri, tra i due indicatori
+        em[y0:y0 + th, x0:x0 + tw] = a * mask
     out += em
 
     comp = out + np.clip(glow, 0, 1.6)

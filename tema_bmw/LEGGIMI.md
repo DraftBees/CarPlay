@@ -1,24 +1,20 @@
-# Tema "Cluster" per il display (Serie 1 Estoril Blue)
+# Tema "M Cluster" per il display (Serie 1)
 
-Ridisegnato interamente nello stile del cluster digitale di riferimento: **nero puro**, linee al **neon sottili**,
-**ciano a sinistra / rosso a destra**, cornici a chevron e angoli tagliati. Le superfici restano nere; gli stati attivi
-si accendono (contorno e alone). Tricolore azzurro / blu / rosso come unica firma. **Nessun logo o marchio**: se vuoi aggiungerne uno, mandami tu l'immagine.
+Superfici nere e silenziose, la luce fa la gerarchia. Ciano a sinistra / rosso a destra come nel cluster digitale M,
+tricolore come firma minima, il tuo **logo M** per avvio, cruscotto, copertine e uno sfondo. Nessuna foto.
 
 ## Cosa contiene
-- **164 immagini** alle misure esatte degli originali (controllate dal backup): card della home con chevron e icone a linea,
-  barre, pulsanti, interruttori, cursori, popup, telefono, musica, video, 6 sfondi + miniature.
-- **Cruscotto** (vedi sotto), con icone di carburante, cintura e parcheggio ridisegnate.
-- **La tua auto**: card "Info veicolo" con la tua foto, copertine musica, sfondo 6 "La mia Serie 1".
-- **130 testi italiani** riscritti e verificati contro le caselle vere (nessun testo tagliato).
-- **1 layout** (`dash.ftu`): solo colori dei numeri, barra giri rossa e testata trasparente.
-
-## Il cruscotto: come funziona davvero (importante)
-Sul display le due barre di velocità e giri **non sono disegnate sopra lo sfondo**: sono due immagini (`press_bg_*.png`) che salgono
-**dietro** lo sfondo `dash_bg_*.png` e si vedono solo dalle **finestre trasparenti** del PNG. Per questo `dash_bg.py` lascia le finestre
-identiche all'originale (stessa forma, stessa posizione) e ridisegna tutto intorno. La finestra del layout è 1920×620, quindi il PNG viene
-compresso in verticale: i numeri della scala sono pre-allungati per compensare.
-- `press_bg_yellow.png` (stesso nome dell'originale) è ora un gradiente **blu**: funziona anche senza toccare i layout.
-- `press_bg_red.png` è usato dalla barra giri **solo** se installi anche `dash.ftu`; senza, la barra giri resta blu.
+| | |
+|---|---|
+| **262 immagini** | alle misure esatte degli originali, palette a 256 colori con libimagequant (niente aloni a gradini) |
+| **Card della home** | superficie nera con filo di luce, icona Lucide a tratto sottile, tricolore in basso; stato premuto in ciano |
+| **Cruscotto** | chevron al neon, barre che salgono dietro le finestre trasparenti (come sul display vero), logo M al centro |
+| **Icone** | set Lucide (licenza ISC, vedi `sorgente/LICENZA_lucide.txt`): coerenti, stesso tratto ovunque |
+| **91 immagini secondarie** | portate ai colori del tema in automatico (`ricolora.py`): gialli → ciano, blu → ciano/blu, pannelli → nero; radar, linee guida e auto restano originali |
+| **Font** | `font.ttf`: caratteri latini sostituiti con Inter Display (SIL OFL); cinese, giapponese, coreano, arabo restano gli originali |
+| **Testi** | 130 testi italiani riscritti e verificati contro le caselle vere |
+| **Layout** | `dash.ftu`: colori dei numeri, barra giri rossa, testata trasparente |
+| **Avvio** | `avvio/avvio_1920x720.mp4` e `avvio/logo_avvio_1920x720.png/.bmp` (vedi sotto) |
 
 ## Installazione (Mac)
 1. Metti la cartella `platform-tools` (con `adb`) dentro questa cartella, o abbi `adb` nel PATH.
@@ -27,23 +23,29 @@ compresso in verticale: i numeri della scala sono pre-allungati per compensare.
    ```bash
    bash installa.sh --solo-immagini
    ```
-   Installa testi e immagini, **senza** layout (.ftu): è l'opzione a rischio minore. La barra giri resta blu.
+   Installa testi e immagini: è l'opzione a rischio minore (la barra giri resta blu, font invariato).
    ```bash
    bash installa.sh
    ```
-   Installa anche `dash.ftu` (barra giri rossa, numeri colorati). Chiede conferma scrivendo "si".
+   Installa anche i **file di sistema**: `dash.ftu` e `font.ttf`. Chiede conferma scrivendo "si".
 
 Lo script copia prima dal display **ogni** file che sostituirà in `backup_prima_<data>/` e si ferma se un backup fallisce.
+Per tornare indietro: `bash ripristina.sh backup_prima_<data>`, oppure dal display Sistema → Fabbrica.
 
-## Tornare all'originale
-```bash
-bash ripristina.sh backup_prima_<data>
-```
-oppure dal display: Sistema → Fabbrica. Non so ancora se `adb` resta raggiungibile se il display non parte: per questo il primo passo
-consigliato è `--solo-immagini`, con l'auto ferma e la retrocamera controllata subito dopo.
+## Video di avvio: stato
+Il video è pronto (1920×720, H.264, 5 s, con audio). **Non viene installato dagli script**: il display non ha
+ancora un modo noto per riprodurre un video all'accensione. Il logo di avvio di fabbrica è un'immagine fissa in una zona
+separata della memoria. Per sapere se e come sostituirlo, o se si può far partire il video prima dell'interfaccia,
+serve l'output di `../strumenti/adb_recon_avvio.sh` (sola lettura). Nel simulatore il video parte a ogni accensione.
+
+## Il cruscotto: come funziona davvero
+Le barre di velocità e giri sono immagini (`press_bg_*.png`) che salgono **dietro** lo sfondo `dash_bg_*.png` e si vedono solo dalle
+**finestre trasparenti** del PNG. `dash_bg.py` lascia le finestre identiche all'originale e ridisegna tutto intorno.
 
 ## Rigenerare il tema
 ```bash
-bash sorgente/costruisci.sh <cartella backup_...>
+LUCIDE=<cartella lucide-static/package> bash sorgente/costruisci.sh <cartella backup_...>
 ```
-Sorgenti: `tema.js` (disegni), `dash_bg.py` (cruscotto), `layout_mod.py` (layout), `testi_it.json`, `foto/auto.jpg`.
+```bash
+bash sorgente/prepara_avvio.sh sorgente/video/avvio_originale.mp4
+```

@@ -7,9 +7,10 @@ const fs = require('fs'), path = require('path');
   const p = await b.newPage({ viewport: { width: 2000, height: 800 }, deviceScaleFactor: 1 });
   await p.setContent(`<!doctype html><html><head><style>html,body{margin:0;background:transparent;font-family:Inter,sans-serif}*{box-sizing:border-box}i{display:block}</style></head><body><div id="root"></div></body></html>`);
   await p.evaluate(() => { window.NO_NOISE = true; }); // il rumore pesa molto nei PNG: l'anti-banding lo fa il dithering
-  // foto dell'auto: caricata prima di disegnare
-  await p.addScriptTag({ path: path.join(__dirname, 'foto', 'auto_foto.js') });
-  await p.evaluate(() => new Promise((r) => { window.CAR_IMG = new Image(); window.CAR_IMG.onload = r; window.CAR_IMG.src = window.CAR_PHOTO; }));
+  // icone e logo: caricati prima di disegnare
+  await p.addScriptTag({ path: path.join(__dirname, 'icone_lucide.js') });
+  await p.addScriptTag({ path: path.join(__dirname, 'logo', 'logo_data.js') });
+  await p.evaluate(() => new Promise((r) => { window.LOGO_IMG = new Image(); window.LOGO_IMG.onload = r; window.LOGO_IMG.src = window.LOGO_DATA; }));
   await p.addScriptTag({ path: path.join(__dirname, 'tema.js') });
   // le dimensioni vere vengono dal backup: ogni PNG deve avere ESATTAMENTE la misura dell'originale
   const sizes = JSON.parse(fs.readFileSync(path.join(__dirname, 'dimensioni_originali.json'), 'utf8'));

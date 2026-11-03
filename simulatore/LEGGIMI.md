@@ -51,3 +51,7 @@ cruscotto all'accensione, barre dell'equalizzatore nella musica.
 ## Cruscotto: correzione importante
 Il simulatore ora riproduce il meccanismo vero: le barre salgono **dietro** lo sfondo e si vedono dalle finestre trasparenti del PNG
 (prima le disegnavo sopra, e con uno sfondo opaco sul display non si sarebbero viste).
+
+## Accensione con il video
+Con il tema attivo, ogni accensione (apertura della pagina, "Riavvia display") riproduce il video di avvio del tema (`tema/avvio.mp4`).
+All'apertura parte muto; con "Riavvia display" parte con l'audio. Il font del tema (`tema/font.ttf`) è usato nell'anteprima.
