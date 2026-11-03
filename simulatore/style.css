@@ -215,3 +215,14 @@ details.grp > summary { cursor: pointer; font: 600 13px var(--f-cond); letter-sp
 #screen.bmw .key:active { background: #1c69d4; }
 #screen.bmw .list-dev .it:active, #screen.bmw .list-dev .it.on { background: linear-gradient(90deg, rgba(28,105,212,.45), rgba(28,105,212,0)); }
 #screen.bmw .title, #screen.bmw .clock { font-weight: 300; letter-spacing: .04em; }
+
+/* visualizzatore layout reali */
+.lv-t { position: absolute; overflow: hidden; line-height: 1.15; word-break: normal; overflow-wrap: normal; }
+.lv-ph { position: absolute; inset: 0; display: grid; place-items: center; font: 600 28px var(--f-cond); letter-spacing: .3em; color: rgba(255,255,255,.35); }
+.lv-spin { animation: lvspin 2s linear infinite; transform-origin: 50% 50%; }
+@keyframes lvspin { to { transform: rotate(360deg); } }
+.lv-outline .lv-n { outline: 1px dashed rgba(255,181,71,.7); outline-offset: -1px; }
+.lv-outline .lv-n[data-hidden] { outline-color: rgba(255,107,107,.8); }
+.lvmode .lv-n:hover { outline: 2px solid rgba(79,182,255,.95) !important; outline-offset: -2px; }
+@media (prefers-reduced-motion: reduce) { .lv-spin { animation: none; } }
+.lv-over { outline: 2px solid #ff6b6b !important; outline-offset: -2px; background: rgba(255,107,107,.18); }

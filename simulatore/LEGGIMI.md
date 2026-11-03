@@ -32,3 +32,12 @@ più le tue modifiche. Il tema pronto da installare da solo è in `../tema_bmw/`
 
 ## Rigenerare i dati
 `data/strings.js` e `data/images.js` sono generati dal backup; le immagini in `res/ui/` sono copie degli originali.
+
+## Layout reali
+La vista **Layout reali** (in alto) disegna le 24 schermate 1920×720 direttamente dai file `.ftu` decodificati
+(`../layout/`): ogni elemento è alla posizione, dimensione, immagine e colore scritti nel file.
+- Menu a tendina con le schermate; "mostra riquadri" e "mostra elementi nascosti"; passando il mouse si leggono nome, id e misure.
+- Il programma sceglie a runtime quale gruppo di card mostrare nella home: qui lo scegli tu (`bwmScrollWindow` è la home con proiezione).
+- Segna in rosso i testi che non entrano nella loro casella (sul display verrebbero tagliati).
+- La **home** e il **cruscotto** della vista Interattiva sono ora costruiti da questi layout; le altre schermate interattive sono ancora disegnate a mano.
+- Dedotto dai dati, non documentato: allineamento del testo = `32 + riga*4 + colonna`; colori `-1` = nessuno.

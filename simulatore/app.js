@@ -36,7 +36,7 @@ const S = {
   strOv: {},   // { lang: { key: valore } }
   imgOv: {},   // { 'HomePage/x.png': dataURL }
   screen: { name: 'home' }, history: [],
-  edit: false, dashGuide: false,
+  edit: false, dashScale: '330', dashGuide: false, lvOutline: false, lvHidden: false, lvFile: 'main', lvVariant: 'bwmScrollWindow', view: 'live',
   music: { playing: false, pos: 0, idx: 0, list: false, shuffle: false },
   dash: { auto: true, speed: 0, rpm: 0.8, t: 0 },
   doors: { lf: false, rf: false, lr: false, rr: false, hood: false, trunk: false },
@@ -85,6 +85,7 @@ const $ = (s, r = document) => r.querySelector(s);
 const $$ = (s, r = document) => [...r.querySelectorAll(s)];
 const esc = (s) => String(s).replace(/[&<>"']/g, (c) => ({ '&': '&amp;', '<': '&lt;', '>': '&gt;', '"': '&quot;', "'": '&#39;' }[c]));
 const screenEl = $('#screen');
+window.SIM = { t: (k) => t(k), src: (p) => src(p) };
 
 function tOrig(k, lang = S.lang) { const L = LANGS[lang] || {}; return L[k] != null ? L[k] : (LANGS.en_US[k] != null ? LANGS.en_US[k] : k); }
 function themeStr(k, lang = S.lang) { const ts = S.theme && THEME.strings[lang]; return ts && ts[k] != null ? ts[k] : null; }
@@ -164,25 +165,15 @@ const HOME_CARDS = [
 
 const screens = {};
 
-screens.home = () => `
-  ${bgLayer()}
-  <div class="topbar">${I('HomePage/home_top_bg.png', '', 'class="tb"')}
-    <div class="clock" data-clock style="left:40px"></div>
-    <div class="sicons">${I('status/home_bt.png')}${I('status/u.png')}</div>
-  </div>
-  <div class="leftbar">${I('HomePage/home_left_bg.png', 'position:absolute;inset:0;width:166px;height:620px')}
-    ${[['home_icon_s_music', 'music', 40], ['home_icon_s_dail', 'bt', 185], ['home_icon_s_video', 'video', 330], ['home_icon_s_set', 'settings', 475]]
-      .map(([n, g, y]) => `<div class="q press" data-go="${g}" style="top:${y}px">${P(`HomePage/${n}_n.png`, `HomePage/${n}_f.png`, 'width:80px;height:80px')}</div>`).join('')}
-  </div>
-  <div class="carousel" id="carousel">
-    ${HOME_CARDS.map(([k, ic, g], i) => `<div class="card" data-card="${i}">${P(`HomePage/${ic}_n.png`, `HomePage/${ic}_s.png`)}${T(k)}</div>`).join('')}
-  </div>
-  <div class="dots" id="dots">${Array.from({ length: Math.ceil(HOME_CARDS.length / 4) }, (_, i) => `<i class="${i ? '' : 'on'}"></i>`).join('')}</div>`;
+screens.layout = ({ file }) => window.LayoutView.html(file || S.lvFile, { outline: S.lvOutline, showHidden: S.lvHidden, variant: S.lvVariant });
+
+screens.home = () => window.LayoutView.html('main', { variant: 'bwmScrollWindow' });
 
 const LINK = {
   carplay: { title: 'wireless_carplay', icon: 'home_icon_wiredcarplay', help: 'carplay_help_remind', n: 8 },
   aa: { title: 'Auto', icon: 'home_icon_androidauto', help: 'aa_help_remind', n: 7 },
   airplay: { title: 'Airplay', icon: 'home_icon_miracast', help: 'airplay_help_remind', n: 6 },
+  miracast: { title: 'Airplay', icon: 'home_icon_miracast', help: 'miracast_help_remind', n: 5 },
   hicar: { title: 'Hicar', icon: 'home_icon_hicar', help: 'hicar_help_remind', n: 5 },
 };
 screens.link = ({ kind }) => {
@@ -290,14 +281,8 @@ screens.dvr = () => `<div class="bgimg" style="background:#05070b"></div>${heade
     <div class="abs devtxt dim" style="left:0;right:0;top:470px;text-align:center">Nessuna telecamera DVR collegata (simulazione)</div>
   </div>`;
 
-screens.dash = () => `${I('dash/dash_bg_english.png', '', 'class="bgimg"')}
-  <canvas class="dashcv" id="dashcv" width="1920" height="720"></canvas>
-  <div class="abs" style="left:0;right:0;top:200px;text-align:center;font-size:190px;line-height:1;font-variant-numeric:tabular-nums" data-speed>0</div>
-  <div class="abs" style="left:0;right:0;top:400px;text-align:center;font-size:40px;color:rgba(255,255,255,.65)">km/h</div>
-  <div class="abs" style="left:0;right:0;top:470px;text-align:center;font-size:36px;color:rgba(255,255,255,.55)" data-rpm>0 r/min</div>
-  <div class="abs" style="left:780px;top:560px;display:flex;gap:60px">${I('HomePage/dash_safety.png')}${I('HomePage/dash_consumption.png')}${I('HomePage/dash_p.png')}</div>
-  <div class="navbtn press" data-act="back" style="left:820px;top:20px">${P('status/home_back_n.png', 'status/home_back_f.png')}</div>
-  <div class="navbtn press" data-act="home" style="left:950px;top:20px">${P('status/home_home_n.png', 'status/home_home_f.png')}</div>`;
+screens.dash = () => window.LayoutView.html('dash', { picMap: S.dashScale === '160' ? { 'dash/dash_bg_china.png': 'dash/dash_bg_english.png' } : {} })
+  + '<canvas class="dashcv" id="dashcv" width="1920" height="720"></canvas>';
 
 screens.car = () => {
   const d = S.doors;
@@ -418,6 +403,7 @@ function render() {
   const fn = screens[sc.name] || screens.home;
   screenEl.innerHTML = fn(sc) + popupHtml() + `<div id="dim" style="opacity:${S.autoBright ? 0 : (1 - S.brightness / 100) * 0.75}"></div>` + (S.booting ? '<div class="boot">ZKOS</div>' : '');
   markChanged();
+  if (S.view === 'layout') { const bad = window.LayoutView.audit(screenEl); S.lvBad = bad; }
   tickClock();
   if (sc.name === 'home') mountCarousel();
   if (sc.name === 'dash') drawDashLoop();
@@ -427,7 +413,10 @@ function markChanged() {
   const o = S.strOv[S.lang] || {};
   $$('[data-k]', screenEl).forEach((el) => el.classList.toggle('changed', o[el.dataset.k] != null));
 }
-function tickClock() { $$('[data-clock]', screenEl).forEach((el) => { el.innerHTML = `${clockStr()}<small>${dateStr()}</small>`; }); }
+function tickClock() {
+  $$('[data-lvclock]', screenEl).forEach((el) => { const d = now(); const m = String(d.getMinutes()).padStart(2, '0'); el.textContent = el.dataset.lvclock === '12' ? `${String(d.getHours() % 12 || 12).padStart(2, '0')}:${m}` : `${String(d.getHours()).padStart(2, '0')}:${m}`; });
+  $$('[data-cap="timeAmPmTextView"] .lv-t', screenEl).forEach((el) => { el.textContent = now().getHours() >= 12 ? 'PM' : 'AM'; });
+  $$('[data-clock]', screenEl).forEach((el) => { el.innerHTML = `${clockStr()}<small>${dateStr()}</small>`; }); }
 
 /* carosello home: trascinamento + rotellina */
 let dragInfo = null;
@@ -442,7 +431,7 @@ function mountCarousel() {
 window.addEventListener('pointermove', (e) => onDragMove(e));
 window.addEventListener('pointerup', () => { if (dragInfo) { const c = $('#carousel'); if (c) c.style.scrollBehavior = ''; setTimeout(() => { dragInfo = null; }, 0); } });
 function onDragMove(e) {
-  const c = $('#carousel'); if (!dragInfo || !c) return;
+  const c = (dragInfo && dragInfo.el) || $('#carousel'); if (!dragInfo || !c) return;
   const dx = (e.clientX - dragInfo.x) / dragInfo.scale;
   if (Math.abs(dx) > 10) dragInfo.moved = true;
   if (dragInfo.moved) c.scrollLeft = dragInfo.sl - dx;
@@ -465,7 +454,7 @@ function drawDashLoop() {
     const d = S.dash;
     if (d.auto) {
       d.t += dt;
-      const target = 70 + 55 * Math.sin(d.t / 4) + 18 * Math.sin(d.t / 1.3);
+      const target = (70 + 55 * Math.sin(d.t / 4) + 18 * Math.sin(d.t / 1.3)) * (S.dashScale === '160' ? 1 : 1.6);
       d.speed += (Math.max(0, target) - d.speed) * Math.min(1, dt * 1.5);
       const gear = Math.min(6, 1 + Math.floor(d.speed / 28));
       d.rpm = Math.min(7.6, 0.8 + ((d.speed % 28) / 28) * 3.2 + gear * 0.25);
@@ -479,11 +468,11 @@ function drawDashLoop() {
       ctx.fillStyle = gr; ctx.globalAlpha = 0.78; ctx.fill(); ctx.globalAlpha = 1;
     };
     const [c1, c2] = S.theme ? ['#1c69d4', '#5cb3ff'] : ['#3aa0ff', '#ff3d5a'];
-    fill(DASH.speed, d.speed, c1, c2);
+    fill(S.dashScale === '160' ? DASH.speed : { ...DASH.speed, max: 330, split: 200 / 330 }, d.speed, c1, c2);
     fill(DASH.rpm, d.rpm, c1, d.rpm > 6.5 ? '#e3242b' : c2);
     if (S.dashGuide) drawGuide(ctx);
-    const sp = $('[data-speed]'); if (sp) sp.textContent = Math.round(d.speed);
-    const rp = $('[data-rpm]'); if (rp) rp.textContent = Math.round(d.rpm * 1000) + ' r/min';
+    const sp = $('[data-cap="speedTextView"] .lv-t'); if (sp) sp.textContent = Math.round(d.speed);
+    const rp = $('[data-cap="rotateTextView"] .lv-t'); if (rp) rp.textContent = d.rpm.toFixed(1);
     dashRaf = requestAnimationFrame(frame);
   };
   dashRaf = requestAnimationFrame(frame);
@@ -503,9 +492,17 @@ function drawGuide(ctx) {
 function renderSimbar() {
   const bar = $('#simbar'); const n = S.call ? 'call' : S.screen.name;
   let h = `<span class="slbl">Simulazione</span>`;
-  if (n === 'dash') {
+  if (S.view === 'layout') {
+    const names = window.LAYOUT_NAMES || {};
+    h = `<span class="slbl">Layout reale</span><select id="lvSel" class="field" style="width:auto;max-width:100%">${Object.keys(names).map((k) => `<option value="${k}" ${k === S.lvFile ? 'selected' : ''}>${esc(names[k])} · ${k}</option>`).join('')}</select>
+      ${(() => { const v = window.LayoutView.variants(S.lvFile); return v.length > 1 ? `<select id="lvVar" class="field" style="width:auto;max-width:100%" title="Il programma mostra uno di questi gruppi a seconda di modello e modalità"><option value="">gruppo: nessuno</option>${v.map((x) => `<option value="${x}" ${x === S.lvVariant ? 'selected' : ''}>${x}</option>`).join('')}</select>` : ''; })()}
+      <label><input type="checkbox" id="lvOut" ${S.lvOutline ? 'checked' : ''}> mostra riquadri</label>
+      <label><input type="checkbox" id="lvHid" ${S.lvHidden ? 'checked' : ''}> mostra elementi nascosti</label>
+      <span class="hint" id="lvInfo">${(S.lvBad && S.lvBad.length) ? `<b style="color:var(--bad)">⚠ ${S.lvBad.length} testi non entrano nella casella (bordo rosso): ${S.lvBad.slice(0, 4).map((b) => esc(b.text)).join(', ')}${S.lvBad.length > 4 ? '…' : ''}</b>` : 'Passa il mouse su un elemento per leggere nome, id, posizione e misure.'}</span>`;
+  } else if (n === 'dash') {
     h += `<label><input type="checkbox" id="simAuto" ${S.dash.auto ? 'checked' : ''}> guida automatica</label>
-      <label>velocità <input type="range" id="simSpeed" min="0" max="160" value="${Math.round(S.dash.speed)}"></label><span class="val" id="simSpeedV">${Math.round(S.dash.speed)} km/h</span>
+      <label>velocità <input type="range" id="simSpeed" min="0" max="${S.dashScale === '160' ? 160 : 330}" value="${Math.round(S.dash.speed)}"></label><span class="val" id="simSpeedV">${Math.round(S.dash.speed)} km/h</span>
+      <label>scala <select id="simScale" class="field" style="width:auto"><option value="330" ${S.dashScale === '330' ? 'selected' : ''}>0–330 km/h (layout reale)</option><option value="160" ${S.dashScale === '160' ? 'selected' : ''}>0–160 km/h</option></select></label>
       <label><input type="checkbox" id="simGuide" ${S.dashGuide ? 'checked' : ''}> mostra guida quadranti</label>`;
   } else if (n === 'car') {
     h += [['lf', 'ant. sx'], ['rf', 'ant. dx'], ['lr', 'post. sx'], ['rr', 'post. dx'], ['hood', 'cofano'], ['trunk', 'bagagliaio']]
@@ -522,8 +519,13 @@ function renderSimbar() {
 }
 $('#simbar').addEventListener('input', (e) => {
   const el = e.target;
+  if (el.id === 'lvVar') { S.lvVariant = el.value; render(); return; }
+  if (el.id === 'lvSel') { S.lvFile = el.value; S.screen = { name: 'layout', file: el.value }; render(); return; }
+  if (el.id === 'lvOut') { S.lvOutline = el.checked; render(); return; }
+  if (el.id === 'lvHid') { S.lvHidden = el.checked; render(); return; }
   if (el.id === 'simSpeed') { S.dash.auto = false; S.dash.speed = +el.value; S.dash.rpm = Math.min(7.8, 0.8 + el.value / 26); $('#simAuto').checked = false; $('#simSpeedV').textContent = el.value + ' km/h'; }
   if (el.id === 'simAuto') S.dash.auto = el.checked;
+  if (el.id === 'simScale') { S.dashScale = el.value; render(); }
   if (el.id === 'simGuide') S.dashGuide = el.checked;
   if (el.dataset.door) { S.doors[el.dataset.door] = el.checked; render(); }
 });
@@ -540,7 +542,7 @@ function reboot() { S.booting = true; S.history = []; S.screen = { name: 'home' 
 let pressed = null;
 screenEl.addEventListener('pointerdown', (e) => {
   if (S.edit) return;
-  const host = e.target.closest('.press, .card, .q, .devbtn, .sidetab');
+  const host = e.target.closest('.press, .card, .q, .devbtn, .sidetab, .lv-n[data-kind="button"]');
   if (!host) return;
   const img = host.querySelector('img[data-p]');
   if (img) { img.src = src(img.dataset.p); pressed = img; }
@@ -560,10 +562,11 @@ screenEl.addEventListener('click', (e) => {
 }, true);
 
 screenEl.addEventListener('click', (e) => {
-  if (S.edit) return;
+  if (S.edit || S.view === 'layout') return;
   if (dragInfo && dragInfo.moved) return;
   const sc = S.screen;
   if (sc.name === 'reverse') { back(); return; }
+  if (layoutNav(e)) return;
   const card = e.target.closest('[data-card]');
   if (card) { const [name, arg] = HOME_CARDS[+card.dataset.card][2]; go(name, arg); return; }
   const g = e.target.closest('[data-go]'); if (g) { go(g.dataset.go); return; }
@@ -612,6 +615,29 @@ screenEl.addEventListener('click', (e) => {
   }
 });
 function nextTrack() { const m = S.music; m.idx = m.shuffle ? Math.floor(Math.random() * SAMPLE_TRACKS.length) : (m.idx + 1) % SAMPLE_TRACKS.length; m.pos = 0; render(); }
+
+// carosello (scrollwindow) dei layout reali: trascinamento con il mouse o il dito
+screenEl.addEventListener('pointerdown', (e) => {
+  const sc = e.target.closest('.lv-scroll'); if (!sc || S.edit || S.view === 'layout') return;
+  dragInfo = { x: e.clientX, sl: sc.scrollLeft, moved: false, scale: currentScale, el: sc };
+});
+// navigazione dai pulsanti dei layout reali (il vero comportamento sta nel programma compilato: qui è dedotto dai nomi)
+const NAV = [[/^carMenuButton/, () => go('car')], [/^dashMenuButton/, () => go('dash')], [/^carplayMenuButton/, () => go('link', { kind: 'carplay' })],
+  [/^autoMenuButton/, () => go('link', { kind: 'aa' })], [/^airplayMenuButton/, () => go('link', { kind: 'airplay' })], [/^miracastMenuButton/, () => go('link', { kind: 'miracast' })],
+  [/^hicarMenuButton/, () => go('link', { kind: 'hicar' })], [/^bgMenuButton/, () => go('settings', { tab: 'bg' })], [/^eqMenuButton/, () => go('settings', { tab: 'eq' })],
+  [/^btTransmitButton/, () => toast('Trasmissione Bluetooth (non simulata)')], [/^musicMenuButton$/, () => go('music')], [/^telMenuButton$/, () => go('bt', { tab: 'dial' })],
+  [/^naviMenuButton$/, () => go('video')], [/^SettingsButton$/, () => go('settings', { tab: 'sys', sub: 'light' })],
+  [/^HomeButton$/, () => { if (S.screen.name !== 'home') home(); }], [/^BackButton$/, () => { if (S.screen.name !== 'home') back(); }]];
+function layoutNav(e) {
+  const n = e.target.closest('[data-cap]'); if (!n) return false;
+  const hit = NAV.find(([re]) => re.test(n.dataset.cap));
+  if (hit) { hit[1](); return true; }
+  // pulsanti indietro/home con altri nomi: si riconoscono dall'immagine
+  const im = n.dataset.kind === 'button' && n.querySelector('img[data-n]');
+  if (im && /home_home/.test(im.dataset.n)) { if (S.screen.name !== 'home') home(); return true; }
+  if (im && /home_back/.test(im.dataset.n)) { if (S.screen.name !== 'home') back(); return true; }
+  return false;
+}
 
 // slider trascinabili
 screenEl.addEventListener('pointerdown', (e) => {
@@ -668,6 +694,19 @@ function toggleEdit() {
   b.textContent = S.edit ? '✎ Modifica attiva: clic su testo o immagine' : '✎ Modifica sullo schermo';
 }
 $('#btnEdit').addEventListener('click', toggleEdit);
+function setView(v) {
+  S.view = v; S.history = []; S.popup = null; S.call = null;
+  screenEl.classList.toggle('lvmode', v === 'layout');
+  S.screen = v === 'layout' ? { name: 'layout', file: S.lvFile } : { name: 'home' };
+  $$('#viewSw button').forEach((b) => b.setAttribute('aria-pressed', String(b.dataset.view === v)));
+  render();
+}
+screenEl.addEventListener('wheel', (e) => { const sc = e.target.closest('.lv-scroll'); if (sc && Math.abs(e.deltaY) > Math.abs(e.deltaX)) { sc.scrollLeft += e.deltaY; e.preventDefault(); } }, { passive: false });
+$('#viewSw').addEventListener('click', (e) => { const b = e.target.closest('[data-view]'); if (b) setView(b.dataset.view); });
+screenEl.addEventListener('mouseover', (e) => {
+  if (S.view !== 'layout') return; const n = e.target.closest('[data-cap]'); const el = $('#lvInfo'); if (!n || !el) return;
+  el.textContent = `${n.dataset.kind} “${n.dataset.cap}”${n.dataset.lid ? ' · id ' + n.dataset.lid : ''} · posizione ${n.dataset.pos}${n.dataset.hidden ? ' · nascosto' : ''}`;
+});
 function syncThemeUi() {
   screenEl.classList.toggle('bmw', S.theme);
   $$('#themeSw button').forEach((b) => b.setAttribute('aria-pressed', String((b.dataset.theme === 'bmw') === S.theme)));
