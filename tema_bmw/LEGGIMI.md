@@ -1,39 +1,49 @@
-# Tema BMW per il display (Serie 1 Estoril Blue)
+# Tema "Cluster" per il display (Serie 1 Estoril Blue)
 
-Tema grafico completo, ispirato ai colori BMW (nero notte, blu BMW, tricolore azzurro / blu scuro / rosso),
-alle **stesse dimensioni** degli originali. Non contiene loghi o marchi: se vuoi aggiungerli, mandami le immagini.
+Ridisegnato interamente nello stile del cluster digitale di riferimento: **nero puro**, linee al **neon sottili**,
+**ciano a sinistra / rosso a destra**, cornici a chevron e angoli tagliati. Le superfici restano nere; gli stati attivi
+si accendono (contorno e alone). Tricolore azzurro / blu / rosso come unica firma. **Nessun logo o marchio**: se vuoi aggiungerne uno, mandami tu l'immagine.
 
-## La tua auto nel tema
-- Il blu degli accenti è campionato dalla vernice della tua auto (circa `#3d6ed1`, luci `#5a95f6`).
-- **Card "Info veicolo"** con la tua foto, **copertina musica** (display e Bluetooth) con il frontale dell'auto,
-  e lo **sfondo 6 "La mia Serie 1"**: foto sfumata con l'auto nitida a destra.
-- La foto sta in `sorgente/foto/auto.jpg`; per cambiarla sostituiscila e rilancia `foto_auto.py`, `build.js`, `ottimizza.py`, `pacchetto.py`.
+## Cosa contiene
+- **164 immagini** alle misure esatte degli originali (controllate dal backup): card della home con chevron e icone a linea,
+  barre, pulsanti, interruttori, cursori, popup, telefono, musica, video, 6 sfondi + miniature.
+- **Cruscotto** (vedi sotto), con icone di carburante, cintura e parcheggio ridisegnate.
+- **La tua auto**: card "Info veicolo" con la tua foto, copertine musica, sfondo 6 "La mia Serie 1".
+- **130 testi italiani** riscritti e verificati contro le caselle vere (nessun testo tagliato).
+- **1 layout** (`dash.ftu`): solo colori dei numeri, barra giri rossa e testata trasparente.
 
-## Cosa cambia
-- **157 immagini**: card della home, barra laterale e scorciatoie, barra di stato, 6 sfondi + miniature,
-  cruscotto (versione km/h 0–160 e 0–330, quadranti nella stessa posizione dell'originale, zona rossa 6.500 giri),
-  impostazioni (icone, pulsanti, interruttori, cursori, popup), telefono, musica, video.
-- **129 testi italiani** riscritti (es. "Impstz." → "Impostazioni", "Veicolo Originale" → "Info veicolo",
-  "disgiunzioni" → "Disconnetti", "night" → "Notte", istruzioni CarPlay/Android Auto in italiano corretto).
-- **Peso**: 3,0 MB contro 4,5 MB degli originali sostituiti (−42%), meno spazio sulla flash SPI.
-
-Layout, animazioni e velocità dell'interfaccia stanno nei file `.ftu` cifrati e non cambiano.
+## Il cruscotto: come funziona davvero (importante)
+Sul display le due barre di velocità e giri **non sono disegnate sopra lo sfondo**: sono due immagini (`press_bg_*.png`) che salgono
+**dietro** lo sfondo `dash_bg_*.png` e si vedono solo dalle **finestre trasparenti** del PNG. Per questo `dash_bg.py` lascia le finestre
+identiche all'originale (stessa forma, stessa posizione) e ridisegna tutto intorno. La finestra del layout è 1920×620, quindi il PNG viene
+compresso in verticale: i numeri della scala sono pre-allungati per compensare.
+- `press_bg_yellow.png` (stesso nome dell'originale) è ora un gradiente **blu**: funziona anche senza toccare i layout.
+- `press_bg_red.png` è usato dalla barra giri **solo** se installi anche `dash.ftu`; senza, la barra giri resta blu.
 
 ## Installazione (Mac)
 1. Metti la cartella `platform-tools` (con `adb`) dentro questa cartella, o abbi `adb` nel PATH.
 2. Collega il Mac alla WiFi `lylink_DBF07ACC`.
-3. Nel Terminale, da questa cartella:
+3. Da questa cartella:
+   ```bash
+   bash installa.sh --solo-immagini
+   ```
+   Installa testi e immagini, **senza** layout (.ftu): è l'opzione a rischio minore. La barra giri resta blu.
    ```bash
    bash installa.sh
    ```
-   Lo script copia prima dal display **ogni** file che sostituirà (in `backup_prima_<data>/`) e si ferma
-   se anche un solo backup fallisce. Poi invia i file e chiede se riavviare.
+   Installa anche `dash.ftu` (barra giri rossa, numeri colorati). Chiede conferma scrivendo "si".
+
+Lo script copia prima dal display **ogni** file che sostituirà in `backup_prima_<data>/` e si ferma se un backup fallisce.
 
 ## Tornare all'originale
 ```bash
 bash ripristina.sh backup_prima_<data>
 ```
-Oppure, dal display: Sistema → Fabbrica (ripristino di emergenza).
+oppure dal display: Sistema → Fabbrica. Non so ancora se `adb` resta raggiungibile se il display non parte: per questo il primo passo
+consigliato è `--solo-immagini`, con l'auto ferma e la retrocamera controllata subito dopo.
 
 ## Rigenerare il tema
-In `sorgente/`: `tema.js` (disegni), `testi_it.json` (testi), `build.js` → `ottimizza.py` → `pacchetto.py`.
+```bash
+bash sorgente/costruisci.sh <cartella backup_...>
+```
+Sorgenti: `tema.js` (disegni), `dash_bg.py` (cruscotto), `layout_mod.py` (layout), `testi_it.json`, `foto/auto.jpg`.

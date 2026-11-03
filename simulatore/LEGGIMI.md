@@ -3,8 +3,8 @@
 Versione navigabile del display aftermarket (FlyThings V2.1 / ZKOS, 1920×720), costruita con le
 **immagini originali** del backup (`res/ui`) e i **testi reali** di tutte le 15 lingue (`res/tr`).
 
-## Tema BMW
-In alto c'è l'interruttore **Originale / Tema BMW**. Con il tema attivo, l'export include tutto il tema
+## Tema Cluster
+In alto c'è l'interruttore **Originale / Tema Cluster**. Con il tema attivo, l'export include tutto il tema
 più le tue modifiche. Il tema pronto da installare da solo è in `../tema_bmw/`.
 
 ## Aprirlo
@@ -47,3 +47,7 @@ Il pulsante **Animazioni** mostra cosa si potrebbe fare con una libreria aggiunt
 dell'auto e le tre strisce, ingresso a scaglioni delle card, transizioni tra schermate, giro di lancetta del
 cruscotto all'accensione, barre dell'equalizzatore nella musica.
 **Sul display, con i soli file `.ftu` e il tema, queste animazioni non ci sono.** Servono la libreria aggiuntiva e il test di sicurezza.
+
+## Cruscotto: correzione importante
+Il simulatore ora riproduce il meccanismo vero: le barre salgono **dietro** lo sfondo e si vedono dalle finestre trasparenti del PNG
+(prima le disegnavo sopra, e con uno sfondo opaco sul display non si sarebbero viste).

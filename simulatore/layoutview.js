@@ -174,7 +174,7 @@ window.LayoutView = {
     return bad;
   },
   html(name, opts = {}) {
-    const d = L[name]; if (!d) return `<div class="lv-ph" style="position:absolute;inset:0;background:#000">Layout "${esc(name)}" non trovato</div>`;
+    const d = (S().theme && window.THEME && window.THEME.layouts && window.THEME.layouts[name]) || L[name]; if (!d) return `<div class="lv-ph" style="position:absolute;inset:0;background:#000">Layout "${esc(name)}" non trovato</div>`;
     const bgc = col(d.backgroundColor);
     PICMAP = opts.picMap || {};
     const ctx = { showHidden: !!opts.showHidden, demoFill: 0.4, checkFirst: true, variant: opts.variant || null };

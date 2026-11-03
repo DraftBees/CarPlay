@@ -86,7 +86,7 @@ const $ = (s, r = document) => r.querySelector(s);
 const $$ = (s, r = document) => [...r.querySelectorAll(s)];
 const esc = (s) => String(s).replace(/[&<>"']/g, (c) => ({ '&': '&amp;', '<': '&lt;', '>': '&gt;', '"': '&quot;', "'": '&#39;' }[c]));
 const screenEl = $('#screen');
-window.SIM = { t: (k) => t(k), src: (p) => src(p) };
+window.SIM = { t: (k) => t(k), src: (p) => src(p), get theme() { return S.theme; } };
 
 function tOrig(k, lang = S.lang) { const L = LANGS[lang] || {}; return L[k] != null ? L[k] : (LANGS.en_US[k] != null ? LANGS.en_US[k] : k); }
 function themeStr(k, lang = S.lang) { const ts = S.theme && THEME.strings[lang]; return ts && ts[k] != null ? ts[k] : null; }
@@ -284,7 +284,7 @@ screens.dvr = () => `<div class="bgimg" style="background:#05070b"></div>${heade
   </div>`;
 
 screens.dash = () => window.LayoutView.html('dash', { picMap: S.dashScale === '160' ? { 'dash/dash_bg_china.png': 'dash/dash_bg_english.png' } : {} })
-  + '<canvas class="dashcv" id="dashcv" width="1920" height="720"></canvas>';
+;
 
 screens.car = () => {
   const d = S.doors;
@@ -457,8 +457,10 @@ function bandPoly(g, frac) {
   return [O[0], O[1], lerp(O[1], O[2], f), lerp(N[1], N[2], f), N[1], N[0]];
 }
 function drawDashLoop() {
-  const cv = $('#dashcv'); if (!cv) return;
-  const ctx = cv.getContext('2d');
+  // Come sul display: le due barre (SpeedDisplayTextView / RotateDisplayTextView) salgono DIETRO lo sfondo e si vedono
+  // solo attraverso le finestre trasparenti del PNG. La finestra del layout è 1920×620 a y=100: il PNG viene compresso in verticale.
+  const fillL = $('[data-cap="SpeedDisplayTextView"]', screenEl), fillR = $('[data-cap="RotateDisplayTextView"]', screenEl);
+  if (!fillL || !fillR) return;
   let last = performance.now();
   const frame = (ts) => {
     const dt = Math.min(0.1, (ts - last) / 1000); last = ts;
@@ -472,21 +474,13 @@ function drawDashLoop() {
       const r = $('#simSpeed'); if (r) { r.value = Math.round(d.speed); $('#simSpeedV').textContent = Math.round(d.speed) + ' km/h'; }
     }
     let spd = d.speed, rpm = d.rpm;
+    const max = S.dashScale === '160' ? 160 : 330;
     if (S.anim && d.sweepAt) {
       const t = (performance.now() - d.sweepAt) / 2400;
-      if (t < 1) { const k = t < 0.5 ? t * 2 : 2 - t * 2, e = k * k * (3 - 2 * k); spd = e * (S.dashScale === '160' ? 160 : 330); rpm = e * 8; }
+      if (t < 1) { const k = t < 0.5 ? t * 2 : 2 - t * 2, e = k * k * (3 - 2 * k); spd = e * max; rpm = e * 8; }
     }
-    ctx.clearRect(0, 0, 1920, 720);
-    const fill = (g, v, c1, c2) => {
-      const pts = bandPoly(g, Math.max(0, Math.min(1, v / g.max)));
-      const gr = ctx.createLinearGradient(0, 670, 0, 50); gr.addColorStop(0, c1); gr.addColorStop(1, c2);
-      ctx.beginPath(); pts.forEach(([x, y], i) => (i ? ctx.lineTo(x, y) : ctx.moveTo(x, y))); ctx.closePath();
-      ctx.fillStyle = gr; ctx.globalAlpha = 0.78; ctx.fill(); ctx.globalAlpha = 1;
-    };
-    const [c1, c2] = S.theme ? ['#1c69d4', '#5cb3ff'] : ['#3aa0ff', '#ff3d5a'];
-    fill(S.dashScale === '160' ? DASH.speed : { ...DASH.speed, max: 330, split: 200 / 330 }, spd, c1, c2);
-    fill(DASH.rpm, rpm, c1, rpm > 6.5 ? '#e3242b' : c2);
-    if (S.dashGuide) drawGuide(ctx);
+    const place = (el, f) => { const top = 676 - Math.max(0, Math.min(1, f)) * 530; el.style.top = top + 'px'; el.style.height = (700 - top) + 'px'; };
+    place(fillL, spd / max); place(fillR, rpm / 8);
     const sp = $('[data-cap="speedTextView"] .lv-t'); if (sp) sp.textContent = Math.round(spd);
     const rp = $('[data-cap="rotateTextView"] .lv-t'); if (rp) rp.textContent = rpm.toFixed(1);
     dashRaf = requestAnimationFrame(frame);
@@ -519,7 +513,7 @@ function renderSimbar() {
     h += `<label><input type="checkbox" id="simAuto" ${S.dash.auto ? 'checked' : ''}> guida automatica</label>
       <label>velocità <input type="range" id="simSpeed" min="0" max="${S.dashScale === '160' ? 160 : 330}" value="${Math.round(S.dash.speed)}"></label><span class="val" id="simSpeedV">${Math.round(S.dash.speed)} km/h</span>
       <label>scala <select id="simScale" class="field" style="width:auto"><option value="330" ${S.dashScale === '330' ? 'selected' : ''}>0–330 km/h (layout reale)</option><option value="160" ${S.dashScale === '160' ? 'selected' : ''}>0–160 km/h</option></select></label>
-      <label><input type="checkbox" id="simGuide" ${S.dashGuide ? 'checked' : ''}> mostra guida quadranti</label>`;
+      <span class="hint">Le barre salgono dietro lo sfondo, come sul display.</span>`;
   } else if (n === 'car') {
     h += [['lf', 'ant. sx'], ['rf', 'ant. dx'], ['lr', 'post. sx'], ['rr', 'post. dx'], ['hood', 'cofano'], ['trunk', 'bagagliaio']]
       .map(([k, l]) => `<label><input type="checkbox" data-door="${k}" ${S.doors[k] ? 'checked' : ''}> ${l}</label>`).join('');
@@ -542,7 +536,6 @@ $('#simbar').addEventListener('input', (e) => {
   if (el.id === 'simSpeed') { S.dash.auto = false; S.dash.speed = +el.value; S.dash.rpm = Math.min(7.8, 0.8 + el.value / 26); $('#simAuto').checked = false; $('#simSpeedV').textContent = el.value + ' km/h'; }
   if (el.id === 'simAuto') S.dash.auto = el.checked;
   if (el.id === 'simScale') { S.dashScale = el.value; render(); }
-  if (el.id === 'simGuide') S.dashGuide = el.checked;
   if (el.dataset.door) { S.doors[el.dataset.door] = el.checked; render(); }
 });
 $('#simbar').addEventListener('click', (e) => {
@@ -768,7 +761,7 @@ function openStringDialog(k, anchorEl) {
   const file = LANG_FILES[S.lang];
   const d = dialog(`<h2>Modifica testo</h2>
     <div class="path">res/tr/${esc(file)} → "${esc(k)}"</div>
-    <p class="hint">${S.theme && themeStr(k) != null ? `Tema BMW: <b>${esc(themeStr(k))}</b> · ` : ''}Originale del display: <b>${esc(tOrig(k))}</b></p>
+    <p class="hint">${S.theme && themeStr(k) != null ? `Tema Cluster: <b>${esc(themeStr(k))}</b> · ` : ''}Originale del display: <b>${esc(tOrig(k))}</b></p>
     <textarea class="field" id="dlgTxt">${esc(t(k))}</textarea>
     <div class="note" id="dlgWarn" hidden>Il testo è più largo dello spazio disponibile: sul display verrebbe tagliato. Accorcialo.</div>
     <div class="row"><button class="btn primary" type="button" id="dlgOk">Fatto</button><button class="btn" type="button" id="dlgReset">Ripristina originale</button></div>`);
@@ -1019,7 +1012,7 @@ function renderExport(pane) {
   pane.innerHTML = `
     <section style="display:flex;flex-direction:column;gap:10px">
       <h3>Riepilogo</h3>
-      ${files.length ? `<p>${S.theme ? '<b>Tema BMW incluso.</b> ' : ''}${nT} testi, ${nI} immagini${S.customBg ? ', 1 sfondo personalizzato' : ''}.</p>
+      ${files.length ? `<p>${S.theme ? '<b>Tema Cluster incluso.</b> ' : ''}${nT} testi, ${nI} immagini${S.customBg ? ', 1 sfondo personalizzato' : ''}.</p>
         <details><summary class="hint" style="cursor:pointer">Elenco file (${files.length})</summary><ul class="list">${files.map((f) => `<li><code>${esc(f.dev)}</code>${f.kind === 'txt' ? ` · ${f.n} testi` : ''}${f.mine ? ' · <b>tua modifica</b>' : ''}</li>`).join('')}</ul></details>`
       : `<div class="note">Non hai ancora modificato nulla. Attiva <b>Modifica sullo schermo</b> (tasto E) e clicca su una scritta o su un'immagine, oppure usa le schede Testi e Immagini.</div>`}
       <div class="row">

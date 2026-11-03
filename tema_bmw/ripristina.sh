@@ -6,7 +6,12 @@ BK="$1"; [ -d "$BK" ] || { echo "Indica la cartella di backup, es: bash ripristi
 ADB="./platform-tools/adb"; [ -x "$ADB" ] || ADB="$(command -v adb)"
 IP=192.168.43.1:5555
 "$ADB" connect $IP; "$ADB" -s $IP wait-for-device
+# prima i layout (.ftu), poi immagini e testi
+[ -f "$BK/res/ui/dash.ftu" ] && "$ADB" -s $IP push "$BK/res/ui/dash.ftu" "/res/ui/dash.ftu" >/dev/null
 [ -f "$BK/res/tr/yi_IT-意大利语.json" ] && "$ADB" -s $IP push "$BK/res/tr/yi_IT-意大利语.json" "/res/tr/yi_IT-意大利语.json" >/dev/null
+[ -f "$BK/res/ui/HomePage/dash_consumption.png" ] && "$ADB" -s $IP push "$BK/res/ui/HomePage/dash_consumption.png" "/res/ui/HomePage/dash_consumption.png" >/dev/null
+[ -f "$BK/res/ui/HomePage/dash_p.png" ] && "$ADB" -s $IP push "$BK/res/ui/HomePage/dash_p.png" "/res/ui/HomePage/dash_p.png" >/dev/null
+[ -f "$BK/res/ui/HomePage/dash_safety.png" ] && "$ADB" -s $IP push "$BK/res/ui/HomePage/dash_safety.png" "/res/ui/HomePage/dash_safety.png" >/dev/null
 [ -f "$BK/res/ui/HomePage/home_bg_n.png" ] && "$ADB" -s $IP push "$BK/res/ui/HomePage/home_bg_n.png" "/res/ui/HomePage/home_bg_n.png" >/dev/null
 [ -f "$BK/res/ui/HomePage/home_bg_s.png" ] && "$ADB" -s $IP push "$BK/res/ui/HomePage/home_bg_s.png" "/res/ui/HomePage/home_bg_s.png" >/dev/null
 [ -f "$BK/res/ui/HomePage/home_icon_airplay_n.png" ] && "$ADB" -s $IP push "$BK/res/ui/HomePage/home_icon_airplay_n.png" "/res/ui/HomePage/home_icon_airplay_n.png" >/dev/null
@@ -123,6 +128,7 @@ IP=192.168.43.1:5555
 [ -f "$BK/res/ui/bt/za_btmusic_defaultcover.png" ] && "$ADB" -s $IP push "$BK/res/ui/bt/za_btmusic_defaultcover.png" "/res/ui/bt/za_btmusic_defaultcover.png" >/dev/null
 [ -f "$BK/res/ui/dash/dash_bg_china.png" ] && "$ADB" -s $IP push "$BK/res/ui/dash/dash_bg_china.png" "/res/ui/dash/dash_bg_china.png" >/dev/null
 [ -f "$BK/res/ui/dash/dash_bg_english.png" ] && "$ADB" -s $IP push "$BK/res/ui/dash/dash_bg_english.png" "/res/ui/dash/dash_bg_english.png" >/dev/null
+[ -f "$BK/res/ui/dash/press_bg_yellow.png" ] && "$ADB" -s $IP push "$BK/res/ui/dash/press_bg_yellow.png" "/res/ui/dash/press_bg_yellow.png" >/dev/null
 [ -f "$BK/res/ui/media/video_load.png" ] && "$ADB" -s $IP push "$BK/res/ui/media/video_load.png" "/res/ui/media/video_load.png" >/dev/null
 [ -f "$BK/res/ui/setting/off.png" ] && "$ADB" -s $IP push "$BK/res/ui/setting/off.png" "/res/ui/setting/off.png" >/dev/null
 [ -f "$BK/res/ui/setting/on.png" ] && "$ADB" -s $IP push "$BK/res/ui/setting/on.png" "/res/ui/setting/on.png" >/dev/null
@@ -139,6 +145,7 @@ IP=192.168.43.1:5555
 [ -f "$BK/res/ui/setting/set_btn_n.png" ] && "$ADB" -s $IP push "$BK/res/ui/setting/set_btn_n.png" "/res/ui/setting/set_btn_n.png" >/dev/null
 [ -f "$BK/res/ui/setting/set_date_n.png" ] && "$ADB" -s $IP push "$BK/res/ui/setting/set_date_n.png" "/res/ui/setting/set_date_n.png" >/dev/null
 [ -f "$BK/res/ui/setting/set_date_s.png" ] && "$ADB" -s $IP push "$BK/res/ui/setting/set_date_s.png" "/res/ui/setting/set_date_s.png" >/dev/null
+[ -f "$BK/res/ui/setting/set_first_menu_select.png" ] && "$ADB" -s $IP push "$BK/res/ui/setting/set_first_menu_select.png" "/res/ui/setting/set_first_menu_select.png" >/dev/null
 [ -f "$BK/res/ui/setting/set_fullscreen_bg.png" ] && "$ADB" -s $IP push "$BK/res/ui/setting/set_fullscreen_bg.png" "/res/ui/setting/set_fullscreen_bg.png" >/dev/null
 [ -f "$BK/res/ui/setting/set_ic_common_f.png" ] && "$ADB" -s $IP push "$BK/res/ui/setting/set_ic_common_f.png" "/res/ui/setting/set_ic_common_f.png" >/dev/null
 [ -f "$BK/res/ui/setting/set_ic_common_n.png" ] && "$ADB" -s $IP push "$BK/res/ui/setting/set_ic_common_n.png" "/res/ui/setting/set_ic_common_n.png" >/dev/null

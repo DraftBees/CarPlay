@@ -1,8 +1,11 @@
 #!/bin/bash
-# Installa il TEMA BMW sul display (158 file: 157 immagini + testi italiani).
-# 1) Collega il Mac alla WiFi lylink_DBF07ACC   2) bash installa.sh
-# Prima di sovrascrivere, ogni file viene copiato dal display in backup_prima_<data>/ (serve a ripristina.sh).
+# Installa il tema sul display: 1 file di testi + 164 immagini + 1 layout (.ftu).
+#   bash installa.sh                    tema completo (con il layout del cruscotto)
+#   bash installa.sh --solo-immagini    solo testi e immagini, nessun layout (.ftu): il rischio minore
+# 1) Collega il Mac alla WiFi lylink_DBF07ACC   2) lancia lo script
+# Prima di sovrascrivere ogni file esistente viene copiato dal display in backup_prima_<data>/ (serve a ripristina.sh).
 cd "$(dirname "$0")"
+SOLO_IMG=0; [ "$1" = "--solo-immagini" ] && SOLO_IMG=1
 ADB="./platform-tools/adb"; [ -x "$ADB" ] || ADB="$(command -v adb)"
 [ -n "$ADB" ] || { echo "adb non trovato: copia la cartella platform-tools qui accanto"; exit 1; }
 IP=192.168.43.1:5555
@@ -14,8 +17,16 @@ exec > >(tee "installa_log_$STAMP.txt") 2>&1
 "$ADB" connect $IP
 "$ADB" -s $IP wait-for-device || { echo "Display non raggiungibile"; exit 1; }
 
+if [ $SOLO_IMG = 0 ]; then
+  echo "Questo installa anche 1 layout (.ftu) del cruscotto. Se il display non dovesse partire:"
+  echo "  bash ripristina.sh $BK   (se adb resta raggiungibile) oppure dal menu Sistema -> di Fabbrica."
+  read -r -p "Digita si per continuare, qualsiasi altro tasto per annullare: " OK
+  [ "$OK" = "si" ] || { echo "Annullato. Puoi usare:  bash installa.sh --solo-immagini"; exit 0; }
+fi
+
 echo "=== 1. backup degli originali in $BK ==="
 mkdir -p "$BK/res/tr"
+mkdir -p "$BK/res/ui"
 mkdir -p "$BK/res/ui/HomePage"
 mkdir -p "$BK/res/ui/MusicPlayer"
 mkdir -p "$BK/res/ui/bg"
@@ -25,6 +36,9 @@ mkdir -p "$BK/res/ui/media"
 mkdir -p "$BK/res/ui/setting"
 mkdir -p "$BK/res/ui/status"
 "$ADB" -s $IP pull "/res/tr/yi_IT-意大利语.json" "$BK/res/tr/yi_IT-意大利语.json" >/dev/null || { echo "Backup fallito: /res/tr/yi_IT-意大利语.json. Interrompo senza toccare nulla."; exit 1; }
+"$ADB" -s $IP pull "/res/ui/HomePage/dash_consumption.png" "$BK/res/ui/HomePage/dash_consumption.png" >/dev/null || { echo "Backup fallito: /res/ui/HomePage/dash_consumption.png. Interrompo senza toccare nulla."; exit 1; }
+"$ADB" -s $IP pull "/res/ui/HomePage/dash_p.png" "$BK/res/ui/HomePage/dash_p.png" >/dev/null || { echo "Backup fallito: /res/ui/HomePage/dash_p.png. Interrompo senza toccare nulla."; exit 1; }
+"$ADB" -s $IP pull "/res/ui/HomePage/dash_safety.png" "$BK/res/ui/HomePage/dash_safety.png" >/dev/null || { echo "Backup fallito: /res/ui/HomePage/dash_safety.png. Interrompo senza toccare nulla."; exit 1; }
 "$ADB" -s $IP pull "/res/ui/HomePage/home_bg_n.png" "$BK/res/ui/HomePage/home_bg_n.png" >/dev/null || { echo "Backup fallito: /res/ui/HomePage/home_bg_n.png. Interrompo senza toccare nulla."; exit 1; }
 "$ADB" -s $IP pull "/res/ui/HomePage/home_bg_s.png" "$BK/res/ui/HomePage/home_bg_s.png" >/dev/null || { echo "Backup fallito: /res/ui/HomePage/home_bg_s.png. Interrompo senza toccare nulla."; exit 1; }
 "$ADB" -s $IP pull "/res/ui/HomePage/home_icon_airplay_n.png" "$BK/res/ui/HomePage/home_icon_airplay_n.png" >/dev/null || { echo "Backup fallito: /res/ui/HomePage/home_icon_airplay_n.png. Interrompo senza toccare nulla."; exit 1; }
@@ -141,6 +155,7 @@ mkdir -p "$BK/res/ui/status"
 "$ADB" -s $IP pull "/res/ui/bt/za_btmusic_defaultcover.png" "$BK/res/ui/bt/za_btmusic_defaultcover.png" >/dev/null || { echo "Backup fallito: /res/ui/bt/za_btmusic_defaultcover.png. Interrompo senza toccare nulla."; exit 1; }
 "$ADB" -s $IP pull "/res/ui/dash/dash_bg_china.png" "$BK/res/ui/dash/dash_bg_china.png" >/dev/null || { echo "Backup fallito: /res/ui/dash/dash_bg_china.png. Interrompo senza toccare nulla."; exit 1; }
 "$ADB" -s $IP pull "/res/ui/dash/dash_bg_english.png" "$BK/res/ui/dash/dash_bg_english.png" >/dev/null || { echo "Backup fallito: /res/ui/dash/dash_bg_english.png. Interrompo senza toccare nulla."; exit 1; }
+"$ADB" -s $IP pull "/res/ui/dash/press_bg_yellow.png" "$BK/res/ui/dash/press_bg_yellow.png" >/dev/null || { echo "Backup fallito: /res/ui/dash/press_bg_yellow.png. Interrompo senza toccare nulla."; exit 1; }
 "$ADB" -s $IP pull "/res/ui/media/video_load.png" "$BK/res/ui/media/video_load.png" >/dev/null || { echo "Backup fallito: /res/ui/media/video_load.png. Interrompo senza toccare nulla."; exit 1; }
 "$ADB" -s $IP pull "/res/ui/setting/off.png" "$BK/res/ui/setting/off.png" >/dev/null || { echo "Backup fallito: /res/ui/setting/off.png. Interrompo senza toccare nulla."; exit 1; }
 "$ADB" -s $IP pull "/res/ui/setting/on.png" "$BK/res/ui/setting/on.png" >/dev/null || { echo "Backup fallito: /res/ui/setting/on.png. Interrompo senza toccare nulla."; exit 1; }
@@ -157,6 +172,7 @@ mkdir -p "$BK/res/ui/status"
 "$ADB" -s $IP pull "/res/ui/setting/set_btn_n.png" "$BK/res/ui/setting/set_btn_n.png" >/dev/null || { echo "Backup fallito: /res/ui/setting/set_btn_n.png. Interrompo senza toccare nulla."; exit 1; }
 "$ADB" -s $IP pull "/res/ui/setting/set_date_n.png" "$BK/res/ui/setting/set_date_n.png" >/dev/null || { echo "Backup fallito: /res/ui/setting/set_date_n.png. Interrompo senza toccare nulla."; exit 1; }
 "$ADB" -s $IP pull "/res/ui/setting/set_date_s.png" "$BK/res/ui/setting/set_date_s.png" >/dev/null || { echo "Backup fallito: /res/ui/setting/set_date_s.png. Interrompo senza toccare nulla."; exit 1; }
+"$ADB" -s $IP pull "/res/ui/setting/set_first_menu_select.png" "$BK/res/ui/setting/set_first_menu_select.png" >/dev/null || { echo "Backup fallito: /res/ui/setting/set_first_menu_select.png. Interrompo senza toccare nulla."; exit 1; }
 "$ADB" -s $IP pull "/res/ui/setting/set_fullscreen_bg.png" "$BK/res/ui/setting/set_fullscreen_bg.png" >/dev/null || { echo "Backup fallito: /res/ui/setting/set_fullscreen_bg.png. Interrompo senza toccare nulla."; exit 1; }
 "$ADB" -s $IP pull "/res/ui/setting/set_ic_common_f.png" "$BK/res/ui/setting/set_ic_common_f.png" >/dev/null || { echo "Backup fallito: /res/ui/setting/set_ic_common_f.png. Interrompo senza toccare nulla."; exit 1; }
 "$ADB" -s $IP pull "/res/ui/setting/set_ic_common_n.png" "$BK/res/ui/setting/set_ic_common_n.png" >/dev/null || { echo "Backup fallito: /res/ui/setting/set_ic_common_n.png. Interrompo senza toccare nulla."; exit 1; }
@@ -182,11 +198,17 @@ mkdir -p "$BK/res/ui/status"
 "$ADB" -s $IP pull "/res/ui/status/home_home_f.png" "$BK/res/ui/status/home_home_f.png" >/dev/null || { echo "Backup fallito: /res/ui/status/home_home_f.png. Interrompo senza toccare nulla."; exit 1; }
 "$ADB" -s $IP pull "/res/ui/status/home_home_n.png" "$BK/res/ui/status/home_home_n.png" >/dev/null || { echo "Backup fallito: /res/ui/status/home_home_n.png. Interrompo senza toccare nulla."; exit 1; }
 "$ADB" -s $IP pull "/res/ui/status/u.png" "$BK/res/ui/status/u.png" >/dev/null || { echo "Backup fallito: /res/ui/status/u.png. Interrompo senza toccare nulla."; exit 1; }
+if [ $SOLO_IMG = 0 ]; then
+  "$ADB" -s $IP pull "/res/ui/dash.ftu" "$BK/res/ui/dash.ftu" >/dev/null || { echo "Backup fallito: /res/ui/dash.ftu. Interrompo senza toccare nulla."; exit 1; }
+fi
 echo "Backup completato."
 
-echo "=== 2. invio dei file del tema ==="
+echo "=== 2. invio: testi e immagini ==="
 ERR=0
 "$ADB" -s $IP push "res/tr/yi_IT-意大利语.json" "/res/tr/yi_IT-意大利语.json" >/dev/null || { echo "Invio fallito: /res/tr/yi_IT-意大利语.json"; ERR=1; }
+"$ADB" -s $IP push "res/ui/HomePage/dash_consumption.png" "/res/ui/HomePage/dash_consumption.png" >/dev/null || { echo "Invio fallito: /res/ui/HomePage/dash_consumption.png"; ERR=1; }
+"$ADB" -s $IP push "res/ui/HomePage/dash_p.png" "/res/ui/HomePage/dash_p.png" >/dev/null || { echo "Invio fallito: /res/ui/HomePage/dash_p.png"; ERR=1; }
+"$ADB" -s $IP push "res/ui/HomePage/dash_safety.png" "/res/ui/HomePage/dash_safety.png" >/dev/null || { echo "Invio fallito: /res/ui/HomePage/dash_safety.png"; ERR=1; }
 "$ADB" -s $IP push "res/ui/HomePage/home_bg_n.png" "/res/ui/HomePage/home_bg_n.png" >/dev/null || { echo "Invio fallito: /res/ui/HomePage/home_bg_n.png"; ERR=1; }
 "$ADB" -s $IP push "res/ui/HomePage/home_bg_s.png" "/res/ui/HomePage/home_bg_s.png" >/dev/null || { echo "Invio fallito: /res/ui/HomePage/home_bg_s.png"; ERR=1; }
 "$ADB" -s $IP push "res/ui/HomePage/home_icon_airplay_n.png" "/res/ui/HomePage/home_icon_airplay_n.png" >/dev/null || { echo "Invio fallito: /res/ui/HomePage/home_icon_airplay_n.png"; ERR=1; }
@@ -303,6 +325,9 @@ ERR=0
 "$ADB" -s $IP push "res/ui/bt/za_btmusic_defaultcover.png" "/res/ui/bt/za_btmusic_defaultcover.png" >/dev/null || { echo "Invio fallito: /res/ui/bt/za_btmusic_defaultcover.png"; ERR=1; }
 "$ADB" -s $IP push "res/ui/dash/dash_bg_china.png" "/res/ui/dash/dash_bg_china.png" >/dev/null || { echo "Invio fallito: /res/ui/dash/dash_bg_china.png"; ERR=1; }
 "$ADB" -s $IP push "res/ui/dash/dash_bg_english.png" "/res/ui/dash/dash_bg_english.png" >/dev/null || { echo "Invio fallito: /res/ui/dash/dash_bg_english.png"; ERR=1; }
+"$ADB" -s $IP push "res/ui/dash/press_bg_blue.png" "/res/ui/dash/press_bg_blue.png" >/dev/null || { echo "Invio fallito: /res/ui/dash/press_bg_blue.png"; ERR=1; }
+"$ADB" -s $IP push "res/ui/dash/press_bg_red.png" "/res/ui/dash/press_bg_red.png" >/dev/null || { echo "Invio fallito: /res/ui/dash/press_bg_red.png"; ERR=1; }
+"$ADB" -s $IP push "res/ui/dash/press_bg_yellow.png" "/res/ui/dash/press_bg_yellow.png" >/dev/null || { echo "Invio fallito: /res/ui/dash/press_bg_yellow.png"; ERR=1; }
 "$ADB" -s $IP push "res/ui/media/video_load.png" "/res/ui/media/video_load.png" >/dev/null || { echo "Invio fallito: /res/ui/media/video_load.png"; ERR=1; }
 "$ADB" -s $IP push "res/ui/setting/off.png" "/res/ui/setting/off.png" >/dev/null || { echo "Invio fallito: /res/ui/setting/off.png"; ERR=1; }
 "$ADB" -s $IP push "res/ui/setting/on.png" "/res/ui/setting/on.png" >/dev/null || { echo "Invio fallito: /res/ui/setting/on.png"; ERR=1; }
@@ -319,6 +344,7 @@ ERR=0
 "$ADB" -s $IP push "res/ui/setting/set_btn_n.png" "/res/ui/setting/set_btn_n.png" >/dev/null || { echo "Invio fallito: /res/ui/setting/set_btn_n.png"; ERR=1; }
 "$ADB" -s $IP push "res/ui/setting/set_date_n.png" "/res/ui/setting/set_date_n.png" >/dev/null || { echo "Invio fallito: /res/ui/setting/set_date_n.png"; ERR=1; }
 "$ADB" -s $IP push "res/ui/setting/set_date_s.png" "/res/ui/setting/set_date_s.png" >/dev/null || { echo "Invio fallito: /res/ui/setting/set_date_s.png"; ERR=1; }
+"$ADB" -s $IP push "res/ui/setting/set_first_menu_select.png" "/res/ui/setting/set_first_menu_select.png" >/dev/null || { echo "Invio fallito: /res/ui/setting/set_first_menu_select.png"; ERR=1; }
 "$ADB" -s $IP push "res/ui/setting/set_fullscreen_bg.png" "/res/ui/setting/set_fullscreen_bg.png" >/dev/null || { echo "Invio fallito: /res/ui/setting/set_fullscreen_bg.png"; ERR=1; }
 "$ADB" -s $IP push "res/ui/setting/set_ic_common_f.png" "/res/ui/setting/set_ic_common_f.png" >/dev/null || { echo "Invio fallito: /res/ui/setting/set_ic_common_f.png"; ERR=1; }
 "$ADB" -s $IP push "res/ui/setting/set_ic_common_n.png" "/res/ui/setting/set_ic_common_n.png" >/dev/null || { echo "Invio fallito: /res/ui/setting/set_ic_common_n.png"; ERR=1; }
@@ -344,6 +370,10 @@ ERR=0
 "$ADB" -s $IP push "res/ui/status/home_home_f.png" "/res/ui/status/home_home_f.png" >/dev/null || { echo "Invio fallito: /res/ui/status/home_home_f.png"; ERR=1; }
 "$ADB" -s $IP push "res/ui/status/home_home_n.png" "/res/ui/status/home_home_n.png" >/dev/null || { echo "Invio fallito: /res/ui/status/home_home_n.png"; ERR=1; }
 "$ADB" -s $IP push "res/ui/status/u.png" "/res/ui/status/u.png" >/dev/null || { echo "Invio fallito: /res/ui/status/u.png"; ERR=1; }
+if [ $SOLO_IMG = 0 ]; then
+  echo "=== 3. invio: layout (.ftu) ==="
+  "$ADB" -s $IP push "res/ui/dash.ftu" "/res/ui/dash.ftu" >/dev/null || { echo "Invio fallito: /res/ui/dash.ftu"; ERR=1; }
+fi
 "$ADB" -s $IP shell sync >/dev/null 2>&1 || true
 if [ $ERR = 1 ]; then echo "Qualcosa non è andato: rimetti gli originali con  bash ripristina.sh $BK"; exit 1; fi
 echo "Fatto. Backup in: $BK"

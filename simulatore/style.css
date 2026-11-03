@@ -211,7 +211,7 @@ details.grp > summary { cursor: pointer; font: 600 13px var(--f-cond); letter-sp
 #screen.bmw { --dev-accent: #5cb3ff; }
 #screen.bmw .sidetabs { background: linear-gradient(90deg, rgba(4,7,12,.94), rgba(8,17,32,.75)); box-shadow: inset -1.5px 0 0 rgba(92,179,255,.25); }
 #screen.bmw .sidetab.on::before { box-shadow: 0 0 12px #5cb3ff; }
-#screen.bmw .key { background: linear-gradient(180deg, rgba(27,38,56,.95), rgba(12,22,40,.95)); border-color: rgba(150,180,220,.22); border-radius: 12px; }
+#screen.bmw .key { background: #04070a; border-color: rgba(190,215,235,.3); border-radius: 4px; }
 #screen.bmw .key:active { background: #1c69d4; }
 #screen.bmw .list-dev .it:active, #screen.bmw .list-dev .it.on { background: linear-gradient(90deg, rgba(28,105,212,.45), rgba(28,105,212,0)); }
 #screen.bmw .title, #screen.bmw .clock { font-weight: 300; letter-spacing: .04em; }
@@ -237,17 +237,17 @@ details.grp > summary { cursor: pointer; font: 600 13px var(--f-cond); letter-sp
 #screen.anim .lv-scroll [data-kind="button"]:active { transform: scale(.965); filter: brightness(1.15); }
 .eqbars { display: none; gap: 7px; align-items: flex-end; height: 64px; }
 #screen.anim .eqbars { display: flex; }
-.eqbars i { width: 9px; height: 100%; border-radius: 2px; background: linear-gradient(#5f9bff, #2a62cc); transform-origin: bottom; animation: eqb .8s ease-in-out infinite alternate; }
+.eqbars i { width: 9px; height: 100%; border-radius: 2px; background: linear-gradient(#3de4ff, #1f46ff); transform-origin: bottom; animation: eqb .8s ease-in-out infinite alternate; }
 @keyframes eqb { from { transform: scaleY(.15); } to { transform: scaleY(1); } }
-.boot2 { position: absolute; inset: 0; z-index: 40; background: #02040a; overflow: hidden; animation: bootOut .5s ease 3.2s forwards; }
+.boot2 { position: absolute; inset: 0; z-index: 40; background: #000; overflow: hidden; animation: bootOut .5s ease 3.2s forwards; }
 .boot2 .b-photo { position: absolute; inset: -4%; background-size: cover; background-position: 60% 50%; opacity: 0; animation: bootPhoto 3.4s ease-out forwards; }
 .boot2 .b-shade { position: absolute; inset: 0; background: radial-gradient(ellipse at 62% 50%, rgba(2,4,10,0) 20%, rgba(2,4,10,.85) 100%); }
 .boot2 .b-stripes { position: absolute; left: 0; top: 335px; width: 100%; display: flex; flex-direction: column; gap: 8px; }
 .boot2 .b-stripes i { display: block; height: 10px; width: 0; transform: skewX(-20deg); animation: bootBar 1.1s cubic-bezier(.3,.8,.2,1) forwards; }
-.boot2 .b-stripes i:nth-child(1) { background: #5f9bff; animation-delay: .5s; }
-.boot2 .b-stripes i:nth-child(2) { background: #1d4e8f; animation-delay: .62s; }
-.boot2 .b-stripes i:nth-child(3) { background: #e3242b; animation-delay: .74s; }
-.boot2 .b-line { position: absolute; left: 0; right: 0; bottom: 120px; height: 2px; background: linear-gradient(90deg, transparent, #5f9bff, transparent); transform: scaleX(0); animation: bootLine 1.4s ease .9s forwards; }
+.boot2 .b-stripes i:nth-child(1) { background: #3de4ff; animation-delay: .5s; }
+.boot2 .b-stripes i:nth-child(2) { background: #1f46ff; animation-delay: .62s; }
+.boot2 .b-stripes i:nth-child(3) { background: #ff3345; animation-delay: .74s; }
+.boot2 .b-line { position: absolute; left: 0; right: 0; bottom: 120px; height: 2px; background: linear-gradient(90deg, transparent, #3de4ff, transparent); transform: scaleX(0); animation: bootLine 1.4s ease .9s forwards; }
 @keyframes bootPhoto { 0% { opacity: 0; transform: scale(1.14); } 40% { opacity: 1; } 100% { opacity: 1; transform: scale(1); } }
 @keyframes bootBar { to { width: 62%; } }
 @keyframes bootLine { to { transform: scaleX(1); } }
