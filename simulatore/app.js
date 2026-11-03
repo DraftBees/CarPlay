@@ -33,6 +33,7 @@ const S = {
   sw: { turn: !!CFG.left_right_back_switch, radar: !!CFG.radar_back_switch, radarDisp: !!CFG.radar_display_switch, track: true, backDisp: !!CFG.back_display_switch, btOn: true, btAuto: true, miracast: false },
   customBg: null,
   theme: true,   // tema BMW attivo (false = grafica originale)
+  anim: true,    // ANTEPRIMA animazioni (sul display servirebbe la libreria aggiuntiva)
   strOv: {},   // { lang: { key: valore } }
   imgOv: {},   // { 'HomePage/x.png': dataURL }
   screen: { name: 'home' }, history: [],
@@ -74,7 +75,7 @@ const store = {
 };
 const saveEdits = () => { store.set('strOv', S.strOv); store.set('imgOv', S.imgOv); store.set('customBg', S.customBg); updateCounts(); };
 const savePrefs = () => {
-  try { localStorage.setItem('displayauto-prefs', JSON.stringify({ theme: S.theme, lang: S.lang, bg: S.bg, brightness: S.brightness, autoBright: S.autoBright, vol: S.vol, eq: S.eq, hour24: S.hour24, sw: S.sw })); } catch (e) { /* ignorato */ }
+  try { localStorage.setItem('displayauto-prefs', JSON.stringify({ theme: S.theme, anim: S.anim, lang: S.lang, bg: S.bg, brightness: S.brightness, autoBright: S.autoBright, vol: S.vol, eq: S.eq, hour24: S.hour24, sw: S.sw })); } catch (e) { /* ignorato */ }
 };
 const loadPrefs = () => {
   try { const p = JSON.parse(localStorage.getItem('displayauto-prefs') || 'null'); if (p) Object.assign(S, p); } catch (e) { /* ignorato */ }
@@ -265,6 +266,7 @@ screens.music = () => {
       <span class="press" data-act="next">${P('MusicPlayer/music_btn_next_n.png', 'MusicPlayer/music_btn_next_f.png')}</span>
       <span class="press" data-act="mlist">${P('MusicPlayer/music_btn_list_n.png', 'MusicPlayer/music_btn_list_f.png')}</span>
     </div>
+    ${m.playing ? `<div class="abs eqbars" style="left:150px;top:470px">${[0, 1, 2, 3, 4, 5, 6, 7].map((i) => `<i style="animation-delay:${(i * 0.13).toFixed(2)}s"></i>`).join('')}</div>` : ''}
     <span class="tag">brano di esempio</span>
   </div>`;
 };
@@ -401,7 +403,16 @@ function render() {
   cancelAnimationFrame(dashRaf);
   const sc = S.call ? { name: 'call' } : S.screen;
   const fn = screens[sc.name] || screens.home;
-  screenEl.innerHTML = fn(sc) + popupHtml() + `<div id="dim" style="opacity:${S.autoBright ? 0 : (1 - S.brightness / 100) * 0.75}"></div>` + (S.booting ? '<div class="boot">ZKOS</div>' : '');
+  screenEl.innerHTML = fn(sc) + popupHtml() + `<div id="dim" style="opacity:${S.autoBright ? 0 : (1 - S.brightness / 100) * 0.75}"></div>` + bootHtml();
+  const key = (S.call ? 'call' : sc.name) + ':' + (sc.file || sc.tab || sc.kind || '') + (sc.sub || '');
+  if (key !== S._key) {
+    S._key = key;
+    screenEl.classList.remove('enter', 'enter-home'); void screenEl.offsetWidth;
+    screenEl.classList.add('enter'); if (sc.name === 'home') screenEl.classList.add('enter-home');
+    clearTimeout(S._enterT); S._enterT = setTimeout(() => screenEl.classList.remove('enter', 'enter-home'), 1400);
+    if (sc.name === 'dash') S.dash.sweepAt = performance.now();
+  }
+  if (sc.name === 'home') $$('.lv-scroll [data-kind="button"], [data-cap="MenuWindow"] [data-kind="button"]', screenEl).forEach((b, i) => b.style.setProperty('--i', i));
   markChanged();
   if (S.view === 'layout') { const bad = window.LayoutView.audit(screenEl); S.lvBad = bad; }
   tickClock();
@@ -460,6 +471,11 @@ function drawDashLoop() {
       d.rpm = Math.min(7.6, 0.8 + ((d.speed % 28) / 28) * 3.2 + gear * 0.25);
       const r = $('#simSpeed'); if (r) { r.value = Math.round(d.speed); $('#simSpeedV').textContent = Math.round(d.speed) + ' km/h'; }
     }
+    let spd = d.speed, rpm = d.rpm;
+    if (S.anim && d.sweepAt) {
+      const t = (performance.now() - d.sweepAt) / 2400;
+      if (t < 1) { const k = t < 0.5 ? t * 2 : 2 - t * 2, e = k * k * (3 - 2 * k); spd = e * (S.dashScale === '160' ? 160 : 330); rpm = e * 8; }
+    }
     ctx.clearRect(0, 0, 1920, 720);
     const fill = (g, v, c1, c2) => {
       const pts = bandPoly(g, Math.max(0, Math.min(1, v / g.max)));
@@ -468,11 +484,11 @@ function drawDashLoop() {
       ctx.fillStyle = gr; ctx.globalAlpha = 0.78; ctx.fill(); ctx.globalAlpha = 1;
     };
     const [c1, c2] = S.theme ? ['#1c69d4', '#5cb3ff'] : ['#3aa0ff', '#ff3d5a'];
-    fill(S.dashScale === '160' ? DASH.speed : { ...DASH.speed, max: 330, split: 200 / 330 }, d.speed, c1, c2);
-    fill(DASH.rpm, d.rpm, c1, d.rpm > 6.5 ? '#e3242b' : c2);
+    fill(S.dashScale === '160' ? DASH.speed : { ...DASH.speed, max: 330, split: 200 / 330 }, spd, c1, c2);
+    fill(DASH.rpm, rpm, c1, rpm > 6.5 ? '#e3242b' : c2);
     if (S.dashGuide) drawGuide(ctx);
-    const sp = $('[data-cap="speedTextView"] .lv-t'); if (sp) sp.textContent = Math.round(d.speed);
-    const rp = $('[data-cap="rotateTextView"] .lv-t'); if (rp) rp.textContent = d.rpm.toFixed(1);
+    const sp = $('[data-cap="speedTextView"] .lv-t'); if (sp) sp.textContent = Math.round(spd);
+    const rp = $('[data-cap="rotateTextView"] .lv-t'); if (rp) rp.textContent = rpm.toFixed(1);
     dashRaf = requestAnimationFrame(frame);
   };
   dashRaf = requestAnimationFrame(frame);
@@ -536,7 +552,13 @@ $('#simbar').addEventListener('click', (e) => {
   if (b.dataset.sim === 'reboot') reboot();
 });
 
-function reboot() { S.booting = true; S.history = []; S.screen = { name: 'home' }; render(); setTimeout(() => { S.booting = false; render(); }, 2700); }
+function bootHtml() {
+  if (!S.booting) return '';
+  if (!S.anim) return '<div class="boot">ZKOS</div>';
+  return `<div class="boot2"><div class="b-photo" style="background-image:url('${src('bg/bg6.png')}')"></div><div class="b-shade"></div>
+    <div class="b-stripes"><i></i><i></i><i></i></div><div class="b-line"></div></div>`;
+}
+function reboot() { S.booting = true; S.history = []; S.screen = { name: 'home' }; S._key = null; render(); setTimeout(() => { S.booting = false; S._key = null; render(); }, S.anim ? 3700 : 2700); }
 
 /* ------------------------------------------------------------------ interazione */
 let pressed = null;
@@ -711,6 +733,8 @@ function syncThemeUi() {
   screenEl.classList.toggle('bmw', S.theme);
   $$('#themeSw button').forEach((b) => b.setAttribute('aria-pressed', String((b.dataset.theme === 'bmw') === S.theme)));
 }
+function syncAnimUi() { screenEl.classList.toggle('anim', S.anim); const b = $('#animSw'); b.setAttribute('aria-pressed', String(S.anim)); b.textContent = S.anim ? '✦ Animazioni: anteprima attiva' : '✦ Animazioni: spente'; }
+$('#animSw').addEventListener('click', () => { S.anim = !S.anim; savePrefs(); syncAnimUi(); render(); });
 function setTheme(on) { S.theme = on && !!window.THEME; savePrefs(); syncThemeUi(); render(); renderPane(); updateCounts(); }
 $('#themeSw').addEventListener('click', (e) => { const b = e.target.closest('[data-theme]'); if (b) setTheme(b.dataset.theme === 'bmw'); });
 $('#btnExport').addEventListener('click', () => selectTab('esporta'));
@@ -1051,7 +1075,7 @@ function exportSingles(files, script) {
   S.customBg = (await store.get('customBg')) || null;
   if (S.bg === 'custom' && !S.customBg) S.bg = (CFG.screen_bg | 0) + 1;
   if (!window.THEME) S.theme = false;
-  syncThemeUi();
+  syncThemeUi(); syncAnimUi();
   updateCounts(); render(); renderPane();
 })();
 })();

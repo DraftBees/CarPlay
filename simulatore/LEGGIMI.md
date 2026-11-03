@@ -41,3 +41,9 @@ La vista **Layout reali** (in alto) disegna le 24 schermate 1920×720 direttamen
 - Segna in rosso i testi che non entrano nella loro casella (sul display verrebbero tagliati).
 - La **home** e il **cruscotto** della vista Interattiva sono ora costruiti da questi layout; le altre schermate interattive sono ancora disegnate a mano.
 - Dedotto dai dati, non documentato: allineamento del testo = `32 + riga*4 + colonna`; colori `-1` = nessuno.
+
+## Animazioni (anteprima)
+Il pulsante **Animazioni** mostra cosa si potrebbe fare con una libreria aggiuntiva (tappa 3): avvio con la foto
+dell'auto e le tre strisce, ingresso a scaglioni delle card, transizioni tra schermate, giro di lancetta del
+cruscotto all'accensione, barre dell'equalizzatore nella musica.
+**Sul display, con i soli file `.ftu` e il tema, queste animazioni non ci sono.** Servono la libreria aggiuntiva e il test di sicurezza.

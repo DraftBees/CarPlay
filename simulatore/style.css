@@ -226,3 +226,32 @@ details.grp > summary { cursor: pointer; font: 600 13px var(--f-cond); letter-sp
 .lvmode .lv-n:hover { outline: 2px solid rgba(79,182,255,.95) !important; outline-offset: -2px; }
 @media (prefers-reduced-motion: reduce) { .lv-spin { animation: none; } }
 .lv-over { outline: 2px solid #ff6b6b !important; outline-offset: -2px; background: rgba(255,107,107,.18); }
+
+/* ===== ANIMAZIONI (anteprima: sul display servirebbe la libreria aggiuntiva) ===== */
+#screen.anim.enter > *:not(#dim):not(.popup):not(.boot):not(.boot2) { animation: scrIn .34s cubic-bezier(.2,.7,.2,1) both; }
+@keyframes scrIn { from { opacity: 0; transform: translateY(16px) scale(.985); } to { opacity: 1; transform: none; } }
+#screen.anim.enter-home .lv-scroll [data-kind="button"],
+#screen.anim.enter-home [data-cap="MenuWindow"] [data-kind="button"] { animation: cardIn .6s cubic-bezier(.2,.8,.2,1) both; animation-delay: calc(var(--i, 0) * 70ms + 140ms); }
+@keyframes cardIn { from { opacity: 0; transform: translateY(46px) scale(.93); } to { opacity: 1; transform: none; } }
+#screen.anim .lv-scroll [data-kind="button"] { transition: transform .18s ease, filter .18s ease; }
+#screen.anim .lv-scroll [data-kind="button"]:active { transform: scale(.965); filter: brightness(1.15); }
+.eqbars { display: none; gap: 7px; align-items: flex-end; height: 64px; }
+#screen.anim .eqbars { display: flex; }
+.eqbars i { width: 9px; height: 100%; border-radius: 2px; background: linear-gradient(#5f9bff, #2a62cc); transform-origin: bottom; animation: eqb .8s ease-in-out infinite alternate; }
+@keyframes eqb { from { transform: scaleY(.15); } to { transform: scaleY(1); } }
+.boot2 { position: absolute; inset: 0; z-index: 40; background: #02040a; overflow: hidden; animation: bootOut .5s ease 3.2s forwards; }
+.boot2 .b-photo { position: absolute; inset: -4%; background-size: cover; background-position: 60% 50%; opacity: 0; animation: bootPhoto 3.4s ease-out forwards; }
+.boot2 .b-shade { position: absolute; inset: 0; background: radial-gradient(ellipse at 62% 50%, rgba(2,4,10,0) 20%, rgba(2,4,10,.85) 100%); }
+.boot2 .b-stripes { position: absolute; left: 0; top: 335px; width: 100%; display: flex; flex-direction: column; gap: 8px; }
+.boot2 .b-stripes i { display: block; height: 10px; width: 0; transform: skewX(-20deg); animation: bootBar 1.1s cubic-bezier(.3,.8,.2,1) forwards; }
+.boot2 .b-stripes i:nth-child(1) { background: #5f9bff; animation-delay: .5s; }
+.boot2 .b-stripes i:nth-child(2) { background: #1d4e8f; animation-delay: .62s; }
+.boot2 .b-stripes i:nth-child(3) { background: #e3242b; animation-delay: .74s; }
+.boot2 .b-line { position: absolute; left: 0; right: 0; bottom: 120px; height: 2px; background: linear-gradient(90deg, transparent, #5f9bff, transparent); transform: scaleX(0); animation: bootLine 1.4s ease .9s forwards; }
+@keyframes bootPhoto { 0% { opacity: 0; transform: scale(1.14); } 40% { opacity: 1; } 100% { opacity: 1; transform: scale(1); } }
+@keyframes bootBar { to { width: 62%; } }
+@keyframes bootLine { to { transform: scaleX(1); } }
+@keyframes bootOut { to { opacity: 0; visibility: hidden; } }
+@media (prefers-reduced-motion: reduce) {
+  #screen.anim.enter > *, #screen.anim.enter-home [data-kind="button"], .eqbars i, .boot2, .boot2 * { animation-duration: .01s !important; animation-delay: 0s !important; }
+}

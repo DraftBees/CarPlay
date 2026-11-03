@@ -3,7 +3,7 @@
    Palette: nero notte, blu BMW, azzurro/blu scuro/rosso "M", acciaio. */
 const C = {
   night: '#04070c', deep: '#081120', panel: '#0c1628', steel: '#1b2638', line: '#2c3d57',
-  blue: '#1c69d4', ice: '#5cb3ff', mblue: '#1d4e8f', red: '#e3242b', white: '#f2f5f9', chrome: '#c8d2df',
+  blue: '#2a62cc', ice: '#5f9bff', mblue: '#1d4e8f', red: '#e3242b', white: '#f2f5f9', chrome: '#c8d2df',
 };
 
 /* ---------------------------------------------------------------- icone (viewBox 64) */
@@ -70,21 +70,37 @@ function card(icon, pressed) {
   const glow = pressed ? C.ice : C.blue;
   return `<div style="position:absolute;inset:0;border-radius:18px;overflow:hidden;
       background:linear-gradient(180deg, ${pressed ? '#13274a' : '#0d1830'} 0%, ${pressed ? '#0a1526' : '#070d18'} 62%, #04070c 100%);
-      box-shadow: inset 0 0 0 ${pressed ? 3 : 1.5}px ${pressed ? 'rgba(92,179,255,.85)' : 'rgba(150,180,220,.16)'};">
-    <div style="position:absolute;inset:0;background:linear-gradient(115deg, rgba(255,255,255,.07) 0%, rgba(255,255,255,0) 38%, rgba(255,255,255,0) 70%, rgba(92,179,255,.05) 100%)"></div>
+      box-shadow: inset 0 0 0 ${pressed ? 3 : 1.5}px ${pressed ? 'rgba(95,155,255,.85)' : 'rgba(150,180,220,.16)'};">
+    <div style="position:absolute;inset:0;background:linear-gradient(115deg, rgba(255,255,255,.07) 0%, rgba(255,255,255,0) 38%, rgba(255,255,255,0) 70%, rgba(95,155,255,.05) 100%)"></div>
     <div style="position:absolute;left:36px;right:36px;top:95px;height:1.5px;background:linear-gradient(90deg, transparent, rgba(200,210,223,.55) 20%, rgba(200,210,223,.55) 80%, transparent)"></div>
     ${STRIPE(16, 171, 91, 9)}
     <div style="position:absolute;left:205px;top:318px;width:248px;height:248px;margin:-124px 0 0 -124px;border-radius:50%;
       background:radial-gradient(circle at 50% 35%, ${pressed ? '#1b3a6b' : '#13233f'} 0%, #0a1323 60%, #060b14 100%);
-      box-shadow: 0 0 0 2px rgba(200,210,223,.35), 0 0 0 7px rgba(10,18,32,.9), 0 0 0 8.5px ${pressed ? 'rgba(92,179,255,.9)' : 'rgba(28,105,212,.55)'}, 0 0 ${pressed ? 70 : 40}px ${pressed ? 'rgba(92,179,255,.55)' : 'rgba(28,105,212,.30)'};
+      box-shadow: 0 0 0 2px rgba(200,210,223,.35), 0 0 0 7px rgba(10,18,32,.9), 0 0 0 8.5px ${pressed ? 'rgba(95,155,255,.9)' : 'rgba(42,98,204,.55)'}, 0 0 ${pressed ? 70 : 40}px ${pressed ? 'rgba(95,155,255,.55)' : 'rgba(42,98,204,.30)'};
       display:grid;place-items:center">${svgIcon(icon, 128, pressed ? C.ice : C.white, 2.6, `filter:drop-shadow(0 0 ${pressed ? 14 : 6}px ${glow})`)}</div>
-    <div style="position:absolute;left:55px;right:55px;bottom:-60px;height:130px;border-radius:50%;background:radial-gradient(ellipse, ${pressed ? 'rgba(92,179,255,.45)' : 'rgba(28,105,212,.28)'}, transparent 70%)"></div>
+    <div style="position:absolute;left:55px;right:55px;bottom:-60px;height:130px;border-radius:50%;background:radial-gradient(ellipse, ${pressed ? 'rgba(95,155,255,.45)' : 'rgba(42,98,204,.28)'}, transparent 70%)"></div>
+    <div style="position:absolute;left:0;right:0;bottom:0;height:3px;background:linear-gradient(90deg, transparent, ${glow}, transparent)"></div>
+  </div>`;
+}
+/* card con la FOTO dell'auto (Info veicolo) */
+function photoCard(pressed) {
+  const glow = pressed ? C.ice : C.blue;
+  return `<div style="position:absolute;inset:0;border-radius:18px;overflow:hidden;
+      background:linear-gradient(180deg, ${pressed ? '#13274a' : '#0d1830'} 0%, ${pressed ? '#0a1526' : '#070d18'} 62%, #04070c 100%);
+      box-shadow: inset 0 0 0 ${pressed ? 3 : 1.5}px ${pressed ? 'rgba(95,155,255,.85)' : 'rgba(150,180,220,.16)'};">
+    <div style="position:absolute;left:36px;right:36px;top:95px;height:1.5px;background:linear-gradient(90deg, transparent, rgba(200,210,223,.55) 20%, rgba(200,210,223,.55) 80%, transparent)"></div>
+    ${STRIPE(16, 171, 91, 9)}
+    <div style="position:absolute;left:22px;top:128px;width:366px;height:360px;border-radius:14px;overflow:hidden;box-shadow:inset 0 0 0 1.5px rgba(200,210,223,.4), 0 0 ${pressed ? 44 : 24}px ${glow}66">
+      <div style="position:absolute;inset:0;overflow:hidden;${pressed ? 'filter:brightness(1.12) saturate(1.1);' : ''}"><img src="${window.CAR_PHOTO}" style="position:absolute;left:-116px;top:-132px;width:800px;max-width:none"></div>
+      <div style="position:absolute;inset:0;background:linear-gradient(180deg, rgba(4,7,12,0) 55%, rgba(4,7,12,.88))"></div>
+    </div>
+    <div style="position:absolute;left:55px;right:55px;bottom:-60px;height:130px;border-radius:50%;background:radial-gradient(ellipse, ${pressed ? 'rgba(95,155,255,.45)' : 'rgba(42,98,204,.28)'}, transparent 70%)"></div>
     <div style="position:absolute;left:0;right:0;bottom:0;height:3px;background:linear-gradient(90deg, transparent, ${glow}, transparent)"></div>
   </div>`;
 }
 const center = (inner) => `<div style="position:absolute;inset:0;display:grid;place-items:center">${inner}</div>`;
 const iconAsset = (icon, size, color, glow, sw) => center(svgIcon(icon, size, color, sw, glow ? `filter:drop-shadow(0 0 6px ${glow})` : ''));
-const pill = (w, h, active, r) => `<div style="position:absolute;inset:4px;border-radius:${r || (h - 8) / 2}px;${active ? `background:linear-gradient(180deg, rgba(28,105,212,.55), rgba(28,105,212,.25));box-shadow:inset 0 0 0 1.5px rgba(92,179,255,.8), 0 0 18px rgba(28,105,212,.5)` : ''}"></div>`;
+const pill = (w, h, active, r) => `<div style="position:absolute;inset:4px;border-radius:${r || (h - 8) / 2}px;${active ? `background:linear-gradient(180deg, rgba(42,98,204,.55), rgba(42,98,204,.25));box-shadow:inset 0 0 0 1.5px rgba(95,155,255,.8), 0 0 18px rgba(42,98,204,.5)` : ''}"></div>`;
 const bar = (h, alpha) => `<div style="position:absolute;inset:0;background:linear-gradient(180deg, rgba(4,7,12,${alpha}) 0%, rgba(4,7,12,${alpha * 0.7}) 100%)"></div>
   <div style="position:absolute;left:0;right:0;bottom:0;height:1.5px;background:linear-gradient(90deg, transparent, rgba(200,210,223,.35) 15%, ${C.blue} 50%, rgba(200,210,223,.35) 85%, transparent)"></div>`;
 
@@ -105,20 +121,20 @@ function glow(ctx, x, y, rx, ry, color, a) {
 }
 const BG = {
   1(ctx, w, h) { // Notte: nero con vignetta blu
-    baseBg(ctx, w, h); glow(ctx, w / 2, h * 1.05, 1100, 420, 'rgba(28,105,212,A)', 0.28); noise(ctx, w, h, 5);
+    baseBg(ctx, w, h); glow(ctx, w / 2, h * 1.05, 1100, 420, 'rgba(42,98,204,A)', 0.28); noise(ctx, w, h, 5);
   },
   2(ctx, w, h) { // Orizzonte: linea di luce
     baseBg(ctx, w, h);
-    glow(ctx, w / 2, 470, 1200, 240, 'rgba(28,105,212,A)', 0.35);
-    const g = ctx.createLinearGradient(0, 0, w, 0); g.addColorStop(0, 'rgba(92,179,255,0)'); g.addColorStop(0.5, 'rgba(160,210,255,.95)'); g.addColorStop(1, 'rgba(92,179,255,0)');
+    glow(ctx, w / 2, 470, 1200, 240, 'rgba(42,98,204,A)', 0.35);
+    const g = ctx.createLinearGradient(0, 0, w, 0); g.addColorStop(0, 'rgba(95,155,255,0)'); g.addColorStop(0.5, 'rgba(160,210,255,.95)'); g.addColorStop(1, 'rgba(95,155,255,0)');
     ctx.fillStyle = g; ctx.fillRect(0, 468, w, 2);
     glow(ctx, w / 2, 470, 500, 30, 'rgba(200,230,255,A)', 0.5);
-    for (let i = 0; i < 26; i++) { const y = 480 + i * i * 0.9; ctx.fillStyle = `rgba(92,179,255,${0.10 - i * 0.0035})`; ctx.fillRect(0, y, w, 1); }
+    for (let i = 0; i < 26; i++) { const y = 480 + i * i * 0.9; ctx.fillStyle = `rgba(95,155,255,${0.10 - i * 0.0035})`; ctx.fillRect(0, y, w, 1); }
     noise(ctx, w, h, 5);
   },
   3(ctx, w, h) { // Strisce: tre fasce di luce diagonali azzurro / blu / rosso
     baseBg(ctx, w, h);
-    glow(ctx, 1500, 650, 900, 380, 'rgba(28,105,212,A)', 0.22);
+    glow(ctx, 1500, 650, 900, 380, 'rgba(42,98,204,A)', 0.22);
     ctx.save(); ctx.filter = 'blur(10px)';
     [[C.ice, 0], [C.mblue, 74], [C.red, 148]].forEach(([c, o]) => {
       ctx.beginPath(); ctx.moveTo(700 + o, h + 40); ctx.lineTo(1200 + o, -40); ctx.lineTo(1262 + o, -40); ctx.lineTo(762 + o, h + 40); ctx.closePath();
@@ -136,11 +152,11 @@ const BG = {
       g.addColorStop(0, '#0b1019'); g.addColorStop(0.5, '#1a2230'); g.addColorStop(1, '#0b1019'); ctx.fillStyle = g; ctx.fillRect(x + 1, y + 1, s - 2, s - 2);
     }
     const v = ctx.createRadialGradient(w / 2, h / 2, 200, w / 2, h / 2, 1100); v.addColorStop(0, 'rgba(4,7,12,0)'); v.addColorStop(1, 'rgba(4,7,12,.8)'); ctx.fillStyle = v; ctx.fillRect(0, 0, w, h);
-    glow(ctx, w / 2, h + 60, 900, 300, 'rgba(28,105,212,A)', 0.35);
+    glow(ctx, w / 2, h + 60, 900, 300, 'rgba(42,98,204,A)', 0.35);
   },
   5(ctx, w, h) { // Scie: luci di una strada notturna
     baseBg(ctx, w, h);
-    glow(ctx, w * 0.55, h * 0.9, 1100, 320, 'rgba(28,105,212,A)', 0.25);
+    glow(ctx, w * 0.55, h * 0.9, 1100, 320, 'rgba(42,98,204,A)', 0.25);
     ctx.save(); ctx.globalCompositeOperation = 'lighter';
     const trail = (y0, amp, col, wdt, a, ph) => {
       ctx.beginPath();
@@ -151,14 +167,27 @@ const BG = {
     for (let i = 0; i < 6; i++) trail(600 + i * 16, 70, C.red, 3 + (i % 2) * 3, 0.5 - i * 0.06, 1.2 + i * 0.1);
     ctx.restore(); ctx.filter = 'none'; ctx.globalAlpha = 1; noise(ctx, w, h, 5);
   },
-  6(ctx, w, h) { // Acciaio spazzolato scuro
-    const g = ctx.createLinearGradient(0, 0, w, h); g.addColorStop(0, '#2a3546'); g.addColorStop(0.5, '#141c28'); g.addColorStop(1, '#2c3849'); ctx.fillStyle = g; ctx.fillRect(0, 0, w, h);
-    let s = 99; for (let y = 0; y < h; y++) { s = (s * 69069 + 1) & 0xffffffff; ctx.fillStyle = `rgba(255,255,255,${((s >>> 24) / 255) * 0.035})`; ctx.fillRect(0, y, w, 1); }
-    const v = ctx.createRadialGradient(w / 2, h * 0.4, 100, w / 2, h / 2, 1150); v.addColorStop(0, 'rgba(4,7,12,0)'); v.addColorStop(1, 'rgba(4,7,12,.7)'); ctx.fillStyle = v; ctx.fillRect(0, 0, w, h);
-    glow(ctx, w / 2, h + 40, 900, 260, 'rgba(28,105,212,A)', 0.3);
+  6(ctx, w, h) { // La mia Serie 1: foto dell'auto con dissolvenza
+    baseBg(ctx, w, h);
+    const img = window.CAR_IMG;
+    ctx.save(); ctx.filter = 'blur(34px) brightness(.6) saturate(1.25)';
+    const sc = Math.max(w / img.width, h / img.height) * 1.25;
+    ctx.drawImage(img, (w - img.width * sc) / 2, (h - img.height * sc) / 2, img.width * sc, img.height * sc);
+    ctx.restore(); ctx.filter = 'none';
+    ctx.fillStyle = 'rgba(3,6,12,.62)'; ctx.fillRect(0, 0, w, h);
+    const oc = document.createElement('canvas'); oc.width = img.width; oc.height = img.height; const o = oc.getContext('2d');
+    o.drawImage(img, 0, 0); o.globalCompositeOperation = 'destination-in';
+    let g = o.createLinearGradient(0, 0, img.width, 0);
+    g.addColorStop(0, 'rgba(0,0,0,0)'); g.addColorStop(0.32, 'rgba(0,0,0,1)'); g.addColorStop(0.9, 'rgba(0,0,0,1)'); g.addColorStop(1, 'rgba(0,0,0,0)');
+    o.fillStyle = g; o.fillRect(0, 0, img.width, img.height);
+    g = o.createLinearGradient(0, 0, 0, img.height); g.addColorStop(0, 'rgba(0,0,0,0)'); g.addColorStop(0.12, 'rgba(0,0,0,1)'); g.addColorStop(0.86, 'rgba(0,0,0,1)'); g.addColorStop(1, 'rgba(0,0,0,0)');
+    o.fillStyle = g; o.fillRect(0, 0, img.width, img.height);
+    ctx.drawImage(oc, w - img.width - 30, (h - img.height) / 2 + 22);
+    const v = ctx.createRadialGradient(w * 0.62, h * 0.5, 160, w / 2, h / 2, 1150); v.addColorStop(0, 'rgba(4,7,12,0)'); v.addColorStop(1, 'rgba(4,7,12,.78)'); ctx.fillStyle = v; ctx.fillRect(0, 0, w, h);
+    glow(ctx, w / 2, h + 60, 900, 260, 'rgba(42,98,204,A)', 0.3);
   },
   music(ctx, w, h) {
-    baseBg(ctx, w, h); glow(ctx, 360, 360, 520, 420, 'rgba(28,105,212,A)', 0.22); glow(ctx, w * 0.7, h + 80, 1100, 300, 'rgba(92,179,255,A)', 0.14); noise(ctx, w, h, 5);
+    baseBg(ctx, w, h); glow(ctx, 360, 360, 520, 420, 'rgba(42,98,204,A)', 0.22); glow(ctx, w * 0.7, h + 80, 1100, 300, 'rgba(95,155,255,A)', 0.14); noise(ctx, w, h, 5);
   },
 };
 
@@ -173,7 +202,7 @@ const DASH = {
 };
 function dash(ctx, w, h, variant) {
   baseBg(ctx, w, h);
-  glow(ctx, w / 2, h + 30, 1000, 260, 'rgba(28,105,212,A)', 0.35);
+  glow(ctx, w / 2, h + 30, 1000, 260, 'rgba(42,98,204,A)', 0.35);
   glow(ctx, 330, 600, 300, 160, 'rgba(227,36,43,A)', 0.10);
   glow(ctx, 1590, 600, 300, 160, 'rgba(227,36,43,A)', 0.10);
   const lerp = (a, b, f) => [a[0] + (b[0] - a[0]) * f, a[1] + (b[1] - a[1]) * f];
@@ -191,11 +220,11 @@ function dash(ctx, w, h, variant) {
     const edge = (pts, wdt, col) => { ctx.beginPath(); pts.forEach(([x, y], i) => (i ? ctx.lineTo(x, y) : ctx.moveTo(x, y))); ctx.lineWidth = wdt; ctx.strokeStyle = col; ctx.lineJoin = 'round'; ctx.lineCap = 'round'; ctx.stroke(); };
     const chrome = ctx.createLinearGradient(0, 40, 0, 680); chrome.addColorStop(0, '#8d9aac'); chrome.addColorStop(0.45, '#eef3f9'); chrome.addColorStop(1, '#6d7a8c');
     edge(O, 7, chrome);
-    edge(N, 2, 'rgba(92,179,255,.75)');
-    ctx.save(); ctx.shadowColor = C.blue; ctx.shadowBlur = 18; edge(N, 1, 'rgba(92,179,255,.6)'); ctx.restore();
+    edge(N, 2, 'rgba(95,155,255,.75)');
+    ctx.save(); ctx.shadowColor = C.blue; ctx.shadowBlur = 18; edge(N, 1, 'rgba(95,155,255,.6)'); ctx.restore();
     // accento interno sottile parallelo
     const off = right ? -26 : 26;
-    edge(N.map(([x, y]) => [x + off, y]), 1.5, 'rgba(28,105,212,.35)');
+    edge(N.map(([x, y]) => [x + off, y]), 1.5, 'rgba(42,98,204,.35)');
     // zona rossa
     if (redFrom != null) {
       ctx.beginPath(); const steps = 30; for (let i = 0; i <= steps; i++) { const f = redFrom + (1 - redFrom) * (i / steps); const p = at(O, split, f); i ? ctx.lineTo(...p) : ctx.moveTo(...p); }
@@ -246,13 +275,13 @@ const addCv = (path, w, h, draw) => A.push({ path, w, h, canvas: draw });
 const CARDS = { home_icon_wiredcarplay: 'carplay', home_icon_androidauto: 'aa', home_icon_bluetooth: 'bt', za_home_icon_music: 'music', home_icon_hidvideo: 'video',
   home_icon_dashboard: 'gauge', home_icon_carinfo: 'car', home_bg: 'image', home_sound: 'eq', home_icon_zlink: 'gear', home_icon_dvr: 'dvr',
   home_icon_miracast: 'mirror', home_icon_airplay: 'mirror', home_icon_hicar: 'link', home_icon_carlife: 'wheel' };
-Object.entries(CARDS).forEach(([n, ic]) => { add(`HomePage/${n}_n.png`, 410, 580, card(ic, false)); add(`HomePage/${n}_s.png`, 410, 580, card(ic, true)); });
+Object.entries(CARDS).forEach(([n, ic]) => { const f = n === 'home_icon_carinfo' ? photoCard : (pr) => card(ic, pr); add(`HomePage/${n}_n.png`, 410, 580, f(false)); add(`HomePage/${n}_s.png`, 410, 580, f(true)); });
 // barra laterale + scorciatoie
-add('HomePage/home_left_bg.png', 166, 620, `<div style="position:absolute;inset:0 6px 0 0;border-radius:0 22px 22px 0;background:linear-gradient(180deg, rgba(10,18,32,.86), rgba(6,10,18,.92));box-shadow:inset -1.5px 0 0 rgba(92,179,255,.35), 8px 0 30px rgba(0,0,0,.4)"></div>
+add('HomePage/home_left_bg.png', 166, 620, `<div style="position:absolute;inset:0 6px 0 0;border-radius:0 22px 22px 0;background:linear-gradient(180deg, rgba(10,18,32,.86), rgba(6,10,18,.92));box-shadow:inset -1.5px 0 0 rgba(95,155,255,.35), 8px 0 30px rgba(0,0,0,.4)"></div>
   <div style="position:absolute;right:6px;top:120px;width:2px;height:380px;background:linear-gradient(180deg, transparent, ${C.blue}, transparent)"></div>`);
 [['home_icon_s_music', 'music'], ['home_icon_s_dail', 'phone'], ['home_icon_s_video', 'video'], ['home_icon_s_set', 'gear']].forEach(([n, ic]) => {
   add(`HomePage/${n}_n.png`, 80, 80, iconAsset(ic, 60, C.white, null, 3));
-  add(`HomePage/${n}_f.png`, 80, 80, `<div style="position:absolute;inset:2px;border-radius:50%;background:radial-gradient(circle, rgba(28,105,212,.45), rgba(28,105,212,0) 70%)"></div>` + iconAsset(ic, 60, C.ice, C.blue, 3));
+  add(`HomePage/${n}_f.png`, 80, 80, `<div style="position:absolute;inset:2px;border-radius:50%;background:radial-gradient(circle, rgba(42,98,204,.45), rgba(42,98,204,0) 70%)"></div>` + iconAsset(ic, 60, C.ice, C.blue, 3));
 });
 add('HomePage/home_top_bg.png', 1920, 100, bar(100, 0.85));
 // barra di stato
@@ -287,19 +316,19 @@ add('bt/bt_base_bg.png', 1920, 112, bar(112, 0.85));
   add(`setting/${n}_n.png`, 50, 50, iconAsset(ic, 40, 'rgba(242,245,249,.85)', null, 3.4));
   add(`setting/${n}_s.png`, n === 'set_audio' ? 52 : 50, n === 'set_audio' ? 52 : 50, iconAsset(ic, 40, C.ice, C.blue, 3.4));
 });
-add('setting/set_second_menu_select_f.png', 1300, 80, `<div style="position:absolute;inset:4px 0;border-radius:10px;background:linear-gradient(90deg, rgba(28,105,212,.62), rgba(28,105,212,.18) 60%, rgba(28,105,212,0))"></div><div style="position:absolute;left:0;top:14px;bottom:14px;width:5px;border-radius:3px;background:${C.ice};box-shadow:0 0 12px ${C.ice}"></div>`);
+add('setting/set_second_menu_select_f.png', 1300, 80, `<div style="position:absolute;inset:4px 0;border-radius:10px;background:linear-gradient(90deg, rgba(42,98,204,.62), rgba(42,98,204,.18) 60%, rgba(42,98,204,0))"></div><div style="position:absolute;left:0;top:14px;bottom:14px;width:5px;border-radius:3px;background:${C.ice};box-shadow:0 0 12px ${C.ice}"></div>`);
 add('setting/set_second_menu_select_n.png', 1300, 80, `<div style="position:absolute;left:20px;right:20px;bottom:2px;height:1px;background:linear-gradient(90deg, rgba(200,210,223,.25), rgba(200,210,223,0))"></div>`);
 const btn = (active) => `<div style="position:absolute;inset:3px;border-radius:10px;
-  background:${active ? `linear-gradient(180deg, ${C.blue}, #12489a)` : 'linear-gradient(180deg, rgba(27,38,56,.92), rgba(12,22,40,.92))'};
-  box-shadow:inset 0 0 0 1.5px ${active ? 'rgba(130,195,255,.9)' : 'rgba(150,180,220,.22)'}, inset 0 1px 0 rgba(255,255,255,.12)${active ? ', 0 0 16px rgba(28,105,212,.5)' : ''}"></div>`;
+  background:${active ? `linear-gradient(180deg, ${C.blue}, #1c4596)` : 'linear-gradient(180deg, rgba(27,38,56,.92), rgba(12,22,40,.92))'};
+  box-shadow:inset 0 0 0 1.5px ${active ? 'rgba(130,195,255,.9)' : 'rgba(150,180,220,.22)'}, inset 0 1px 0 rgba(255,255,255,.12)${active ? ', 0 0 16px rgba(42,98,204,.5)' : ''}"></div>`;
 add('setting/set_btn_n.png', 354, 68, btn(false)); add('setting/set_btn_f.png', 354, 68, btn(true));
 add('MusicPlayer/file_btn_n.png', 354, 68, btn(false)); add('MusicPlayer/file_btn_f.png', 354, 68, btn(true));
 const sw = (on) => `<div style="position:absolute;left:3px;top:5px;width:67px;height:29px;border-radius:15px;background:${on ? C.blue : '#2a3446'};box-shadow:inset 0 0 0 1.5px ${on ? 'rgba(130,195,255,.8)' : 'rgba(150,180,220,.25)'}"></div>
   <div style="position:absolute;top:8px;left:${on ? 44 : 6}px;width:23px;height:23px;border-radius:50%;background:${on ? '#fff' : '#9aa6b8'};box-shadow:0 1px 3px rgba(0,0,0,.5)"></div>`;
 add('setting/on.png', 73, 39, sw(true)); add('setting/off.png', 73, 39, sw(false));
 add('setting/set_adjust_bg.png', 1200, 42, `<div style="position:absolute;left:8px;right:8px;top:18px;height:6px;border-radius:3px;background:#222c3c;box-shadow:inset 0 0 0 1px rgba(150,180,220,.2)"></div>`);
-add('setting/set_adjust.png', 1200, 42, `<div style="position:absolute;left:8px;right:8px;top:18px;height:6px;border-radius:3px;background:linear-gradient(90deg, ${C.mblue}, ${C.blue} 50%, ${C.ice});box-shadow:0 0 10px rgba(92,179,255,.6)"></div>`);
-add('setting/set_adjust_click.png', 101, 57, center(`<div style="width:34px;height:34px;border-radius:50%;background:radial-gradient(circle at 40% 35%, #fff, #cfd8e4);box-shadow:0 0 0 4px rgba(28,105,212,.9), 0 0 16px rgba(92,179,255,.8)"></div>`));
+add('setting/set_adjust.png', 1200, 42, `<div style="position:absolute;left:8px;right:8px;top:18px;height:6px;border-radius:3px;background:linear-gradient(90deg, ${C.mblue}, ${C.blue} 50%, ${C.ice});box-shadow:0 0 10px rgba(95,155,255,.6)"></div>`);
+add('setting/set_adjust_click.png', 101, 57, center(`<div style="width:34px;height:34px;border-radius:50%;background:radial-gradient(circle at 40% 35%, #fff, #cfd8e4);box-shadow:0 0 0 4px rgba(42,98,204,.9), 0 0 16px rgba(95,155,255,.8)"></div>`));
 add('setting/set_line.png', 1307, 12, `<div style="position:absolute;left:0;right:0;top:5px;height:1.5px;background:linear-gradient(90deg, rgba(200,210,223,.3), rgba(200,210,223,.08))"></div>`);
 add('setting/popwbag.png', 654, 357, `<div style="position:absolute;inset:2px;border-radius:18px;background:linear-gradient(180deg, #13213a, #0a1220);box-shadow:inset 0 0 0 1.5px rgba(150,180,220,.3), 0 20px 50px rgba(0,0,0,.6)"></div>${STRIPE(26, 270, 20, 5)}`);
 add('setting/set_right_bg.png', 1424, 464, `<div style="position:absolute;inset:2px;border-radius:16px;background:rgba(8,14,26,.72);box-shadow:inset 0 0 0 1px rgba(150,180,220,.16)"></div>`);
@@ -318,22 +347,21 @@ addCv('MusicPlayer/music_bg.png', 1920, 720, (ctx, w, h) => BG.music(ctx, w, h))
 [['music_btn_previous', 'prev', 44], ['music_btn_next', 'next', 44], ['music_btn_play', 'play', 46], ['music_btn_pause', 'pause', 46], ['music_btn_list', 'list', 44], ['music_btn_random', 'shuffle', 44], ['music_btn_single', 'repeat', 44]].forEach(([n, ic, s]) => {
   const big = ic === 'play' || ic === 'pause';
   add(`MusicPlayer/${n}_n.png`, 80, 80, (big ? `<div style="position:absolute;inset:3px;border-radius:50%;box-shadow:inset 0 0 0 2px rgba(200,210,223,.6)"></div>` : '') + iconAsset(ic, big ? 36 : s, C.white, null, 3.2));
-  add(`MusicPlayer/${n}_f.png`, 80, 80, `<div style="position:absolute;inset:3px;border-radius:50%;background:radial-gradient(circle, rgba(28,105,212,.6), rgba(28,105,212,.15));box-shadow:inset 0 0 0 2px ${C.ice}"></div>` + iconAsset(ic, big ? 36 : s, '#fff', C.ice, 3.2));
+  add(`MusicPlayer/${n}_f.png`, 80, 80, `<div style="position:absolute;inset:3px;border-radius:50%;background:radial-gradient(circle, rgba(42,98,204,.6), rgba(42,98,204,.15));box-shadow:inset 0 0 0 2px ${C.ice}"></div>` + iconAsset(ic, big ? 36 : s, '#fff', C.ice, 3.2));
 });
 add('MusicPlayer/music_slide_bg.png', 1060, 32, `<div style="position:absolute;left:4px;right:4px;top:13px;height:6px;border-radius:3px;background:#222c3c"></div>`);
-add('MusicPlayer/music_slide.png', 1411, 32, `<div style="position:absolute;left:4px;right:4px;top:13px;height:6px;border-radius:3px;background:linear-gradient(90deg, ${C.mblue}, ${C.blue} 40%, ${C.ice});box-shadow:0 0 10px rgba(92,179,255,.6)"></div>`);
+add('MusicPlayer/music_slide.png', 1411, 32, `<div style="position:absolute;left:4px;right:4px;top:13px;height:6px;border-radius:3px;background:linear-gradient(90deg, ${C.mblue}, ${C.blue} 40%, ${C.ice});box-shadow:0 0 10px rgba(95,155,255,.6)"></div>`);
 add('MusicPlayer/music_slide_btn.png', 32, 32, center(`<div style="width:22px;height:22px;border-radius:50%;background:#fff;box-shadow:0 0 0 3px ${C.blue}, 0 0 10px ${C.ice}"></div>`));
 [['music_title', 'title'], ['music_artist', 'person'], ['music_albunm', 'disc']].forEach(([n, ic]) => add(`MusicPlayer/${n}.png`, 76, 76, iconAsset(ic, 46, C.ice, null, 3)));
-add('MusicPlayer/music_defaultcover.png', 458, 466, `<div style="position:absolute;inset:4px;border-radius:22px;background:linear-gradient(150deg, #16294a, #070d18 70%);box-shadow:inset 0 0 0 1.5px rgba(150,180,220,.25), 0 20px 40px rgba(0,0,0,.5)"></div>
-  <div style="position:absolute;inset:0;display:grid;place-items:center">${svgIcon('music', 190, 'rgba(242,245,249,.9)', 2.4, `filter:drop-shadow(0 0 16px ${C.blue})`)}</div>${STRIPE(30, 180, 420, 5)}`);
-add('bt/za_btmusic_defaultcover.png', 270, 270, `<div style="position:absolute;inset:3px;border-radius:18px;background:linear-gradient(150deg, #16294a, #070d18 70%);box-shadow:inset 0 0 0 1.5px rgba(150,180,220,.25)"></div>` + center(svgIcon('btmusic', 120, 'rgba(242,245,249,.9)', 2.6, `filter:drop-shadow(0 0 12px ${C.blue})`)));
+add('MusicPlayer/music_defaultcover.png', 458, 466, `<div style="position:absolute;inset:4px;border-radius:22px;overflow:hidden;box-shadow:inset 0 0 0 1.5px rgba(150,180,220,.3), 0 20px 40px rgba(0,0,0,.5)"><div style="position:absolute;inset:0;overflow:hidden;"><img src="${window.CAR_PHOTO}" style="position:absolute;left:-146px;top:-166px;width:1004px;max-width:none"></div><div style="position:absolute;inset:0;background:linear-gradient(180deg, rgba(4,7,12,0) 60%, rgba(4,7,12,.8))"></div></div>${STRIPE(30, 180, 420, 5)}`);
+add('bt/za_btmusic_defaultcover.png', 270, 270, `<div style="position:absolute;inset:3px;border-radius:18px;overflow:hidden;box-shadow:inset 0 0 0 1.5px rgba(150,180,220,.3)"><div style="position:absolute;inset:0;overflow:hidden;"><img src="${window.CAR_PHOTO}" style="position:absolute;left:-86px;top:-98px;width:592px;max-width:none"></div><div style="position:absolute;inset:0;background:linear-gradient(180deg, rgba(4,7,12,0) 62%, rgba(4,7,12,.8))"></div></div>`);
 // icone secondarie (liste, musica BT, chiamata, video)
 [['bt_tmusic_previous_n', 'prev'], ['bt_tmusic_play_n', 'play'], ['bt_tmusic_pause_n', 'pause'], ['bt_tmusic_next_n', 'next']].forEach(([n, ic]) =>
   add(`bt/${n}.png`, 148, 74, `<div style="position:absolute;inset:4px;border-radius:14px;background:linear-gradient(180deg, rgba(27,38,56,.92), rgba(12,22,40,.92));box-shadow:inset 0 0 0 1.5px rgba(150,180,220,.22)"></div>` + iconAsset(ic, 34, C.white, null, 3.2)));
 [['bt_s_call_callin', 'phone', '#2fc06a'], ['bt_s_call_callout', 'phone', C.ice], ['bt_s_call_callmiss', 'phone', C.red], ['bt_s_contacts', 'person', C.ice]].forEach(([n, ic, col]) =>
   add(`bt/${n}.png`, 52, 52, iconAsset(ic, 38, col, null, 3.4)));
-add('bt/head.png', 80, 80, `<div style="position:absolute;inset:2px;border-radius:50%;background:radial-gradient(circle at 50% 35%, #1b3a6b, #0a1323);box-shadow:inset 0 0 0 2px rgba(92,179,255,.7)"></div>` + iconAsset('person', 46, C.white, null, 3));
-add('bt/bt_contacts_download_n.png', 116, 116, `<div style="position:absolute;inset:6px;border-radius:50%;background:rgba(12,22,40,.9);box-shadow:inset 0 0 0 2px rgba(92,179,255,.6)"></div>` + iconAsset('download', 52, C.white, null, 3.2));
+add('bt/head.png', 80, 80, `<div style="position:absolute;inset:2px;border-radius:50%;background:radial-gradient(circle at 50% 35%, #1b3a6b, #0a1323);box-shadow:inset 0 0 0 2px rgba(95,155,255,.7)"></div>` + iconAsset('person', 46, C.white, null, 3));
+add('bt/bt_contacts_download_n.png', 116, 116, `<div style="position:absolute;inset:6px;border-radius:50%;background:rgba(12,22,40,.9);box-shadow:inset 0 0 0 2px rgba(95,155,255,.6)"></div>` + iconAsset('download', 52, C.white, null, 3.2));
 [['file_music', 'music', C.ice], ['file_usbr_n', 'usb', 'rgba(242,245,249,.85)'], ['file_usbr_s', 'usb', C.ice], ['file_local_n', 'disc', 'rgba(242,245,249,.85)'], ['file_local_s', 'disc', C.ice]].forEach(([n, ic, col]) =>
   add(`MusicPlayer/${n}.png`, 48, 48, iconAsset(ic, 38, col, null, 3.4)));
 add('media/video_load.png', 680, 431, `<div style="position:absolute;inset:4px;border-radius:22px;background:linear-gradient(150deg, #13233f, #070d18 70%);box-shadow:inset 0 0 0 1.5px rgba(150,180,220,.22)"></div>` + center(svgIcon('video', 170, 'rgba(242,245,249,.9)', 2.4, `filter:drop-shadow(0 0 14px ${C.blue})`)) + STRIPE(30, 290, 395, 5));
