@@ -5,6 +5,7 @@
 'use strict';
 
 const LANGS = window.LANGS, LANG_FILES = window.LANG_FILES, CFG = window.DEVICE_CFG, IMAGES = window.IMAGES;
+const THEME = window.THEME || { images: {}, strings: {} };
 const LANG_ORDER = [ // ordine del menu Lingua (language_select dell'apparecchio = indice)
   ['zh_CN', 'language_simp'], ['en_US', 'language_english'], ['ft_TR', 'language_trad'], ['ri_JA', 'language_japanese'],
   ['ko_KR', 'language_korean'], ['de_GE', 'language_german'], ['fa_FR', 'language_french'], ['pu_PO', 'language_portugal'],
@@ -31,6 +32,7 @@ const S = {
   clockOffset: 0,
   sw: { turn: !!CFG.left_right_back_switch, radar: !!CFG.radar_back_switch, radarDisp: !!CFG.radar_display_switch, track: true, backDisp: !!CFG.back_display_switch, btOn: true, btAuto: true, miracast: false },
   customBg: null,
+  theme: true,   // tema BMW attivo (false = grafica originale)
   strOv: {},   // { lang: { key: valore } }
   imgOv: {},   // { 'HomePage/x.png': dataURL }
   screen: { name: 'home' }, history: [],
@@ -72,7 +74,7 @@ const store = {
 };
 const saveEdits = () => { store.set('strOv', S.strOv); store.set('imgOv', S.imgOv); store.set('customBg', S.customBg); updateCounts(); };
 const savePrefs = () => {
-  try { localStorage.setItem('displayauto-prefs', JSON.stringify({ lang: S.lang, bg: S.bg, brightness: S.brightness, autoBright: S.autoBright, vol: S.vol, eq: S.eq, hour24: S.hour24, sw: S.sw })); } catch (e) { /* ignorato */ }
+  try { localStorage.setItem('displayauto-prefs', JSON.stringify({ theme: S.theme, lang: S.lang, bg: S.bg, brightness: S.brightness, autoBright: S.autoBright, vol: S.vol, eq: S.eq, hour24: S.hour24, sw: S.sw })); } catch (e) { /* ignorato */ }
 };
 const loadPrefs = () => {
   try { const p = JSON.parse(localStorage.getItem('displayauto-prefs') || 'null'); if (p) Object.assign(S, p); } catch (e) { /* ignorato */ }
@@ -85,8 +87,11 @@ const esc = (s) => String(s).replace(/[&<>"']/g, (c) => ({ '&': '&amp;', '<': '&
 const screenEl = $('#screen');
 
 function tOrig(k, lang = S.lang) { const L = LANGS[lang] || {}; return L[k] != null ? L[k] : (LANGS.en_US[k] != null ? LANGS.en_US[k] : k); }
-function t(k) { const o = S.strOv[S.lang]; return o && o[k] != null ? o[k] : tOrig(k); }
-function src(p) { return S.imgOv[p] || ('res/ui/' + p); }
+function themeStr(k, lang = S.lang) { const ts = S.theme && THEME.strings[lang]; return ts && ts[k] != null ? ts[k] : null; }
+function tBase(k, lang = S.lang) { const v = themeStr(k, lang); return v != null ? v : tOrig(k, lang); } // testo di partenza (tema o originale)
+function t(k) { const o = S.strOv[S.lang]; return o && o[k] != null ? o[k] : tBase(k); }
+function themeImg(p) { return S.theme ? THEME.images[p] : null; }
+function src(p) { return S.imgOv[p] || themeImg(p) || ('res/ui/' + p); }
 const T = (k, cls = 'lbl', style = '') => `<span class="${cls}" data-k="${k}" style="${style}">${esc(t(k))}</span>`;
 const I = (p, style = '', extra = '') => `<img src="${src(p)}" data-img="${p}" style="${style}" ${extra} draggable="false" alt="">`;
 const P = (n, f, style = '') => I(n, style, `data-n="${n}" data-p="${f}"`); // immagine con stato premuto
@@ -186,9 +191,9 @@ screens.link = ({ kind }) => {
   <div class="content">
     <div class="abs" style="left:90px;top:30px;width:410px;height:580px;transform:scale(.92);transform-origin:0 0;border-radius:8px;overflow:hidden">${I(`HomePage/${L.icon}_n.png`, 'width:410px;height:580px')}</div>
     <div class="abs" style="left:560px;top:24px;width:1300px;display:flex;flex-direction:column;gap:8px;font-size:28px">
-      ${Array.from({ length: L.n }, (_, i) => T(`${L.help}${i + 1}`, 'lbl', `position:static;white-space:normal;${i === 0 ? 'font-size:38px;color:#4fc3ff' : ''}`)).join('')}
+      ${Array.from({ length: L.n }, (_, i) => T(`${L.help}${i + 1}`, 'lbl', `position:static;white-space:normal;${i === 0 ? 'font-size:38px;color:var(--dev-accent)' : ''}`)).join('')}
       <div class="devtxt dim" style="margin-top:10px">${T('dev_name_text', 'lbl', 'position:static')}: ${esc(CFG.bt_name)}</div>
-      <div class="devtxt" style="color:#4fc3ff">${T('bt_connect_now', 'lbl', 'position:static')}</div>
+      <div class="devtxt" style="color:var(--dev-accent)">${T('bt_connect_now', 'lbl', 'position:static')}</div>
     </div>
   </div>`;
 };
@@ -218,7 +223,7 @@ screens.bt = ({ tab = 'dial', rec = 'out' }) => {
   } else {
     const rows = [['dev_name_text', `<span class="v">${esc(CFG.bt_name)}</span>`], ['pin_text', '<span class="v">0000</span>'], ['bt_switch_text', sw('btOn', S.sw.btOn)], ['auto_connect_text', sw('btAuto', S.sw.btAuto)]];
     body = `<div class="abs" style="left:240px;top:0;width:1680px;height:620px">${rows.map(([k, v], i) => `<div class="setrow" style="top:${30 + i * 100}px">${T(k)}${v}</div>`).join('')}
-      <div class="setrow" style="top:430px;border:0">${T('bt_no_connect', 'lbl', 'color:#4fc3ff')}</div></div>`;
+      <div class="setrow" style="top:430px;border:0">${T('bt_no_connect', 'lbl', 'color:var(--dev-accent)')}</div></div>`;
   }
   return `${bgLayer()}${header('bt_menu')}
     <div class="sidetabs">${BT_TABS.map(([id, ic, k]) => `<div class="sidetab ${tab === id ? 'on' : ''}" data-act="bttab" data-v="${id}">${I(`bt/${ic}_${tab === id ? 'f' : 'n'}.png`)}${T(k)}</div>`).join('')}</div>
@@ -231,7 +236,7 @@ screens.call = () => {
     <div class="content">
       <div class="abs" style="left:880px;top:40px">${I('bt/head.png', 'width:160px;height:160px')}</div>
       <div class="abs devtxt" style="left:0;right:0;top:230px;text-align:center;font-size:56px">${esc(c.name || c.num)}</div>
-      <div class="abs" style="left:0;right:0;top:310px;text-align:center">${T(c.start ? 'call_remind' : 'outgoing_remind', 'lbl devtxt', 'position:static;color:#4fc3ff')} <span class="devtxt" data-calltime>${c.start ? fmtT(secs) : ''}</span></div>
+      <div class="abs" style="left:0;right:0;top:310px;text-align:center">${T(c.start ? 'call_remind' : 'outgoing_remind', 'lbl devtxt', 'position:static;color:var(--dev-accent)')} <span class="devtxt" data-calltime>${c.start ? fmtT(secs) : ''}</span></div>
       <div class="abs press" data-act="hang" style="left:870px;top:400px">${P('bt/bt_call_btn2_n.png', 'bt/bt_call_btn2_f.png')}</div>
     </div>`;
 };
@@ -372,7 +377,7 @@ screens.settings = ({ tab = 'sys', sub = 'light', pin = '' }) => {
     body = `<div class="abs" style="left:30px;top:20px;width:368px;display:flex;flex-direction:column;gap:12px">
       ${SYS_SUB.map(([id, ic, k]) => `<div class="press" data-act="sub" data-v="${id}" style="position:relative;height:84px;display:flex;align-items:center;gap:22px;padding-left:30px">
         ${id === sub ? I('setting/set_second_menu_select_f.png', 'position:absolute;inset:0;width:368px;height:84px') : ''}
-        ${I(`setting/${ic}_${id === sub ? 's' : 'n'}.png`, 'position:relative;width:50px;height:50px')}${T(k, 'lbl', `position:relative;font-size:32px;${id === sub ? 'color:#4fc3ff' : ''}`)}</div>`).join('')}
+        ${I(`setting/${ic}_${id === sub ? 's' : 'n'}.png`, 'position:relative;width:50px;height:50px')}${T(k, 'lbl', `position:relative;font-size:32px;${id === sub ? 'color:var(--dev-accent)' : ''}`)}</div>`).join('')}
     </div>
     <div class="abs" style="left:430px;top:10px;width:1460px;height:590px">${setPane(sub)}</div>`;
   } else if (tab === 'eq') {
@@ -384,7 +389,7 @@ screens.settings = ({ tab = 'sys', sub = 'light', pin = '' }) => {
       ${[1, 2, 3, 4, 5, 6].map((n) => `<div class="press" data-act="bgsel" data-v="${n}" style="position:relative;width:310px;height:116px">${I(`bg/home_bg${n}_${S.bg === n ? 'f' : 'n'}.png`, 'width:310px;height:116px')}</div>`).join('')}
     </div>
     <div class="abs" style="left:1240px;top:30px;width:620px;display:flex;flex-direction:column;gap:6px;font-size:24px">
-      ${T('set_bg_custom', 'lbl', 'position:static;font-size:32px;color:#4fc3ff')}
+      ${T('set_bg_custom', 'lbl', 'position:static;font-size:32px;color:var(--dev-accent)')}
       ${[1, 2, 3, 4, 5].map((i) => T('set_bg_custom_remind' + i, 'lbl', 'position:static;white-space:normal;color:rgba(255,255,255,.75)')).join('')}
       <div style="display:flex;gap:20px;margin-top:16px">${devbtn('set_bg_custom_import', 'bgimport', 260, 68, S.bg === 'custom')}${S.customBg ? devbtn('set_bg_custom_exit', 'bgsel', 260, 68, false, 'data-v="custom"') : ''}</div>
     </div>`;
@@ -398,7 +403,7 @@ screens.settings = ({ tab = 'sys', sub = 'light', pin = '' }) => {
   <div class="topbar">${I('setting/set_base_bg.png', 'position:absolute;inset:0;width:1920px;height:112px')}
     <div class="navbtn press" data-act="back" style="left:16px;top:10px">${P('status/home_back_n.png', 'status/home_back_f.png')}</div>
     <div class="abs" style="left:300px;right:300px;top:6px;display:flex;justify-content:center;gap:60px">
-      ${SET_TABS.map(([id, ic, k]) => `<div class="press" data-act="settab" data-v="${id}" style="display:flex;align-items:center;gap:6px;height:92px">${I(`setting/${ic}_${tab === id ? 'f' : 'n'}.png`)}${T(k, 'lbl', `position:static;font-size:32px;${tab === id ? 'color:#4fc3ff' : ''}`)}</div>`).join('')}
+      ${SET_TABS.map(([id, ic, k]) => `<div class="press" data-act="settab" data-v="${id}" style="display:flex;align-items:center;gap:6px;height:92px">${I(`setting/${ic}_${tab === id ? 'f' : 'n'}.png`)}${T(k, 'lbl', `position:static;font-size:32px;${tab === id ? 'color:var(--dev-accent)' : ''}`)}</div>`).join('')}
     </div>
     <div class="navbtn press" data-act="home" style="right:24px;top:10px">${P('status/home_home_n.png', 'status/home_home_f.png')}</div>
   </div>
@@ -473,8 +478,9 @@ function drawDashLoop() {
       ctx.beginPath(); pts.forEach(([x, y], i) => (i ? ctx.lineTo(x, y) : ctx.moveTo(x, y))); ctx.closePath();
       ctx.fillStyle = gr; ctx.globalAlpha = 0.78; ctx.fill(); ctx.globalAlpha = 1;
     };
-    fill(DASH.speed, d.speed, '#3aa0ff', '#ff3d5a');
-    fill(DASH.rpm, d.rpm, '#3aa0ff', '#ff3d5a');
+    const [c1, c2] = S.theme ? ['#1c69d4', '#5cb3ff'] : ['#3aa0ff', '#ff3d5a'];
+    fill(DASH.speed, d.speed, c1, c2);
+    fill(DASH.rpm, d.rpm, c1, d.rpm > 6.5 ? '#e3242b' : c2);
     if (S.dashGuide) drawGuide(ctx);
     const sp = $('[data-speed]'); if (sp) sp.textContent = Math.round(d.speed);
     const rp = $('[data-rpm]'); if (rp) rp.textContent = Math.round(d.rpm * 1000) + ' r/min';
@@ -662,11 +668,17 @@ function toggleEdit() {
   b.textContent = S.edit ? '✎ Modifica attiva: clic su testo o immagine' : '✎ Modifica sullo schermo';
 }
 $('#btnEdit').addEventListener('click', toggleEdit);
+function syncThemeUi() {
+  screenEl.classList.toggle('bmw', S.theme);
+  $$('#themeSw button').forEach((b) => b.setAttribute('aria-pressed', String((b.dataset.theme === 'bmw') === S.theme)));
+}
+function setTheme(on) { S.theme = on && !!window.THEME; savePrefs(); syncThemeUi(); render(); renderPane(); updateCounts(); }
+$('#themeSw').addEventListener('click', (e) => { const b = e.target.closest('[data-theme]'); if (b) setTheme(b.dataset.theme === 'bmw'); });
 $('#btnExport').addEventListener('click', () => selectTab('esporta'));
 
 function setString(k, v) {
   const o = S.strOv[S.lang] || (S.strOv[S.lang] = {});
-  if (v === tOrig(k)) delete o[k]; else o[k] = v;
+  if (v === tBase(k)) delete o[k]; else o[k] = v;
   if (!Object.keys(o).length) delete S.strOv[S.lang];
   $$(`[data-k="${CSS.escape(k)}"]`, screenEl).forEach((el) => { el.textContent = t(k); el.classList.toggle('changed', o[k] != null); });
   saveEdits();
@@ -693,7 +705,7 @@ function openStringDialog(k, anchorEl) {
   const file = LANG_FILES[S.lang];
   const d = dialog(`<h2>Modifica testo</h2>
     <div class="path">res/tr/${esc(file)} → "${esc(k)}"</div>
-    <p class="hint">Originale: <b>${esc(tOrig(k))}</b></p>
+    <p class="hint">${S.theme && themeStr(k) != null ? `Tema BMW: <b>${esc(themeStr(k))}</b> · ` : ''}Originale del display: <b>${esc(tOrig(k))}</b></p>
     <textarea class="field" id="dlgTxt">${esc(t(k))}</textarea>
     <div class="note" id="dlgWarn" hidden>Il testo è più largo dello spazio disponibile: sul display verrebbe tagliato. Accorcialo.</div>
     <div class="row"><button class="btn primary" type="button" id="dlgOk">Fatto</button><button class="btn" type="button" id="dlgReset">Ripristina originale</button></div>`);
@@ -701,7 +713,7 @@ function openStringDialog(k, anchorEl) {
   const check = () => { const el = anchorEl || $(`[data-k="${CSS.escape(k)}"]`, screenEl); $('#dlgWarn', d).hidden = !(el && el.scrollWidth > el.clientWidth + 2); };
   ta.addEventListener('input', () => { setString(k, ta.value.replace(/\n/g, ' ')); check(); syncStrRow(k); });
   $('#dlgOk', d).onclick = closeDialog;
-  $('#dlgReset', d).onclick = () => { ta.value = tOrig(k); setString(k, ta.value); check(); syncStrRow(k); };
+  $('#dlgReset', d).onclick = () => { ta.value = tBase(k); setString(k, ta.value); check(); syncStrRow(k); };
   ta.addEventListener('keydown', (e) => { if (e.key === 'Enter') { e.preventDefault(); closeDialog(); } });
   check();
 }
@@ -828,7 +840,7 @@ function renderPane() {
       const q = strFilter.toLowerCase(), only = $('#onlyMod').checked, o = S.strOv[S.lang] || {};
       list.innerHTML = keys.filter((k) => (!q || k.toLowerCase().includes(q) || t(k).toLowerCase().includes(q) || tOrig(k).toLowerCase().includes(q)) && (!only || o[k] != null))
         .map((k) => { const mod = o[k] != null; return `<div class="strrow ${mod ? 'mod' : ''}" data-key="${esc(k)}"><span class="skey">${esc(k)}</span><span class="chip ${mod ? 'mod' : ''}">${mod ? 'modificato' : 'originale'}</span>
-          <input class="field" id="s_${esc(k)}" value="${esc(t(k))}" aria-label="${esc(k)}">${mod ? `<span class="orig">originale: ${esc(tOrig(k))}</span>` : ''}</div>`; }).join('') || '<p>Nessun testo trovato.</p>';
+          <input class="field" id="s_${esc(k)}" value="${esc(t(k))}" aria-label="${esc(k)}">${mod ? `<span class="orig">prima: ${esc(tBase(k))}</span>` : (themeStr(k) != null ? `<span class="orig">originale del display: ${esc(tOrig(k))}</span>` : '')}</div>`; }).join('') || '<p>Nessun testo trovato.</p>';
     };
     draw();
     $('#strSearch').addEventListener('input', (e) => { strFilter = e.target.value; draw(); });
@@ -856,12 +868,18 @@ function renderPane() {
 function langJson(lang) {
   // stesso formato del file originale: tab, "chiave":"valore", nessuno spazio, nessun a-capo finale
   const base = LANGS[lang], o = S.strOv[lang] || {};
-  return '{\n' + Object.keys(base).map((k) => `\t${JSON.stringify(k)}:${JSON.stringify(o[k] != null ? o[k] : base[k])}`).join(',\n') + '\n}';
+  return '{\n' + Object.keys(base).map((k) => `\t${JSON.stringify(k)}:${JSON.stringify(o[k] != null ? o[k] : tBase(k, lang))}`).join(',\n') + '\n}';
 }
 function changedFiles() {
   const files = [];
-  Object.keys(S.strOv).forEach((lang) => { if (Object.keys(S.strOv[lang]).length) files.push({ dev: `/res/tr/${LANG_FILES[lang]}`, local: `res/tr/${LANG_FILES[lang]}`, kind: 'txt', lang, n: Object.keys(S.strOv[lang]).length }); });
-  Object.keys(S.imgOv).sort().forEach((p) => files.push({ dev: `/res/ui/${p}`, local: `res/ui/${p}`, kind: 'img', p }));
+  const langs = new Set([...Object.keys(S.strOv), ...(S.theme ? Object.keys(THEME.strings) : [])]);
+  langs.forEach((lang) => {
+    const mine = S.strOv[lang] || {}, th = (S.theme && THEME.strings[lang]) || {};
+    const n = Object.keys(mine).length + Object.keys(th).filter((k) => mine[k] == null).length;
+    if (n) files.push({ dev: `/res/tr/${LANG_FILES[lang]}`, local: `res/tr/${LANG_FILES[lang]}`, kind: 'txt', lang, n });
+  });
+  const imgs = new Set([...Object.keys(S.imgOv), ...(S.theme ? Object.keys(THEME.images) : [])]);
+  [...imgs].sort().forEach((p) => files.push({ dev: `/res/ui/${p}`, local: `res/ui/${p}`, kind: 'img', p, mine: !!S.imgOv[p] }));
   return files;
 }
 function installScript(files) {
@@ -938,8 +956,8 @@ function renderExport(pane) {
   pane.innerHTML = `
     <section style="display:flex;flex-direction:column;gap:10px">
       <h3>Riepilogo</h3>
-      ${files.length ? `<p>${nT} testi modificati, ${nI} immagini sostituite${S.customBg ? ', 1 sfondo personalizzato' : ''}.</p>
-        <ul class="list">${files.map((f) => `<li><code>${esc(f.dev)}</code>${f.kind === 'txt' ? ` · ${f.n} testi` : ''}</li>`).join('')}</ul>`
+      ${files.length ? `<p>${S.theme ? '<b>Tema BMW incluso.</b> ' : ''}${nT} testi, ${nI} immagini${S.customBg ? ', 1 sfondo personalizzato' : ''}.</p>
+        <details><summary class="hint" style="cursor:pointer">Elenco file (${files.length})</summary><ul class="list">${files.map((f) => `<li><code>${esc(f.dev)}</code>${f.kind === 'txt' ? ` · ${f.n} testi` : ''}${f.mine ? ' · <b>tua modifica</b>' : ''}</li>`).join('')}</ul></details>`
       : `<div class="note">Non hai ancora modificato nulla. Attiva <b>Modifica sullo schermo</b> (tasto E) e clicca su una scritta o su un'immagine, oppure usa le schede Testi e Immagini.</div>`}
       <div class="row">
         <button class="btn primary" type="button" id="exZip" ${files.length || S.customBg ? '' : 'disabled'}>Scarica pacchetto .zip</button>
@@ -965,7 +983,7 @@ function renderExport(pane) {
   on('exZip', async () => {
     if (!window.JSZip) { toast('Libreria zip non caricata (serve internet): uso i file singoli'); exportSingles(files, script); return; }
     const z = new window.JSZip(); const root = z.folder('personalizzazione_display');
-    files.forEach((f) => root.file(f.local, f.kind === 'txt' ? langJson(f.lang) : dataUrlToBytes(S.imgOv[f.p])));
+    files.forEach((f) => root.file(f.local, f.kind === 'txt' ? langJson(f.lang) : dataUrlToBytes(src(f.p))));
     if (S.customBg) root.file('per_chiavetta_USB/bg_custom.png', dataUrlToBytes(S.customBg));
     root.file('installa.sh', script, { unixPermissions: '755' }); root.file('ripristina.sh', restoreScript(files), { unixPermissions: '755' }); root.file('LEGGIMI.txt', readme(files));
     download('personalizzazione_display.zip', await z.generateAsync({ type: 'blob', platform: 'UNIX' }));
@@ -980,7 +998,7 @@ function renderExport(pane) {
 function exportSingles(files, script) {
   files.forEach((f, i) => setTimeout(() => {
     const name = f.local.split('/').pop();
-    download(name, f.kind === 'txt' ? new Blob([langJson(f.lang)], { type: 'application/json' }) : new Blob([dataUrlToBytes(S.imgOv[f.p])], { type: 'image/png' }));
+    download(name, f.kind === 'txt' ? new Blob([langJson(f.lang)], { type: 'application/json' }) : new Blob([dataUrlToBytes(src(f.p))], { type: 'image/png' }));
   }, i * 300));
   setTimeout(() => download('installa.sh', new Blob([script], { type: 'text/x-shellscript' })), files.length * 300);
 }
@@ -993,6 +1011,8 @@ function exportSingles(files, script) {
   S.imgOv = (await store.get('imgOv')) || {};
   S.customBg = (await store.get('customBg')) || null;
   if (S.bg === 'custom' && !S.customBg) S.bg = (CFG.screen_bg | 0) + 1;
+  if (!window.THEME) S.theme = false;
+  syncThemeUi();
   updateCounts(); render(); renderPane();
 })();
 })();

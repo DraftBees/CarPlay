@@ -1,0 +1,2974 @@
+{
+"Frame 16.png": [
+384,
+30
+],
+"Frame 17.png": [
+384,
+30
+],
+"HomePage/Airplay_n.png": [
+361,
+465
+],
+"HomePage/Airplay_s.png": [
+361,
+465
+],
+"HomePage/Auto_n.png": [
+361,
+465
+],
+"HomePage/Auto_s.png": [
+361,
+465
+],
+"HomePage/Carplay_n.png": [
+361,
+465
+],
+"HomePage/Carplay_s.png": [
+361,
+465
+],
+"HomePage/Hicar_n.png": [
+361,
+465
+],
+"HomePage/Hicar_s.png": [
+361,
+465
+],
+"HomePage/Miracast_n.png": [
+361,
+465
+],
+"HomePage/Miracast_s.png": [
+361,
+465
+],
+"HomePage/bg_menu_n.png": [
+361,
+465
+],
+"HomePage/bg_menu_s.png": [
+361,
+465
+],
+"HomePage/bt_transmit_n.png": [
+361,
+465
+],
+"HomePage/bt_transmit_s.png": [
+361,
+465
+],
+"HomePage/buttom.png": [
+1023,
+82
+],
+"HomePage/car_menu_n.png": [
+361,
+465
+],
+"HomePage/car_menu_s.png": [
+361,
+465
+],
+"HomePage/car_n.png": [
+66,
+136
+],
+"HomePage/car_s.png": [
+66,
+136
+],
+"HomePage/carlife_n.png": [
+361,
+465
+],
+"HomePage/carlife_s.png": [
+361,
+465
+],
+"HomePage/dash_bg.png": [
+290,
+548
+],
+"HomePage/dash_consumption.png": [
+80,
+80
+],
+"HomePage/dash_menu_n.png": [
+361,
+465
+],
+"HomePage/dash_menu_s.png": [
+361,
+465
+],
+"HomePage/dash_p.png": [
+80,
+80
+],
+"HomePage/dash_safety.png": [
+80,
+80
+],
+"HomePage/eq_menu_n.png": [
+361,
+465
+],
+"HomePage/eq_menu_s.png": [
+361,
+465
+],
+"HomePage/home_bg_n.png": [
+410,
+580
+],
+"HomePage/home_bg_s.png": [
+410,
+580
+],
+"HomePage/home_icon_airplay_n.png": [
+410,
+580
+],
+"HomePage/home_icon_airplay_s.png": [
+410,
+580
+],
+"HomePage/home_icon_androidauto_n.png": [
+410,
+580
+],
+"HomePage/home_icon_androidauto_s.png": [
+410,
+580
+],
+"HomePage/home_icon_bluetooth_n.png": [
+410,
+580
+],
+"HomePage/home_icon_bluetooth_s.png": [
+410,
+580
+],
+"HomePage/home_icon_carinfo_n.png": [
+410,
+580
+],
+"HomePage/home_icon_carinfo_s.png": [
+410,
+580
+],
+"HomePage/home_icon_carlife_n.png": [
+410,
+580
+],
+"HomePage/home_icon_carlife_s.png": [
+410,
+580
+],
+"HomePage/home_icon_dashboard_n.png": [
+410,
+580
+],
+"HomePage/home_icon_dashboard_s.png": [
+410,
+580
+],
+"HomePage/home_icon_dvr_n.png": [
+410,
+580
+],
+"HomePage/home_icon_dvr_s.png": [
+410,
+580
+],
+"HomePage/home_icon_hicar_n.png": [
+410,
+580
+],
+"HomePage/home_icon_hicar_s.png": [
+410,
+580
+],
+"HomePage/home_icon_hidvideo_n.png": [
+410,
+580
+],
+"HomePage/home_icon_hidvideo_s.png": [
+410,
+580
+],
+"HomePage/home_icon_miracast_n.png": [
+410,
+580
+],
+"HomePage/home_icon_miracast_s.png": [
+410,
+580
+],
+"HomePage/home_icon_s_dail_f.png": [
+80,
+80
+],
+"HomePage/home_icon_s_dail_n.png": [
+80,
+80
+],
+"HomePage/home_icon_s_music_f.png": [
+80,
+80
+],
+"HomePage/home_icon_s_music_n.png": [
+80,
+80
+],
+"HomePage/home_icon_s_set_f.png": [
+80,
+80
+],
+"HomePage/home_icon_s_set_n.png": [
+80,
+80
+],
+"HomePage/home_icon_s_video_f.png": [
+80,
+80
+],
+"HomePage/home_icon_s_video_n.png": [
+80,
+80
+],
+"HomePage/home_icon_wiredcarplay_n.png": [
+410,
+580
+],
+"HomePage/home_icon_wiredcarplay_s.png": [
+410,
+580
+],
+"HomePage/home_icon_zlink_n.png": [
+410,
+580
+],
+"HomePage/home_icon_zlink_s.png": [
+410,
+580
+],
+"HomePage/home_left_bg.png": [
+166,
+620
+],
+"HomePage/home_menu_select.png": [
+100,
+100
+],
+"HomePage/home_right_biao.png": [
+410,
+580
+],
+"HomePage/home_sound_n.png": [
+410,
+580
+],
+"HomePage/home_sound_s.png": [
+410,
+580
+],
+"HomePage/home_top_bg.png": [
+1920,
+100
+],
+"HomePage/hpj_test_bg.png": [
+1600,
+600
+],
+"HomePage/music_n.png": [
+361,
+465
+],
+"HomePage/music_s.png": [
+361,
+465
+],
+"HomePage/set_menu_n.png": [
+361,
+465
+],
+"HomePage/set_menu_s.png": [
+361,
+465
+],
+"HomePage/setting_n.png": [
+100,
+100
+],
+"HomePage/setting_s.png": [
+100,
+100
+],
+"HomePage/tel_n.png": [
+361,
+465
+],
+"HomePage/tel_s.png": [
+361,
+465
+],
+"HomePage/video_n.png": [
+361,
+465
+],
+"HomePage/video_s.png": [
+361,
+465
+],
+"HomePage/za_home_icon_music_n.png": [
+410,
+580
+],
+"HomePage/za_home_icon_music_s.png": [
+410,
+580
+],
+"MusicPlayer/bg.png": [
+1920,
+720
+],
+"MusicPlayer/file_btn_f.png": [
+354,
+68
+],
+"MusicPlayer/file_btn_n.png": [
+354,
+68
+],
+"MusicPlayer/file_choice.png": [
+1312,
+62
+],
+"MusicPlayer/file_folder_f.png": [
+48,
+48
+],
+"MusicPlayer/file_folder_n.png": [
+48,
+48
+],
+"MusicPlayer/file_local_n.png": [
+48,
+48
+],
+"MusicPlayer/file_local_s.png": [
+48,
+48
+],
+"MusicPlayer/file_music.png": [
+48,
+48
+],
+"MusicPlayer/file_music_f.png": [
+48,
+48
+],
+"MusicPlayer/file_right_bg.png": [
+1424,
+554
+],
+"MusicPlayer/file_usbr_n.png": [
+48,
+48
+],
+"MusicPlayer/file_usbr_s.png": [
+48,
+48
+],
+"MusicPlayer/file_vedio_f.png": [
+48,
+48
+],
+"MusicPlayer/file_vedio_n.png": [
+48,
+48
+],
+"MusicPlayer/icon.png": [
+120,
+120
+],
+"MusicPlayer/jindutiao1.png": [
+449,
+41
+],
+"MusicPlayer/jindutiao2.png": [
+449,
+41
+],
+"MusicPlayer/kuang1.png": [
+722,
+102
+],
+"MusicPlayer/kuang2.png": [
+721,
+102
+],
+"MusicPlayer/list_play01.png": [
+55,
+55
+],
+"MusicPlayer/list_play02.png": [
+55,
+55
+],
+"MusicPlayer/list_play03.png": [
+55,
+55
+],
+"MusicPlayer/list_play04.png": [
+55,
+55
+],
+"MusicPlayer/list_play05.png": [
+55,
+55
+],
+"MusicPlayer/music.png": [
+54,
+56
+],
+"MusicPlayer/music_albunm.png": [
+76,
+76
+],
+"MusicPlayer/music_artist.png": [
+76,
+76
+],
+"MusicPlayer/music_base_bg.png": [
+1920,
+112
+],
+"MusicPlayer/music_bg.png": [
+1920,
+720
+],
+"MusicPlayer/music_btn_list2_f.png": [
+80,
+80
+],
+"MusicPlayer/music_btn_list2_n.png": [
+80,
+80
+],
+"MusicPlayer/music_btn_list_f.png": [
+80,
+80
+],
+"MusicPlayer/music_btn_list_n.png": [
+80,
+80
+],
+"MusicPlayer/music_btn_next_f.png": [
+80,
+80
+],
+"MusicPlayer/music_btn_next_n.png": [
+80,
+80
+],
+"MusicPlayer/music_btn_pause_f.png": [
+80,
+80
+],
+"MusicPlayer/music_btn_pause_n.png": [
+80,
+80
+],
+"MusicPlayer/music_btn_play_f.png": [
+80,
+80
+],
+"MusicPlayer/music_btn_play_n.png": [
+80,
+80
+],
+"MusicPlayer/music_btn_previous_f.png": [
+80,
+80
+],
+"MusicPlayer/music_btn_previous_n.png": [
+80,
+80
+],
+"MusicPlayer/music_btn_random_f.png": [
+80,
+80
+],
+"MusicPlayer/music_btn_random_n.png": [
+80,
+80
+],
+"MusicPlayer/music_btn_single_f.png": [
+80,
+80
+],
+"MusicPlayer/music_btn_single_n.png": [
+80,
+80
+],
+"MusicPlayer/music_btn_stop_f.png": [
+80,
+80
+],
+"MusicPlayer/music_btn_stop_n.png": [
+80,
+80
+],
+"MusicPlayer/music_defaultcover.png": [
+458,
+466
+],
+"MusicPlayer/music_slide.png": [
+1411,
+32
+],
+"MusicPlayer/music_slide_bg.png": [
+1060,
+32
+],
+"MusicPlayer/music_slide_btn.png": [
+32,
+32
+],
+"MusicPlayer/music_title.png": [
+76,
+76
+],
+"MusicPlayer/vedio_btnbg.png": [
+1434,
+165
+],
+"MusicPlayer/video_btn_screen_f.png": [
+80,
+80
+],
+"MusicPlayer/video_btn_screen_n.png": [
+80,
+80
+],
+"MusicPlayer/video_slide.png": [
+1058,
+8
+],
+"MusicPlayer/video_slide2.png": [
+1060,
+32
+],
+"MusicPlayer/video_slide_btn.png": [
+32,
+32
+],
+"MusicPlayer/yuan.png": [
+18,
+41
+],
+"aircontrol/ac_off.png": [
+150,
+90
+],
+"aircontrol/ac_on.png": [
+150,
+90
+],
+"aircontrol/aircontrol_bg.png": [
+962,
+281
+],
+"aircontrol/airinfobg.png": [
+1928,
+148
+],
+"aircontrol/auto_wind.png": [
+56,
+16
+],
+"aircontrol/carinfo_bottom_bg.png": [
+338,
+23
+],
+"aircontrol/chair.png": [
+67,
+96
+],
+"aircontrol/feng.png": [
+80,
+140
+],
+"aircontrol/hand_progress_1.png": [
+152,
+32
+],
+"aircontrol/hand_progress_2.png": [
+152,
+32
+],
+"aircontrol/hand_progress_3.png": [
+152,
+32
+],
+"aircontrol/hand_progress_4.png": [
+152,
+32
+],
+"aircontrol/hand_progress_5.png": [
+152,
+32
+],
+"aircontrol/hand_progress_6.png": [
+152,
+32
+],
+"aircontrol/hand_progress_7.png": [
+152,
+32
+],
+"aircontrol/hand_progress_8.png": [
+152,
+32
+],
+"aircontrol/hand_progress_9.png": [
+152,
+32
+],
+"aircontrol/hand_wind_model.png": [
+22,
+22
+],
+"aircontrol/in_cycle_off.png": [
+140,
+100
+],
+"aircontrol/in_cycle_on.png": [
+140,
+100
+],
+"aircontrol/inside_cycle.png": [
+60,
+28
+],
+"aircontrol/left_1.png": [
+140,
+140
+],
+"aircontrol/left_2.png": [
+140,
+140
+],
+"aircontrol/left_3.png": [
+140,
+140
+],
+"aircontrol/left_4.png": [
+140,
+140
+],
+"aircontrol/left_5.png": [
+140,
+140
+],
+"aircontrol/left_6.png": [
+140,
+140
+],
+"aircontrol/left_7.png": [
+140,
+140
+],
+"aircontrol/left_auto.png": [
+140,
+140
+],
+"aircontrol/left_chair.png": [
+67,
+96
+],
+"aircontrol/left_chair_wind_center.png": [
+37,
+8
+],
+"aircontrol/left_chair_wind_down.png": [
+36,
+10
+],
+"aircontrol/left_chair_wind_up.png": [
+36,
+10
+],
+"aircontrol/line.png": [
+12,
+148
+],
+"aircontrol/off.png": [
+90,
+46
+],
+"aircontrol/on.png": [
+90,
+46
+],
+"aircontrol/out_cycle.png": [
+60,
+28
+],
+"aircontrol/out_cycle_off.png": [
+140,
+100
+],
+"aircontrol/out_cycle_on.png": [
+140,
+100
+],
+"aircontrol/rear_off.png": [
+140,
+100
+],
+"aircontrol/rear_on.png": [
+140,
+100
+],
+"aircontrol/right_1.png": [
+140,
+140
+],
+"aircontrol/right_2.png": [
+140,
+140
+],
+"aircontrol/right_3.png": [
+140,
+140
+],
+"aircontrol/right_4.png": [
+140,
+140
+],
+"aircontrol/right_5.png": [
+140,
+140
+],
+"aircontrol/right_6.png": [
+140,
+140
+],
+"aircontrol/right_7.png": [
+140,
+140
+],
+"aircontrol/right_auto.png": [
+140,
+140
+],
+"aodi/aodi_airplay_n.png": [
+334,
+250
+],
+"aodi/aodi_airplay_s.png": [
+334,
+250
+],
+"aodi/aodi_auto_n.png": [
+335,
+250
+],
+"aodi/aodi_auto_s.png": [
+335,
+250
+],
+"aodi/aodi_back_n.png": [
+144,
+90
+],
+"aodi/aodi_back_s.png": [
+144,
+90
+],
+"aodi/aodi_bg_n.png": [
+334,
+251
+],
+"aodi/aodi_bg_s.png": [
+334,
+251
+],
+"aodi/aodi_bt_n.png": [
+144,
+150
+],
+"aodi/aodi_bt_s.png": [
+144,
+150
+],
+"aodi/aodi_car_n.png": [
+334,
+251
+],
+"aodi/aodi_car_s.png": [
+334,
+251
+],
+"aodi/aodi_carlife_n.png": [
+335,
+250
+],
+"aodi/aodi_carlife_s.png": [
+335,
+250
+],
+"aodi/aodi_carplay_n.png": [
+337,
+250
+],
+"aodi/aodi_carplay_s.png": [
+337,
+250
+],
+"aodi/aodi_dash_n.png": [
+334,
+251
+],
+"aodi/aodi_dash_s.png": [
+334,
+251
+],
+"aodi/aodi_eq_n.png": [
+334,
+250
+],
+"aodi/aodi_eq_s.png": [
+334,
+250
+],
+"aodi/aodi_hicar_n.png": [
+334,
+250
+],
+"aodi/aodi_hicar_s.png": [
+334,
+250
+],
+"aodi/aodi_home_n.png": [
+144,
+90
+],
+"aodi/aodi_home_s.png": [
+144,
+90
+],
+"aodi/aodi_miracast_n.png": [
+334,
+251
+],
+"aodi/aodi_miracast_s.png": [
+334,
+251
+],
+"aodi/aodi_music_n.png": [
+144,
+148
+],
+"aodi/aodi_music_s.png": [
+144,
+148
+],
+"aodi/aodi_set_n.png": [
+144,
+149
+],
+"aodi/aodi_set_s.png": [
+144,
+149
+],
+"aodi/aodi_video_n.png": [
+144,
+150
+],
+"aodi/aodi_video_s.png": [
+144,
+150
+],
+"back/set_ic_common_f.png": [
+124,
+80
+],
+"back/set_ic_common_n.png": [
+124,
+80
+],
+"bag_5_5.png": [
+6,
+6
+],
+"bg/bg1.png": [
+1920,
+720
+],
+"bg/bg2.png": [
+1920,
+720
+],
+"bg/bg3.png": [
+1920,
+720
+],
+"bg/bg4.png": [
+1920,
+720
+],
+"bg/bg5.png": [
+1920,
+720
+],
+"bg/bg6.png": [
+1920,
+720
+],
+"bg/home_bg1_f.png": [
+310,
+116
+],
+"bg/home_bg1_n.png": [
+310,
+116
+],
+"bg/home_bg2_f.png": [
+310,
+116
+],
+"bg/home_bg2_n.png": [
+310,
+116
+],
+"bg/home_bg3_f.png": [
+310,
+116
+],
+"bg/home_bg3_n.png": [
+310,
+116
+],
+"bg/home_bg4_f.png": [
+310,
+116
+],
+"bg/home_bg4_n.png": [
+310,
+116
+],
+"bg/home_bg5_f.png": [
+310,
+116
+],
+"bg/home_bg5_n.png": [
+310,
+116
+],
+"bg/home_bg6_f.png": [
+310,
+116
+],
+"bg/home_bg6_n.png": [
+310,
+116
+],
+"bg/hpj_test_bg.png": [
+1600,
+600
+],
+"bt/Invlaid.png": [
+80,
+36
+],
+"bt/OFF.png": [
+80,
+36
+],
+"bt/ON.png": [
+80,
+36
+],
+"bt/bt.png": [
+164,
+106
+],
+"bt/bt_base_bg.png": [
+1920,
+112
+],
+"bt/bt_btn1_f.png": [
+186,
+76
+],
+"bt/bt_btn1_n.png": [
+186,
+76
+],
+"bt/bt_btn2_f.png": [
+186,
+76
+],
+"bt/bt_btn2_n.png": [
+186,
+76
+],
+"bt/bt_btn_off.png": [
+70,
+30
+],
+"bt/bt_btn_on.png": [
+70,
+30
+],
+"bt/bt_call_btn1_f.png": [
+180,
+158
+],
+"bt/bt_call_btn1_n.png": [
+180,
+158
+],
+"bt/bt_call_btn2_f.png": [
+180,
+158
+],
+"bt/bt_call_btn2_n.png": [
+180,
+158
+],
+"bt/bt_call_btnbg.png": [
+1008,
+64
+],
+"bt/bt_call_callin_f.png": [
+306,
+64
+],
+"bt/bt_call_callin_n.png": [
+306,
+64
+],
+"bt/bt_call_callmiss_f.png": [
+306,
+64
+],
+"bt/bt_call_callmiss_n.png": [
+306,
+64
+],
+"bt/bt_call_callout_f.png": [
+306,
+64
+],
+"bt/bt_call_callout_n.png": [
+306,
+64
+],
+"bt/bt_call_keykeyboard_f.png": [
+186,
+76
+],
+"bt/bt_call_keykeyboard_n.png": [
+186,
+76
+],
+"bt/bt_call_voice_f.png": [
+186,
+76
+],
+"bt/bt_call_voice_n.png": [
+186,
+76
+],
+"bt/bt_change_f.png": [
+116,
+116
+],
+"bt/bt_change_n.png": [
+116,
+116
+],
+"bt/bt_choice.png": [
+860,
+48
+],
+"bt/bt_contacts_download_f.png": [
+116,
+116
+],
+"bt/bt_contacts_download_n.png": [
+116,
+116
+],
+"bt/bt_contacts_f.png": [
+125,
+80
+],
+"bt/bt_contacts_n.png": [
+125,
+80
+],
+"bt/bt_dail_f.png": [
+186,
+76
+],
+"bt/bt_dail_n.png": [
+186,
+76
+],
+"bt/bt_driver.png": [
+51,
+76
+],
+"bt/bt_hang_up_f.png": [
+186,
+76
+],
+"bt/bt_hang_up_n.png": [
+186,
+76
+],
+"bt/bt_icon.png": [
+152,
+152
+],
+"bt/bt_keyboard_f.png": [
+125,
+80
+],
+"bt/bt_keyboard_n.png": [
+125,
+80
+],
+"bt/bt_line.png": [
+860,
+3
+],
+"bt/bt_line_s.png": [
+8,
+310
+],
+"bt/bt_line_s2.png": [
+417,
+8
+],
+"bt/bt_load0.png": [
+40,
+40
+],
+"bt/bt_load1.png": [
+40,
+40
+],
+"bt/bt_load2.png": [
+40,
+40
+],
+"bt/bt_load3.png": [
+40,
+40
+],
+"bt/bt_load4.png": [
+40,
+40
+],
+"bt/bt_load5.png": [
+40,
+40
+],
+"bt/bt_music.png": [
+206,
+79
+],
+"bt/bt_music_f.png": [
+207,
+81
+],
+"bt/bt_music_n.png": [
+125,
+80
+],
+"bt/bt_music_next_f.png": [
+148,
+74
+],
+"bt/bt_music_play_f.png": [
+148,
+74
+],
+"bt/bt_music_previous_f.png": [
+148,
+74
+],
+"bt/bt_music_stop_f.png": [
+148,
+74
+],
+"bt/bt_music_stop_n.png": [
+148,
+74
+],
+"bt/bt_p.png": [
+164,
+106
+],
+"bt/bt_record_f.png": [
+125,
+80
+],
+"bt/bt_record_n.png": [
+125,
+80
+],
+"bt/bt_refresh_n.png": [
+59,
+59
+],
+"bt/bt_refresh_s.png": [
+59,
+59
+],
+"bt/bt_s_call_callin.png": [
+52,
+52
+],
+"bt/bt_s_call_callmiss.png": [
+52,
+52
+],
+"bt/bt_s_call_callout.png": [
+52,
+52
+],
+"bt/bt_s_contacts.png": [
+52,
+52
+],
+"bt/bt_set_connect_f.png": [
+148,
+74
+],
+"bt/bt_set_connect_n.png": [
+148,
+74
+],
+"bt/bt_set_delete_f.png": [
+40,
+40
+],
+"bt/bt_set_delete_n.png": [
+40,
+40
+],
+"bt/bt_set_f.png": [
+125,
+80
+],
+"bt/bt_set_n.png": [
+125,
+80
+],
+"bt/bt_set_unconnect_f.png": [
+148,
+74
+],
+"bt/bt_set_unconnect_n.png": [
+148,
+74
+],
+"bt/bt_tmusic_next_n.png": [
+148,
+74
+],
+"bt/bt_tmusic_pause_f.png": [
+148,
+74
+],
+"bt/bt_tmusic_pause_n.png": [
+148,
+74
+],
+"bt/bt_tmusic_play_n.png": [
+148,
+74
+],
+"bt/bt_tmusic_previous_n.png": [
+148,
+74
+],
+"bt/bt_update_f.png": [
+116,
+116
+],
+"bt/bt_update_n.png": [
+116,
+116
+],
+"bt/btcall_update_f.png": [
+186,
+76
+],
+"bt/btcall_update_n.png": [
+186,
+76
+],
+"bt/btmusic.png": [
+164,
+106
+],
+"bt/btmusic_p.png": [
+164,
+106
+],
+"bt/dialed.png": [
+50,
+50
+],
+"bt/download.png": [
+60,
+60
+],
+"bt/find.png": [
+50,
+50
+],
+"bt/find_p.png": [
+50,
+50
+],
+"bt/hang_up.png": [
+80,
+60
+],
+"bt/head.png": [
+80,
+80
+],
+"bt/incoming.png": [
+80,
+60
+],
+"bt/mic.png": [
+80,
+60
+],
+"bt/mic_p.png": [
+80,
+60
+],
+"bt/missed.png": [
+50,
+50
+],
+"bt/music.png": [
+164,
+106
+],
+"bt/music_p.png": [
+164,
+106
+],
+"bt/set_fullscreen_bg.png": [
+1802,
+462
+],
+"bt/za_btcall_callin_f.png": [
+295,
+38
+],
+"bt/za_btcall_callin_n.png": [
+30,
+30
+],
+"bt/za_btmusic_defaultcover.png": [
+270,
+270
+],
+"car/car.png": [
+231,
+338
+],
+"car/car_adjust_bg.png": [
+216,
+217
+],
+"car/car_adjust_down_f.png": [
+105,
+43
+],
+"car/car_adjust_down_n.png": [
+109,
+46
+],
+"car/car_adjust_left_f.png": [
+42,
+106
+],
+"car/car_adjust_left_n.png": [
+46,
+110
+],
+"car/car_adjust_ok_f.png": [
+60,
+60
+],
+"car/car_adjust_ok_n.png": [
+64,
+64
+],
+"car/car_adjust_right_f.png": [
+42,
+106
+],
+"car/car_adjust_right_n.png": [
+46,
+110
+],
+"car/car_adjust_up_f.png": [
+105,
+42
+],
+"car/car_adjust_up_n.png": [
+109,
+47
+],
+"car/car_bg.png": [
+600,
+720
+],
+"car/car_close.png": [
+22,
+108
+],
+"car/car_list_bg.png": [
+630,
+430
+],
+"car/car_open.png": [
+79,
+79
+],
+"car/fll_1.png": [
+226,
+192
+],
+"car/fll_10.png": [
+226,
+192
+],
+"car/fll_11.png": [
+226,
+192
+],
+"car/fll_2.png": [
+226,
+192
+],
+"car/fll_3.png": [
+226,
+192
+],
+"car/fll_4.png": [
+226,
+192
+],
+"car/fll_5.png": [
+226,
+192
+],
+"car/fll_6.png": [
+226,
+192
+],
+"car/fll_7.png": [
+226,
+192
+],
+"car/fll_8.png": [
+226,
+192
+],
+"car/fll_9.png": [
+226,
+192
+],
+"car/flm_1.png": [
+226,
+192
+],
+"car/flm_10.png": [
+226,
+192
+],
+"car/flm_11.png": [
+226,
+192
+],
+"car/flm_2.png": [
+226,
+192
+],
+"car/flm_3.png": [
+226,
+192
+],
+"car/flm_4.png": [
+226,
+192
+],
+"car/flm_5.png": [
+226,
+192
+],
+"car/flm_6.png": [
+226,
+192
+],
+"car/flm_7.png": [
+226,
+192
+],
+"car/flm_8.png": [
+226,
+192
+],
+"car/flm_9.png": [
+226,
+192
+],
+"car/fradar_0.png": [
+226,
+192
+],
+"car/frm_1.png": [
+226,
+192
+],
+"car/frm_10.png": [
+226,
+192
+],
+"car/frm_11.png": [
+226,
+192
+],
+"car/frm_2.png": [
+226,
+192
+],
+"car/frm_3.png": [
+226,
+192
+],
+"car/frm_4.png": [
+226,
+192
+],
+"car/frm_5.png": [
+226,
+192
+],
+"car/frm_6.png": [
+226,
+192
+],
+"car/frm_7.png": [
+226,
+192
+],
+"car/frm_8.png": [
+226,
+192
+],
+"car/frm_9.png": [
+226,
+192
+],
+"car/frr_1.png": [
+226,
+192
+],
+"car/frr_10.png": [
+226,
+192
+],
+"car/frr_11.png": [
+226,
+192
+],
+"car/frr_2.png": [
+226,
+192
+],
+"car/frr_3.png": [
+226,
+192
+],
+"car/frr_4.png": [
+226,
+192
+],
+"car/frr_5.png": [
+226,
+192
+],
+"car/frr_6.png": [
+226,
+192
+],
+"car/frr_7.png": [
+226,
+192
+],
+"car/frr_8.png": [
+226,
+192
+],
+"car/frr_9.png": [
+226,
+192
+],
+"car/fuel_f.png": [
+40,
+45
+],
+"car/fuel_n.png": [
+40,
+45
+],
+"car/list_remind.png": [
+30,
+30
+],
+"car/parking_f.png": [
+65,
+50
+],
+"car/parking_n.png": [
+65,
+50
+],
+"car/rll_1.png": [
+226,
+190
+],
+"car/rll_10.png": [
+226,
+190
+],
+"car/rll_11.png": [
+226,
+192
+],
+"car/rll_2.png": [
+226,
+190
+],
+"car/rll_3.png": [
+226,
+190
+],
+"car/rll_4.png": [
+226,
+190
+],
+"car/rll_5.png": [
+226,
+190
+],
+"car/rll_6.png": [
+226,
+190
+],
+"car/rll_7.png": [
+226,
+190
+],
+"car/rll_8.png": [
+226,
+190
+],
+"car/rll_9.png": [
+226,
+190
+],
+"car/rlm_1.png": [
+226,
+190
+],
+"car/rlm_10.png": [
+226,
+190
+],
+"car/rlm_11.png": [
+226,
+192
+],
+"car/rlm_2.png": [
+226,
+190
+],
+"car/rlm_3.png": [
+226,
+190
+],
+"car/rlm_4.png": [
+226,
+190
+],
+"car/rlm_5.png": [
+226,
+190
+],
+"car/rlm_6.png": [
+226,
+190
+],
+"car/rlm_7.png": [
+226,
+190
+],
+"car/rlm_8.png": [
+226,
+190
+],
+"car/rlm_9.png": [
+226,
+190
+],
+"car/rradar_0.png": [
+226,
+192
+],
+"car/rrm_1.png": [
+226,
+190
+],
+"car/rrm_10.png": [
+226,
+190
+],
+"car/rrm_11.png": [
+226,
+192
+],
+"car/rrm_2.png": [
+226,
+190
+],
+"car/rrm_3.png": [
+226,
+190
+],
+"car/rrm_4.png": [
+226,
+190
+],
+"car/rrm_5.png": [
+226,
+190
+],
+"car/rrm_6.png": [
+226,
+190
+],
+"car/rrm_7.png": [
+226,
+190
+],
+"car/rrm_8.png": [
+226,
+190
+],
+"car/rrm_9.png": [
+226,
+190
+],
+"car/rrr_1.png": [
+226,
+190
+],
+"car/rrr_10.png": [
+226,
+190
+],
+"car/rrr_11.png": [
+226,
+192
+],
+"car/rrr_2.png": [
+226,
+190
+],
+"car/rrr_3.png": [
+226,
+190
+],
+"car/rrr_4.png": [
+226,
+190
+],
+"car/rrr_5.png": [
+226,
+190
+],
+"car/rrr_6.png": [
+226,
+190
+],
+"car/rrr_7.png": [
+226,
+190
+],
+"car/rrr_8.png": [
+226,
+190
+],
+"car/rrr_9.png": [
+226,
+190
+],
+"car/safety_f.png": [
+47,
+50
+],
+"car/safety_n.png": [
+47,
+50
+],
+"car/trl_0.png": [
+1253,
+390
+],
+"car/trl_1.png": [
+1253,
+390
+],
+"car/trl_10.png": [
+1253,
+390
+],
+"car/trl_11.png": [
+1253,
+390
+],
+"car/trl_12.png": [
+1253,
+390
+],
+"car/trl_13.png": [
+1253,
+390
+],
+"car/trl_14.png": [
+1253,
+390
+],
+"car/trl_15.png": [
+1253,
+390
+],
+"car/trl_16.png": [
+1253,
+390
+],
+"car/trl_17.png": [
+1253,
+390
+],
+"car/trl_18.png": [
+1253,
+390
+],
+"car/trl_19.png": [
+1253,
+390
+],
+"car/trl_2.png": [
+1253,
+390
+],
+"car/trl_20.png": [
+1253,
+390
+],
+"car/trl_21.png": [
+1253,
+390
+],
+"car/trl_22.png": [
+1253,
+390
+],
+"car/trl_23.png": [
+1253,
+390
+],
+"car/trl_24.png": [
+1253,
+390
+],
+"car/trl_25.png": [
+1253,
+390
+],
+"car/trl_26.png": [
+1253,
+390
+],
+"car/trl_27.png": [
+1253,
+390
+],
+"car/trl_28.png": [
+1253,
+390
+],
+"car/trl_29.png": [
+1253,
+390
+],
+"car/trl_3.png": [
+1253,
+390
+],
+"car/trl_4.png": [
+1253,
+390
+],
+"car/trl_5.png": [
+1253,
+390
+],
+"car/trl_6.png": [
+1253,
+390
+],
+"car/trl_7.png": [
+1253,
+390
+],
+"car/trl_8.png": [
+1253,
+390
+],
+"car/trl_9.png": [
+1253,
+390
+],
+"car/trr_0.png": [
+1253,
+390
+],
+"car/trr_1.png": [
+1253,
+390
+],
+"car/trr_10.png": [
+1253,
+390
+],
+"car/trr_11.png": [
+1253,
+390
+],
+"car/trr_12.png": [
+1253,
+390
+],
+"car/trr_13.png": [
+1253,
+390
+],
+"car/trr_14.png": [
+1253,
+390
+],
+"car/trr_15.png": [
+1253,
+390
+],
+"car/trr_16.png": [
+1253,
+390
+],
+"car/trr_17.png": [
+1253,
+390
+],
+"car/trr_18.png": [
+1253,
+390
+],
+"car/trr_19.png": [
+1253,
+390
+],
+"car/trr_2.png": [
+1253,
+390
+],
+"car/trr_20.png": [
+1253,
+390
+],
+"car/trr_21.png": [
+1253,
+390
+],
+"car/trr_22.png": [
+1253,
+390
+],
+"car/trr_23.png": [
+1253,
+390
+],
+"car/trr_24.png": [
+1253,
+390
+],
+"car/trr_25.png": [
+1253,
+390
+],
+"car/trr_26.png": [
+1253,
+390
+],
+"car/trr_27.png": [
+1253,
+390
+],
+"car/trr_28.png": [
+1253,
+390
+],
+"car/trr_29.png": [
+1253,
+390
+],
+"car/trr_3.png": [
+1253,
+390
+],
+"car/trr_30.png": [
+1253,
+390
+],
+"car/trr_4.png": [
+1253,
+390
+],
+"car/trr_5.png": [
+1253,
+390
+],
+"car/trr_6.png": [
+1253,
+390
+],
+"car/trr_7.png": [
+1253,
+390
+],
+"car/trr_8.png": [
+1253,
+390
+],
+"car/trr_9.png": [
+1253,
+390
+],
+"dash/dash_bg_china.png": [
+1920,
+720
+],
+"dash/dash_bg_english.png": [
+1920,
+720
+],
+"dash/press_bg_yellow.png": [
+810,
+720
+],
+"door/alert_car.png": [
+664,
+480
+],
+"door/alert_car_engine.png": [
+664,
+480
+],
+"door/alert_car_engine_open.png": [
+664,
+480
+],
+"door/alert_car_left_front_door.png": [
+664,
+480
+],
+"door/alert_car_left_front_door_open.png": [
+664,
+480
+],
+"door/alert_car_left_rear_door.png": [
+664,
+480
+],
+"door/alert_car_left_rear_door_open.png": [
+664,
+480
+],
+"door/alert_car_rear.png": [
+664,
+480
+],
+"door/alert_car_rear_open.png": [
+664,
+480
+],
+"door/alert_car_right_front_door.png": [
+664,
+480
+],
+"door/alert_car_right_front_door_open.png": [
+664,
+480
+],
+"door/alert_car_right_rear_door.png": [
+664,
+480
+],
+"door/alert_car_right_rear_door_open.png": [
+664,
+480
+],
+"door/alert_carinfo_bg.png": [
+664,
+480
+],
+"jd.png": [
+300,
+50
+],
+"jdd.png": [
+300,
+50
+],
+"lexus/lexus_airplay_n.png": [
+330,
+252
+],
+"lexus/lexus_airplay_s.png": [
+330,
+252
+],
+"lexus/lexus_auto_n.png": [
+330,
+252
+],
+"lexus/lexus_auto_s.png": [
+330,
+252
+],
+"lexus/lexus_bg_n.png": [
+330,
+252
+],
+"lexus/lexus_bg_s.png": [
+330,
+252
+],
+"lexus/lexus_bt_n.png": [
+162,
+100
+],
+"lexus/lexus_bt_s.png": [
+162,
+100
+],
+"lexus/lexus_car_n.png": [
+330,
+252
+],
+"lexus/lexus_car_s.png": [
+330,
+252
+],
+"lexus/lexus_carlife_n.png": [
+330,
+252
+],
+"lexus/lexus_carlife_s.png": [
+330,
+252
+],
+"lexus/lexus_carplay_n.png": [
+330,
+252
+],
+"lexus/lexus_carplay_s.png": [
+330,
+252
+],
+"lexus/lexus_dash_n.png": [
+330,
+252
+],
+"lexus/lexus_dash_s.png": [
+330,
+252
+],
+"lexus/lexus_eq_n.png": [
+330,
+252
+],
+"lexus/lexus_eq_s.png": [
+330,
+252
+],
+"lexus/lexus_hicar_n.png": [
+330,
+252
+],
+"lexus/lexus_hicar_s.png": [
+330,
+252
+],
+"lexus/lexus_menu.png": [
+162,
+616
+],
+"lexus/lexus_miracast_n.png": [
+330,
+252
+],
+"lexus/lexus_miracast_s.png": [
+330,
+252
+],
+"lexus/lexus_music_n.png": [
+162,
+100
+],
+"lexus/lexus_music_s.png": [
+162,
+100
+],
+"lexus/lexus_set_n.png": [
+162,
+100
+],
+"lexus/lexus_set_s.png": [
+162,
+100
+],
+"lexus/lexus_video_n.png": [
+162,
+100
+],
+"lexus/lexus_video_s.png": [
+162,
+100
+],
+"link/incom_remind.png": [
+178,
+114
+],
+"link/link_adjust_down.png": [
+184,
+249
+],
+"link/link_adjust_left.png": [
+249,
+184
+],
+"link/link_adjust_right.png": [
+249,
+184
+],
+"link/link_adjust_up.png": [
+184,
+249
+],
+"media/Gv.png": [
+220,
+220
+],
+"media/SDcard.png": [
+48,
+48
+],
+"media/album.png": [
+54,
+54
+],
+"media/artist.png": [
+54,
+54
+],
+"media/back.png": [
+54,
+54
+],
+"media/backP.png": [
+54,
+54
+],
+"media/bag.png": [
+1024,
+128
+],
+"media/cycle.png": [
+54,
+54
+],
+"media/cycleP.png": [
+54,
+54
+],
+"media/file_vedio_f.png": [
+48,
+48
+],
+"media/file_vedio_n.png": [
+48,
+48
+],
+"media/gc.png": [
+260,
+260
+],
+"media/list.png": [
+54,
+54
+],
+"media/music.png": [
+50,
+50
+],
+"media/musicBtn.png": [
+60,
+60
+],
+"media/musicBtnP.png": [
+60,
+60
+],
+"media/music_btn_list_f.png": [
+80,
+80
+],
+"media/music_btn_list_n.png": [
+80,
+80
+],
+"media/next.png": [
+54,
+54
+],
+"media/nextP.png": [
+54,
+54
+],
+"media/pause.png": [
+78,
+82
+],
+"media/pauseP.png": [
+78,
+82
+],
+"media/playList.png": [
+80,
+60
+],
+"media/playListP.png": [
+80,
+60
+],
+"media/playing.png": [
+78,
+82
+],
+"media/playingP.png": [
+78,
+82
+],
+"media/prev.png": [
+54,
+54
+],
+"media/prevP.png": [
+54,
+54
+],
+"media/progress_bar_bag.png": [
+700,
+50
+],
+"media/progress_bar_eff.png": [
+700,
+50
+],
+"media/pumb.png": [
+20,
+50
+],
+"media/random.png": [
+54,
+54
+],
+"media/randomP.png": [
+54,
+54
+],
+"media/scaning.png": [
+100,
+100
+],
+"media/single.png": [
+54,
+54
+],
+"media/singleP.png": [
+54,
+54
+],
+"media/t_music.png": [
+54,
+54
+],
+"media/usb_stick.png": [
+48,
+48
+],
+"media/vedio_btn_bg.png": [
+1434,
+165
+],
+"media/video.png": [
+50,
+50
+],
+"media/videoBtn.png": [
+60,
+60
+],
+"media/videoList.png": [
+48,
+48
+],
+"media/video_btn_list2_f.png": [
+80,
+80
+],
+"media/video_btn_list2_n.png": [
+80,
+80
+],
+"media/video_btn_next_f.png": [
+80,
+80
+],
+"media/video_btn_next_n.png": [
+80,
+80
+],
+"media/video_btn_pause_f.png": [
+80,
+80
+],
+"media/video_btn_pause_n.png": [
+80,
+80
+],
+"media/video_btn_play_f.png": [
+80,
+80
+],
+"media/video_btn_play_n.png": [
+80,
+80
+],
+"media/video_btn_previous_f.png": [
+80,
+80
+],
+"media/video_btn_previous_n.png": [
+80,
+80
+],
+"media/video_btn_random_f.png": [
+80,
+80
+],
+"media/video_btn_random_n.png": [
+80,
+80
+],
+"media/video_btn_single_f.png": [
+80,
+80
+],
+"media/video_btn_single_n.png": [
+80,
+80
+],
+"media/video_btn_stop_f.png": [
+80,
+80
+],
+"media/video_btn_stop_n.png": [
+80,
+80
+],
+"media/video_load.png": [
+680,
+431
+],
+"media/volume.png": [
+48,
+48
+],
+"popwbag.png": [
+654,
+357
+],
+"setting/language_confir_select.png": [
+145,
+55
+],
+"setting/language_menu_select_f.png": [
+320,
+380
+],
+"setting/language_menu_select_n.png": [
+320,
+380
+],
+"setting/list_remind.png": [
+69,
+69
+],
+"setting/off.png": [
+73,
+39
+],
+"setting/ok.png": [
+120,
+51
+],
+"setting/on.png": [
+73,
+39
+],
+"setting/ota_bg.png": [
+1058,
+535
+],
+"setting/popwbag.png": [
+654,
+357
+],
+"setting/set_adjust.png": [
+1200,
+42
+],
+"setting/set_adjust_500.png": [
+500,
+36
+],
+"setting/set_adjust_620.png": [
+620,
+36
+],
+"setting/set_adjust_934.png": [
+934,
+36
+],
+"setting/set_adjust_bg.png": [
+1200,
+42
+],
+"setting/set_adjust_click.png": [
+101,
+57
+],
+"setting/set_audio_n.png": [
+50,
+50
+],
+"setting/set_audio_s.png": [
+52,
+52
+],
+"setting/set_back_n.png": [
+50,
+50
+],
+"setting/set_back_s.png": [
+50,
+50
+],
+"setting/set_base_bg.png": [
+1920,
+112
+],
+"setting/set_btn_f.png": [
+354,
+68
+],
+"setting/set_btn_n.png": [
+354,
+68
+],
+"setting/set_btn_s_f.png": [
+149,
+75
+],
+"setting/set_btn_s_n.png": [
+149,
+75
+],
+"setting/set_car.png": [
+314,
+313
+],
+"setting/set_car_move.png": [
+42,
+42
+],
+"setting/set_choice.png": [
+1358,
+62
+],
+"setting/set_date_n.png": [
+50,
+50
+],
+"setting/set_date_s.png": [
+50,
+50
+],
+"setting/set_eq01_n.png": [
+50,
+50
+],
+"setting/set_eq01_s.png": [
+50,
+50
+],
+"setting/set_eq02_n.png": [
+50,
+50
+],
+"setting/set_eq02_s.png": [
+50,
+50
+],
+"setting/set_factory_btn3_f.png": [
+186,
+76
+],
+"setting/set_factory_btn3_n.png": [
+186,
+76
+],
+"setting/set_first_menu_select.png": [
+368,
+68
+],
+"setting/set_fullscreen_bg.png": [
+1802,
+462
+],
+"setting/set_ic_common_f.png": [
+124,
+80
+],
+"setting/set_ic_common_n.png": [
+124,
+80
+],
+"setting/set_ic_eq_f.png": [
+125,
+80
+],
+"setting/set_ic_eq_n.png": [
+125,
+80
+],
+"setting/set_ic_factory_f.png": [
+124,
+80
+],
+"setting/set_ic_factory_n.png": [
+124,
+80
+],
+"setting/set_ic_wallpaper_f.png": [
+125,
+80
+],
+"setting/set_ic_wallpaper_n.png": [
+125,
+80
+],
+"setting/set_language_btn_f.png": [
+1307,
+92
+],
+"setting/set_language_n.png": [
+50,
+50
+],
+"setting/set_language_s.png": [
+50,
+50
+],
+"setting/set_light_n.png": [
+50,
+50
+],
+"setting/set_light_s.png": [
+50,
+50
+],
+"setting/set_line.png": [
+1307,
+12
+],
+"setting/set_n.png": [
+255,
+66
+],
+"setting/set_p.png": [
+255,
+66
+],
+"setting/set_right_bg.png": [
+1424,
+464
+],
+"setting/set_s.png": [
+255,
+66
+],
+"setting/set_second_menu_select_f.png": [
+1300,
+80
+],
+"setting/set_second_menu_select_n.png": [
+1300,
+80
+],
+"setting/set_system_n.png": [
+50,
+50
+],
+"setting/set_system_s.png": [
+50,
+50
+],
+"setting/set_time_bg.png": [
+150,
+239
+],
+"setting/set_time_select_f.png": [
+52,
+52
+],
+"setting/set_time_select_n.png": [
+52,
+52
+],
+"setting/setfactory_btn1_f.png": [
+186,
+76
+],
+"setting/setfactory_btn1_n.png": [
+186,
+76
+],
+"setting/setfactory_btn2_f.png": [
+186,
+76
+],
+"setting/setfactory_btn2_n.png": [
+186,
+76
+],
+"setting/setfactory_btn3_f.png": [
+60,
+130
+],
+"setting/setfactory_btn3_n.png": [
+60,
+130
+],
+"setting/time_menu_select_f.png": [
+140,
+250
+],
+"setting/time_menu_select_n.png": [
+140,
+250
+],
+"setting/track_select.png": [
+73,
+39
+],
+"setting/track_select_f.png": [
+12,
+20
+],
+"status/home_back_f.png": [
+154,
+92
+],
+"status/home_back_n.png": [
+154,
+92
+],
+"status/home_bt.png": [
+66,
+64
+],
+"status/home_bt_f.png": [
+66,
+64
+],
+"status/home_home_f.png": [
+154,
+92
+],
+"status/home_home_n.png": [
+154,
+92
+],
+"status/sd.png": [
+66,
+64
+],
+"status/u.png": [
+66,
+64
+],
+"status/usb1.png": [
+66,
+64
+],
+"status/usb2.png": [
+66,
+64
+],
+"wifi/btn_check_off.png": [
+32,
+32
+],
+"wifi/btn_check_on.png": [
+32,
+32
+],
+"wifi/btn_normal.9.png": [
+30,
+30
+],
+"wifi/btn_pressed.9.png": [
+30,
+30
+],
+"wifi/ic_sysbar_back.png": [
+80,
+50
+],
+"wifi/ic_wifi_lock_signal_0_teal.png": [
+26,
+24
+],
+"wifi/ic_wifi_lock_signal_1_teal.png": [
+26,
+24
+],
+"wifi/ic_wifi_lock_signal_2_teal.png": [
+26,
+24
+],
+"wifi/ic_wifi_lock_signal_3_teal.png": [
+26,
+24
+],
+"wifi/ic_wifi_lock_signal_4_teal.png": [
+26,
+24
+],
+"wifi/ic_wifi_signal_0_teal.png": [
+26,
+24
+],
+"wifi/ic_wifi_signal_1_teal.png": [
+26,
+24
+],
+"wifi/ic_wifi_signal_2_teal.png": [
+26,
+24
+],
+"wifi/ic_wifi_signal_3_teal.png": [
+26,
+24
+],
+"wifi/ic_wifi_signal_4_teal.png": [
+26,
+24
+],
+"wifi/menu_more_normal.png": [
+40,
+40
+],
+"wifi/menu_more_pressed.png": [
+40,
+40
+],
+"wifi/radio_off.png": [
+20,
+20
+],
+"wifi/radio_on.png": [
+20,
+20
+],
+"wifi/toggle-off-invalid.png": [
+50,
+50
+],
+"wifi/toggle-off.png": [
+50,
+50
+],
+"wifi/toggle-on.png": [
+50,
+50
+],
+"wifi/win_bg.9.png": [
+30,
+30
+],
+"yb.png": [
+30,
+50
+]
+}

@@ -53,6 +53,10 @@ button { font: inherit; color: inherit; }
 .btn:hover { border-color: #3c4760; }
 .btn.primary { background: var(--accent); color: var(--accent-ink); border-color: var(--accent); }
 .btn.on { background: var(--warn); color: #1c1100; border-color: var(--warn); }
+.seg { display: inline-flex; border: 1px solid var(--line); border-radius: 7px; overflow: hidden; }
+.seg button { background: var(--panel-2); border: 0; padding: 7px 12px; cursor: pointer; font-weight: 500; color: var(--ink-dim); }
+.seg button + button { border-left: 1px solid var(--line); }
+.seg button[aria-pressed=true] { background: #1c69d4; color: #fff; }
 .btn.small { padding: 4px 9px; font-size: 13px; }
 .btn.danger { color: var(--bad); }
 .btn[disabled] { opacity: .45; cursor: not-allowed; }
@@ -65,6 +69,7 @@ button { font: inherit; color: inherit; }
 }
 .viewport { position: relative; width: 100%; aspect-ratio: 1920 / 720; max-width: 100%; overflow: hidden; border-radius: 6px; background: #000; }
 #screen {
+  --dev-accent: #4fc3ff;
   position: absolute; left: 0; top: 0; width: 1920px; height: 720px; transform-origin: 0 0;
   overflow: hidden; background: #000; color: #fff; font-family: var(--f-device);
   user-select: none; -webkit-user-select: none; touch-action: pan-x;
@@ -168,8 +173,8 @@ details.grp > summary { cursor: pointer; font: 600 13px var(--f-cond); letter-sp
 .sidetabs { position: absolute; left: 0; top: 100px; width: 220px; height: 620px; background: linear-gradient(90deg, rgba(10,14,24,.92), rgba(10,14,24,.6)); display: flex; flex-direction: column; justify-content: space-between; padding: 4px 0; }
 .sidetab { position: relative; height: 118px; display: flex; flex-direction: column; align-items: center; justify-content: center; cursor: pointer; gap: 2px; }
 .sidetab .lbl { position: static; font-size: 24px; line-height: 1.2; color: rgba(255,255,255,.75); max-width: 200px; }
-.sidetab.on .lbl { color: #4fc3ff; }
-.sidetab.on::before { content: ""; position: absolute; left: 0; top: 12px; bottom: 12px; width: 5px; background: #4fc3ff; border-radius: 0 3px 3px 0; }
+.sidetab.on .lbl { color: var(--dev-accent); }
+.sidetab.on::before { content: ""; position: absolute; left: 0; top: 12px; bottom: 12px; width: 5px; background: var(--dev-accent); border-radius: 0 3px 3px 0; }
 .devtxt { font-size: 30px; }
 :where(#screen) .dim { color: rgba(255,255,255,.6); }
 .devbtn { position: relative; display: inline-grid; place-items: center; cursor: pointer; }
@@ -201,3 +206,12 @@ details.grp > summary { cursor: pointer; font: 600 13px var(--f-cond); letter-sp
 #dim { position: absolute; inset: 0; background: #000; pointer-events: none; z-index: 30; }
 .dashcv { position: absolute; left: 0; top: 0; width: 1920px; height: 720px; pointer-events: none; }
 @media (prefers-reduced-motion: reduce) { .carousel { scroll-behavior: auto; } .boot { animation-duration: .8s; } }
+
+/* accenti del tema BMW sugli elementi che il simulatore disegna da sé */
+#screen.bmw { --dev-accent: #5cb3ff; }
+#screen.bmw .sidetabs { background: linear-gradient(90deg, rgba(4,7,12,.94), rgba(8,17,32,.75)); box-shadow: inset -1.5px 0 0 rgba(92,179,255,.25); }
+#screen.bmw .sidetab.on::before { box-shadow: 0 0 12px #5cb3ff; }
+#screen.bmw .key { background: linear-gradient(180deg, rgba(27,38,56,.95), rgba(12,22,40,.95)); border-color: rgba(150,180,220,.22); border-radius: 12px; }
+#screen.bmw .key:active { background: #1c69d4; }
+#screen.bmw .list-dev .it:active, #screen.bmw .list-dev .it.on { background: linear-gradient(90deg, rgba(28,105,212,.45), rgba(28,105,212,0)); }
+#screen.bmw .title, #screen.bmw .clock { font-weight: 300; letter-spacing: .04em; }
