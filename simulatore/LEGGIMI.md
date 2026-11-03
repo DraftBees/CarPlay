@@ -3,6 +3,10 @@
 Versione navigabile del display aftermarket (FlyThings V2.1 / ZKOS, 1920×720), costruita con le
 **immagini originali** del backup (`res/ui`) e i **testi reali** di tutte le 15 lingue (`res/tr`).
 
+## Tema BMW
+In alto c'è l'interruttore **Originale / Tema BMW**. Con il tema attivo, l'export include tutto il tema
+più le tue modifiche. Il tema pronto da installare da solo è in `../tema_bmw/`.
+
 ## Aprirlo
 - **Doppio clic su `index.html`**: funziona offline in qualsiasi browser.
 - **Doppio clic su `avvia.command`** (Mac): stesso simulatore servito da un piccolo server locale.
