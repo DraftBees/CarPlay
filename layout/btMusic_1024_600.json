@@ -1,0 +1,563 @@
+{
+  "backgroundPic": "setting/backgoun.png",
+  "beepEnable": true,
+  "id": 0,
+  "resolution": {
+    "height": 600,
+    "width": 1024
+  },
+  "topmost": false,
+  "position": {
+    "height": 600,
+    "left": 0,
+    "top": 0,
+    "width": 1024
+  },
+  "window__1": {
+    "backgroundPic": "/bg/bg1.png",
+    "beepEnable": true,
+    "caption": "BtMusicBgWindow",
+    "id": 110008,
+    "position": {
+      "height": 600,
+      "left": 0,
+      "top": 0,
+      "width": 1024
+    },
+    "window__2": {
+      "beepEnable": true,
+      "caption": "BtMusicWindow",
+      "id": 110010,
+      "position": {
+        "height": 360,
+        "left": 0,
+        "top": 165,
+        "width": 1024
+      },
+      "radiogroup__3": {
+        "caption": "RotaryBtMusicRadioGroup",
+        "id": 94003,
+        "position": {
+          "height": 360,
+          "left": 0,
+          "top": 0,
+          "width": 1024
+        },
+        "radiobuttons": [
+          {
+            "alignment": 38,
+            "caption": "BtMusicPrevRadioButton",
+            "checked": false,
+            "colorTab": {
+              "color0": 16777215
+            },
+            "id": 22053,
+            "picTab": {
+              "pic2": "setting/language_menu_select_n.png"
+            },
+            "position": {
+              "height": 54,
+              "left": 70,
+              "top": 280,
+              "width": 54
+            }
+          },
+          {
+            "alignment": 38,
+            "caption": "BtMusicPauseRadioButton",
+            "checked": false,
+            "colorTab": {
+              "color0": 16777215
+            },
+            "id": 22013,
+            "picTab": {
+              "pic2": "setting/language_menu_select_n.png"
+            },
+            "position": {
+              "height": 54,
+              "left": 440,
+              "top": 280,
+              "width": 54
+            }
+          },
+          {
+            "alignment": 38,
+            "caption": "BtMusicNextRadioButton",
+            "checked": false,
+            "colorTab": {
+              "color0": 16777215
+            },
+            "id": 22015,
+            "picTab": {
+              "pic2": "setting/language_menu_select_n.png"
+            },
+            "position": {
+              "height": 54,
+              "left": 830,
+              "top": 280,
+              "width": 54
+            }
+          }
+        ]
+      },
+      "textview__4": {
+        "alignment": 36,
+        "backgroundPic": "bt/za_btmusic_defaultcover.png",
+        "caption": "TextView1",
+        "colorTab": {
+          "color0": 16777215
+        },
+        "id": 50005,
+        "touchable": false,
+        "position": {
+          "height": 180,
+          "left": 138,
+          "top": 0,
+          "width": 180
+        }
+      },
+      "button__5": {
+        "alignment": 37,
+        "caption": "prevButton",
+        "colorTab": {
+          "color0": 16777215
+        },
+        "id": 20005,
+        "picTab": {
+          "pic0": "MusicPlayer/music_btn_previous_n.png",
+          "pic1": "MusicPlayer/music_btn_previous_f.png"
+        },
+        "position": {
+          "height": 54,
+          "left": 70,
+          "top": 280,
+          "width": 54
+        }
+      },
+      "button__6": {
+        "alignment": 37,
+        "caption": "pauseButton",
+        "colorTab": {
+          "color0": 16777215
+        },
+        "id": 20006,
+        "picTab": {
+          "pic0": "MusicPlayer/music_btn_pause_n.png",
+          "pic2": "MusicPlayer/music_btn_play_n.png"
+        },
+        "position": {
+          "height": 54,
+          "left": 440,
+          "top": 280,
+          "width": 54
+        }
+      },
+      "button__7": {
+        "alignment": 37,
+        "caption": "nextButton",
+        "colorTab": {
+          "color0": 16777215
+        },
+        "id": 20015,
+        "picTab": {
+          "pic0": "MusicPlayer/music_btn_next_n.png",
+          "pic1": "MusicPlayer/music_btn_next_f.png"
+        },
+        "position": {
+          "height": 54,
+          "left": 830,
+          "top": 280,
+          "width": 54
+        }
+      },
+      "textview__8": {
+        "alignment": 36,
+        "caption": "tittleTextView",
+        "colorTab": {
+          "color0": 16777215
+        },
+        "fontSize": 30,
+        "id": 50007,
+        "text": "@Unknown",
+        "touchable": false,
+        "position": {
+          "height": 40,
+          "left": 370,
+          "top": 10,
+          "width": 600
+        }
+      },
+      "textview__9": {
+        "alignment": 36,
+        "caption": "artistTextView",
+        "colorTab": {
+          "color0": 16777215
+        },
+        "fontSize": 30,
+        "id": 50008,
+        "text": "@Unknown",
+        "touchable": false,
+        "position": {
+          "height": 40,
+          "left": 370,
+          "top": 70,
+          "width": 600
+        }
+      },
+      "textview__10": {
+        "alignment": 36,
+        "caption": "albumTextView",
+        "colorTab": {
+          "color0": 16777215
+        },
+        "fontSize": 25,
+        "id": 50009,
+        "text": "@Unknown",
+        "touchable": false,
+        "position": {
+          "height": 35,
+          "left": 370,
+          "top": 130,
+          "width": 600
+        }
+      },
+      "seekbar__11": {
+        "backgroundPic": "MusicPlayer/music_slide_bg.png",
+        "caption": "musicSeekBar",
+        "id": 91002,
+        "max": 100,
+        "progressPic": "MusicPlayer/video_slide.png",
+        "thumb": {
+          "normalPic": "MusicPlayer/video_slide_btn.png",
+          "size": {
+            "height": 32,
+            "width": 32
+          }
+        },
+        "touchable": false,
+        "position": {
+          "height": 30,
+          "left": 110,
+          "top": 205,
+          "width": 710
+        }
+      },
+      "textview__12": {
+        "alignment": 37,
+        "caption": "curposTextView",
+        "colorTab": {
+          "color0": 16777215
+        },
+        "fontSize": 15,
+        "id": 50010,
+        "text": "00:00",
+        "touchable": false,
+        "position": {
+          "height": 40,
+          "left": 40,
+          "top": 200,
+          "width": 80
+        }
+      },
+      "textview__13": {
+        "alignment": 37,
+        "caption": "durationTextView",
+        "colorTab": {
+          "color0": 16777215
+        },
+        "fontSize": 15,
+        "id": 50017,
+        "text": "00:00",
+        "touchable": false,
+        "position": {
+          "height": 40,
+          "left": 825,
+          "top": 200,
+          "width": 80
+        }
+      },
+      "textview__14": {
+        "alignment": 37,
+        "caption": "lyricTextView",
+        "colorTab": {
+          "color0": 16777215
+        },
+        "fontSize": 32,
+        "id": 50023,
+        "text": "@cLyric",
+        "touchable": false,
+        "visible": false,
+        "position": {
+          "height": 72,
+          "left": 800,
+          "top": 130,
+          "width": 732
+        }
+      }
+    },
+    "window__15": {
+      "backgroundPic": "HomePage/home_top_bg.png",
+      "beepEnable": true,
+      "caption": "headWindow",
+      "id": 110007,
+      "position": {
+        "height": 67,
+        "left": 0,
+        "top": 0,
+        "width": 1920
+      },
+      "button__16": {
+        "alignment": 37,
+        "caption": "auxButton",
+        "colorTab": {
+          "color0": 16777215
+        },
+        "id": 20022,
+        "picTab": {
+          "pic0": "status/aux_.png"
+        },
+        "touchable": false,
+        "visible": false,
+        "position": {
+          "height": 20,
+          "left": 743,
+          "top": 19,
+          "width": 20
+        }
+      },
+      "button__17": {
+        "alignment": 37,
+        "caption": "fmButton",
+        "colorTab": {
+          "color0": 16777215
+        },
+        "id": 20012,
+        "picTab": {
+          "pic0": "status/fm.png"
+        },
+        "touchable": false,
+        "visible": false,
+        "position": {
+          "height": 20,
+          "left": 773,
+          "top": 19,
+          "width": 20
+        }
+      },
+      "button__18": {
+        "alignment": 37,
+        "caption": "linkButton",
+        "colorTab": {
+          "color0": 16777215
+        },
+        "id": 20029,
+        "picTab": {
+          "pic0": "status/link.png"
+        },
+        "touchable": false,
+        "visible": false,
+        "position": {
+          "height": 20,
+          "left": 803,
+          "top": 19,
+          "width": 20
+        }
+      },
+      "button__19": {
+        "alignment": 37,
+        "caption": "sdButton",
+        "colorTab": {
+          "color0": 16777215
+        },
+        "id": 20030,
+        "picTab": {
+          "pic0": "status/sd.png"
+        },
+        "touchable": false,
+        "position": {
+          "height": 43,
+          "left": 470,
+          "top": 10,
+          "width": 43
+        }
+      },
+      "button__20": {
+        "alignment": 37,
+        "caption": "NetButton",
+        "colorTab": {
+          "color0": 16777215
+        },
+        "id": 20001,
+        "picTab": {
+          "pic0": "status/wifi.png"
+        },
+        "touchable": false,
+        "visible": false,
+        "position": {
+          "height": 20,
+          "left": 1345,
+          "top": 19,
+          "width": 20
+        }
+      },
+      "button__21": {
+        "alignment": 37,
+        "caption": "soundButton",
+        "colorTab": {
+          "color0": 16777215
+        },
+        "id": 20002,
+        "picTab": {
+          "pic0": "status/sound.png",
+          "pic2": "status/sound0.png"
+        },
+        "touchable": false,
+        "visible": false,
+        "position": {
+          "height": 20,
+          "left": 1377,
+          "top": 19,
+          "width": 20
+        }
+      },
+      "button__22": {
+        "alignment": 37,
+        "caption": "BtMusicHomeButton",
+        "colorTab": {
+          "color0": 8421504,
+          "color1": 8388863
+        },
+        "id": 20013,
+        "picTab": {
+          "pic0": "status/home_home_n.png",
+          "pic1": "status/home_home_f.png"
+        },
+        "position": {
+          "height": 61,
+          "left": 0,
+          "top": 6,
+          "width": 103
+        }
+      },
+      "button__23": {
+        "alignment": 37,
+        "caption": "btStatusButton",
+        "colorTab": {
+          "color0": 16777215
+        },
+        "id": 20032,
+        "picTab": {
+          "pic0": "status/home_bt.png",
+          "pic2": "status/home_bt_f.png"
+        },
+        "touchable": false,
+        "position": {
+          "height": 43,
+          "left": 400,
+          "top": 10,
+          "width": 43
+        }
+      },
+      "button__24": {
+        "alignment": 37,
+        "caption": "usb1Button",
+        "colorTab": {
+          "color0": 16777215
+        },
+        "id": 20031,
+        "picTab": {
+          "pic0": "status/usb1.png"
+        },
+        "touchable": false,
+        "position": {
+          "height": 43,
+          "left": 540,
+          "top": 10,
+          "width": 44
+        }
+      },
+      "button__25": {
+        "alignment": 37,
+        "caption": "usb2Button",
+        "colorTab": {
+          "color0": 16777215
+        },
+        "id": 20003,
+        "picTab": {
+          "pic0": "status/usb2.png"
+        },
+        "touchable": false,
+        "position": {
+          "height": 43,
+          "left": 610,
+          "top": 10,
+          "width": 44
+        }
+      },
+      "digitalclock__26": {
+        "beat": true,
+        "caption": "DigitalClock24Hour",
+        "fontSize": 28,
+        "id": 93002,
+        "touchable": false,
+        "position": {
+          "height": 49,
+          "left": 800,
+          "top": 15,
+          "width": 139
+        }
+      },
+      "digitalclock__27": {
+        "beat": true,
+        "caption": "DigitalClock12Hour",
+        "fontSize": 28,
+        "format": "hh:MM",
+        "id": 93001,
+        "touchable": false,
+        "visible": false,
+        "position": {
+          "height": 49,
+          "left": 800,
+          "top": 15,
+          "width": 139
+        }
+      },
+      "button__28": {
+        "alignment": 37,
+        "caption": "BtMusicBackButton",
+        "colorTab": {
+          "color0": 8421504,
+          "color1": 8388863
+        },
+        "id": 20014,
+        "picTab": {
+          "pic0": "status/home_back_n.png",
+          "pic1": "status/home_back_f.png"
+        },
+        "position": {
+          "height": 61,
+          "left": 920,
+          "top": 4,
+          "width": 103
+        }
+      },
+      "textview__29": {
+        "alignment": 37,
+        "caption": "timeAmPmTextView",
+        "colorTab": {
+          "color0": 16777215
+        },
+        "fontSize": 25,
+        "id": 50001,
+        "text": "AP",
+        "touchable": false,
+        "position": {
+          "height": 40,
+          "left": 700,
+          "top": 15,
+          "width": 100
+        }
+      }
+    }
+  }
+}

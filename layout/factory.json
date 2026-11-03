@@ -1,0 +1,1728 @@
+{
+  "backgroundColor": 8421504,
+  "beepEnable": true,
+  "id": 0,
+  "resolution": {
+    "height": 720,
+    "width": 1920
+  },
+  "topmost": false,
+  "position": {
+    "height": 720,
+    "left": 0,
+    "top": 0,
+    "width": 1920
+  },
+  "window__1": {
+    "backgroundPic": "/bg/bg1.png",
+    "beepEnable": true,
+    "caption": "FactoryBgWindow",
+    "id": 110022,
+    "position": {
+      "height": 720,
+      "left": 0,
+      "top": 0,
+      "width": 1920
+    }
+  },
+  "window__2": {
+    "backgroundPic": "setting/set_fullscreen_bg.png",
+    "beepEnable": true,
+    "caption": "FactoryWindow",
+    "id": 110017,
+    "position": {
+      "height": 462,
+      "left": 60,
+      "top": 178,
+      "width": 1802
+    },
+    "radiogroup__3": {
+      "caption": "SetFactoryRadioGroup",
+      "id": 94011,
+      "position": {
+        "height": 462,
+        "left": 0,
+        "top": 0,
+        "width": 1802
+      },
+      "radiobuttons": [
+        {
+          "alignment": 38,
+          "caption": "SetPassRadioButton1",
+          "checked": false,
+          "colorTab": {
+            "color0": 16777215
+          },
+          "id": 22061,
+          "picTab": {
+            "pic2": "setting/language_confir_select.png"
+          },
+          "position": {
+            "height": 75,
+            "left": 507,
+            "top": 120,
+            "width": 190
+          }
+        },
+        {
+          "alignment": 38,
+          "caption": "SetPassRadioButton2",
+          "checked": false,
+          "colorTab": {
+            "color0": 16777215
+          },
+          "id": 22062,
+          "picTab": {
+            "pic2": "setting/language_confir_select.png"
+          },
+          "position": {
+            "height": 75,
+            "left": 705,
+            "top": 120,
+            "width": 190
+          }
+        },
+        {
+          "alignment": 38,
+          "caption": "SetPassRadioButton3",
+          "checked": false,
+          "colorTab": {
+            "color0": 16777215
+          },
+          "id": 22063,
+          "picTab": {
+            "pic2": "setting/language_confir_select.png"
+          },
+          "position": {
+            "height": 75,
+            "left": 900,
+            "top": 120,
+            "width": 190
+          }
+        },
+        {
+          "alignment": 38,
+          "caption": "DeletePassRadioButton",
+          "checked": false,
+          "colorTab": {
+            "color0": 16777215
+          },
+          "id": 22064,
+          "picTab": {
+            "pic2": "setting/language_confir_select.png"
+          },
+          "position": {
+            "height": 75,
+            "left": 1095,
+            "top": 120,
+            "width": 190
+          }
+        },
+        {
+          "alignment": 38,
+          "caption": "SetPassRadioButton4",
+          "checked": false,
+          "colorTab": {
+            "color0": 16777215
+          },
+          "id": 22065,
+          "picTab": {
+            "pic2": "setting/language_confir_select.png"
+          },
+          "position": {
+            "height": 75,
+            "left": 507,
+            "top": 210,
+            "width": 190
+          }
+        },
+        {
+          "alignment": 38,
+          "caption": "SetPassRadioButton5",
+          "checked": false,
+          "colorTab": {
+            "color0": 16777215
+          },
+          "id": 22066,
+          "picTab": {
+            "pic2": "setting/language_confir_select.png"
+          },
+          "position": {
+            "height": 75,
+            "left": 705,
+            "top": 210,
+            "width": 190
+          }
+        },
+        {
+          "alignment": 38,
+          "caption": "SetPassRadioButton6",
+          "checked": false,
+          "colorTab": {
+            "color0": 16777215
+          },
+          "id": 22067,
+          "picTab": {
+            "pic2": "setting/language_confir_select.png"
+          },
+          "position": {
+            "height": 75,
+            "left": 900,
+            "top": 210,
+            "width": 190
+          }
+        },
+        {
+          "alignment": 38,
+          "caption": "SetPassRadioButton0",
+          "checked": false,
+          "colorTab": {
+            "color0": 16777215
+          },
+          "id": 22068,
+          "picTab": {
+            "pic2": "setting/language_confir_select.png"
+          },
+          "position": {
+            "height": 75,
+            "left": 1095,
+            "top": 210,
+            "width": 190
+          }
+        },
+        {
+          "alignment": 38,
+          "caption": "SetPassRadioButton7",
+          "checked": false,
+          "colorTab": {
+            "color0": 16777215
+          },
+          "id": 22069,
+          "picTab": {
+            "pic2": "setting/language_confir_select.png"
+          },
+          "position": {
+            "height": 75,
+            "left": 507,
+            "top": 300,
+            "width": 190
+          }
+        },
+        {
+          "alignment": 38,
+          "caption": "SetPassRadioButton8",
+          "checked": false,
+          "colorTab": {
+            "color0": 16777215
+          },
+          "id": 22070,
+          "picTab": {
+            "pic2": "setting/language_confir_select.png"
+          },
+          "position": {
+            "height": 75,
+            "left": 705,
+            "top": 300,
+            "width": 190
+          }
+        },
+        {
+          "alignment": 38,
+          "caption": "SetPassRadioButton9",
+          "checked": false,
+          "colorTab": {
+            "color0": 16777215
+          },
+          "id": 22071,
+          "picTab": {
+            "pic2": "setting/language_confir_select.png"
+          },
+          "position": {
+            "height": 75,
+            "left": 900,
+            "top": 300,
+            "width": 190
+          }
+        },
+        {
+          "alignment": 38,
+          "caption": "EnterPassRadioButton",
+          "checked": false,
+          "colorTab": {
+            "color0": 16777215
+          },
+          "id": 22072,
+          "picTab": {
+            "pic2": "setting/language_confir_select.png"
+          },
+          "position": {
+            "height": 75,
+            "left": 1095,
+            "top": 300,
+            "width": 190
+          }
+        }
+      ]
+    },
+    "textview__4": {
+      "alignment": 36,
+      "caption": "CodeRemindTextView",
+      "colorTab": {
+        "color0": 8421504
+      },
+      "fontSize": 36,
+      "id": 50014,
+      "text": "@enter_password",
+      "touchable": false,
+      "position": {
+        "height": 46,
+        "left": 510,
+        "top": 50,
+        "width": 264
+      }
+    },
+    "textview__5": {
+      "alignment": 36,
+      "caption": "CodeTextView",
+      "colorTab": {
+        "color0": 16777215
+      },
+      "fontSize": 36,
+      "id": 50015,
+      "touchable": false,
+      "position": {
+        "height": 38,
+        "left": 780,
+        "top": 54,
+        "width": 393
+      }
+    },
+    "button__6": {
+      "alignment": 37,
+      "caption": "Num1Button",
+      "colorTab": {
+        "color0": 16777215,
+        "color1": 6091519
+      },
+      "fontSize": 44,
+      "id": 20019,
+      "picTab": {
+        "pic0": "setting/setfactory_btn1_n.png",
+        "pic1": "setting/setfactory_btn1_f.png"
+      },
+      "text": "1",
+      "position": {
+        "height": 76,
+        "left": 510,
+        "top": 120,
+        "width": 186
+      }
+    },
+    "button__7": {
+      "alignment": 37,
+      "caption": "Num2Button",
+      "colorTab": {
+        "color0": 16777215,
+        "color1": 6091519
+      },
+      "fontSize": 44,
+      "id": 20020,
+      "picTab": {
+        "pic0": "setting/setfactory_btn1_n.png",
+        "pic1": "setting/setfactory_btn1_f.png"
+      },
+      "text": "2",
+      "position": {
+        "height": 76,
+        "left": 706,
+        "top": 120,
+        "width": 186
+      }
+    },
+    "button__8": {
+      "alignment": 37,
+      "caption": "Num3Button",
+      "colorTab": {
+        "color0": 16777215,
+        "color1": 6091519
+      },
+      "fontSize": 44,
+      "id": 20025,
+      "picTab": {
+        "pic0": "setting/setfactory_btn1_n.png",
+        "pic1": "setting/setfactory_btn1_f.png"
+      },
+      "text": "3",
+      "position": {
+        "height": 76,
+        "left": 902,
+        "top": 120,
+        "width": 186
+      }
+    },
+    "button__9": {
+      "alignment": 37,
+      "caption": "DeleteButton",
+      "colorTab": {
+        "color0": 16777215,
+        "color1": 6091519
+      },
+      "fontSize": 44,
+      "id": 20026,
+      "picTab": {
+        "pic0": "setting/setfactory_btn2_n.png",
+        "pic1": "setting/setfactory_btn2_f.png"
+      },
+      "position": {
+        "height": 76,
+        "left": 1098,
+        "top": 120,
+        "width": 186
+      }
+    },
+    "button__10": {
+      "alignment": 37,
+      "caption": "Num4Button",
+      "colorTab": {
+        "color0": 16777215,
+        "color1": 6091519
+      },
+      "fontSize": 44,
+      "id": 20027,
+      "picTab": {
+        "pic0": "setting/setfactory_btn1_n.png",
+        "pic1": "setting/setfactory_btn1_f.png"
+      },
+      "text": "4",
+      "position": {
+        "height": 76,
+        "left": 510,
+        "top": 210,
+        "width": 186
+      }
+    },
+    "button__11": {
+      "alignment": 37,
+      "caption": "Num5Button",
+      "colorTab": {
+        "color0": 16777215,
+        "color1": 6091519
+      },
+      "fontSize": 44,
+      "id": 20028,
+      "picTab": {
+        "pic0": "setting/setfactory_btn1_n.png",
+        "pic1": "setting/setfactory_btn1_f.png"
+      },
+      "text": "5",
+      "position": {
+        "height": 76,
+        "left": 706,
+        "top": 210,
+        "width": 186
+      }
+    },
+    "button__12": {
+      "alignment": 37,
+      "caption": "Num6Button",
+      "colorTab": {
+        "color0": 16777215,
+        "color1": 6091519
+      },
+      "fontSize": 44,
+      "id": 20029,
+      "picTab": {
+        "pic0": "setting/setfactory_btn1_n.png",
+        "pic1": "setting/setfactory_btn1_f.png"
+      },
+      "text": "6",
+      "position": {
+        "height": 76,
+        "left": 902,
+        "top": 210,
+        "width": 186
+      }
+    },
+    "button__13": {
+      "alignment": 37,
+      "caption": "Num0Button",
+      "colorTab": {
+        "color0": 16777215,
+        "color1": 6091519
+      },
+      "fontSize": 44,
+      "id": 20035,
+      "picTab": {
+        "pic0": "setting/setfactory_btn1_n.png",
+        "pic1": "setting/setfactory_btn1_f.png"
+      },
+      "text": "0",
+      "position": {
+        "height": 76,
+        "left": 1098,
+        "top": 210,
+        "width": 186
+      }
+    },
+    "button__14": {
+      "alignment": 37,
+      "caption": "Num7Button",
+      "colorTab": {
+        "color0": 16777215,
+        "color1": 6091519
+      },
+      "fontSize": 44,
+      "id": 20036,
+      "picTab": {
+        "pic0": "setting/setfactory_btn1_n.png",
+        "pic1": "setting/setfactory_btn1_f.png"
+      },
+      "text": "7",
+      "position": {
+        "height": 76,
+        "left": 510,
+        "top": 300,
+        "width": 186
+      }
+    },
+    "button__15": {
+      "alignment": 37,
+      "caption": "Num8Button",
+      "colorTab": {
+        "color0": 16777215,
+        "color1": 6091519
+      },
+      "fontSize": 44,
+      "id": 20037,
+      "picTab": {
+        "pic0": "setting/setfactory_btn1_n.png",
+        "pic1": "setting/setfactory_btn1_f.png"
+      },
+      "text": "8",
+      "position": {
+        "height": 76,
+        "left": 706,
+        "top": 300,
+        "width": 186
+      }
+    },
+    "button__16": {
+      "alignment": 37,
+      "caption": "Num9Button",
+      "colorTab": {
+        "color0": 16777215,
+        "color1": 6091519
+      },
+      "fontSize": 44,
+      "id": 20038,
+      "picTab": {
+        "pic0": "setting/setfactory_btn1_n.png",
+        "pic1": "setting/setfactory_btn1_f.png"
+      },
+      "text": "9",
+      "position": {
+        "height": 76,
+        "left": 902,
+        "top": 300,
+        "width": 186
+      }
+    },
+    "button__17": {
+      "alignment": 37,
+      "caption": "OkButton",
+      "colorTab": {
+        "color0": 16777215,
+        "color1": 6091519
+      },
+      "fontSize": 44,
+      "id": 20039,
+      "picTab": {
+        "pic0": "setting/set_factory_btn3_n.png",
+        "pic1": "setting/set_factory_btn3_f.png"
+      },
+      "position": {
+        "height": 76,
+        "left": 1098,
+        "top": 300,
+        "width": 186
+      }
+    }
+  },
+  "window__18": {
+    "backgroundPic": "setting/set_fullscreen_bg.png",
+    "beepEnable": true,
+    "caption": "moreWindow",
+    "id": 110007,
+    "visible": false,
+    "position": {
+      "height": 462,
+      "left": 60,
+      "top": 148,
+      "width": 1802
+    },
+    "listview__19": {
+      "beepEnable": true,
+      "caption": "moreListView",
+      "cols": 1,
+      "id": 80002,
+      "rows": 5,
+      "position": {
+        "height": 430,
+        "left": 300,
+        "top": 15,
+        "width": 1200
+      },
+      "colSpacing": 5,
+      "rowSpacing": 5,
+      "item": {
+        "alignment": 37,
+        "caption": "item",
+        "colorTab": {
+          "color0": 16777215
+        },
+        "iconPosition": {
+          "height": 12,
+          "left": 0,
+          "top": 75,
+          "width": 1200
+        },
+        "picTab": {
+          "pic0": "setting/set_line.png"
+        },
+        "position": {
+          "height": 81,
+          "left": 0,
+          "top": 0,
+          "width": 1195
+        },
+        "subItem": [
+          {
+            "alignment": 36,
+            "caption": "moreRemindSubItem",
+            "colorTab": {
+              "color0": 16777215
+            },
+            "fontSize": 25,
+            "id": 24002,
+            "picTab": {
+              "pic1": "setting/set_language_btn_f.png",
+              "pic2": "setting/set_language_btn_f.png"
+            },
+            "text": "ListSubItem",
+            "position": {
+              "height": 80,
+              "left": 0,
+              "top": 0,
+              "width": 1200
+            },
+            "textPosition": {
+              "height": 80,
+              "left": 100,
+              "top": 0,
+              "width": 1100
+            }
+          },
+          {
+            "alignment": 37,
+            "caption": "morePicSubItem",
+            "colorTab": {
+              "color0": 16777215
+            },
+            "iconPosition": {
+              "height": 39,
+              "left": 200,
+              "top": 15,
+              "width": 73
+            },
+            "id": 24003,
+            "picTab": {
+              "pic0": "setting/off.png"
+            },
+            "position": {
+              "height": 70,
+              "left": 900,
+              "top": 5,
+              "width": 300
+            }
+          }
+        ]
+      }
+    }
+  },
+  "window__21": {
+    "backgroundPic": "setting/set_fullscreen_bg.png",
+    "beepEnable": true,
+    "caption": "factorySettingWindow",
+    "id": 110024,
+    "visible": false,
+    "position": {
+      "height": 462,
+      "left": 60,
+      "top": 148,
+      "width": 1802
+    },
+    "listview__22": {
+      "beepEnable": true,
+      "caption": "FactoryListView1",
+      "cols": 1,
+      "id": 80004,
+      "rows": 5,
+      "position": {
+        "height": 430,
+        "left": 138,
+        "top": 15,
+        "width": 550
+      },
+      "colSpacing": 5,
+      "rowSpacing": 5,
+      "item": {
+        "alignment": 37,
+        "caption": "item",
+        "colorTab": {
+          "color0": 16777215
+        },
+        "iconPosition": {
+          "height": 12,
+          "left": 0,
+          "top": 70,
+          "width": 550
+        },
+        "picTab": {
+          "pic0": "setting/set_line.png"
+        },
+        "position": {
+          "height": 81,
+          "left": 0,
+          "top": 0,
+          "width": 545
+        },
+        "subItem": [
+          {
+            "alignment": 36,
+            "caption": "FactoryTextSubItem",
+            "colorTab": {
+              "color0": 16777215
+            },
+            "fontSize": 30,
+            "iconPosition": {
+              "height": 75,
+              "left": 0,
+              "top": 0,
+              "width": 550
+            },
+            "id": 24009,
+            "picTab": {
+              "pic1": "setting/set_language_btn_f.png",
+              "pic2": "setting/set_language_btn_f.png"
+            },
+            "text": "ListViewItem",
+            "position": {
+              "height": 80,
+              "left": 0,
+              "top": 0,
+              "width": 550
+            }
+          }
+        ]
+      }
+    },
+    "listview__24": {
+      "beepEnable": true,
+      "caption": "FactoryListView2",
+      "cols": 1,
+      "id": 80006,
+      "rows": 5,
+      "position": {
+        "height": 430,
+        "left": 1003,
+        "top": 15,
+        "width": 550
+      },
+      "colSpacing": 5,
+      "rowSpacing": 5,
+      "item": {
+        "alignment": 37,
+        "caption": "item",
+        "colorTab": {
+          "color0": 16777215
+        },
+        "iconPosition": {
+          "height": 12,
+          "left": 0,
+          "top": 70,
+          "width": 550
+        },
+        "picTab": {
+          "pic0": "setting/set_line.png"
+        },
+        "position": {
+          "height": 81,
+          "left": 0,
+          "top": 0,
+          "width": 545
+        },
+        "subItem": [
+          {
+            "alignment": 36,
+            "caption": "FactorySelectTextSubItem",
+            "colorTab": {
+              "color0": 16777215
+            },
+            "fontSize": 30,
+            "iconPosition": {
+              "height": 75,
+              "left": 0,
+              "top": 0,
+              "width": 550
+            },
+            "id": 24010,
+            "picTab": {
+              "pic1": "setting/set_language_btn_f.png",
+              "pic2": "setting/set_language_btn_f.png"
+            },
+            "text": "ListViewItem",
+            "position": {
+              "height": 80,
+              "left": 0,
+              "top": 0,
+              "width": 550
+            }
+          }
+        ]
+      }
+    },
+    "window__26": {
+      "backgroundColor": 0,
+      "beepEnable": true,
+      "caption": "factorySaveWindow",
+      "id": 110003,
+      "visible": false,
+      "position": {
+        "height": 300,
+        "left": 550,
+        "top": 50,
+        "width": 500
+      },
+      "radiogroup__27": {
+        "caption": "factorySaveSelectRadioGroup",
+        "id": 94002,
+        "visible": false,
+        "position": {
+          "height": 300,
+          "left": 0,
+          "top": 0,
+          "width": 500
+        },
+        "radiobuttons": [
+          {
+            "alignment": 38,
+            "caption": "SetFactoryConfirRadioButton",
+            "checked": false,
+            "colorTab": {
+              "color0": 16777215
+            },
+            "iconPosition": {
+              "height": 68,
+              "left": 0,
+              "top": 0,
+              "width": 284
+            },
+            "id": 22011,
+            "picTab": {
+              "pic2": "setting/set_first_menu_select.png"
+            },
+            "position": {
+              "height": 65,
+              "left": 60,
+              "top": 200,
+              "width": 150
+            }
+          },
+          {
+            "alignment": 38,
+            "caption": "SetFactoryCancelRadioButton",
+            "checked": false,
+            "colorTab": {
+              "color0": 16777215
+            },
+            "iconPosition": {
+              "height": 68,
+              "left": 0,
+              "top": 0,
+              "width": 284
+            },
+            "id": 22012,
+            "picTab": {
+              "pic2": "setting/set_first_menu_select.png"
+            },
+            "position": {
+              "height": 65,
+              "left": 280,
+              "top": 200,
+              "width": 150
+            }
+          }
+        ]
+      },
+      "textview__28": {
+        "alignment": 37,
+        "caption": "TextView2",
+        "colorTab": {
+          "color0": 16777215
+        },
+        "fontSize": 20,
+        "id": 50024,
+        "text": "@set_factory_confirs_remind1",
+        "touchable": false,
+        "position": {
+          "height": 65,
+          "left": 59,
+          "top": 20,
+          "width": 398
+        }
+      },
+      "textview__29": {
+        "alignment": 37,
+        "caption": "TextView3",
+        "colorTab": {
+          "color0": 16777215
+        },
+        "fontSize": 20,
+        "id": 50002,
+        "text": "@set_factory_confirs_remind2",
+        "touchable": false,
+        "position": {
+          "height": 65,
+          "left": 59,
+          "top": 70,
+          "width": 398
+        }
+      },
+      "textview__30": {
+        "alignment": 37,
+        "caption": "TextView4",
+        "colorTab": {
+          "color0": 16777215
+        },
+        "fontSize": 20,
+        "id": 50004,
+        "text": "@set_factory_confirs_remind3",
+        "touchable": false,
+        "position": {
+          "height": 65,
+          "left": 59,
+          "top": 120,
+          "width": 398
+        }
+      },
+      "button__31": {
+        "alignment": 37,
+        "caption": "factorySaveConfirButton",
+        "colorTab": {
+          "color0": 16777215
+        },
+        "id": 20014,
+        "picTab": {
+          "pic0": "setting/set_btn_s_n.png",
+          "pic1": "setting/set_btn_s_f.png"
+        },
+        "text": "yes",
+        "position": {
+          "height": 65,
+          "left": 60,
+          "top": 200,
+          "width": 150
+        }
+      },
+      "button__32": {
+        "alignment": 37,
+        "caption": "factorySaveCancelButton",
+        "colorTab": {
+          "color0": 16777215
+        },
+        "id": 20015,
+        "picTab": {
+          "pic0": "setting/set_btn_s_n.png",
+          "pic1": "setting/set_btn_s_f.png"
+        },
+        "text": "no",
+        "position": {
+          "height": 65,
+          "left": 280,
+          "top": 200,
+          "width": 150
+        }
+      }
+    }
+  },
+  "window__33": {
+    "beepEnable": true,
+    "caption": "uiSelectWindow",
+    "id": 110002,
+    "visible": false,
+    "position": {
+      "height": 462,
+      "left": 60,
+      "top": 148,
+      "width": 1802
+    },
+    "listview__34": {
+      "beepEnable": true,
+      "caption": "uiSelectListView",
+      "cols": 1,
+      "id": 80001,
+      "rows": 5,
+      "position": {
+        "height": 430,
+        "left": 600,
+        "top": 20,
+        "width": 550
+      },
+      "colSpacing": 5,
+      "rowSpacing": 5,
+      "item": {
+        "alignment": 37,
+        "caption": "item",
+        "colorTab": {
+          "color0": 16777215
+        },
+        "iconPosition": {
+          "height": 12,
+          "left": 0,
+          "top": 70,
+          "width": 550
+        },
+        "picTab": {
+          "pic0": "setting/set_line.png"
+        },
+        "position": {
+          "height": 81,
+          "left": 0,
+          "top": 0,
+          "width": 545
+        },
+        "subItem": [
+          {
+            "alignment": 37,
+            "caption": "uiSelectTextSubItem",
+            "colorTab": {
+              "color0": 16777215
+            },
+            "fontSize": 30,
+            "iconPosition": {
+              "height": 75,
+              "left": 0,
+              "top": 0,
+              "width": 550
+            },
+            "id": 24001,
+            "picTab": {
+              "pic1": "setting/set_language_btn_f.png",
+              "pic2": "setting/set_language_btn_f.png"
+            },
+            "text": "ListViewItem",
+            "position": {
+              "height": 80,
+              "left": 0,
+              "top": 0,
+              "width": 550
+            }
+          }
+        ]
+      }
+    },
+    "textview__36": {
+      "alignment": 36,
+      "caption": "uiSelectRemindTextView",
+      "colorTab": {
+        "color0": 16777215
+      },
+      "fontSize": 30,
+      "id": 50005,
+      "text": "UI select:",
+      "touchable": false,
+      "position": {
+        "height": 40,
+        "left": 400,
+        "top": 10,
+        "width": 150
+      }
+    }
+  },
+  "window__37": {
+    "backgroundPic": "setting/set_fullscreen_bg.png",
+    "beepEnable": true,
+    "caption": "AdbWindow",
+    "id": 110001,
+    "visible": false,
+    "position": {
+      "height": 462,
+      "left": 60,
+      "top": 178,
+      "width": 1802
+    },
+    "button__38": {
+      "alignment": 37,
+      "bgColorTab": {
+        "color0": 5601532,
+        "color1": 43764
+      },
+      "caption": "adbButton",
+      "colorTab": {
+        "color0": 16777215
+      },
+      "id": 20040,
+      "text": "adb开关",
+      "position": {
+        "height": 65,
+        "left": 638,
+        "top": 170,
+        "width": 150
+      }
+    },
+    "button__39": {
+      "alignment": 37,
+      "bgColorTab": {
+        "color0": 5601532,
+        "color1": 43764
+      },
+      "caption": "FreeButton",
+      "colorTab": {
+        "color0": 16777215
+      },
+      "fontSize": 30,
+      "iconPosition": {
+        "height": 65,
+        "left": 0,
+        "top": 0,
+        "width": 150
+      },
+      "id": 20001,
+      "text": "查看内存",
+      "position": {
+        "height": 65,
+        "left": 1205,
+        "top": 170,
+        "width": 500
+      }
+    }
+  },
+  "window__40": {
+    "backgroundPic": "setting/set_fullscreen_bg.png",
+    "beepEnable": true,
+    "caption": "luminanceWindow",
+    "id": 110005,
+    "visible": false,
+    "position": {
+      "height": 462,
+      "left": 60,
+      "top": 178,
+      "width": 1802
+    },
+    "seekbar__41": {
+      "backgroundPic": "setting/set_adjust_bg.png",
+      "caption": "luminanceSeekBar",
+      "id": 91001,
+      "max": 100,
+      "progressPic": "setting/set_adjust.png",
+      "thumb": {
+        "normalPic": "setting/set_adjust_click.png",
+        "size": {
+          "height": 57,
+          "width": 101
+        }
+      },
+      "position": {
+        "height": 36,
+        "left": 400,
+        "top": 50,
+        "width": 924
+      }
+    },
+    "seekbar__42": {
+      "backgroundPic": "setting/set_adjust_bg.png",
+      "caption": "contrastSeekBar",
+      "id": 91002,
+      "max": 80,
+      "progressPic": "setting/set_adjust.png",
+      "thumb": {
+        "normalPic": "setting/set_adjust_click.png",
+        "size": {
+          "height": 57,
+          "width": 101
+        }
+      },
+      "position": {
+        "height": 36,
+        "left": 400,
+        "top": 150,
+        "width": 924
+      }
+    },
+    "seekbar__43": {
+      "backgroundPic": "setting/set_adjust_bg.png",
+      "caption": "saturationSeekBar",
+      "id": 91003,
+      "max": 100,
+      "progressPic": "setting/set_adjust.png",
+      "thumb": {
+        "normalPic": "setting/set_adjust_click.png",
+        "size": {
+          "height": 57,
+          "width": 101
+        }
+      },
+      "position": {
+        "height": 36,
+        "left": 400,
+        "top": 250,
+        "width": 924
+      }
+    },
+    "seekbar__44": {
+      "backgroundPic": "setting/set_adjust_bg.png",
+      "caption": "hueSeekBar",
+      "id": 91004,
+      "max": 100,
+      "progressPic": "setting/set_adjust.png",
+      "thumb": {
+        "normalPic": "setting/set_adjust_click.png",
+        "size": {
+          "height": 57,
+          "width": 101
+        }
+      },
+      "position": {
+        "height": 36,
+        "left": 400,
+        "top": 350,
+        "width": 924
+      }
+    },
+    "textview__45": {
+      "alignment": 37,
+      "caption": "luminanceRemindTextView",
+      "colorTab": {
+        "color0": 16777215
+      },
+      "fontSize": 30,
+      "id": 50007,
+      "text": "@luminance_remind",
+      "touchable": false,
+      "position": {
+        "height": 30,
+        "left": 250,
+        "top": 52,
+        "width": 150
+      }
+    },
+    "textview__46": {
+      "alignment": 37,
+      "caption": "contrastRemindTextView",
+      "colorTab": {
+        "color0": 16777215
+      },
+      "fontSize": 30,
+      "id": 50008,
+      "text": "@contrast_remind",
+      "touchable": false,
+      "position": {
+        "height": 30,
+        "left": 250,
+        "top": 150,
+        "width": 150
+      }
+    },
+    "textview__47": {
+      "alignment": 37,
+      "caption": "saturationRemindTextView",
+      "colorTab": {
+        "color0": 16777215
+      },
+      "fontSize": 30,
+      "id": 50009,
+      "text": "@saturation_remind",
+      "touchable": false,
+      "position": {
+        "height": 30,
+        "left": 250,
+        "top": 250,
+        "width": 150
+      }
+    },
+    "textview__48": {
+      "alignment": 37,
+      "caption": "hueRemindTextView",
+      "colorTab": {
+        "color0": 16777215
+      },
+      "fontSize": 30,
+      "id": 50010,
+      "text": "@hue_remind",
+      "touchable": false,
+      "position": {
+        "height": 30,
+        "left": 250,
+        "top": 350,
+        "width": 150
+      }
+    },
+    "textview__49": {
+      "alignment": 36,
+      "caption": "luminanceNumTextView",
+      "colorTab": {
+        "color0": 16777215
+      },
+      "fontSize": 20,
+      "id": 50011,
+      "text": "20",
+      "touchable": false,
+      "position": {
+        "height": 30,
+        "left": 1350,
+        "top": 50,
+        "width": 120
+      }
+    },
+    "textview__50": {
+      "alignment": 36,
+      "caption": "contrastNumTextView",
+      "colorTab": {
+        "color0": 16777215
+      },
+      "fontSize": 20,
+      "id": 50012,
+      "text": "20",
+      "touchable": false,
+      "position": {
+        "height": 30,
+        "left": 1350,
+        "top": 150,
+        "width": 120
+      }
+    },
+    "textview__51": {
+      "alignment": 36,
+      "caption": "saturationNumTextView",
+      "colorTab": {
+        "color0": 16777215
+      },
+      "fontSize": 20,
+      "id": 50013,
+      "text": "20",
+      "touchable": false,
+      "position": {
+        "height": 30,
+        "left": 1350,
+        "top": 251,
+        "width": 120
+      }
+    },
+    "textview__52": {
+      "alignment": 36,
+      "caption": "hueNumTextView",
+      "colorTab": {
+        "color0": 16777215
+      },
+      "fontSize": 20,
+      "id": 50016,
+      "text": "20",
+      "touchable": false,
+      "position": {
+        "height": 30,
+        "left": 1350,
+        "top": 350,
+        "width": 120
+      }
+    },
+    "button__53": {
+      "alignment": 37,
+      "caption": "resetButton",
+      "colorTab": {
+        "color0": 16777215
+      },
+      "iconPosition": {
+        "height": 78,
+        "left": 0,
+        "top": 0,
+        "width": 149
+      },
+      "id": 20005,
+      "picTab": {
+        "pic0": "setting/set_btn_s_n.png",
+        "pic1": "setting/set_btn_s_f.png"
+      },
+      "text": "@luminance_resest",
+      "position": {
+        "height": 75,
+        "left": 1520,
+        "top": 179,
+        "width": 149
+      }
+    }
+  },
+  "window__54": {
+    "backgroundPic": "HomePage/home_left_bg.png",
+    "beepEnable": true,
+    "caption": "FactoryFileUpdateWindow",
+    "id": 110004,
+    "visible": false,
+    "position": {
+      "height": 500,
+      "left": 500,
+      "top": 150,
+      "width": 800
+    },
+    "textview__55": {
+      "alignment": 37,
+      "caption": "TextView1",
+      "colorTab": {
+        "color0": 16777215
+      },
+      "fontSize": 26,
+      "id": 50001,
+      "text": "@factory_file_update1",
+      "touchable": false,
+      "position": {
+        "height": 65,
+        "left": 210,
+        "top": 101,
+        "width": 398
+      }
+    },
+    "button__56": {
+      "alignment": 37,
+      "caption": "StartFactoryFileUpdateButton",
+      "colorTab": {
+        "color0": 16777215
+      },
+      "id": 20004,
+      "picTab": {
+        "pic0": "setting/set_btn_s_n.png",
+        "pic1": "setting/set_btn_s_f.png"
+      },
+      "text": "@factory_file_update2",
+      "position": {
+        "height": 65,
+        "left": 127,
+        "top": 350,
+        "width": 150
+      }
+    },
+    "button__57": {
+      "alignment": 37,
+      "caption": "CloseFactoryFileUpdateButton",
+      "colorTab": {
+        "color0": 16777215
+      },
+      "id": 20006,
+      "picTab": {
+        "pic0": "setting/set_btn_s_n.png",
+        "pic1": "setting/set_btn_s_f.png"
+      },
+      "text": "@factory_file_update3",
+      "position": {
+        "height": 65,
+        "left": 484,
+        "top": 350,
+        "width": 150
+      }
+    }
+  },
+  "window__58": {
+    "beepEnable": true,
+    "caption": "UpdateRebootRemindWindow",
+    "hideTimeOut": 3,
+    "id": 110006,
+    "modal": true,
+    "visible": false,
+    "position": {
+      "height": 54,
+      "left": 276,
+      "top": 546,
+      "width": 472
+    },
+    "textview__59": {
+      "alignment": 37,
+      "backgroundColor": 12632256,
+      "caption": "UpdateRebootRemindTextView",
+      "colorTab": {
+        "color0": 16711680
+      },
+      "fontSize": 26,
+      "id": 50003,
+      "text": "@update_reboot_remind",
+      "touchable": false,
+      "position": {
+        "height": 54,
+        "left": 0,
+        "top": 0,
+        "width": 472
+      }
+    }
+  },
+  "window__60": {
+    "backgroundPic": "HomePage/home_top_bg.png",
+    "beepEnable": true,
+    "caption": "headWindow",
+    "id": 110018,
+    "position": {
+      "height": 100,
+      "left": 0,
+      "top": 0,
+      "width": 1920
+    },
+    "button__61": {
+      "alignment": 37,
+      "caption": "auxButton",
+      "colorTab": {
+        "color0": 16777215
+      },
+      "id": 20022,
+      "picTab": {
+        "pic0": "status/aux_.png"
+      },
+      "touchable": false,
+      "visible": false,
+      "position": {
+        "height": 20,
+        "left": 743,
+        "top": 19,
+        "width": 20
+      }
+    },
+    "button__62": {
+      "alignment": 37,
+      "caption": "fmButton",
+      "colorTab": {
+        "color0": 16777215
+      },
+      "id": 20003,
+      "picTab": {
+        "pic0": "status/fm.png"
+      },
+      "touchable": false,
+      "visible": false,
+      "position": {
+        "height": 20,
+        "left": 773,
+        "top": 19,
+        "width": 20
+      }
+    },
+    "button__63": {
+      "alignment": 37,
+      "caption": "linkButton",
+      "colorTab": {
+        "color0": 16777215
+      },
+      "id": 20021,
+      "picTab": {
+        "pic0": "status/link.png"
+      },
+      "touchable": false,
+      "visible": false,
+      "position": {
+        "height": 20,
+        "left": 803,
+        "top": 19,
+        "width": 20
+      }
+    },
+    "button__64": {
+      "alignment": 37,
+      "caption": "sdButton",
+      "colorTab": {
+        "color0": 16777215
+      },
+      "id": 20030,
+      "picTab": {
+        "pic0": "status/sd.png"
+      },
+      "touchable": false,
+      "position": {
+        "height": 64,
+        "left": 1270,
+        "top": 20,
+        "width": 64
+      }
+    },
+    "button__65": {
+      "alignment": 37,
+      "caption": "NetButton",
+      "colorTab": {
+        "color0": 16777215
+      },
+      "id": 20033,
+      "picTab": {
+        "pic0": "status/wifi.png"
+      },
+      "touchable": false,
+      "visible": false,
+      "position": {
+        "height": 20,
+        "left": 1345,
+        "top": 19,
+        "width": 20
+      }
+    },
+    "button__66": {
+      "alignment": 37,
+      "caption": "soundButton",
+      "colorTab": {
+        "color0": 16777215
+      },
+      "id": 20034,
+      "picTab": {
+        "pic0": "status/sound.png",
+        "pic2": "status/sound0.png"
+      },
+      "touchable": false,
+      "visible": false,
+      "position": {
+        "height": 20,
+        "left": 1377,
+        "top": 19,
+        "width": 20
+      }
+    },
+    "button__67": {
+      "alignment": 37,
+      "caption": "factoryHomeButton",
+      "colorTab": {
+        "color0": 8421504,
+        "color1": 8388863
+      },
+      "id": 20023,
+      "picTab": {
+        "pic0": "status/home_home_n.png",
+        "pic1": "status/home_home_f.png"
+      },
+      "position": {
+        "height": 92,
+        "left": 0,
+        "top": 6,
+        "width": 154
+      }
+    },
+    "button__68": {
+      "alignment": 37,
+      "caption": "btStatusButton",
+      "colorTab": {
+        "color0": 16777215
+      },
+      "id": 20032,
+      "picTab": {
+        "pic0": "status/home_bt.png",
+        "pic2": "status/home_bt_f.png"
+      },
+      "touchable": false,
+      "position": {
+        "height": 64,
+        "left": 1200,
+        "top": 18,
+        "width": 64
+      }
+    },
+    "button__69": {
+      "alignment": 37,
+      "caption": "usb1Button",
+      "colorTab": {
+        "color0": 16777215
+      },
+      "id": 20031,
+      "picTab": {
+        "pic0": "status/usb1.png"
+      },
+      "touchable": false,
+      "position": {
+        "height": 64,
+        "left": 1340,
+        "top": 20,
+        "width": 66
+      }
+    },
+    "button__70": {
+      "alignment": 37,
+      "caption": "usb2Button",
+      "colorTab": {
+        "color0": 16777215
+      },
+      "id": 20002,
+      "picTab": {
+        "pic0": "status/usb2.png"
+      },
+      "touchable": false,
+      "position": {
+        "height": 64,
+        "left": 1410,
+        "top": 20,
+        "width": 66
+      }
+    },
+    "digitalclock__71": {
+      "beat": true,
+      "caption": "DigitalClock24Hour",
+      "fontSize": 32,
+      "id": 93002,
+      "touchable": false,
+      "position": {
+        "height": 49,
+        "left": 1650,
+        "top": 25,
+        "width": 139
+      }
+    },
+    "digitalclock__72": {
+      "beat": true,
+      "caption": "DigitalClock12Hour",
+      "fontSize": 32,
+      "format": "hh:MM",
+      "id": 93001,
+      "touchable": false,
+      "visible": false,
+      "position": {
+        "height": 49,
+        "left": 1650,
+        "top": 25,
+        "width": 139
+      }
+    },
+    "button__73": {
+      "alignment": 37,
+      "caption": "factoryBackButton",
+      "colorTab": {
+        "color0": 8421504,
+        "color1": 8388863
+      },
+      "id": 20024,
+      "picTab": {
+        "pic0": "status/home_back_n.png",
+        "pic1": "status/home_back_f.png"
+      },
+      "position": {
+        "height": 92,
+        "left": 1760,
+        "top": 4,
+        "width": 154
+      }
+    },
+    "textview__74": {
+      "alignment": 37,
+      "caption": "timeAmPmTextView",
+      "colorTab": {
+        "color0": 16777215
+      },
+      "fontSize": 25,
+      "id": 50006,
+      "text": "AM",
+      "touchable": false,
+      "position": {
+        "height": 40,
+        "left": 1550,
+        "top": 30,
+        "width": 100
+      }
+    }
+  }
+}

@@ -1,0 +1,477 @@
+{
+  "backgroundColor": 592137,
+  "beepEnable": true,
+  "id": 0,
+  "resolution": {
+    "height": 720,
+    "width": 1920
+  },
+  "topmost": false,
+  "position": {
+    "height": 720,
+    "left": 0,
+    "top": 0,
+    "width": 1920
+  },
+  "textview__1": {
+    "alignment": 36,
+    "backgroundPic": "/dash/press_bg_yellow.png",
+    "caption": "SpeedDisplayTextView",
+    "colorTab": {
+      "color0": 16777215
+    },
+    "id": 50002,
+    "text": "text",
+    "touchable": false,
+    "position": {
+      "height": 540,
+      "left": 100,
+      "top": 680,
+      "width": 400
+    }
+  },
+  "textview__2": {
+    "alignment": 36,
+    "backgroundPic": "/dash/press_bg_yellow.png",
+    "caption": "RotateDisplayTextView",
+    "colorTab": {
+      "color0": 16777215
+    },
+    "id": 50003,
+    "text": "text",
+    "touchable": false,
+    "position": {
+      "height": 540,
+      "left": 1450,
+      "top": 680,
+      "width": 400
+    }
+  },
+  "window__3": {
+    "backgroundPic": "dash/dash_bg_china.png",
+    "beepEnable": true,
+    "caption": "HomeBgWindow",
+    "id": 110003,
+    "position": {
+      "height": 620,
+      "left": 0,
+      "top": 100,
+      "width": 1920
+    }
+  },
+  "window__4": {
+    "backgroundPic": "HomePage/home_top_bg.png",
+    "beepEnable": true,
+    "caption": "headWindow",
+    "id": 110018,
+    "position": {
+      "height": 100,
+      "left": 0,
+      "top": 0,
+      "width": 1920
+    },
+    "button__5": {
+      "alignment": 37,
+      "caption": "auxButton",
+      "colorTab": {
+        "color0": 16777215
+      },
+      "id": 20022,
+      "picTab": {
+        "pic0": "status/aux_.png"
+      },
+      "touchable": false,
+      "visible": false,
+      "position": {
+        "height": 20,
+        "left": 743,
+        "top": 19,
+        "width": 20
+      }
+    },
+    "button__6": {
+      "alignment": 37,
+      "caption": "fmButton",
+      "colorTab": {
+        "color0": 16777215
+      },
+      "id": 20001,
+      "picTab": {
+        "pic0": "status/fm.png"
+      },
+      "touchable": false,
+      "visible": false,
+      "position": {
+        "height": 20,
+        "left": 773,
+        "top": 19,
+        "width": 20
+      }
+    },
+    "button__7": {
+      "alignment": 37,
+      "caption": "linkButton",
+      "colorTab": {
+        "color0": 16777215
+      },
+      "id": 20021,
+      "picTab": {
+        "pic0": "status/link.png"
+      },
+      "touchable": false,
+      "visible": false,
+      "position": {
+        "height": 20,
+        "left": 803,
+        "top": 19,
+        "width": 20
+      }
+    },
+    "button__8": {
+      "alignment": 37,
+      "caption": "sdButton",
+      "colorTab": {
+        "color0": 16777215
+      },
+      "id": 20030,
+      "picTab": {
+        "pic0": "status/sd.png"
+      },
+      "touchable": false,
+      "position": {
+        "height": 64,
+        "left": 1270,
+        "top": 20,
+        "width": 64
+      }
+    },
+    "button__9": {
+      "alignment": 37,
+      "caption": "NetButton",
+      "colorTab": {
+        "color0": 16777215
+      },
+      "id": 20033,
+      "picTab": {
+        "pic0": "status/wifi.png"
+      },
+      "touchable": false,
+      "visible": false,
+      "position": {
+        "height": 20,
+        "left": 1345,
+        "top": 19,
+        "width": 20
+      }
+    },
+    "button__10": {
+      "alignment": 37,
+      "caption": "soundButton",
+      "colorTab": {
+        "color0": 16777215
+      },
+      "id": 20034,
+      "picTab": {
+        "pic0": "status/sound.png",
+        "pic2": "status/sound0.png"
+      },
+      "touchable": false,
+      "visible": false,
+      "position": {
+        "height": 20,
+        "left": 1377,
+        "top": 19,
+        "width": 20
+      }
+    },
+    "button__11": {
+      "alignment": 37,
+      "caption": "DashHomeButton",
+      "colorTab": {
+        "color0": 8421504,
+        "color1": 8388863
+      },
+      "id": 20023,
+      "picTab": {
+        "pic0": "status/home_home_n.png",
+        "pic1": "status/home_home_f.png"
+      },
+      "position": {
+        "height": 92,
+        "left": 0,
+        "top": 6,
+        "width": 154
+      }
+    },
+    "button__12": {
+      "alignment": 37,
+      "caption": "btStatusButton",
+      "colorTab": {
+        "color0": 16777215
+      },
+      "id": 20032,
+      "picTab": {
+        "pic0": "status/home_bt.png",
+        "pic2": "status/home_bt_f.png"
+      },
+      "touchable": false,
+      "position": {
+        "height": 64,
+        "left": 1200,
+        "top": 18,
+        "width": 64
+      }
+    },
+    "button__13": {
+      "alignment": 37,
+      "caption": "usb1Button",
+      "colorTab": {
+        "color0": 16777215
+      },
+      "id": 20031,
+      "picTab": {
+        "pic0": "status/usb1.png"
+      },
+      "touchable": false,
+      "position": {
+        "height": 64,
+        "left": 1340,
+        "top": 20,
+        "width": 66
+      }
+    },
+    "button__14": {
+      "alignment": 37,
+      "caption": "usb2Button",
+      "colorTab": {
+        "color0": 16777215
+      },
+      "id": 20005,
+      "picTab": {
+        "pic0": "status/usb2.png"
+      },
+      "touchable": false,
+      "position": {
+        "height": 64,
+        "left": 1410,
+        "top": 20,
+        "width": 66
+      }
+    },
+    "digitalclock__15": {
+      "beat": true,
+      "caption": "DigitalClock24Hour",
+      "fontSize": 32,
+      "id": 93002,
+      "touchable": false,
+      "position": {
+        "height": 49,
+        "left": 1650,
+        "top": 25,
+        "width": 139
+      }
+    },
+    "digitalclock__16": {
+      "beat": true,
+      "caption": "DigitalClock12Hour",
+      "fontSize": 32,
+      "format": "hh:MM",
+      "id": 93001,
+      "touchable": false,
+      "visible": false,
+      "position": {
+        "height": 49,
+        "left": 1650,
+        "top": 25,
+        "width": 139
+      }
+    },
+    "button__17": {
+      "alignment": 37,
+      "caption": "DashBackButton",
+      "colorTab": {
+        "color0": 8421504,
+        "color1": 8388863
+      },
+      "id": 20024,
+      "picTab": {
+        "pic0": "status/home_back_n.png",
+        "pic1": "status/home_back_f.png"
+      },
+      "position": {
+        "height": 92,
+        "left": 1760,
+        "top": 4,
+        "width": 154
+      }
+    },
+    "textview__18": {
+      "alignment": 37,
+      "caption": "timeAmPmTextView",
+      "colorTab": {
+        "color0": 16777215
+      },
+      "fontSize": 25,
+      "id": 50012,
+      "text": "AM",
+      "touchable": false,
+      "position": {
+        "height": 40,
+        "left": 1538,
+        "top": 30,
+        "width": 100
+      }
+    }
+  },
+  "textview__19": {
+    "alignment": 36,
+    "caption": "speedRemindTextView",
+    "colorTab": {
+      "color0": 12632256
+    },
+    "fontSize": 47,
+    "id": 50001,
+    "text": "km/h",
+    "touchable": false,
+    "position": {
+      "height": 50,
+      "left": 647,
+      "top": 356,
+      "width": 120
+    }
+  },
+  "textview__20": {
+    "alignment": 37,
+    "caption": "speedTextView",
+    "colorTab": {
+      "color0": 16777215
+    },
+    "fontSize": 120,
+    "id": 50004,
+    "text": "0",
+    "touchable": false,
+    "position": {
+      "height": 130,
+      "left": 411,
+      "top": 309,
+      "width": 247
+    }
+  },
+  "textview__21": {
+    "alignment": 36,
+    "caption": "rotateTextView",
+    "colorTab": {
+      "color0": 16777215
+    },
+    "fontSize": 120,
+    "id": 50005,
+    "text": "0.0",
+    "touchable": false,
+    "position": {
+      "height": 130,
+      "left": 1250,
+      "top": 310,
+      "width": 320
+    }
+  },
+  "textview__22": {
+    "alignment": 36,
+    "caption": "rotateRemindTextView",
+    "colorTab": {
+      "color0": 12632256
+    },
+    "fontSize": 47,
+    "id": 50011,
+    "text": "r/min",
+    "touchable": false,
+    "position": {
+      "height": 50,
+      "left": 1480,
+      "top": 356,
+      "width": 150
+    }
+  },
+  "textview__23": {
+    "alignment": 36,
+    "backgroundPic": "/HomePage/dash_consumption.png",
+    "caption": "consumptionIconTextView",
+    "colorTab": {
+      "color0": 16777215
+    },
+    "fontSize": 30,
+    "id": 50006,
+    "touchable": false,
+    "position": {
+      "height": 80,
+      "left": 632,
+      "top": 552,
+      "width": 80
+    }
+  },
+  "textview__24": {
+    "alignment": 36,
+    "backgroundPic": "/HomePage/dash_safety.png",
+    "caption": "safetyTextView",
+    "colorTab": {
+      "color0": 16777215
+    },
+    "id": 50007,
+    "touchable": false,
+    "position": {
+      "height": 80,
+      "left": 830,
+      "top": 552,
+      "width": 80
+    }
+  },
+  "textview__25": {
+    "alignment": 36,
+    "backgroundPic": "/HomePage/dash_p.png",
+    "caption": "pTextView",
+    "colorTab": {
+      "color0": 16777215
+    },
+    "id": 50008,
+    "touchable": false,
+    "position": {
+      "height": 80,
+      "left": 1028,
+      "top": 552,
+      "width": 80
+    }
+  },
+  "textview__26": {
+    "alignment": 37,
+    "caption": "tempTextView",
+    "colorTab": {
+      "color0": 16777215
+    },
+    "fontSize": 36,
+    "id": 50009,
+    "text": "26℃",
+    "touchable": false,
+    "position": {
+      "height": 40,
+      "left": 1235,
+      "top": 570,
+      "width": 120
+    }
+  },
+  "textview__27": {
+    "alignment": 37,
+    "caption": "consumptionTextView",
+    "colorTab": {
+      "color0": 16777215
+    },
+    "fontSize": 30,
+    "id": 50010,
+    "text": "0/L",
+    "touchable": false,
+    "position": {
+      "height": 50,
+      "left": 612,
+      "top": 623,
+      "width": 120
+    }
+  }
+}

@@ -1,0 +1,868 @@
+{
+  "beepEnable": true,
+  "id": 0,
+  "resolution": {
+    "height": 900,
+    "width": 2400
+  },
+  "topmost": false,
+  "position": {
+    "height": 900,
+    "left": 0,
+    "top": 0,
+    "width": 2400
+  },
+  "window__1": {
+    "backgroundPic": "/bg/bg1.png",
+    "beepEnable": true,
+    "caption": "EqBgWindow",
+    "id": 110022,
+    "position": {
+      "height": 900,
+      "left": 0,
+      "top": 0,
+      "width": 2400
+    }
+  },
+  "window__2": {
+    "beepEnable": true,
+    "caption": "Audio1Window",
+    "id": 110007,
+    "position": {
+      "height": 464,
+      "left": 492,
+      "top": 268,
+      "width": 1424
+    },
+    "radiogroup__3": {
+      "caption": "SetAudio1RadioGroup",
+      "id": 94010,
+      "position": {
+        "height": 464,
+        "left": 0,
+        "top": 0,
+        "width": 1424
+      },
+      "radiobuttons": [
+        {
+          "alignment": 38,
+          "caption": "SetBassRadioButtonN",
+          "checked": false,
+          "colorTab": {
+            "color0": 16777215
+          },
+          "id": 22046,
+          "picTab": {
+            "pic2": "setting/set_second_menu_select_f.png"
+          },
+          "position": {
+            "height": 80,
+            "left": 50,
+            "top": 39,
+            "width": 1300
+          }
+        },
+        {
+          "alignment": 38,
+          "caption": "SetBassRadioButtonF",
+          "checked": false,
+          "colorTab": {
+            "color0": 16777215
+          },
+          "id": 22054,
+          "picTab": {
+            "pic2": "setting/set_first_menu_select.png"
+          },
+          "position": {
+            "height": 80,
+            "left": 50,
+            "top": 39,
+            "width": 1300
+          }
+        },
+        {
+          "alignment": 38,
+          "caption": "SetAltoRadioButtonN",
+          "checked": false,
+          "colorTab": {
+            "color0": 16777215
+          },
+          "id": 22047,
+          "picTab": {
+            "pic2": "setting/set_second_menu_select_f.png"
+          },
+          "position": {
+            "height": 80,
+            "left": 50,
+            "top": 140,
+            "width": 1300
+          }
+        },
+        {
+          "alignment": 38,
+          "caption": "SetAltoRadioButtonF",
+          "checked": false,
+          "colorTab": {
+            "color0": 16777215
+          },
+          "id": 22055,
+          "picTab": {
+            "pic2": "setting/set_first_menu_select.png"
+          },
+          "position": {
+            "height": 80,
+            "left": 50,
+            "top": 140,
+            "width": 1300
+          }
+        },
+        {
+          "alignment": 38,
+          "caption": "SetHighRadioButtonN",
+          "checked": false,
+          "colorTab": {
+            "color0": 16777215
+          },
+          "id": 22052,
+          "picTab": {
+            "pic2": "setting/set_second_menu_select_f.png"
+          },
+          "position": {
+            "height": 80,
+            "left": 50,
+            "top": 235,
+            "width": 1300
+          }
+        },
+        {
+          "alignment": 38,
+          "caption": "SetHighRadioButtonF",
+          "checked": false,
+          "colorTab": {
+            "color0": 16777215
+          },
+          "id": 22056,
+          "picTab": {
+            "pic2": "setting/set_first_menu_select.png"
+          },
+          "position": {
+            "height": 80,
+            "left": 50,
+            "top": 235,
+            "width": 1300
+          }
+        },
+        {
+          "alignment": 38,
+          "caption": "SetAudioRadioButton1",
+          "checked": false,
+          "colorTab": {
+            "color0": 16777215
+          },
+          "id": 22053,
+          "picTab": {
+            "pic2": "setting/language_confir_select.png"
+          },
+          "position": {
+            "height": 60,
+            "left": 155,
+            "top": 345,
+            "width": 145
+          }
+        },
+        {
+          "alignment": 38,
+          "caption": "SetAudioRadioButton2",
+          "checked": false,
+          "colorTab": {
+            "color0": 16777215
+          },
+          "id": 22057,
+          "picTab": {
+            "pic2": "setting/language_confir_select.png"
+          },
+          "position": {
+            "height": 60,
+            "left": 396,
+            "top": 345,
+            "width": 145
+          }
+        },
+        {
+          "alignment": 38,
+          "caption": "SetAudioRadioButton3",
+          "checked": false,
+          "colorTab": {
+            "color0": 16777215
+          },
+          "id": 22058,
+          "picTab": {
+            "pic2": "setting/language_confir_select.png"
+          },
+          "position": {
+            "height": 60,
+            "left": 635,
+            "top": 345,
+            "width": 145
+          }
+        },
+        {
+          "alignment": 38,
+          "caption": "SetAudioRadioButton4",
+          "checked": false,
+          "colorTab": {
+            "color0": 16777215
+          },
+          "id": 22059,
+          "picTab": {
+            "pic2": "setting/language_confir_select.png"
+          },
+          "position": {
+            "height": 60,
+            "left": 875,
+            "top": 345,
+            "width": 145
+          }
+        },
+        {
+          "alignment": 38,
+          "caption": "SetAudioRadioButton5",
+          "checked": false,
+          "colorTab": {
+            "color0": 16777215
+          },
+          "id": 22060,
+          "picTab": {
+            "pic2": "setting/language_confir_select.png"
+          },
+          "position": {
+            "height": 60,
+            "left": 1115,
+            "top": 345,
+            "width": 145
+          }
+        }
+      ]
+    },
+    "seekbar__4": {
+      "backgroundPic": "setting/set_adjust_bg.png",
+      "caption": "BassSeekBar",
+      "id": 91002,
+      "max": 24,
+      "progressPic": "setting/set_adjust_934.png",
+      "thumb": {
+        "normalPic": "setting/set_adjust_click.png",
+        "size": {
+          "height": 57,
+          "width": 101
+        }
+      },
+      "position": {
+        "height": 36,
+        "left": 260,
+        "top": 60,
+        "width": 934
+      }
+    },
+    "seekbar__5": {
+      "backgroundPic": "setting/set_adjust_bg.png",
+      "caption": "AltoSeekBar",
+      "id": 91003,
+      "max": 24,
+      "progressPic": "setting/set_adjust_934.png",
+      "thumb": {
+        "normalPic": "setting/set_adjust_click.png",
+        "size": {
+          "height": 57,
+          "width": 101
+        }
+      },
+      "position": {
+        "height": 36,
+        "left": 260,
+        "top": 160,
+        "width": 934
+      }
+    },
+    "seekbar__6": {
+      "backgroundPic": "setting/set_adjust_bg.png",
+      "caption": "HighSeekBar",
+      "id": 91010,
+      "max": 24,
+      "progressPic": "setting/set_adjust_934.png",
+      "thumb": {
+        "normalPic": "setting/set_adjust_click.png",
+        "size": {
+          "height": 57,
+          "width": 101
+        }
+      },
+      "position": {
+        "height": 36,
+        "left": 260,
+        "top": 260,
+        "width": 934
+      }
+    },
+    "textview__7": {
+      "alignment": 37,
+      "caption": "BassTextView",
+      "colorTab": {
+        "color0": 16777215
+      },
+      "fontSize": 36,
+      "id": 50001,
+      "text": "@bass_text",
+      "touchable": false,
+      "position": {
+        "height": 52,
+        "left": 0,
+        "top": 52,
+        "width": 270
+      }
+    },
+    "textview__8": {
+      "alignment": 37,
+      "caption": "BassBeginTextView",
+      "colorTab": {
+        "color0": 16777215
+      },
+      "fontSize": 30,
+      "id": 50002,
+      "text": "0",
+      "touchable": false,
+      "visible": false,
+      "position": {
+        "height": 30,
+        "left": 218,
+        "top": 63,
+        "width": 57
+      }
+    },
+    "textview__9": {
+      "alignment": 37,
+      "caption": "BassEndTextView",
+      "colorTab": {
+        "color0": 16777215
+      },
+      "fontSize": 30,
+      "id": 50003,
+      "text": "24",
+      "touchable": false,
+      "position": {
+        "height": 30,
+        "left": 1219,
+        "top": 63,
+        "width": 57
+      }
+    },
+    "textview__10": {
+      "alignment": 37,
+      "caption": "AltoTextView",
+      "colorTab": {
+        "color0": 16777215
+      },
+      "fontSize": 36,
+      "id": 50004,
+      "text": "@alto_text",
+      "touchable": false,
+      "position": {
+        "height": 54,
+        "left": 0,
+        "top": 151,
+        "width": 270
+      }
+    },
+    "textview__11": {
+      "alignment": 37,
+      "caption": "AltoBeginTextView",
+      "colorTab": {
+        "color0": 16777215
+      },
+      "fontSize": 30,
+      "id": 50005,
+      "text": "0",
+      "touchable": false,
+      "visible": false,
+      "position": {
+        "height": 30,
+        "left": 218,
+        "top": 163,
+        "width": 57
+      }
+    },
+    "textview__12": {
+      "alignment": 37,
+      "caption": "AltoEndTextView",
+      "colorTab": {
+        "color0": 16777215
+      },
+      "fontSize": 30,
+      "id": 50006,
+      "text": "24",
+      "touchable": false,
+      "position": {
+        "height": 30,
+        "left": 1219,
+        "top": 163,
+        "width": 57
+      }
+    },
+    "textview__13": {
+      "alignment": 37,
+      "caption": "HighTextView",
+      "colorTab": {
+        "color0": 16777215
+      },
+      "fontSize": 36,
+      "id": 50007,
+      "text": "@high_text",
+      "touchable": false,
+      "position": {
+        "height": 55,
+        "left": 0,
+        "top": 251,
+        "width": 270
+      }
+    },
+    "textview__14": {
+      "alignment": 37,
+      "caption": "HighBeginTextView",
+      "colorTab": {
+        "color0": 16777215
+      },
+      "fontSize": 30,
+      "id": 50010,
+      "text": "0",
+      "touchable": false,
+      "visible": false,
+      "position": {
+        "height": 30,
+        "left": 218,
+        "top": 263,
+        "width": 57
+      }
+    },
+    "textview__15": {
+      "alignment": 37,
+      "caption": "HighEndTextView",
+      "colorTab": {
+        "color0": 16777215
+      },
+      "fontSize": 30,
+      "id": 50011,
+      "text": "24",
+      "touchable": false,
+      "position": {
+        "height": 30,
+        "left": 1219,
+        "top": 263,
+        "width": 57
+      }
+    },
+    "button__16": {
+      "alignment": 37,
+      "caption": "AudioButton1",
+      "colorTab": {
+        "color0": 16777215,
+        "color1": 6091519
+      },
+      "fontSize": 30,
+      "iconPosition": {
+        "height": 75,
+        "left": 0,
+        "top": 0,
+        "width": 159
+      },
+      "id": 20005,
+      "picTab": {
+        "pic0": "setting/set_btn_s_n.png",
+        "pic1": "setting/set_btn_s_f.png",
+        "pic2": "setting/set_btn_s_f.png"
+      },
+      "text": "@audio_stytle1",
+      "position": {
+        "height": 75,
+        "left": 150,
+        "top": 340,
+        "width": 149
+      }
+    },
+    "button__17": {
+      "alignment": 37,
+      "caption": "AudioButton2",
+      "colorTab": {
+        "color0": 16777215,
+        "color1": 6091519
+      },
+      "fontSize": 30,
+      "iconPosition": {
+        "height": 75,
+        "left": 0,
+        "top": 0,
+        "width": 159
+      },
+      "id": 20007,
+      "picTab": {
+        "pic0": "setting/set_btn_s_n.png",
+        "pic1": "setting/set_btn_s_f.png",
+        "pic2": "setting/set_btn_s_f.png"
+      },
+      "text": "@audio_stytle2",
+      "position": {
+        "height": 75,
+        "left": 390,
+        "top": 340,
+        "width": 149
+      }
+    },
+    "button__18": {
+      "alignment": 37,
+      "caption": "AudioButton3",
+      "colorTab": {
+        "color0": 16777215,
+        "color1": 6091519
+      },
+      "fontSize": 30,
+      "iconPosition": {
+        "height": 75,
+        "left": 0,
+        "top": 0,
+        "width": 159
+      },
+      "id": 20008,
+      "picTab": {
+        "pic0": "setting/set_btn_s_n.png",
+        "pic1": "setting/set_btn_s_f.png",
+        "pic2": "setting/set_btn_s_f.png"
+      },
+      "text": "@audio_stytle3",
+      "position": {
+        "height": 75,
+        "left": 630,
+        "top": 340,
+        "width": 149
+      }
+    },
+    "button__19": {
+      "alignment": 37,
+      "caption": "AudioButton4",
+      "colorTab": {
+        "color0": 16777215,
+        "color1": 6091519
+      },
+      "fontSize": 30,
+      "iconPosition": {
+        "height": 75,
+        "left": 0,
+        "top": 0,
+        "width": 159
+      },
+      "id": 20009,
+      "picTab": {
+        "pic0": "setting/set_btn_s_n.png",
+        "pic1": "setting/set_btn_s_f.png",
+        "pic2": "setting/set_btn_s_f.png"
+      },
+      "text": "@audio_stytle4",
+      "position": {
+        "height": 75,
+        "left": 870,
+        "top": 340,
+        "width": 149
+      }
+    },
+    "button__20": {
+      "alignment": 37,
+      "caption": "AudioButton5",
+      "colorTab": {
+        "color0": 16777215,
+        "color1": 6091519
+      },
+      "fontSize": 30,
+      "iconPosition": {
+        "height": 75,
+        "left": 0,
+        "top": 0,
+        "width": 159
+      },
+      "id": 20010,
+      "picTab": {
+        "pic0": "setting/set_btn_s_n.png",
+        "pic1": "setting/set_btn_s_f.png",
+        "pic2": "setting/set_btn_s_f.png"
+      },
+      "text": "@audio_stytle5",
+      "position": {
+        "height": 75,
+        "left": 1110,
+        "top": 340,
+        "width": 149
+      }
+    }
+  },
+  "window__21": {
+    "backgroundPic": "HomePage/home_top_bg.png",
+    "beepEnable": true,
+    "caption": "headWindow",
+    "id": 110018,
+    "position": {
+      "height": 100,
+      "left": 0,
+      "top": 0,
+      "width": 2400
+    },
+    "button__22": {
+      "alignment": 37,
+      "caption": "auxButton",
+      "colorTab": {
+        "color0": 16777215
+      },
+      "id": 20022,
+      "picTab": {
+        "pic0": "status/aux_.png"
+      },
+      "touchable": false,
+      "visible": false,
+      "position": {
+        "height": 20,
+        "left": 743,
+        "top": 19,
+        "width": 20
+      }
+    },
+    "button__23": {
+      "alignment": 37,
+      "caption": "fmButton",
+      "colorTab": {
+        "color0": 16777215
+      },
+      "id": 20003,
+      "picTab": {
+        "pic0": "status/fm.png"
+      },
+      "touchable": false,
+      "visible": false,
+      "position": {
+        "height": 20,
+        "left": 773,
+        "top": 19,
+        "width": 20
+      }
+    },
+    "button__24": {
+      "alignment": 37,
+      "caption": "linkButton",
+      "colorTab": {
+        "color0": 16777215
+      },
+      "id": 20021,
+      "picTab": {
+        "pic0": "status/link.png"
+      },
+      "touchable": false,
+      "visible": false,
+      "position": {
+        "height": 20,
+        "left": 803,
+        "top": 19,
+        "width": 20
+      }
+    },
+    "button__25": {
+      "alignment": 37,
+      "caption": "sdButton",
+      "colorTab": {
+        "color0": 16777215
+      },
+      "id": 20030,
+      "picTab": {
+        "pic0": "status/sd.png"
+      },
+      "touchable": false,
+      "position": {
+        "height": 64,
+        "left": 1464,
+        "top": 20,
+        "width": 64
+      }
+    },
+    "button__26": {
+      "alignment": 37,
+      "caption": "NetButton",
+      "colorTab": {
+        "color0": 16777215
+      },
+      "id": 20033,
+      "picTab": {
+        "pic0": "status/wifi.png"
+      },
+      "touchable": false,
+      "visible": false,
+      "position": {
+        "height": 20,
+        "left": 1345,
+        "top": 19,
+        "width": 20
+      }
+    },
+    "button__27": {
+      "alignment": 37,
+      "caption": "soundButton",
+      "colorTab": {
+        "color0": 16777215
+      },
+      "id": 20034,
+      "picTab": {
+        "pic0": "status/sound.png",
+        "pic2": "status/sound0.png"
+      },
+      "touchable": false,
+      "visible": false,
+      "position": {
+        "height": 20,
+        "left": 1377,
+        "top": 19,
+        "width": 20
+      }
+    },
+    "button__28": {
+      "alignment": 37,
+      "caption": "eqHomeButton",
+      "colorTab": {
+        "color0": 8421504,
+        "color1": 8388863
+      },
+      "id": 20023,
+      "picTab": {
+        "pic0": "status/home_home_n.png",
+        "pic1": "status/home_home_f.png"
+      },
+      "position": {
+        "height": 92,
+        "left": 0,
+        "top": 6,
+        "width": 154
+      }
+    },
+    "button__29": {
+      "alignment": 37,
+      "caption": "btStatusButton",
+      "colorTab": {
+        "color0": 16777215
+      },
+      "id": 20032,
+      "picTab": {
+        "pic0": "status/home_bt.png",
+        "pic2": "status/home_bt_f.png"
+      },
+      "touchable": false,
+      "position": {
+        "height": 64,
+        "left": 1364,
+        "top": 18,
+        "width": 64
+      }
+    },
+    "button__30": {
+      "alignment": 37,
+      "caption": "usb1Button",
+      "colorTab": {
+        "color0": 16777215
+      },
+      "id": 20031,
+      "picTab": {
+        "pic0": "status/usb1.png"
+      },
+      "touchable": false,
+      "position": {
+        "height": 64,
+        "left": 1564,
+        "top": 20,
+        "width": 66
+      }
+    },
+    "button__31": {
+      "alignment": 37,
+      "caption": "usb2Button",
+      "colorTab": {
+        "color0": 16777215
+      },
+      "id": 20001,
+      "picTab": {
+        "pic0": "status/usb2.png"
+      },
+      "touchable": false,
+      "position": {
+        "height": 64,
+        "left": 1640,
+        "top": 20,
+        "width": 66
+      }
+    },
+    "digitalclock__32": {
+      "beat": true,
+      "caption": "DigitalClock24Hour",
+      "fontSize": 32,
+      "id": 93002,
+      "touchable": false,
+      "position": {
+        "height": 49,
+        "left": 2100,
+        "top": 25,
+        "width": 139
+      }
+    },
+    "digitalclock__33": {
+      "beat": true,
+      "caption": "DigitalClock12Hour",
+      "fontSize": 32,
+      "format": "hh:MM",
+      "id": 93001,
+      "touchable": false,
+      "visible": false,
+      "position": {
+        "height": 49,
+        "left": 2100,
+        "top": 25,
+        "width": 139
+      }
+    },
+    "button__34": {
+      "alignment": 37,
+      "caption": "eqBackButton",
+      "colorTab": {
+        "color0": 8421504,
+        "color1": 8388863
+      },
+      "id": 20024,
+      "picTab": {
+        "pic0": "status/home_back_n.png",
+        "pic1": "status/home_back_f.png"
+      },
+      "position": {
+        "height": 92,
+        "left": 2230,
+        "top": 4,
+        "width": 154
+      }
+    },
+    "textview__35": {
+      "alignment": 37,
+      "caption": "timeAmPmTextView",
+      "colorTab": {
+        "color0": 16777215
+      },
+      "fontSize": 25,
+      "id": 50008,
+      "text": "AM",
+      "touchable": false,
+      "position": {
+        "height": 40,
+        "left": 1950,
+        "top": 30,
+        "width": 100
+      }
+    }
+  }
+}

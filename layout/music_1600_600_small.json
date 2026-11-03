@@ -1,0 +1,1068 @@
+{
+  "beepEnable": true,
+  "id": 0,
+  "resolution": {
+    "height": 600,
+    "width": 1600
+  },
+  "topmost": false,
+  "position": {
+    "height": 600,
+    "left": 0,
+    "top": 0,
+    "width": 1600
+  },
+  "window__1": {
+    "backgroundPic": "/bg/bg1.png",
+    "beepEnable": true,
+    "caption": "MusicBgWindow",
+    "id": 110005,
+    "position": {
+      "height": 600,
+      "left": 0,
+      "top": 0,
+      "width": 1600
+    }
+  },
+  "window__2": {
+    "beepEnable": true,
+    "caption": "MusicListWindow",
+    "id": 110006,
+    "position": {
+      "height": 370,
+      "left": 500,
+      "top": 140,
+      "width": 700
+    },
+    "listview__3": {
+      "beepEnable": true,
+      "caption": "musicListView",
+      "cols": 1,
+      "id": 80003,
+      "rows": 5,
+      "position": {
+        "height": 320,
+        "left": 40,
+        "top": 25,
+        "width": 600
+      },
+      "rowSpacing": 2,
+      "item": {
+        "alignment": 36,
+        "caption": "item",
+        "colorTab": {
+          "color0": 16777215,
+          "color2": 6091519
+        },
+        "fontSize": 20,
+        "iconPosition": {
+          "height": 60,
+          "left": 0,
+          "top": 0,
+          "width": 590
+        },
+        "picTab": {
+          "pic2": "MusicPlayer/file_choice.png"
+        },
+        "position": {
+          "height": 62,
+          "left": 0,
+          "top": 0,
+          "width": 600
+        },
+        "text": "ListViewItem",
+        "textPosition": {
+          "height": 62,
+          "left": 120,
+          "top": 0,
+          "width": 480
+        },
+        "subItem": [
+          {
+            "alignment": 37,
+            "caption": "SubItemID",
+            "colorTab": {
+              "color0": 16777215,
+              "color2": 6091519
+            },
+            "fontSize": 20,
+            "iconPosition": {
+              "height": 32,
+              "left": 0,
+              "top": 0,
+              "width": 38
+            },
+            "id": 24001,
+            "text": "1",
+            "position": {
+              "height": 32,
+              "left": 70,
+              "top": 15,
+              "width": 40
+            }
+          },
+          {
+            "alignment": 36,
+            "caption": "MusicFilepicSub",
+            "colorTab": {
+              "color0": 16777215
+            },
+            "id": 24002,
+            "picTab": {
+              "pic0": "MusicPlayer/file_music.png",
+              "pic2": "MusicPlayer/file_music_f.png"
+            },
+            "position": {
+              "height": 37,
+              "left": 12,
+              "top": 10,
+              "width": 36
+            }
+          },
+          {
+            "alignment": 36,
+            "caption": "MusicFileListSelectSubItem",
+            "colorTab": {
+              "color0": 16777215
+            },
+            "iconPosition": {
+              "height": 60,
+              "left": 0,
+              "top": 0,
+              "width": 590
+            },
+            "id": 24004,
+            "position": {
+              "height": 60,
+              "left": 0,
+              "top": 0,
+              "width": 600
+            }
+          },
+          {
+            "alignment": 36,
+            "caption": "MusicLineSubItem",
+            "colorTab": {
+              "color0": 16777215
+            },
+            "iconPosition": {
+              "height": 5,
+              "left": 0,
+              "top": 0,
+              "width": 850
+            },
+            "id": 24005,
+            "picTab": {
+              "pic0": "setting/set_line.png"
+            },
+            "position": {
+              "height": 5,
+              "left": 0,
+              "top": 55,
+              "width": 600
+            }
+          }
+        ]
+      }
+    }
+  },
+  "button__5": {
+    "alignment": 37,
+    "caption": "musicButton",
+    "colorTab": {
+      "color0": 16777215
+    },
+    "fontSize": 22,
+    "iconPosition": {
+      "height": 52,
+      "left": 0,
+      "top": 0,
+      "width": 51
+    },
+    "id": 20001,
+    "picTab": {
+      "pic0": "media/musicBtn.png",
+      "pic1": "media/musicBtnP.png"
+    },
+    "visible": false,
+    "position": {
+      "height": 51,
+      "left": 800,
+      "top": 230,
+      "width": 51
+    }
+  },
+  "window__6": {
+    "beepEnable": true,
+    "caption": "MusicMenuWindow",
+    "id": 110019,
+    "position": {
+      "height": 310,
+      "left": 240,
+      "top": 160,
+      "width": 270
+    },
+    "listview__7": {
+      "beepEnable": true,
+      "caption": "MusicMenuListView",
+      "cols": 1,
+      "id": 80001,
+      "rows": 2,
+      "position": {
+        "height": 282,
+        "left": 0,
+        "top": 0,
+        "width": 270
+      },
+      "colSpacing": 5,
+      "rowSpacing": 7,
+      "item": {
+        "alignment": 37,
+        "caption": "item",
+        "iconPosition": {
+          "height": 55,
+          "left": 0,
+          "top": 0,
+          "width": 195
+        },
+        "position": {
+          "height": 134,
+          "left": 0,
+          "top": 0,
+          "width": 265
+        },
+        "subItem": [
+          {
+            "alignment": 36,
+            "caption": "SubItem19",
+            "colorTab": {
+              "color0": 16777215
+            },
+            "id": 24006,
+            "picTab": {
+              "pic1": "setting/set_btn_f.png",
+              "pic2": "setting/set_btn_f.png"
+            },
+            "position": {
+              "height": 50,
+              "left": 0,
+              "top": 0,
+              "width": 240
+            }
+          },
+          {
+            "alignment": 37,
+            "caption": "MisicTextSub",
+            "colorTab": {
+              "color0": 16777215,
+              "color1": 6091519,
+              "color2": 6091519
+            },
+            "fontSize": 20,
+            "id": 24007,
+            "picTab": {
+              "pic0": "setting/set_btn_n.png",
+              "pic1": "setting/set_btn_f.png"
+            },
+            "text": "SD",
+            "touchable": false,
+            "position": {
+              "height": 50,
+              "left": 0,
+              "top": 0,
+              "width": 240
+            }
+          },
+          {
+            "caption": "MusicpicSub",
+            "colorTab": {
+              "color0": 16777215
+            },
+            "id": 24008,
+            "touchable": false,
+            "position": {
+              "height": 29,
+              "left": 49,
+              "top": 9,
+              "width": 30
+            }
+          },
+          {
+            "alignment": 36,
+            "caption": "MusicListSelectSubItem",
+            "colorTab": {
+              "color0": 16777215
+            },
+            "id": 24003,
+            "position": {
+              "height": 50,
+              "left": 0,
+              "top": 0,
+              "width": 240
+            }
+          }
+        ]
+      }
+    }
+  },
+  "window__9": {
+    "beepEnable": true,
+    "caption": "scaningWindow",
+    "id": 110003,
+    "modal": true,
+    "visible": false,
+    "position": {
+      "height": 200,
+      "left": 400,
+      "top": 230,
+      "width": 360
+    },
+    "textview__10": {
+      "alignment": 41,
+      "backgroundColor": 0,
+      "caption": "scaningTextView",
+      "colorTab": {
+        "color0": 16777215
+      },
+      "fontSize": 26,
+      "id": 50012,
+      "text": "@scaning",
+      "touchable": false,
+      "position": {
+        "height": 200,
+        "left": 0,
+        "top": 0,
+        "width": 360
+      },
+      "textPosition": {
+        "height": 190,
+        "left": 0,
+        "top": 0,
+        "width": 360
+      }
+    },
+    "pointer__11": {
+      "animatable": false,
+      "caption": "syncPointer",
+      "clockwise": true,
+      "fixedPoint": {
+        "x": 50,
+        "y": 50
+      },
+      "id": 90001,
+      "pointerPic": "media/scaning.png",
+      "pointerSize": {
+        "height": 100,
+        "width": 100
+      },
+      "rotateSpeed": 1,
+      "rotationPoint": {
+        "x": 50,
+        "y": 50
+      },
+      "startAngle": 0,
+      "touchable": false,
+      "position": {
+        "height": 100,
+        "left": 130,
+        "top": 25,
+        "width": 100
+      }
+    }
+  },
+  "window__12": {
+    "backgroundPic": "/bg/bg1.png",
+    "beepEnable": true,
+    "caption": "MusicWindow",
+    "id": 110001,
+    "position": {
+      "height": 600,
+      "left": 0,
+      "top": 0,
+      "width": 1600
+    },
+    "textview__13": {
+      "alignment": 36,
+      "backgroundPic": "MusicPlayer/music_base_bg.png",
+      "caption": "MusicPlayTextView",
+      "colorTab": {
+        "color0": 16777215
+      },
+      "id": 50002,
+      "touchable": false,
+      "position": {
+        "height": 80,
+        "left": 0,
+        "top": 520,
+        "width": 1600
+      }
+    },
+    "radiogroup__14": {
+      "caption": "MusicPlaySelectRadioGroup",
+      "id": 94001,
+      "position": {
+        "height": 600,
+        "left": 0,
+        "top": 0,
+        "width": 1600
+      },
+      "radiobuttons": [
+        {
+          "alignment": 38,
+          "caption": "SetMusicPrevRadioButton",
+          "checked": false,
+          "colorTab": {
+            "color0": 16777215
+          },
+          "id": 22048,
+          "picTab": {
+            "pic2": "setting/set_first_menu_select.png"
+          },
+          "position": {
+            "height": 50,
+            "left": 70,
+            "top": 540,
+            "width": 180
+          }
+        },
+        {
+          "alignment": 38,
+          "caption": "SetMusicPlayRadioButtonRadioButton",
+          "checked": false,
+          "colorTab": {
+            "color0": 16777215
+          },
+          "id": 22001,
+          "picTab": {
+            "pic2": "setting/set_first_menu_select.png"
+          },
+          "position": {
+            "height": 50,
+            "left": 390,
+            "top": 540,
+            "width": 180
+          }
+        },
+        {
+          "alignment": 38,
+          "caption": "SetMusicNextRadioButton",
+          "checked": false,
+          "colorTab": {
+            "color0": 16777215
+          },
+          "id": 22002,
+          "picTab": {
+            "pic2": "setting/set_first_menu_select.png"
+          },
+          "position": {
+            "height": 50,
+            "left": 710,
+            "top": 540,
+            "width": 180
+          }
+        },
+        {
+          "alignment": 38,
+          "caption": "SetMusicPlayModeRadioButton",
+          "checked": false,
+          "colorTab": {
+            "color0": 16777215
+          },
+          "id": 22003,
+          "picTab": {
+            "pic2": "setting/set_first_menu_select.png"
+          },
+          "position": {
+            "height": 50,
+            "left": 1030,
+            "top": 540,
+            "width": 180
+          }
+        },
+        {
+          "alignment": 38,
+          "caption": "SetMusicBackListRadioButton",
+          "checked": false,
+          "colorTab": {
+            "color0": 16777215
+          },
+          "id": 22004,
+          "picTab": {
+            "pic2": "setting/set_first_menu_select.png"
+          },
+          "position": {
+            "height": 50,
+            "left": 1350,
+            "top": 540,
+            "width": 180
+          }
+        }
+      ]
+    },
+    "textview__15": {
+      "alignment": 36,
+      "backgroundPic": "MusicPlayer/music_defaultcover.png",
+      "caption": "picTextView",
+      "colorTab": {
+        "color0": 16777215
+      },
+      "id": 50013,
+      "touchable": false,
+      "position": {
+        "height": 312,
+        "left": 425,
+        "top": 160,
+        "width": 307
+      }
+    },
+    "textview__16": {
+      "alignment": 36,
+      "caption": "titleTextView",
+      "colorTab": {
+        "color0": 16777215
+      },
+      "fontSize": 30,
+      "id": 50003,
+      "text": "@Unknown",
+      "touchable": false,
+      "position": {
+        "height": 40,
+        "left": 805,
+        "top": 188,
+        "width": 700
+      }
+    },
+    "textview__17": {
+      "alignment": 37,
+      "bold": true,
+      "caption": "CurPosTextView",
+      "colorTab": {
+        "color0": 16777215
+      },
+      "fontSize": 15,
+      "id": 50001,
+      "text": "00:00",
+      "touchable": false,
+      "position": {
+        "height": 40,
+        "left": 350,
+        "top": 410,
+        "width": 90
+      }
+    },
+    "seekbar__18": {
+      "backgroundPic": "MusicPlayer/music_slide_bg.png",
+      "caption": "PlayProgressSeekbar",
+      "id": 91002,
+      "max": 100,
+      "progressPic": "MusicPlayer/music_slide.png",
+      "thumb": {
+        "normalPic": "",
+        "size": {
+          "height": 41,
+          "width": 18
+        }
+      },
+      "position": {
+        "height": 20,
+        "left": 430,
+        "top": 420,
+        "width": 770
+      }
+    },
+    "textview__19": {
+      "alignment": 37,
+      "bold": true,
+      "caption": "DurationTextView",
+      "colorTab": {
+        "color0": 16777215
+      },
+      "fontSize": 15,
+      "id": 50007,
+      "text": "00:00",
+      "touchable": false,
+      "position": {
+        "height": 40,
+        "left": 1200,
+        "top": 410,
+        "width": 91
+      }
+    },
+    "button__20": {
+      "alignment": 37,
+      "caption": "musicListButton",
+      "id": 20007,
+      "picTab": {
+        "pic0": "MusicPlayer/music_btn_list_n.png",
+        "pic1": "MusicPlayer/music_btn_list_f.png"
+      },
+      "position": {
+        "height": 51,
+        "left": 1420,
+        "top": 540,
+        "width": 51
+      }
+    },
+    "button__21": {
+      "alignment": 37,
+      "caption": "playModeButton",
+      "id": 20008,
+      "position": {
+        "height": 51,
+        "left": 1100,
+        "top": 540,
+        "width": 51
+      }
+    },
+    "button__22": {
+      "alignment": 37,
+      "caption": "PrevButton",
+      "colorTab": {
+        "color0": 16777215
+      },
+      "id": 20006,
+      "picTab": {
+        "pic0": "MusicPlayer/music_btn_previous_n.png",
+        "pic1": "MusicPlayer/music_btn_previous_f.png"
+      },
+      "position": {
+        "height": 50,
+        "left": 130,
+        "top": 540,
+        "width": 50
+      }
+    },
+    "button__23": {
+      "alignment": 37,
+      "caption": "ButtonPlay",
+      "colorTab": {
+        "color0": 16777215
+      },
+      "id": 20009,
+      "picTab": {
+        "pic0": "MusicPlayer/music_btn_pause_n.png",
+        "pic2": "MusicPlayer/music_btn_play_n.png"
+      },
+      "position": {
+        "height": 51,
+        "left": 460,
+        "top": 540,
+        "width": 51
+      }
+    },
+    "button__24": {
+      "alignment": 37,
+      "caption": "NextButton",
+      "colorTab": {
+        "color0": 16777215
+      },
+      "id": 20010,
+      "picTab": {
+        "pic0": "MusicPlayer/music_btn_next_n.png",
+        "pic1": "MusicPlayer/music_btn_next_f.png"
+      },
+      "position": {
+        "height": 51,
+        "left": 760,
+        "top": 540,
+        "width": 51
+      }
+    },
+    "textview__25": {
+      "alignment": 36,
+      "caption": "artistTextView",
+      "colorTab": {
+        "color0": 16777215
+      },
+      "fontSize": 30,
+      "id": 50005,
+      "text": "@Unknown",
+      "touchable": false,
+      "position": {
+        "height": 40,
+        "left": 805,
+        "top": 260,
+        "width": 353
+      }
+    },
+    "textview__26": {
+      "alignment": 36,
+      "caption": "albumTextView",
+      "colorTab": {
+        "color0": 16777215
+      },
+      "fontSize": 25,
+      "id": 50008,
+      "text": "@Unknown",
+      "touchable": false,
+      "position": {
+        "height": 35,
+        "left": 805,
+        "top": 335,
+        "width": 353
+      }
+    },
+    "textview__27": {
+      "alignment": 36,
+      "backgroundPic": "MusicPlayer/music_title.png",
+      "caption": "TextView1",
+      "colorTab": {
+        "color0": 16777215
+      },
+      "id": 50004,
+      "touchable": false,
+      "position": {
+        "height": 51,
+        "left": 730,
+        "top": 183,
+        "width": 51
+      }
+    },
+    "textview__28": {
+      "alignment": 36,
+      "backgroundPic": "MusicPlayer/music_artist.png",
+      "caption": "TextView2",
+      "colorTab": {
+        "color0": 16777215
+      },
+      "id": 50006,
+      "touchable": false,
+      "position": {
+        "height": 51,
+        "left": 730,
+        "top": 260,
+        "width": 51
+      }
+    },
+    "textview__29": {
+      "alignment": 36,
+      "backgroundPic": "MusicPlayer/music_albunm.png",
+      "caption": "TextView3",
+      "colorTab": {
+        "color0": 16777215
+      },
+      "id": 50009,
+      "touchable": false,
+      "position": {
+        "height": 51,
+        "left": 730,
+        "top": 330,
+        "width": 51
+      }
+    }
+  },
+  "window__30": {
+    "beepEnable": true,
+    "caption": "errorWindow",
+    "hideTimeOut": 3,
+    "id": 110002,
+    "modal": true,
+    "visible": false,
+    "position": {
+      "height": 54,
+      "left": 800,
+      "top": 260,
+      "width": 472
+    },
+    "textview__31": {
+      "alignment": 37,
+      "backgroundColor": 12632256,
+      "caption": "errorTextView",
+      "colorTab": {
+        "color0": 16711680
+      },
+      "fontSize": 26,
+      "id": 50014,
+      "text": "@file_error",
+      "touchable": false,
+      "position": {
+        "height": 54,
+        "left": 0,
+        "top": 0,
+        "width": 472
+      }
+    }
+  },
+  "textview__32": {
+    "alignment": 37,
+    "caption": "DevicesRemindTextView",
+    "colorTab": {
+      "color0": 16777215
+    },
+    "fontSize": 25,
+    "id": 50010,
+    "text": "@no_devices",
+    "touchable": false,
+    "visible": false,
+    "position": {
+      "height": 60,
+      "left": 700,
+      "top": 260,
+      "width": 500
+    }
+  },
+  "window__33": {
+    "backgroundPic": "HomePage/home_top_bg.png",
+    "beepEnable": true,
+    "caption": "headWindow",
+    "id": 110004,
+    "position": {
+      "height": 80,
+      "left": 0,
+      "top": 0,
+      "width": 1920
+    },
+    "button__34": {
+      "alignment": 37,
+      "caption": "auxButton",
+      "colorTab": {
+        "color0": 16777215
+      },
+      "id": 20022,
+      "picTab": {
+        "pic0": "status/aux_.png"
+      },
+      "touchable": false,
+      "visible": false,
+      "position": {
+        "height": 20,
+        "left": 743,
+        "top": 19,
+        "width": 20
+      }
+    },
+    "button__35": {
+      "alignment": 37,
+      "caption": "fmButton",
+      "colorTab": {
+        "color0": 16777215
+      },
+      "id": 20012,
+      "picTab": {
+        "pic0": "status/fm.png"
+      },
+      "touchable": false,
+      "visible": false,
+      "position": {
+        "height": 20,
+        "left": 773,
+        "top": 19,
+        "width": 20
+      }
+    },
+    "button__36": {
+      "alignment": 37,
+      "caption": "linkButton",
+      "colorTab": {
+        "color0": 16777215
+      },
+      "id": 20029,
+      "picTab": {
+        "pic0": "status/link.png"
+      },
+      "touchable": false,
+      "visible": false,
+      "position": {
+        "height": 20,
+        "left": 803,
+        "top": 19,
+        "width": 20
+      }
+    },
+    "button__37": {
+      "alignment": 37,
+      "caption": "sdButton",
+      "colorTab": {
+        "color0": 16777215
+      },
+      "id": 20030,
+      "picTab": {
+        "pic0": "status/sd.png"
+      },
+      "touchable": false,
+      "position": {
+        "height": 64,
+        "left": 1000,
+        "top": 10,
+        "width": 64
+      }
+    },
+    "button__38": {
+      "alignment": 37,
+      "caption": "btStatusButton",
+      "colorTab": {
+        "color0": 16777215
+      },
+      "id": 20032,
+      "picTab": {
+        "pic0": "status/home_bt.png",
+        "pic2": "status/home_bt_f.png"
+      },
+      "touchable": false,
+      "position": {
+        "height": 64,
+        "left": 930,
+        "top": 10,
+        "width": 64
+      }
+    },
+    "button__39": {
+      "alignment": 37,
+      "caption": "NetButton",
+      "colorTab": {
+        "color0": 16777215
+      },
+      "id": 20033,
+      "picTab": {
+        "pic0": "status/wifi.png"
+      },
+      "touchable": false,
+      "visible": false,
+      "position": {
+        "height": 20,
+        "left": 1345,
+        "top": 19,
+        "width": 20
+      }
+    },
+    "button__40": {
+      "alignment": 37,
+      "caption": "soundButton",
+      "colorTab": {
+        "color0": 16777215
+      },
+      "id": 20034,
+      "picTab": {
+        "pic0": "status/sound.png",
+        "pic2": "status/sound0.png"
+      },
+      "touchable": false,
+      "visible": false,
+      "position": {
+        "height": 20,
+        "left": 1377,
+        "top": 19,
+        "width": 20
+      }
+    },
+    "button__41": {
+      "alignment": 37,
+      "caption": "MusicHomeButton",
+      "colorTab": {
+        "color0": 8421504,
+        "color1": 8388863
+      },
+      "id": 20013,
+      "picTab": {
+        "pic0": "status/home_home_n.png",
+        "pic1": "status/home_home_f.png"
+      },
+      "position": {
+        "height": 80,
+        "left": 0,
+        "top": 0,
+        "width": 154
+      }
+    },
+    "button__42": {
+      "alignment": 37,
+      "caption": "usb1Button",
+      "colorTab": {
+        "color0": 16777215
+      },
+      "id": 20031,
+      "picTab": {
+        "pic0": "status/usb1.png"
+      },
+      "touchable": false,
+      "position": {
+        "height": 64,
+        "left": 1070,
+        "top": 10,
+        "width": 66
+      }
+    },
+    "button__43": {
+      "alignment": 37,
+      "caption": "usb2Button",
+      "colorTab": {
+        "color0": 16777215
+      },
+      "id": 20002,
+      "picTab": {
+        "pic0": "status/usb2.png"
+      },
+      "touchable": false,
+      "position": {
+        "height": 64,
+        "left": 1140,
+        "top": 10,
+        "width": 66
+      }
+    },
+    "digitalclock__44": {
+      "beat": true,
+      "caption": "DigitalClock24Hour",
+      "fontSize": 32,
+      "id": 93002,
+      "touchable": false,
+      "position": {
+        "height": 49,
+        "left": 1330,
+        "top": 15,
+        "width": 139
+      }
+    },
+    "digitalclock__45": {
+      "beat": true,
+      "caption": "DigitalClock12Hour",
+      "fontSize": 32,
+      "format": "hh:MM",
+      "id": 93001,
+      "touchable": false,
+      "visible": false,
+      "position": {
+        "height": 49,
+        "left": 1330,
+        "top": 15,
+        "width": 139
+      }
+    },
+    "button__46": {
+      "alignment": 37,
+      "caption": "MusicBackButton",
+      "colorTab": {
+        "color0": 8421504,
+        "color1": 8388863
+      },
+      "id": 20014,
+      "picTab": {
+        "pic0": "status/home_back_n.png",
+        "pic1": "status/home_back_f.png"
+      },
+      "position": {
+        "height": 80,
+        "left": 1420,
+        "top": 0,
+        "width": 154
+      }
+    },
+    "textview__47": {
+      "alignment": 37,
+      "caption": "timeAmPmTextView",
+      "colorTab": {
+        "color0": 16777215
+      },
+      "fontSize": 25,
+      "id": 50011,
+      "text": "AM",
+      "touchable": false,
+      "position": {
+        "height": 40,
+        "left": 1230,
+        "top": 20,
+        "width": 100
+      }
+    }
+  }
+}

@@ -1,0 +1,619 @@
+{
+  "backgroundColor": -1,
+  "backgroundPic": "setting/backgoun.png",
+  "hideTimeOut": -1,
+  "id": 0,
+  "modal": false,
+  "resolution": {
+    "height": 600,
+    "width": 1024
+  },
+  "topmost": false,
+  "touchable": false,
+  "visible": true,
+  "position": {
+    "height": 600,
+    "left": 0,
+    "top": 0,
+    "width": 1024
+  },
+  "button__1": {
+    "alignment": 37,
+    "backgroundColor": -1,
+    "backgroundPic": "",
+    "beepEnable": true,
+    "bgColorTab": {
+      "color0": -1,
+      "color1": -1,
+      "color2": -1,
+      "color3": -1,
+      "color4": -1
+    },
+    "bold": false,
+    "caption": "sys_back",
+    "colorTab": {
+      "color0": 16777215,
+      "color1": -1,
+      "color2": -1,
+      "color3": -1,
+      "color4": -1
+    },
+    "fontSize": 16,
+    "iconPosition": {
+      "height": 54,
+      "left": 10,
+      "top": 0,
+      "width": 54
+    },
+    "id": 100,
+    "italic": false,
+    "longClickIntervalTime": -1,
+    "longClickTimeOut": -1,
+    "picTab": {
+      "pic0": "HomePage/back_n.png",
+      "pic1": "HomePage/back_s.png"
+    },
+    "rollDirection": 1,
+    "rollEnable": false,
+    "rollIntervalTime": 150,
+    "rollStep": 5,
+    "text": "",
+    "touchable": true,
+    "visible": true,
+    "position": {
+      "height": 82,
+      "left": 0,
+      "top": 0,
+      "width": 187
+    },
+    "textPosition": {
+      "height": 82,
+      "left": 0,
+      "top": 0,
+      "width": 187
+    }
+  },
+  "window__2": {
+    "backgroundColor": -1,
+    "caption": "sortTipsWindow",
+    "hideTimeOut": -1,
+    "id": 110010,
+    "modal": false,
+    "touchable": false,
+    "visible": false,
+    "position": {
+      "height": 440,
+      "left": 17,
+      "top": 0,
+      "width": 604
+    },
+    "textview__3": {
+      "alignment": 37,
+      "backgroundColor": 0,
+      "bgColorTab": {
+        "color0": -1,
+        "color1": -1,
+        "color2": -1,
+        "color3": -1,
+        "color4": -1
+      },
+      "bold": false,
+      "caption": "sortTipsTextView",
+      "colorTab": {
+        "color0": 16777215,
+        "color1": -1,
+        "color2": -1,
+        "color3": -1,
+        "color4": -1
+      },
+      "fontSize": 26,
+      "id": 50011,
+      "italic": false,
+      "rollDirection": 1,
+      "rollEnable": false,
+      "rollIntervalTime": 150,
+      "rollStep": 5,
+      "text": "联系人排序中...",
+      "touchable": false,
+      "visible": true,
+      "position": {
+        "height": 176,
+        "left": 149,
+        "top": 122,
+        "width": 284
+      },
+      "textPosition": {
+        "height": 176,
+        "left": 0,
+        "top": 0,
+        "width": 284
+      }
+    }
+  },
+  "textview__4": {
+    "alignment": 37,
+    "backgroundColor": -1,
+    "backgroundPic": "bt_n/Char.png",
+    "bgColorTab": {
+      "color0": -1,
+      "color1": -1,
+      "color2": -1,
+      "color3": -1,
+      "color4": -1
+    },
+    "bold": false,
+    "caption": "indexTip",
+    "colorTab": {
+      "color0": 16777215,
+      "color1": -1,
+      "color2": -1,
+      "color3": -1,
+      "color4": -1
+    },
+    "fontSize": 26,
+    "id": 50012,
+    "italic": false,
+    "rollDirection": 1,
+    "rollEnable": false,
+    "rollIntervalTime": 150,
+    "rollStep": 5,
+    "text": "A",
+    "touchable": false,
+    "visible": false,
+    "position": {
+      "height": 35,
+      "left": 941,
+      "top": 89,
+      "width": 35
+    },
+    "textPosition": {
+      "height": 35,
+      "left": 0,
+      "top": 0,
+      "width": 35
+    }
+  },
+  "listview__5": {
+    "autoRollback": false,
+    "backgroundColor": -1,
+    "beepEnable": true,
+    "caption": "charJump",
+    "cols": 1,
+    "cycleEnable": false,
+    "dragMaxDis": 0,
+    "edgeEffect": 0,
+    "hasScrollbar": false,
+    "id": 80006,
+    "rows": 27,
+    "touchable": true,
+    "visible": true,
+    "position": {
+      "height": 540,
+      "left": 956,
+      "top": 49,
+      "width": 68
+    },
+    "orientation": 1,
+    "colSpacing": 0,
+    "rowSpacing": 0,
+    "item": {
+      "alignment": 38,
+      "backgroundColor": -1,
+      "bgColorTab": {
+        "color0": -1,
+        "color1": -1,
+        "color2": -1,
+        "color3": -1,
+        "color4": -1
+      },
+      "bold": false,
+      "caption": "item",
+      "colorTab": {
+        "color0": 8421504,
+        "color1": 8388863,
+        "color2": 8388863,
+        "color3": -1,
+        "color4": -1
+      },
+      "fontSize": 20,
+      "iconPosition": {
+        "height": 108,
+        "left": 0,
+        "top": 0,
+        "width": 46
+      },
+      "italic": false,
+      "longClickIntervalTime": -1,
+      "longClickTimeOut": -1,
+      "picTab": {},
+      "position": {
+        "height": 20,
+        "left": 0,
+        "top": 0,
+        "width": 68
+      },
+      "text": "A",
+      "touchable": true,
+      "visible": true,
+      "textPosition": {
+        "height": 20,
+        "left": 0,
+        "top": 0,
+        "width": 63
+      }
+    }
+  },
+  "listview__7": {
+    "autoRollback": true,
+    "backgroundColor": -1,
+    "beepEnable": true,
+    "caption": "contactsListView",
+    "cols": 1,
+    "cycleEnable": false,
+    "dragMaxDis": 0,
+    "edgeEffect": 0,
+    "hasScrollbar": true,
+    "id": 80003,
+    "rows": 5,
+    "touchable": true,
+    "visible": true,
+    "position": {
+      "height": 550,
+      "left": 199,
+      "top": 44,
+      "width": 743
+    },
+    "orientation": 1,
+    "colSpacing": 0,
+    "rowSpacing": 0,
+    "item": {
+      "alignment": 36,
+      "backgroundColor": -1,
+      "backgroundPic": "",
+      "bgColorTab": {
+        "color0": -1,
+        "color1": -1,
+        "color2": -1,
+        "color3": -1,
+        "color4": -1
+      },
+      "bold": false,
+      "caption": "item",
+      "colorTab": {
+        "color0": 16777215,
+        "color1": -1,
+        "color2": -1,
+        "color3": -1,
+        "color4": -1
+      },
+      "fontSize": 30,
+      "iconPosition": {
+        "height": 106,
+        "left": 0,
+        "top": 0,
+        "width": 732
+      },
+      "italic": false,
+      "longClickIntervalTime": -1,
+      "longClickTimeOut": -1,
+      "picTab": {
+        "pic0": "MusicPlayer/kuang1.png",
+        "pic1": "MusicPlayer/kuang2.png",
+        "pic3": "MusicPlayer/kuang2.png"
+      },
+      "position": {
+        "height": 110,
+        "left": 0,
+        "top": 0,
+        "width": 743
+      },
+      "subItem": [
+        {
+          "alignment": 37,
+          "backgroundColor": -1,
+          "backgroundPic": "bt_n/head.png",
+          "bgColorTab": {
+            "color0": -1,
+            "color1": -1,
+            "color2": -1,
+            "color3": -1,
+            "color4": -1
+          },
+          "bold": false,
+          "caption": "cIdSubItem",
+          "colorTab": {
+            "color0": 16777215,
+            "color1": -1,
+            "color2": -1,
+            "color3": -1,
+            "color4": -1
+          },
+          "fontSize": 24,
+          "iconPosition": {
+            "height": 71,
+            "left": 0,
+            "top": 0,
+            "width": 421
+          },
+          "id": 24002,
+          "italic": false,
+          "longClickIntervalTime": -1,
+          "longClickTimeOut": -1,
+          "picTab": {},
+          "text": "",
+          "touchable": false,
+          "visible": true,
+          "position": {
+            "height": 55,
+            "left": 19,
+            "top": 22,
+            "width": 55
+          },
+          "textPosition": {
+            "height": 55,
+            "left": 0,
+            "top": 0,
+            "width": 55
+          }
+        }
+      ],
+      "text": "number",
+      "touchable": true,
+      "visible": true,
+      "textPosition": {
+        "height": 95,
+        "left": 105,
+        "top": 0,
+        "width": 638
+      }
+    }
+  },
+  "button__9": {
+    "alignment": 37,
+    "backgroundColor": -1,
+    "backgroundPic": "",
+    "beepEnable": true,
+    "bgColorTab": {
+      "color0": -1,
+      "color1": -1,
+      "color2": -1,
+      "color3": -1,
+      "color4": -1
+    },
+    "bold": false,
+    "caption": "downloadButton",
+    "colorTab": {
+      "color0": 16777215,
+      "color1": 1218267,
+      "color2": -1,
+      "color3": -1,
+      "color4": -1
+    },
+    "fontSize": 22,
+    "iconPosition": {
+      "height": 60,
+      "left": 30,
+      "top": 0,
+      "width": 60
+    },
+    "id": 20001,
+    "italic": false,
+    "longClickIntervalTime": -1,
+    "longClickTimeOut": -1,
+    "picTab": {
+      "pic0": "bt/download.png",
+      "pic1": "bt/download_p.png"
+    },
+    "rollDirection": 1,
+    "rollEnable": false,
+    "rollIntervalTime": 150,
+    "rollStep": 5,
+    "text": "导入",
+    "touchable": true,
+    "visible": true,
+    "position": {
+      "height": 63,
+      "left": 14,
+      "top": 534,
+      "width": 179
+    },
+    "textPosition": {
+      "height": 63,
+      "left": 30,
+      "top": 0,
+      "width": 149
+    }
+  },
+  "button__10": {
+    "alignment": 36,
+    "backgroundColor": -1,
+    "backgroundPic": "bt_n/call.png",
+    "beepEnable": true,
+    "bgColorTab": {
+      "color0": -1,
+      "color1": -1,
+      "color2": -1,
+      "color3": -1,
+      "color4": -1
+    },
+    "bold": false,
+    "caption": "btDialButton",
+    "colorTab": {
+      "color0": 16777215,
+      "color1": -1,
+      "color2": -1,
+      "color3": -1,
+      "color4": -1
+    },
+    "fontSize": 26,
+    "iconPosition": {
+      "height": 155,
+      "left": 0,
+      "top": 0,
+      "width": 185
+    },
+    "id": 20003,
+    "italic": false,
+    "longClickIntervalTime": -1,
+    "longClickTimeOut": -1,
+    "picTab": {
+      "pic0": "bt_n/call.png",
+      "pic1": "bt_n/call0.png"
+    },
+    "rollDirection": 1,
+    "rollEnable": false,
+    "rollIntervalTime": 150,
+    "rollStep": 5,
+    "text": "",
+    "touchable": true,
+    "visible": true,
+    "position": {
+      "height": 155,
+      "left": 8,
+      "top": 380,
+      "width": 185
+    },
+    "textPosition": {
+      "height": 155,
+      "left": 80,
+      "top": 0,
+      "width": 105
+    }
+  },
+  "button__11": {
+    "alignment": 36,
+    "backgroundColor": -1,
+    "backgroundPic": "",
+    "beepEnable": true,
+    "bgColorTab": {
+      "color0": -1,
+      "color1": -1,
+      "color2": -1,
+      "color3": -1,
+      "color4": -1
+    },
+    "bold": false,
+    "caption": "btContactsButton",
+    "colorTab": {
+      "color0": 16777215,
+      "color1": -1,
+      "color2": -1,
+      "color3": -1,
+      "color4": -1
+    },
+    "fontSize": 26,
+    "iconPosition": {
+      "height": 155,
+      "left": 0,
+      "top": 0,
+      "width": 185
+    },
+    "id": 20005,
+    "italic": false,
+    "longClickIntervalTime": -1,
+    "longClickTimeOut": -1,
+    "picTab": {
+      "pic0": "bt_n/linkman0.png",
+      "pic1": "",
+      "pic2": "bt_n/linkman.png"
+    },
+    "rollDirection": 1,
+    "rollEnable": false,
+    "rollIntervalTime": 150,
+    "rollStep": 5,
+    "text": "",
+    "touchable": true,
+    "visible": true,
+    "position": {
+      "height": 155,
+      "left": 8,
+      "top": 56,
+      "width": 185
+    },
+    "textPosition": {
+      "height": 155,
+      "left": 80,
+      "top": 0,
+      "width": 105
+    }
+  },
+  "button__12": {
+    "alignment": 36,
+    "backgroundColor": -1,
+    "backgroundPic": "bt_n/record.png",
+    "beepEnable": true,
+    "bgColorTab": {
+      "color0": -1,
+      "color1": -1,
+      "color2": -1,
+      "color3": -1,
+      "color4": -1
+    },
+    "bold": false,
+    "caption": "btRecordsButton",
+    "colorTab": {
+      "color0": 16777215,
+      "color1": -1,
+      "color2": -1,
+      "color3": -1,
+      "color4": -1
+    },
+    "fontSize": 26,
+    "iconPosition": {
+      "height": 155,
+      "left": 0,
+      "top": 0,
+      "width": 185
+    },
+    "id": 20004,
+    "italic": false,
+    "longClickIntervalTime": -1,
+    "longClickTimeOut": -1,
+    "picTab": {
+      "pic0": "bt_n/record.png",
+      "pic1": "bt_n/record0.png"
+    },
+    "rollDirection": 1,
+    "rollEnable": false,
+    "rollIntervalTime": 150,
+    "rollStep": 5,
+    "text": "",
+    "touchable": true,
+    "visible": true,
+    "position": {
+      "height": 155,
+      "left": 8,
+      "top": 218,
+      "width": 185
+    },
+    "textPosition": {
+      "height": 155,
+      "left": 80,
+      "top": 0,
+      "width": 105
+    }
+  },
+  "seekbar__13": {
+    "backgroundColor": -1,
+    "beepEnable": true,
+    "caption": "charSeekBar",
+    "defProgress": 0,
+    "id": 91001,
+    "max": 107,
+    "orientation": 1,
+    "thumb": {
+      "size": {
+        "height": 0,
+        "width": 0
+      }
+    },
+    "touchable": true,
+    "visible": true,
+    "position": {
+      "height": 540,
+      "left": 956,
+      "top": 49,
+      "width": 68
+    }
+  }
+}

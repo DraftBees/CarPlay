@@ -1,0 +1,1047 @@
+{
+  "backgroundPic": "setting/backgoun.png",
+  "beepEnable": true,
+  "id": 0,
+  "resolution": {
+    "height": 720,
+    "width": 1920
+  },
+  "topmost": false,
+  "position": {
+    "height": 720,
+    "left": 0,
+    "top": 0,
+    "width": 1920
+  },
+  "window__1": {
+    "backgroundPic": "/bg/bg1.png",
+    "beepEnable": true,
+    "caption": "CallInBgWindow",
+    "id": 110002,
+    "position": {
+      "height": 720,
+      "left": 0,
+      "top": 0,
+      "width": 1920
+    }
+  },
+  "textview__2": {
+    "alignment": 37,
+    "caption": "numberTextView",
+    "colorTab": {
+      "color0": 16777215
+    },
+    "fontSize": 36,
+    "id": 50002,
+    "text": "number",
+    "touchable": false,
+    "position": {
+      "height": 40,
+      "left": 230,
+      "top": 350,
+      "width": 502
+    }
+  },
+  "radiogroup__3": {
+    "caption": "RotaryCallingSelectRadioGroup",
+    "id": 94001,
+    "position": {
+      "height": 102,
+      "left": 730,
+      "top": 458,
+      "width": 800
+    },
+    "radiobuttons": [
+      {
+        "alignment": 38,
+        "caption": "SetCallingKeyBoardRadioButton",
+        "checked": false,
+        "colorTab": {
+          "color0": 16777215
+        },
+        "id": 22048,
+        "picTab": {
+          "pic2": "setting/set_first_menu_select.png"
+        },
+        "position": {
+          "height": 80,
+          "left": 23,
+          "top": 10,
+          "width": 190
+        }
+      },
+      {
+        "alignment": 38,
+        "caption": "SetCallingHangUpRadioButton",
+        "checked": false,
+        "colorTab": {
+          "color0": 16777215
+        },
+        "id": 22001,
+        "picTab": {
+          "pic2": "setting/set_first_menu_select.png"
+        },
+        "position": {
+          "height": 80,
+          "left": 215,
+          "top": 10,
+          "width": 190
+        }
+      },
+      {
+        "alignment": 38,
+        "caption": "SetCallingSoundRadioButton",
+        "checked": false,
+        "colorTab": {
+          "color0": 16777215
+        },
+        "id": 22002,
+        "picTab": {
+          "pic2": "setting/set_first_menu_select.png"
+        },
+        "position": {
+          "height": 80,
+          "left": 405,
+          "top": 10,
+          "width": 190
+        }
+      },
+      {
+        "alignment": 38,
+        "caption": "SetCallingMicRadioButton",
+        "checked": false,
+        "colorTab": {
+          "color0": 16777215
+        },
+        "id": 22003,
+        "picTab": {
+          "pic2": "setting/set_first_menu_select.png"
+        },
+        "position": {
+          "height": 80,
+          "left": 595,
+          "top": 10,
+          "width": 190
+        }
+      }
+    ]
+  },
+  "textview__4": {
+    "alignment": 38,
+    "caption": "TextView1",
+    "colorTab": {
+      "color0": 16777215
+    },
+    "fontSize": 36,
+    "id": 50001,
+    "text": "@call_remind",
+    "touchable": false,
+    "position": {
+      "height": 40,
+      "left": 27,
+      "top": 400,
+      "width": 398
+    }
+  },
+  "textview__5": {
+    "alignment": 37,
+    "caption": "nameTextView",
+    "colorTab": {
+      "color0": 16777215
+    },
+    "fontSize": 32,
+    "id": 50004,
+    "text": "name",
+    "touchable": false,
+    "position": {
+      "height": 52,
+      "left": 230,
+      "top": 300,
+      "width": 502
+    }
+  },
+  "button__6": {
+    "alignment": 37,
+    "caption": "CallSoundButton",
+    "colorTab": {
+      "color0": 16777215,
+      "color1": 6091519
+    },
+    "fontSize": 44,
+    "id": 20036,
+    "picTab": {
+      "pic0": "bt/btcall_update_n.png",
+      "pic2": "bt/btcall_update_f.png"
+    },
+    "position": {
+      "height": 76,
+      "left": 1138,
+      "top": 470,
+      "width": 186
+    }
+  },
+  "button__7": {
+    "alignment": 37,
+    "caption": "keyBoardButton",
+    "colorTab": {
+      "color0": 16777215
+    },
+    "fontSize": 26,
+    "id": 20001,
+    "picTab": {
+      "pic0": "bt/bt_call_keykeyboard_n.png",
+      "pic1": "bt/bt_call_keykeyboard_n.png",
+      "pic2": "bt/bt_call_keykeyboard_f.png",
+      "pic3": "bt/bt_call_keykeyboard_f.png"
+    },
+    "position": {
+      "height": 76,
+      "left": 754,
+      "top": 470,
+      "width": 186
+    }
+  },
+  "button__8": {
+    "alignment": 37,
+    "caption": "hangupButton",
+    "colorTab": {
+      "color0": 16777215
+    },
+    "fontSize": 26,
+    "id": 20006,
+    "picTab": {
+      "pic0": "bt/bt_hang_up_n.png",
+      "pic1": "bt/bt_hang_up_f.png"
+    },
+    "position": {
+      "height": 76,
+      "left": 946,
+      "top": 470,
+      "width": 186
+    }
+  },
+  "button__9": {
+    "alignment": 37,
+    "caption": "stopMicButton",
+    "colorTab": {
+      "color0": 16777215
+    },
+    "fontSize": 26,
+    "id": 20003,
+    "picTab": {
+      "pic0": "bt/bt_call_voice_n.png",
+      "pic2": "bt/bt_call_voice_f.png"
+    },
+    "position": {
+      "height": 76,
+      "left": 1329,
+      "top": 470,
+      "width": 186
+    }
+  },
+  "textview__10": {
+    "alignment": 37,
+    "caption": "callTimeTextView",
+    "colorTab": {
+      "color0": 16777215
+    },
+    "fontSize": 36,
+    "id": 50003,
+    "text": "0:00",
+    "touchable": false,
+    "position": {
+      "height": 37,
+      "left": 410,
+      "top": 400,
+      "width": 136
+    }
+  },
+  "window__11": {
+    "beepEnable": true,
+    "caption": "keyBoardWindow",
+    "id": 110007,
+    "visible": false,
+    "position": {
+      "height": 354,
+      "left": 754,
+      "top": 117,
+      "width": 769
+    },
+    "radiogroup__12": {
+      "caption": "RotaryKeyBoardSelectRadioGroup",
+      "id": 94002,
+      "position": {
+        "height": 354,
+        "left": 0,
+        "top": 0,
+        "width": 769
+      },
+      "radiobuttons": [
+        {
+          "alignment": 38,
+          "caption": "SetKeyBoardRadioButton1",
+          "checked": false,
+          "colorTab": {
+            "color0": 16777215
+          },
+          "id": 22061,
+          "picTab": {
+            "pic2": "setting/language_confir_select.png"
+          },
+          "position": {
+            "height": 75,
+            "left": 0,
+            "top": 100,
+            "width": 185
+          }
+        },
+        {
+          "alignment": 38,
+          "caption": "SetKeyBoardRadioButton2",
+          "checked": false,
+          "colorTab": {
+            "color0": 16777215
+          },
+          "id": 22004,
+          "picTab": {
+            "pic2": "setting/language_confir_select.png"
+          },
+          "position": {
+            "height": 75,
+            "left": 193,
+            "top": 100,
+            "width": 185
+          }
+        },
+        {
+          "alignment": 38,
+          "caption": "SetKeyBoardRadioButton3",
+          "checked": false,
+          "colorTab": {
+            "color0": 16777215
+          },
+          "id": 22005,
+          "picTab": {
+            "pic2": "setting/language_confir_select.png"
+          },
+          "position": {
+            "height": 75,
+            "left": 385,
+            "top": 99,
+            "width": 185
+          }
+        },
+        {
+          "alignment": 38,
+          "caption": "SetKeyBoardRadioButtonXing",
+          "checked": false,
+          "colorTab": {
+            "color0": 16777215
+          },
+          "id": 22006,
+          "picTab": {
+            "pic2": "setting/language_confir_select.png"
+          },
+          "position": {
+            "height": 75,
+            "left": 577,
+            "top": 100,
+            "width": 185
+          }
+        },
+        {
+          "alignment": 38,
+          "caption": "SetKeyBoardRadioButton4",
+          "checked": false,
+          "colorTab": {
+            "color0": 16777215
+          },
+          "id": 22007,
+          "picTab": {
+            "pic2": "setting/language_confir_select.png"
+          },
+          "position": {
+            "height": 75,
+            "left": 0,
+            "top": 180,
+            "width": 185
+          }
+        },
+        {
+          "alignment": 38,
+          "caption": "SetKeyBoardRadioButton5",
+          "checked": false,
+          "colorTab": {
+            "color0": 16777215
+          },
+          "id": 22008,
+          "picTab": {
+            "pic2": "setting/language_confir_select.png"
+          },
+          "position": {
+            "height": 75,
+            "left": 193,
+            "top": 180,
+            "width": 185
+          }
+        },
+        {
+          "alignment": 38,
+          "caption": "SetKeyBoardRadioButton6",
+          "checked": false,
+          "colorTab": {
+            "color0": 16777215
+          },
+          "id": 22009,
+          "picTab": {
+            "pic2": "setting/language_confir_select.png"
+          },
+          "position": {
+            "height": 75,
+            "left": 385,
+            "top": 180,
+            "width": 185
+          }
+        },
+        {
+          "alignment": 38,
+          "caption": "SetKeyBoardRadioButton0",
+          "checked": false,
+          "colorTab": {
+            "color0": 16777215
+          },
+          "id": 22010,
+          "picTab": {
+            "pic2": "setting/language_confir_select.png"
+          },
+          "position": {
+            "height": 75,
+            "left": 577,
+            "top": 180,
+            "width": 185
+          }
+        },
+        {
+          "alignment": 38,
+          "caption": "SetKeyBoardRadioButton7",
+          "checked": false,
+          "colorTab": {
+            "color0": 16777215
+          },
+          "id": 22011,
+          "picTab": {
+            "pic2": "setting/language_confir_select.png"
+          },
+          "position": {
+            "height": 75,
+            "left": 0,
+            "top": 260,
+            "width": 185
+          }
+        },
+        {
+          "alignment": 38,
+          "caption": "SetKeyBoardRadioButton8",
+          "checked": false,
+          "colorTab": {
+            "color0": 16777215
+          },
+          "id": 22012,
+          "picTab": {
+            "pic2": "setting/language_confir_select.png"
+          },
+          "position": {
+            "height": 75,
+            "left": 193,
+            "top": 260,
+            "width": 185
+          }
+        },
+        {
+          "alignment": 38,
+          "caption": "SetKeyBoardRadioButton9",
+          "checked": false,
+          "colorTab": {
+            "color0": 16777215
+          },
+          "id": 22013,
+          "picTab": {
+            "pic2": "setting/language_confir_select.png"
+          },
+          "position": {
+            "height": 75,
+            "left": 385,
+            "top": 260,
+            "width": 185
+          }
+        },
+        {
+          "alignment": 38,
+          "caption": "SetKeyBoardRadioButtonJin",
+          "checked": false,
+          "colorTab": {
+            "color0": 16777215
+          },
+          "id": 22014,
+          "picTab": {
+            "pic2": "setting/language_confir_select.png"
+          },
+          "position": {
+            "height": 75,
+            "left": 577,
+            "top": 260,
+            "width": 185
+          }
+        }
+      ]
+    },
+    "textview__13": {
+      "alignment": 37,
+      "caption": "numTextView",
+      "colorTab": {
+        "color0": 16777215
+      },
+      "fontSize": 26,
+      "id": 50007,
+      "touchable": false,
+      "position": {
+        "height": 59,
+        "left": 0,
+        "top": 14,
+        "width": 267
+      }
+    },
+    "button__14": {
+      "alignment": 37,
+      "bgColorTab": {
+        "color0": 8421504,
+        "color1": 43764
+      },
+      "caption": "delButton",
+      "colorTab": {
+        "color0": 16777215
+      },
+      "fontSize": 26,
+      "iconPosition": {
+        "height": 78,
+        "left": 0,
+        "top": 0,
+        "width": 142
+      },
+      "id": 20025,
+      "longClickTimeOut": 1000,
+      "text": "Del",
+      "visible": false,
+      "position": {
+        "height": 59,
+        "left": 315,
+        "top": 14,
+        "width": 103
+      }
+    },
+    "button__15": {
+      "alignment": 37,
+      "caption": "key1Button",
+      "colorTab": {
+        "color0": 16777215,
+        "color1": 6091519
+      },
+      "fontSize": 44,
+      "id": 20010,
+      "picTab": {
+        "pic0": "bt/bt_btn1_n.png",
+        "pic1": "bt/bt_btn1_f.png"
+      },
+      "text": "1",
+      "position": {
+        "height": 76,
+        "left": 0,
+        "top": 100,
+        "width": 186
+      }
+    },
+    "button__16": {
+      "alignment": 37,
+      "caption": "key2Button",
+      "colorTab": {
+        "color0": 16777215,
+        "color1": 6091519
+      },
+      "fontSize": 44,
+      "id": 20011,
+      "picTab": {
+        "pic0": "bt/bt_btn1_n.png",
+        "pic1": "bt/bt_btn1_f.png"
+      },
+      "text": "2",
+      "position": {
+        "height": 76,
+        "left": 192,
+        "top": 100,
+        "width": 186
+      }
+    },
+    "button__17": {
+      "alignment": 37,
+      "caption": "key3Button",
+      "colorTab": {
+        "color0": 16777215,
+        "color1": 6091519
+      },
+      "fontSize": 44,
+      "id": 20026,
+      "picTab": {
+        "pic0": "bt/bt_btn1_n.png",
+        "pic1": "bt/bt_btn1_f.png"
+      },
+      "text": "3",
+      "position": {
+        "height": 76,
+        "left": 384,
+        "top": 100,
+        "width": 186
+      }
+    },
+    "button__18": {
+      "alignment": 37,
+      "caption": "keyXINGButton",
+      "colorTab": {
+        "color0": 16777215,
+        "color1": 6091519
+      },
+      "fontSize": 44,
+      "id": 20013,
+      "picTab": {
+        "pic0": "bt/bt_btn1_n.png",
+        "pic1": "bt/bt_btn1_f.png"
+      },
+      "text": "*",
+      "position": {
+        "height": 76,
+        "left": 576,
+        "top": 100,
+        "width": 186
+      },
+      "textPosition": {
+        "height": 66,
+        "left": 0,
+        "top": 10,
+        "width": 186
+      }
+    },
+    "button__19": {
+      "alignment": 37,
+      "caption": "key4Button",
+      "colorTab": {
+        "color0": 16777215,
+        "color1": 6091519
+      },
+      "fontSize": 44,
+      "id": 20014,
+      "picTab": {
+        "pic0": "bt/bt_btn1_n.png",
+        "pic1": "bt/bt_btn1_f.png"
+      },
+      "text": "4",
+      "position": {
+        "height": 76,
+        "left": 0,
+        "top": 180,
+        "width": 186
+      }
+    },
+    "button__20": {
+      "alignment": 37,
+      "caption": "key5Button",
+      "colorTab": {
+        "color0": 16777215,
+        "color1": 6091519
+      },
+      "fontSize": 44,
+      "id": 20015,
+      "picTab": {
+        "pic0": "bt/bt_btn1_n.png",
+        "pic1": "bt/bt_btn1_f.png"
+      },
+      "text": "5",
+      "position": {
+        "height": 76,
+        "left": 192,
+        "top": 180,
+        "width": 186
+      }
+    },
+    "button__21": {
+      "alignment": 37,
+      "caption": "key6Button",
+      "colorTab": {
+        "color0": 16777215,
+        "color1": 6091519
+      },
+      "fontSize": 44,
+      "id": 20024,
+      "picTab": {
+        "pic0": "bt/bt_btn1_n.png",
+        "pic1": "bt/bt_btn1_f.png"
+      },
+      "text": "6",
+      "position": {
+        "height": 76,
+        "left": 384,
+        "top": 180,
+        "width": 186
+      }
+    },
+    "button__22": {
+      "alignment": 37,
+      "caption": "key0Button",
+      "colorTab": {
+        "color0": 16777215,
+        "color1": 6091519
+      },
+      "fontSize": 44,
+      "id": 20035,
+      "picTab": {
+        "pic0": "bt/bt_btn1_n.png",
+        "pic1": "bt/bt_btn1_f.png"
+      },
+      "text": "0/+",
+      "position": {
+        "height": 76,
+        "left": 576,
+        "top": 180,
+        "width": 186
+      }
+    },
+    "button__23": {
+      "alignment": 37,
+      "caption": "key7Button",
+      "colorTab": {
+        "color0": 16777215,
+        "color1": 6091519
+      },
+      "fontSize": 44,
+      "id": 20037,
+      "picTab": {
+        "pic0": "bt/bt_btn1_n.png",
+        "pic1": "bt/bt_btn1_f.png"
+      },
+      "text": "7",
+      "position": {
+        "height": 76,
+        "left": 0,
+        "top": 260,
+        "width": 186
+      }
+    },
+    "button__24": {
+      "alignment": 37,
+      "caption": "key8Button",
+      "colorTab": {
+        "color0": 16777215,
+        "color1": 6091519
+      },
+      "fontSize": 44,
+      "id": 20038,
+      "picTab": {
+        "pic0": "bt/bt_btn1_n.png",
+        "pic1": "bt/bt_btn1_f.png"
+      },
+      "text": "8",
+      "position": {
+        "height": 76,
+        "left": 192,
+        "top": 260,
+        "width": 186
+      }
+    },
+    "button__25": {
+      "alignment": 37,
+      "caption": "key9Button",
+      "colorTab": {
+        "color0": 16777215,
+        "color1": 6091519
+      },
+      "fontSize": 44,
+      "id": 20039,
+      "picTab": {
+        "pic0": "bt/bt_btn1_n.png",
+        "pic1": "bt/bt_btn1_f.png"
+      },
+      "text": "9",
+      "position": {
+        "height": 76,
+        "left": 384,
+        "top": 260,
+        "width": 186
+      }
+    },
+    "button__26": {
+      "alignment": 37,
+      "caption": "keyJINGButton",
+      "colorTab": {
+        "color0": 16777215,
+        "color1": 6091519
+      },
+      "fontSize": 44,
+      "id": 20040,
+      "picTab": {
+        "pic0": "bt/bt_btn1_n.png",
+        "pic1": "bt/bt_btn1_f.png"
+      },
+      "text": "#",
+      "position": {
+        "height": 76,
+        "left": 576,
+        "top": 260,
+        "width": 186
+      }
+    }
+  },
+  "window__27": {
+    "backgroundPic": "HomePage/home_top_bg.png",
+    "beepEnable": true,
+    "caption": "headWindow",
+    "id": 110003,
+    "position": {
+      "height": 100,
+      "left": 0,
+      "top": 0,
+      "width": 1920
+    },
+    "button__28": {
+      "alignment": 37,
+      "caption": "auxButton",
+      "colorTab": {
+        "color0": 16777215
+      },
+      "id": 20002,
+      "picTab": {
+        "pic0": "status/aux_.png"
+      },
+      "touchable": false,
+      "visible": false,
+      "position": {
+        "height": 20,
+        "left": 743,
+        "top": 19,
+        "width": 20
+      }
+    },
+    "button__29": {
+      "alignment": 37,
+      "caption": "fmButton",
+      "colorTab": {
+        "color0": 16777215
+      },
+      "id": 20012,
+      "picTab": {
+        "pic0": "status/fm.png"
+      },
+      "touchable": false,
+      "visible": false,
+      "position": {
+        "height": 20,
+        "left": 773,
+        "top": 19,
+        "width": 20
+      }
+    },
+    "button__30": {
+      "alignment": 37,
+      "caption": "linkButton",
+      "colorTab": {
+        "color0": 16777215
+      },
+      "id": 20029,
+      "picTab": {
+        "pic0": "status/link.png"
+      },
+      "touchable": false,
+      "visible": false,
+      "position": {
+        "height": 20,
+        "left": 803,
+        "top": 19,
+        "width": 20
+      }
+    },
+    "button__31": {
+      "alignment": 37,
+      "caption": "sdButton",
+      "colorTab": {
+        "color0": 16777215
+      },
+      "id": 20030,
+      "picTab": {
+        "pic0": "status/sd.png"
+      },
+      "touchable": false,
+      "position": {
+        "height": 64,
+        "left": 1270,
+        "top": 20,
+        "width": 64
+      }
+    },
+    "button__32": {
+      "alignment": 37,
+      "caption": "NetButton",
+      "colorTab": {
+        "color0": 16777215
+      },
+      "id": 20004,
+      "picTab": {
+        "pic0": "status/wifi.png"
+      },
+      "touchable": false,
+      "visible": false,
+      "position": {
+        "height": 20,
+        "left": 1345,
+        "top": 19,
+        "width": 20
+      }
+    },
+    "button__33": {
+      "alignment": 37,
+      "caption": "CallInHomeButton",
+      "colorTab": {
+        "color0": 8421504,
+        "color1": 8388863
+      },
+      "id": 20008,
+      "picTab": {
+        "pic0": "status/home_home_n.png",
+        "pic1": "status/home_home_f.png"
+      },
+      "touchable": false,
+      "position": {
+        "height": 92,
+        "left": 0,
+        "top": 6,
+        "width": 154
+      }
+    },
+    "button__34": {
+      "alignment": 37,
+      "caption": "btStatusButton",
+      "colorTab": {
+        "color0": 16777215
+      },
+      "id": 20032,
+      "picTab": {
+        "pic0": "status/home_bt.png",
+        "pic2": "status/home_bt_f.png"
+      },
+      "touchable": false,
+      "position": {
+        "height": 64,
+        "left": 1200,
+        "top": 18,
+        "width": 64
+      }
+    },
+    "button__35": {
+      "alignment": 37,
+      "caption": "usb1Button",
+      "colorTab": {
+        "color0": 16777215
+      },
+      "id": 20031,
+      "picTab": {
+        "pic0": "status/usb1.png"
+      },
+      "touchable": false,
+      "position": {
+        "height": 64,
+        "left": 1340,
+        "top": 20,
+        "width": 66
+      }
+    },
+    "button__36": {
+      "alignment": 37,
+      "caption": "usb2Button",
+      "colorTab": {
+        "color0": 16777215
+      },
+      "id": 20005,
+      "picTab": {
+        "pic0": "status/usb2.png"
+      },
+      "touchable": false,
+      "position": {
+        "height": 64,
+        "left": 1410,
+        "top": 20,
+        "width": 66
+      }
+    },
+    "digitalclock__37": {
+      "beat": true,
+      "caption": "DigitalClock24Hour",
+      "fontSize": 32,
+      "id": 93002,
+      "touchable": false,
+      "position": {
+        "height": 49,
+        "left": 1650,
+        "top": 25,
+        "width": 139
+      }
+    },
+    "digitalclock__38": {
+      "beat": true,
+      "caption": "DigitalClock12Hour",
+      "fontSize": 32,
+      "format": "hh:MM",
+      "id": 93001,
+      "touchable": false,
+      "visible": false,
+      "position": {
+        "height": 49,
+        "left": 1650,
+        "top": 25,
+        "width": 139
+      }
+    },
+    "button__39": {
+      "alignment": 37,
+      "caption": "CallInBackButton",
+      "colorTab": {
+        "color0": 8421504,
+        "color1": 8388863
+      },
+      "id": 20009,
+      "picTab": {
+        "pic0": "status/home_back_n.png",
+        "pic1": "status/home_back_f.png"
+      },
+      "touchable": false,
+      "position": {
+        "height": 92,
+        "left": 1760,
+        "top": 4,
+        "width": 154
+      }
+    },
+    "textview__40": {
+      "alignment": 37,
+      "caption": "timeAmPmTextView",
+      "colorTab": {
+        "color0": 16777215
+      },
+      "fontSize": 25,
+      "id": 50005,
+      "text": "AM",
+      "touchable": false,
+      "position": {
+        "height": 40,
+        "left": 1533,
+        "top": 30,
+        "width": 100
+      }
+    }
+  }
+}

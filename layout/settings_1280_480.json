@@ -1,0 +1,5158 @@
+{
+  "beepEnable": true,
+  "id": 0,
+  "resolution": {
+    "height": 480,
+    "width": 1280
+  },
+  "topmost": false,
+  "position": {
+    "height": 480,
+    "left": 0,
+    "top": 0,
+    "width": 1280
+  },
+  "window__1": {
+    "backgroundPic": "/bg/bg1.png",
+    "beepEnable": true,
+    "caption": "SettingsBgWindow",
+    "id": 110022,
+    "position": {
+      "height": 480,
+      "left": 0,
+      "top": 0,
+      "width": 1280
+    },
+    "window__2": {
+      "backgroundPic": "HomePage/home_top_bg.png",
+      "beepEnable": true,
+      "caption": "headWindow",
+      "id": 110018,
+      "position": {
+        "height": 67,
+        "left": 0,
+        "top": 0,
+        "width": 1280
+      },
+      "button__3": {
+        "alignment": 37,
+        "caption": "auxButton",
+        "colorTab": {
+          "color0": 16777215
+        },
+        "id": 20022,
+        "picTab": {
+          "pic0": "status/aux_.png"
+        },
+        "touchable": false,
+        "visible": false,
+        "position": {
+          "height": 20,
+          "left": 743,
+          "top": 19,
+          "width": 20
+        }
+      },
+      "button__4": {
+        "alignment": 37,
+        "caption": "fmButton",
+        "colorTab": {
+          "color0": 16777215
+        },
+        "id": 20003,
+        "picTab": {
+          "pic0": "status/fm.png"
+        },
+        "touchable": false,
+        "visible": false,
+        "position": {
+          "height": 20,
+          "left": 773,
+          "top": 19,
+          "width": 20
+        }
+      },
+      "button__5": {
+        "alignment": 37,
+        "caption": "linkButton",
+        "colorTab": {
+          "color0": 16777215
+        },
+        "id": 20021,
+        "picTab": {
+          "pic0": "status/link.png"
+        },
+        "touchable": false,
+        "visible": false,
+        "position": {
+          "height": 20,
+          "left": 803,
+          "top": 19,
+          "width": 20
+        }
+      },
+      "button__6": {
+        "alignment": 37,
+        "caption": "sdButton",
+        "colorTab": {
+          "color0": 16777215
+        },
+        "id": 20030,
+        "picTab": {
+          "pic0": "status/sd.png"
+        },
+        "touchable": false,
+        "position": {
+          "height": 43,
+          "left": 770,
+          "top": 10,
+          "width": 43
+        }
+      },
+      "button__7": {
+        "alignment": 37,
+        "caption": "btStatusButton",
+        "colorTab": {
+          "color0": 16777215
+        },
+        "id": 20032,
+        "picTab": {
+          "pic0": "status/home_bt.png",
+          "pic2": "status/home_bt_f.png"
+        },
+        "touchable": false,
+        "position": {
+          "height": 43,
+          "left": 700,
+          "top": 10,
+          "width": 43
+        }
+      },
+      "button__8": {
+        "alignment": 37,
+        "caption": "NetButton",
+        "colorTab": {
+          "color0": 16777215
+        },
+        "id": 20033,
+        "picTab": {
+          "pic0": "status/wifi.png"
+        },
+        "touchable": false,
+        "visible": false,
+        "position": {
+          "height": 20,
+          "left": 1345,
+          "top": 19,
+          "width": 20
+        }
+      },
+      "button__9": {
+        "alignment": 37,
+        "caption": "soundButton",
+        "colorTab": {
+          "color0": 16777215
+        },
+        "id": 20034,
+        "picTab": {
+          "pic0": "status/sound.png",
+          "pic2": "status/sound0.png"
+        },
+        "touchable": false,
+        "visible": false,
+        "position": {
+          "height": 20,
+          "left": 1377,
+          "top": 19,
+          "width": 20
+        }
+      },
+      "button__10": {
+        "alignment": 37,
+        "caption": "settingHomeButton",
+        "colorTab": {
+          "color0": 8421504,
+          "color1": 8388863
+        },
+        "id": 20023,
+        "picTab": {
+          "pic0": "status/home_home_n.png",
+          "pic1": "status/home_home_f.png"
+        },
+        "position": {
+          "height": 61,
+          "left": 0,
+          "top": 6,
+          "width": 103
+        }
+      },
+      "button__11": {
+        "alignment": 37,
+        "caption": "usb1Button",
+        "colorTab": {
+          "color0": 16777215
+        },
+        "id": 20031,
+        "picTab": {
+          "pic0": "status/usb1.png"
+        },
+        "touchable": false,
+        "position": {
+          "height": 43,
+          "left": 840,
+          "top": 10,
+          "width": 43
+        }
+      },
+      "button__12": {
+        "alignment": 37,
+        "caption": "usb2Button",
+        "colorTab": {
+          "color0": 16777215
+        },
+        "id": 20002,
+        "picTab": {
+          "pic0": "status/usb2.png"
+        },
+        "touchable": false,
+        "position": {
+          "height": 43,
+          "left": 910,
+          "top": 10,
+          "width": 43
+        }
+      },
+      "button__13": {
+        "alignment": 37,
+        "caption": "settingBackButton",
+        "colorTab": {
+          "color0": 8421504,
+          "color1": 8388863
+        },
+        "id": 20024,
+        "picTab": {
+          "pic0": "status/home_back_n.png",
+          "pic1": "status/home_back_f.png"
+        },
+        "position": {
+          "height": 61,
+          "left": 1170,
+          "top": 4,
+          "width": 103
+        }
+      },
+      "textview__14": {
+        "alignment": 37,
+        "caption": "timeAmPmTextView",
+        "colorTab": {
+          "color0": 16777215
+        },
+        "fontSize": 25,
+        "id": 50010,
+        "text": "AM",
+        "touchable": false,
+        "position": {
+          "height": 30,
+          "left": 1000,
+          "top": 20,
+          "width": 100
+        }
+      },
+      "digitalclock__15": {
+        "beat": true,
+        "caption": "DigitalClock24Hour",
+        "fontSize": 28,
+        "id": 93002,
+        "touchable": false,
+        "position": {
+          "height": 49,
+          "left": 1100,
+          "top": 15,
+          "width": 139
+        }
+      },
+      "digitalclock__16": {
+        "beat": true,
+        "caption": "DigitalClock12Hour",
+        "fontSize": 28,
+        "format": "hh:MM",
+        "id": 93001,
+        "touchable": false,
+        "visible": false,
+        "position": {
+          "height": 49,
+          "left": 1100,
+          "top": 15,
+          "width": 139
+        }
+      }
+    }
+  },
+  "window__17": {
+    "beepEnable": true,
+    "caption": "Menu1Window",
+    "id": 110014,
+    "position": {
+      "height": 355,
+      "left": 40,
+      "top": 100,
+      "width": 250
+    },
+    "listview__18": {
+      "beepEnable": true,
+      "caption": "SettingListView",
+      "cols": 1,
+      "id": 80001,
+      "rows": 6,
+      "position": {
+        "height": 355,
+        "left": 0,
+        "top": 0,
+        "width": 250
+      },
+      "colSpacing": 5,
+      "rowSpacing": 7,
+      "item": {
+        "alignment": 37,
+        "caption": "item",
+        "iconPosition": {
+          "height": 55,
+          "left": 0,
+          "top": 0,
+          "width": 195
+        },
+        "position": {
+          "height": 52,
+          "left": 0,
+          "top": 0,
+          "width": 245
+        },
+        "subItem": [
+          {
+            "alignment": 36,
+            "caption": "SubItem7",
+            "colorTab": {
+              "color0": 16777215
+            },
+            "id": 24021,
+            "picTab": {
+              "pic1": "setting/set_btn_f.png",
+              "pic2": "setting/set_btn_f.png"
+            },
+            "position": {
+              "height": 46,
+              "left": 0,
+              "top": 0,
+              "width": 246
+            }
+          },
+          {
+            "alignment": 36,
+            "caption": "settingTextSub",
+            "colorTab": {
+              "color0": 16777215,
+              "color1": 6091519,
+              "color2": 6091519
+            },
+            "fontSize": 20,
+            "id": 24001,
+            "picTab": {
+              "pic0": "setting/set_btn_n.png",
+              "pic1": "setting/set_btn_f.png"
+            },
+            "text": "显示",
+            "touchable": false,
+            "position": {
+              "height": 46,
+              "left": 0,
+              "top": 0,
+              "width": 246
+            },
+            "textPosition": {
+              "height": 46,
+              "left": 105,
+              "top": 0,
+              "width": 141
+            }
+          },
+          {
+            "caption": "SettingpicSub",
+            "colorTab": {
+              "color0": 16777215
+            },
+            "id": 24002,
+            "touchable": false,
+            "position": {
+              "height": 34,
+              "left": 40,
+              "top": 9,
+              "width": 35
+            }
+          }
+        ]
+      }
+    }
+  },
+  "window__20": {
+    "beepEnable": true,
+    "caption": "lightWnd",
+    "id": 110001,
+    "position": {
+      "height": 400,
+      "left": 300,
+      "top": 80,
+      "width": 954
+    },
+    "radiogroup__21": {
+      "caption": "LightRadioGroup",
+      "id": 94004,
+      "position": {
+        "height": 400,
+        "left": 0,
+        "top": 0,
+        "width": 1000
+      },
+      "radiobuttons": [
+        {
+          "alignment": 38,
+          "caption": "LightNumAdjustRadioButtonN",
+          "checked": false,
+          "colorTab": {
+            "color0": 16777215
+          },
+          "id": 22014,
+          "picTab": {
+            "pic2": "setting/set_first_menu_select.png"
+          },
+          "position": {
+            "height": 60,
+            "left": 30,
+            "top": 20,
+            "width": 850
+          }
+        },
+        {
+          "alignment": 38,
+          "caption": "LightNumAdjustRadioButtonF",
+          "checked": false,
+          "colorTab": {
+            "color0": 16777215
+          },
+          "id": 22015,
+          "picTab": {
+            "pic2": "setting/set_second_menu_select_f.png"
+          },
+          "position": {
+            "height": 60,
+            "left": 30,
+            "top": 20,
+            "width": 850
+          }
+        },
+        {
+          "alignment": 38,
+          "caption": "LightAutoSwitchRadioButton",
+          "checked": false,
+          "colorTab": {
+            "color0": 16777215
+          },
+          "id": 22005,
+          "picTab": {
+            "pic2": "setting/set_first_menu_select.png"
+          },
+          "position": {
+            "height": 60,
+            "left": 30,
+            "top": 110,
+            "width": 850
+          }
+        },
+        {
+          "alignment": 38,
+          "caption": "daytimeLightNumAdjustRadioButtonN",
+          "checked": false,
+          "colorTab": {
+            "color0": 16777215
+          },
+          "id": 22006,
+          "picTab": {
+            "pic2": "setting/set_first_menu_select.png"
+          },
+          "position": {
+            "height": 60,
+            "left": 30,
+            "top": 210,
+            "width": 850
+          }
+        },
+        {
+          "alignment": 38,
+          "caption": "daytimeLightNumAdjustRadioButtonF",
+          "checked": false,
+          "colorTab": {
+            "color0": 16777215
+          },
+          "id": 22007,
+          "picTab": {
+            "pic2": "setting/set_second_menu_select_f.png"
+          },
+          "position": {
+            "height": 60,
+            "left": 30,
+            "top": 210,
+            "width": 850
+          }
+        },
+        {
+          "alignment": 38,
+          "caption": "nightLightNumAdjustRadioButtonN",
+          "checked": false,
+          "colorTab": {
+            "color0": 16777215
+          },
+          "id": 22008,
+          "picTab": {
+            "pic2": "setting/set_first_menu_select.png"
+          },
+          "position": {
+            "height": 60,
+            "left": 30,
+            "top": 310,
+            "width": 850
+          }
+        },
+        {
+          "alignment": 38,
+          "caption": "nightLightNumAdjustRadioButtonF",
+          "checked": false,
+          "colorTab": {
+            "color0": 16777215
+          },
+          "id": 22009,
+          "picTab": {
+            "pic2": "setting/set_second_menu_select_f.png"
+          },
+          "position": {
+            "height": 60,
+            "left": 30,
+            "top": 310,
+            "width": 850
+          }
+        }
+      ]
+    },
+    "seekbar__22": {
+      "backgroundPic": "setting/set_adjust_bg.png",
+      "caption": "BrightnessSeekBar",
+      "id": 91001,
+      "max": 60,
+      "progressPic": "setting/set_adjust_620.png",
+      "thumb": {
+        "normalPic": "setting/set_adjust_click.png",
+        "size": {
+          "height": 57,
+          "width": 101
+        }
+      },
+      "position": {
+        "height": 36,
+        "left": 190,
+        "top": 35,
+        "width": 620
+      }
+    },
+    "textview__23": {
+      "alignment": 36,
+      "caption": "BrightnessText",
+      "colorTab": {
+        "color0": 16777215
+      },
+      "fontSize": 20,
+      "id": 50026,
+      "text": "60",
+      "touchable": false,
+      "position": {
+        "height": 30,
+        "left": 820,
+        "top": 35,
+        "width": 57
+      }
+    },
+    "textview__24": {
+      "alignment": 37,
+      "caption": "TextView37",
+      "colorTab": {
+        "color0": 16777215
+      },
+      "fontSize": 30,
+      "id": 50047,
+      "text": "0",
+      "touchable": false,
+      "visible": false,
+      "position": {
+        "height": 30,
+        "left": 240,
+        "top": 25,
+        "width": 57
+      }
+    },
+    "textview__25": {
+      "alignment": 36,
+      "caption": "TextView3",
+      "colorTab": {
+        "color0": 16777215
+      },
+      "fontSize": 20,
+      "id": 50032,
+      "text": "@brightness",
+      "touchable": false,
+      "position": {
+        "height": 41,
+        "left": 70,
+        "top": 30,
+        "width": 120
+      }
+    },
+    "button__26": {
+      "alignment": 37,
+      "caption": "autoBrightButton",
+      "colorTab": {
+        "color0": 16777215
+      },
+      "iconPosition": {
+        "height": 39,
+        "left": 25,
+        "top": 8,
+        "width": 73
+      },
+      "id": 20009,
+      "picTab": {
+        "pic0": "setting/off.png",
+        "pic2": "setting/on.png"
+      },
+      "position": {
+        "height": 55,
+        "left": 750,
+        "top": 110,
+        "width": 123
+      }
+    },
+    "textview__27": {
+      "alignment": 36,
+      "caption": "autoBrightRemindTextView",
+      "colorTab": {
+        "color0": 16777215
+      },
+      "fontSize": 20,
+      "id": 50011,
+      "text": "@auto_bright_remind",
+      "touchable": false,
+      "position": {
+        "height": 30,
+        "left": 70,
+        "top": 120,
+        "width": 500
+      }
+    },
+    "textview__28": {
+      "alignment": 36,
+      "caption": "daytimeBrightRemindTextView",
+      "colorTab": {
+        "color0": 16777215
+      },
+      "fontSize": 20,
+      "id": 50068,
+      "text": "@daytime_brightness",
+      "touchable": false,
+      "position": {
+        "height": 41,
+        "left": 70,
+        "top": 220,
+        "width": 120
+      }
+    },
+    "seekbar__29": {
+      "backgroundPic": "setting/set_adjust_bg.png",
+      "caption": "daytimeBrightnessSeekBar",
+      "id": 91002,
+      "max": 60,
+      "progressPic": "setting/set_adjust_620.png",
+      "thumb": {
+        "normalPic": "setting/set_adjust_click.png",
+        "size": {
+          "height": 57,
+          "width": 101
+        }
+      },
+      "position": {
+        "height": 36,
+        "left": 190,
+        "top": 225,
+        "width": 620
+      }
+    },
+    "textview__30": {
+      "alignment": 36,
+      "caption": "daytimeBrightnessText",
+      "colorTab": {
+        "color0": 16777215
+      },
+      "fontSize": 20,
+      "id": 50069,
+      "text": "60",
+      "touchable": false,
+      "position": {
+        "height": 30,
+        "left": 820,
+        "top": 225,
+        "width": 57
+      }
+    },
+    "textview__31": {
+      "alignment": 36,
+      "caption": "nightBrightRemindTextView",
+      "colorTab": {
+        "color0": 16777215
+      },
+      "fontSize": 20,
+      "id": 50070,
+      "text": "@night_brightness",
+      "touchable": false,
+      "position": {
+        "height": 41,
+        "left": 70,
+        "top": 320,
+        "width": 120
+      }
+    },
+    "seekbar__32": {
+      "backgroundPic": "setting/set_adjust_bg.png",
+      "caption": "nightBrightnessSeekBar",
+      "id": 91003,
+      "max": 60,
+      "progressPic": "setting/set_adjust_620.png",
+      "thumb": {
+        "normalPic": "setting/set_adjust_click.png",
+        "size": {
+          "height": 57,
+          "width": 101
+        }
+      },
+      "position": {
+        "height": 36,
+        "left": 190,
+        "top": 325,
+        "width": 620
+      }
+    },
+    "textview__33": {
+      "alignment": 36,
+      "caption": "nightBrightnessText",
+      "colorTab": {
+        "color0": 16777215
+      },
+      "fontSize": 20,
+      "id": 50071,
+      "text": "60",
+      "touchable": false,
+      "position": {
+        "height": 30,
+        "left": 820,
+        "top": 325,
+        "width": 57
+      }
+    },
+    "textview__34": {
+      "alignment": 36,
+      "caption": "brightHideTextView",
+      "colorTab": {
+        "color0": 16777215
+      },
+      "id": 50072,
+      "touchable": false,
+      "visible": false,
+      "position": {
+        "height": 60,
+        "left": 30,
+        "top": 20,
+        "width": 850
+      }
+    },
+    "textview__35": {
+      "alignment": 36,
+      "caption": "daytimeBrightHideTextView",
+      "colorTab": {
+        "color0": 16777215
+      },
+      "id": 50073,
+      "touchable": false,
+      "visible": false,
+      "position": {
+        "height": 60,
+        "left": 30,
+        "top": 210,
+        "width": 850
+      }
+    },
+    "textview__36": {
+      "alignment": 36,
+      "caption": "nightBrightHideTextView",
+      "colorTab": {
+        "color0": 16777215
+      },
+      "id": 50074,
+      "touchable": false,
+      "visible": false,
+      "position": {
+        "height": 60,
+        "left": 30,
+        "top": 310,
+        "width": 850
+      }
+    }
+  },
+  "window__37": {
+    "beepEnable": true,
+    "caption": "soundWnd",
+    "id": 110002,
+    "visible": false,
+    "position": {
+      "height": 310,
+      "left": 300,
+      "top": 110,
+      "width": 955
+    },
+    "radiogroup__38": {
+      "caption": "VolumeRadioGroup",
+      "id": 94005,
+      "position": {
+        "height": 310,
+        "left": 0,
+        "top": 0,
+        "width": 955
+      },
+      "radiobuttons": [
+        {
+          "alignment": 38,
+          "caption": "VolumeRadioButtonN",
+          "checked": false,
+          "colorTab": {
+            "color0": 16777215
+          },
+          "id": 22016,
+          "picTab": {
+            "pic2": "setting/set_first_menu_select.png"
+          },
+          "position": {
+            "height": 60,
+            "left": 20,
+            "top": 0,
+            "width": 880
+          }
+        },
+        {
+          "alignment": 38,
+          "caption": "VolumeRadioButtonF",
+          "checked": false,
+          "colorTab": {
+            "color0": 16777215
+          },
+          "id": 22017,
+          "picTab": {
+            "pic2": "setting/set_second_menu_select_f.png"
+          },
+          "position": {
+            "height": 60,
+            "left": 80,
+            "top": 0,
+            "width": 880
+          }
+        },
+        {
+          "alignment": 38,
+          "caption": "TelephoneRadioButtonN",
+          "checked": false,
+          "colorTab": {
+            "color0": 16777215
+          },
+          "id": 22018,
+          "picTab": {
+            "pic2": "setting/set_first_menu_select.png"
+          },
+          "position": {
+            "height": 60,
+            "left": 20,
+            "top": 85,
+            "width": 880
+          }
+        },
+        {
+          "alignment": 38,
+          "caption": "TelephoneRadioButtonF",
+          "checked": false,
+          "colorTab": {
+            "color0": 16777215
+          },
+          "id": 22019,
+          "picTab": {
+            "pic2": "setting/set_second_menu_select_f.png"
+          },
+          "position": {
+            "height": 60,
+            "left": 20,
+            "top": 85,
+            "width": 880
+          }
+        },
+        {
+          "alignment": 38,
+          "caption": "ReverseRadioButtonN",
+          "checked": false,
+          "colorTab": {
+            "color0": 16777215
+          },
+          "id": 22020,
+          "picTab": {
+            "pic2": "setting/set_first_menu_select.png"
+          },
+          "position": {
+            "height": 60,
+            "left": 20,
+            "top": 160,
+            "width": 880
+          }
+        },
+        {
+          "alignment": 38,
+          "caption": "ReverseRadioButtonF",
+          "checked": false,
+          "colorTab": {
+            "color0": 16777215
+          },
+          "id": 22021,
+          "picTab": {
+            "pic2": "setting/set_second_menu_select_f.png"
+          },
+          "position": {
+            "height": 60,
+            "left": 20,
+            "top": 160,
+            "width": 880
+          }
+        },
+        {
+          "alignment": 38,
+          "caption": "NavigationRadioButtonN",
+          "checked": false,
+          "colorTab": {
+            "color0": 16777215
+          },
+          "id": 22022,
+          "picTab": {
+            "pic2": "setting/set_first_menu_select.png"
+          },
+          "position": {
+            "height": 60,
+            "left": 20,
+            "top": 240,
+            "width": 880
+          }
+        },
+        {
+          "alignment": 38,
+          "caption": "NavigationRadioButtonF",
+          "checked": false,
+          "colorTab": {
+            "color0": 16777215
+          },
+          "id": 22023,
+          "picTab": {
+            "pic2": "setting/set_second_menu_select_f.png"
+          },
+          "position": {
+            "height": 60,
+            "left": 20,
+            "top": 240,
+            "width": 880
+          }
+        }
+      ]
+    },
+    "seekbar__39": {
+      "backgroundPic": "setting/set_adjust_bg.png",
+      "caption": "VolumeSeekBar",
+      "id": 91007,
+      "max": 40,
+      "progressPic": "setting/set_adjust_620.png",
+      "thumb": {
+        "normalPic": "setting/set_adjust_click.png",
+        "size": {
+          "height": 57,
+          "width": 101
+        }
+      },
+      "position": {
+        "height": 36,
+        "left": 210,
+        "top": 15,
+        "width": 620
+      }
+    },
+    "seekbar__40": {
+      "backgroundPic": "setting/set_adjust_bg.png",
+      "caption": "TelephoneSeekBar",
+      "id": 91008,
+      "max": 40,
+      "progressPic": "setting/set_adjust_620.png",
+      "thumb": {
+        "normalPic": "setting/set_adjust_click.png",
+        "size": {
+          "height": 57,
+          "width": 101
+        }
+      },
+      "position": {
+        "height": 36,
+        "left": 210,
+        "top": 95,
+        "width": 620
+      }
+    },
+    "seekbar__41": {
+      "backgroundPic": "setting/set_adjust_bg.png",
+      "caption": "NavigationSeekBar",
+      "id": 91009,
+      "max": 40,
+      "progressPic": "setting/set_adjust_620.png",
+      "thumb": {
+        "normalPic": "setting/set_adjust_click.png",
+        "size": {
+          "height": 57,
+          "width": 101
+        }
+      },
+      "position": {
+        "height": 36,
+        "left": 210,
+        "top": 255,
+        "width": 620
+      }
+    },
+    "textview__42": {
+      "alignment": 36,
+      "caption": "VolumeTextView",
+      "colorTab": {
+        "color0": 16777215
+      },
+      "fontSize": 20,
+      "id": 50039,
+      "text": "@volume_text",
+      "touchable": false,
+      "position": {
+        "height": 40,
+        "left": 60,
+        "top": 10,
+        "width": 150
+      }
+    },
+    "textview__43": {
+      "alignment": 37,
+      "caption": "VolumeNumBeginTextView",
+      "colorTab": {
+        "color0": 16777215
+      },
+      "fontSize": 30,
+      "id": 50040,
+      "text": "0",
+      "touchable": false,
+      "visible": false,
+      "position": {
+        "height": 40,
+        "left": 220,
+        "top": 60,
+        "width": 57
+      }
+    },
+    "textview__44": {
+      "alignment": 37,
+      "caption": "VolumeNumEndTextView",
+      "colorTab": {
+        "color0": 16777215
+      },
+      "fontSize": 20,
+      "id": 50049,
+      "text": "40",
+      "touchable": false,
+      "position": {
+        "height": 30,
+        "left": 850,
+        "top": 15,
+        "width": 57
+      }
+    },
+    "textview__45": {
+      "alignment": 36,
+      "caption": "TelephoneTextView",
+      "colorTab": {
+        "color0": 16777215
+      },
+      "fontSize": 20,
+      "id": 50051,
+      "text": "@telephone_text",
+      "touchable": false,
+      "position": {
+        "height": 40,
+        "left": 60,
+        "top": 90,
+        "width": 150
+      }
+    },
+    "textview__46": {
+      "alignment": 36,
+      "caption": "NavigationTextView",
+      "colorTab": {
+        "color0": 16777215
+      },
+      "fontSize": 20,
+      "id": 50052,
+      "text": "@navigation_text",
+      "touchable": false,
+      "position": {
+        "height": 40,
+        "left": 60,
+        "top": 250,
+        "width": 150
+      }
+    },
+    "textview__47": {
+      "alignment": 37,
+      "caption": "TelephoneNumBeginTextView",
+      "colorTab": {
+        "color0": 16777215
+      },
+      "fontSize": 30,
+      "id": 50053,
+      "text": "0",
+      "touchable": false,
+      "visible": false,
+      "position": {
+        "height": 40,
+        "left": 220,
+        "top": 160,
+        "width": 57
+      }
+    },
+    "textview__48": {
+      "alignment": 37,
+      "caption": "MixedNumBeginTextView",
+      "colorTab": {
+        "color0": 16777215
+      },
+      "fontSize": 30,
+      "id": 50054,
+      "text": "0",
+      "touchable": false,
+      "visible": false,
+      "position": {
+        "height": 40,
+        "left": 218,
+        "top": 360,
+        "width": 57
+      }
+    },
+    "textview__49": {
+      "alignment": 37,
+      "caption": "TelephoneNumEndTextView",
+      "colorTab": {
+        "color0": 16777215
+      },
+      "fontSize": 20,
+      "id": 50055,
+      "text": "40",
+      "touchable": false,
+      "position": {
+        "height": 30,
+        "left": 850,
+        "top": 95,
+        "width": 57
+      }
+    },
+    "textview__50": {
+      "alignment": 37,
+      "caption": "NavigationNumEndTextView",
+      "colorTab": {
+        "color0": 16777215
+      },
+      "fontSize": 20,
+      "id": 50058,
+      "text": "40",
+      "touchable": false,
+      "position": {
+        "height": 30,
+        "left": 850,
+        "top": 255,
+        "width": 57
+      }
+    },
+    "textview__51": {
+      "alignment": 36,
+      "caption": "reverseTextView",
+      "colorTab": {
+        "color0": 16777215
+      },
+      "fontSize": 20,
+      "id": 50016,
+      "text": "@reverse_text",
+      "touchable": false,
+      "position": {
+        "height": 40,
+        "left": 60,
+        "top": 170,
+        "width": 150
+      }
+    },
+    "textview__52": {
+      "alignment": 37,
+      "caption": "ReverseNumBeginTextView",
+      "colorTab": {
+        "color0": 16777215
+      },
+      "fontSize": 30,
+      "id": 50017,
+      "text": "0",
+      "touchable": false,
+      "visible": false,
+      "position": {
+        "height": 40,
+        "left": 220,
+        "top": 260,
+        "width": 57
+      }
+    },
+    "seekbar__53": {
+      "backgroundPic": "setting/set_adjust_bg.png",
+      "caption": "ReverseSeekBar",
+      "id": 91011,
+      "max": 40,
+      "progressPic": "setting/set_adjust_620.png",
+      "thumb": {
+        "normalPic": "setting/set_adjust_click.png",
+        "size": {
+          "height": 57,
+          "width": 101
+        }
+      },
+      "position": {
+        "height": 36,
+        "left": 210,
+        "top": 175,
+        "width": 620
+      }
+    },
+    "textview__54": {
+      "alignment": 37,
+      "caption": "ReverseNumEndTextView",
+      "colorTab": {
+        "color0": 16777215
+      },
+      "fontSize": 20,
+      "id": 50018,
+      "text": "40",
+      "touchable": false,
+      "position": {
+        "height": 30,
+        "left": 850,
+        "top": 175,
+        "width": 57
+      }
+    }
+  },
+  "window__55": {
+    "beepEnable": true,
+    "caption": "languageWnd",
+    "id": 110003,
+    "visible": false,
+    "position": {
+      "height": 310,
+      "left": 300,
+      "top": 110,
+      "width": 955
+    },
+    "radiogroup__56": {
+      "caption": "LanguageRadioGroup",
+      "id": 94006,
+      "position": {
+        "height": 310,
+        "left": 0,
+        "top": 0,
+        "width": 955
+      },
+      "radiobuttons": [
+        {
+          "alignment": 38,
+          "caption": "LanguageSelectRadioButtonN",
+          "checked": false,
+          "colorTab": {
+            "color0": 16777215
+          },
+          "id": 22024,
+          "picTab": {
+            "pic2": "setting/language_menu_select_n.png"
+          },
+          "position": {
+            "height": 254,
+            "left": 360,
+            "top": 20,
+            "width": 214
+          }
+        },
+        {
+          "alignment": 38,
+          "caption": "LanguageSelectRadioButtonF",
+          "checked": false,
+          "colorTab": {
+            "color0": 16777215
+          },
+          "id": 22026,
+          "picTab": {
+            "pic2": "setting/language_menu_select_f.png"
+          },
+          "position": {
+            "height": 254,
+            "left": 360,
+            "top": 20,
+            "width": 214
+          }
+        }
+      ]
+    },
+    "listview__57": {
+      "autoRollback": true,
+      "beepEnable": true,
+      "caption": "LanguageListView2",
+      "cols": 1,
+      "cycleEnable": true,
+      "id": 80013,
+      "rows": 3,
+      "position": {
+        "height": 200,
+        "left": 0,
+        "top": 40,
+        "width": 938
+      },
+      "item": {
+        "alignment": 37,
+        "caption": "item",
+        "colorTab": {
+          "color0": 12632256,
+          "color2": 16777215
+        },
+        "fontSize": 30,
+        "iconPosition": {
+          "height": 44,
+          "left": 0,
+          "top": 0,
+          "width": 90
+        },
+        "position": {
+          "height": 66,
+          "left": 0,
+          "top": 0,
+          "width": 938
+        },
+        "text": "1",
+        "subItem": [
+          {
+            "alignment": 36,
+            "caption": "LanguageSelectSubItem",
+            "colorTab": {
+              "color0": 16777215
+            },
+            "id": 24036,
+            "picTab": {
+              "pic2": "setting/set_language_btn_f.png"
+            },
+            "position": {
+              "height": 41,
+              "left": 60,
+              "top": 15,
+              "width": 875
+            }
+          }
+        ]
+      }
+    },
+    "textview__59": {
+      "alignment": 36,
+      "backgroundPic": "setting/set_language_btn_f.png",
+      "caption": "TextView20",
+      "colorTab": {
+        "color0": 16777215
+      },
+      "fontSize": 36,
+      "id": 50027,
+      "touchable": false,
+      "visible": false,
+      "position": {
+        "height": 62,
+        "left": 30,
+        "top": 195,
+        "width": 1307
+      }
+    }
+  },
+  "window__60": {
+    "beepEnable": true,
+    "caption": "timeDateWnd",
+    "id": 110005,
+    "visible": false,
+    "position": {
+      "height": 310,
+      "left": 300,
+      "top": 110,
+      "width": 955
+    },
+    "radiogroup__61": {
+      "caption": "SetTimeRadioGroup",
+      "id": 94007,
+      "position": {
+        "height": 310,
+        "left": 0,
+        "top": 0,
+        "width": 955
+      },
+      "radiobuttons": [
+        {
+          "alignment": 38,
+          "caption": "SetYearRadioButtonN",
+          "checked": false,
+          "colorTab": {
+            "color0": 16777215
+          },
+          "id": 22027,
+          "picTab": {
+            "pic2": "setting/time_menu_select_n.png"
+          },
+          "position": {
+            "height": 167,
+            "left": 70,
+            "top": 40,
+            "width": 98
+          }
+        },
+        {
+          "alignment": 38,
+          "caption": "SetYearRadioButtonF",
+          "checked": false,
+          "colorTab": {
+            "color0": 16777215
+          },
+          "id": 22028,
+          "picTab": {
+            "pic2": "setting/time_menu_select_f.png"
+          },
+          "position": {
+            "height": 167,
+            "left": 70,
+            "top": 40,
+            "width": 98
+          }
+        },
+        {
+          "alignment": 38,
+          "caption": "SetMonthRadioButtonN",
+          "checked": false,
+          "colorTab": {
+            "color0": 16777215
+          },
+          "id": 22029,
+          "picTab": {
+            "pic2": "setting/time_menu_select_n.png"
+          },
+          "position": {
+            "height": 167,
+            "left": 220,
+            "top": 40,
+            "width": 98
+          }
+        },
+        {
+          "alignment": 38,
+          "caption": "SetMonthRadioButtonF",
+          "checked": false,
+          "colorTab": {
+            "color0": 16777215
+          },
+          "id": 22030,
+          "picTab": {
+            "pic2": "setting/time_menu_select_f.png"
+          },
+          "position": {
+            "height": 167,
+            "left": 220,
+            "top": 40,
+            "width": 98
+          }
+        },
+        {
+          "alignment": 38,
+          "caption": "SetDayRadioButtonN",
+          "checked": false,
+          "colorTab": {
+            "color0": 16777215
+          },
+          "id": 22031,
+          "picTab": {
+            "pic2": "setting/time_menu_select_n.png"
+          },
+          "position": {
+            "height": 167,
+            "left": 370,
+            "top": 40,
+            "width": 98
+          }
+        },
+        {
+          "alignment": 38,
+          "caption": "SetDayRadioButtonF",
+          "checked": false,
+          "colorTab": {
+            "color0": 16777215
+          },
+          "id": 22032,
+          "picTab": {
+            "pic2": "setting/time_menu_select_f.png"
+          },
+          "position": {
+            "height": 167,
+            "left": 370,
+            "top": 40,
+            "width": 98
+          }
+        },
+        {
+          "alignment": 38,
+          "caption": "SetHourRadioButtonN",
+          "checked": false,
+          "colorTab": {
+            "color0": 16777215
+          },
+          "id": 22033,
+          "picTab": {
+            "pic2": "setting/time_menu_select_n.png"
+          },
+          "position": {
+            "height": 167,
+            "left": 520,
+            "top": 40,
+            "width": 98
+          }
+        },
+        {
+          "alignment": 38,
+          "caption": "SetHourRadioButtonF",
+          "checked": false,
+          "colorTab": {
+            "color0": 16777215
+          },
+          "id": 22034,
+          "picTab": {
+            "pic2": "setting/time_menu_select_f.png"
+          },
+          "position": {
+            "height": 167,
+            "left": 520,
+            "top": 40,
+            "width": 98
+          }
+        },
+        {
+          "alignment": 38,
+          "caption": "SetMinRadioButtonN",
+          "checked": false,
+          "colorTab": {
+            "color0": 16777215
+          },
+          "id": 22035,
+          "picTab": {
+            "pic2": "setting/time_menu_select_n.png"
+          },
+          "position": {
+            "height": 167,
+            "left": 670,
+            "top": 40,
+            "width": 98
+          }
+        },
+        {
+          "alignment": 38,
+          "caption": "SetMinRadioButtonF",
+          "checked": false,
+          "colorTab": {
+            "color0": 16777215
+          },
+          "id": 22036,
+          "picTab": {
+            "pic2": "setting/time_menu_select_f.png"
+          },
+          "position": {
+            "height": 167,
+            "left": 670,
+            "top": 40,
+            "width": 98
+          }
+        },
+        {
+          "alignment": 38,
+          "caption": "SetTimeConfirRadioButton",
+          "checked": false,
+          "colorTab": {
+            "color0": 16777215
+          },
+          "id": 22037,
+          "picTab": {
+            "pic2": "setting/language_confir_select.png"
+          },
+          "position": {
+            "height": 50,
+            "left": 800,
+            "top": 105,
+            "width": 100
+          }
+        },
+        {
+          "alignment": 38,
+          "caption": "SetTimeModeRadioButton1",
+          "checked": false,
+          "colorTab": {
+            "color0": 16777215
+          },
+          "id": 22038,
+          "picTab": {
+            "pic2": "setting/language_confir_select.png"
+          },
+          "position": {
+            "height": 35,
+            "left": 330,
+            "top": 250,
+            "width": 100
+          }
+        },
+        {
+          "alignment": 38,
+          "caption": "SetTimeModeRadioButton2",
+          "checked": false,
+          "colorTab": {
+            "color0": 16777215
+          },
+          "id": 22039,
+          "picTab": {
+            "pic2": "setting/language_confir_select.png"
+          },
+          "position": {
+            "height": 35,
+            "left": 440,
+            "top": 250,
+            "width": 100
+          }
+        }
+      ]
+    },
+    "window__62": {
+      "beepEnable": true,
+      "caption": "SetdataWnd",
+      "id": 110008,
+      "position": {
+        "height": 310,
+        "left": 0,
+        "top": 0,
+        "width": 955
+      },
+      "window__63": {
+        "beepEnable": true,
+        "caption": "setWindow",
+        "id": 110011,
+        "position": {
+          "height": 310,
+          "left": 0,
+          "top": 0,
+          "width": 955
+        },
+        "listview__64": {
+          "autoRollback": true,
+          "backgroundPic": "setting/set_time_bg.png",
+          "beepEnable": true,
+          "caption": "hourListView",
+          "cols": 1,
+          "cycleEnable": true,
+          "id": 80015,
+          "rows": 3,
+          "position": {
+            "height": 160,
+            "left": 520,
+            "top": 50,
+            "width": 100
+          },
+          "item": {
+            "alignment": 37,
+            "caption": "item",
+            "colorTab": {
+              "color0": 12632256,
+              "color2": 16777215
+            },
+            "fontSize": 20,
+            "iconPosition": {
+              "height": 44,
+              "left": 0,
+              "top": 0,
+              "width": 90
+            },
+            "position": {
+              "height": 53,
+              "left": 0,
+              "top": 0,
+              "width": 100
+            },
+            "text": "1",
+            "subItem": [
+              {
+                "alignment": 36,
+                "backgroundColor": 6727307,
+                "caption": "Subh",
+                "colorTab": {
+                  "color0": 16777215
+                },
+                "iconPosition": {
+                  "height": 5,
+                  "left": 0,
+                  "top": 0,
+                  "width": 110
+                },
+                "id": 24012,
+                "visible": false,
+                "position": {
+                  "height": 2,
+                  "left": 10,
+                  "top": 38,
+                  "width": 90
+                }
+              },
+              {
+                "alignment": 36,
+                "caption": "SubItem4",
+                "colorTab": {
+                  "color0": 16777215
+                },
+                "id": 24013,
+                "text": "ListSubItem",
+                "visible": false,
+                "position": {
+                  "height": 5,
+                  "left": 109,
+                  "top": 38,
+                  "width": 112
+                }
+              }
+            ]
+          }
+        },
+        "listview__66": {
+          "autoRollback": true,
+          "backgroundPic": "setting/set_time_bg.png",
+          "beepEnable": true,
+          "caption": "minListView",
+          "cols": 1,
+          "cycleEnable": true,
+          "id": 80016,
+          "rows": 3,
+          "position": {
+            "height": 160,
+            "left": 670,
+            "top": 50,
+            "width": 100
+          },
+          "item": {
+            "alignment": 37,
+            "caption": "item",
+            "colorTab": {
+              "color0": 12632256,
+              "color2": 16777215
+            },
+            "fontSize": 20,
+            "iconPosition": {
+              "height": 44,
+              "left": 0,
+              "top": 0,
+              "width": 90
+            },
+            "position": {
+              "height": 53,
+              "left": 0,
+              "top": 0,
+              "width": 100
+            },
+            "text": "0",
+            "subItem": [
+              {
+                "alignment": 36,
+                "backgroundColor": 6727307,
+                "caption": "Subs",
+                "colorTab": {
+                  "color0": 16777215
+                },
+                "iconPosition": {
+                  "height": 5,
+                  "left": 0,
+                  "top": 0,
+                  "width": 110
+                },
+                "id": 24014,
+                "visible": false,
+                "position": {
+                  "height": 2,
+                  "left": 10,
+                  "top": 38,
+                  "width": 90
+                }
+              }
+            ]
+          }
+        },
+        "listview__68": {
+          "autoRollback": true,
+          "backgroundPic": "setting/set_time_bg.png",
+          "beepEnable": true,
+          "caption": "yearListView",
+          "cols": 1,
+          "cycleEnable": true,
+          "id": 80005,
+          "rows": 3,
+          "position": {
+            "height": 160,
+            "left": 70,
+            "top": 50,
+            "width": 100
+          },
+          "item": {
+            "alignment": 37,
+            "caption": "item",
+            "colorTab": {
+              "color0": 12632256,
+              "color2": 16777215
+            },
+            "fontSize": 20,
+            "iconPosition": {
+              "height": 11,
+              "left": 0,
+              "top": 0,
+              "width": 44
+            },
+            "position": {
+              "height": 53,
+              "left": 0,
+              "top": 0,
+              "width": 100
+            },
+            "text": "2021",
+            "subItem": [
+              {
+                "alignment": 36,
+                "backgroundColor": 6727307,
+                "caption": "Suby",
+                "colorTab": {
+                  "color0": 16777215
+                },
+                "iconPosition": {
+                  "height": 5,
+                  "left": 0,
+                  "top": 0,
+                  "width": 105
+                },
+                "id": 24015,
+                "visible": false,
+                "position": {
+                  "height": 2,
+                  "left": 10,
+                  "top": 38,
+                  "width": 90
+                }
+              }
+            ]
+          }
+        },
+        "listview__70": {
+          "autoRollback": true,
+          "backgroundPic": "setting/set_time_bg.png",
+          "beepEnable": true,
+          "caption": "monthListView",
+          "cols": 1,
+          "cycleEnable": true,
+          "dragMaxDis": 50,
+          "id": 80021,
+          "rows": 3,
+          "position": {
+            "height": 160,
+            "left": 220,
+            "top": 50,
+            "width": 100
+          },
+          "item": {
+            "alignment": 37,
+            "caption": "item",
+            "colorTab": {
+              "color0": 12632256,
+              "color2": 16777215
+            },
+            "fontSize": 20,
+            "iconPosition": {
+              "height": 11,
+              "left": 0,
+              "top": 0,
+              "width": 44
+            },
+            "position": {
+              "height": 53,
+              "left": 0,
+              "top": 0,
+              "width": 100
+            },
+            "text": "11",
+            "subItem": [
+              {
+                "alignment": 36,
+                "backgroundColor": 6727307,
+                "caption": "Subm",
+                "colorTab": {
+                  "color0": 16777215
+                },
+                "iconPosition": {
+                  "height": 5,
+                  "left": 0,
+                  "top": 0,
+                  "width": 111
+                },
+                "id": 24016,
+                "visible": false,
+                "position": {
+                  "height": 2,
+                  "left": 10,
+                  "top": 38,
+                  "width": 90
+                }
+              }
+            ]
+          }
+        },
+        "listview__72": {
+          "autoRollback": true,
+          "backgroundPic": "setting/set_time_bg.png",
+          "beepEnable": true,
+          "caption": "dayListView",
+          "cols": 1,
+          "cycleEnable": true,
+          "id": 80019,
+          "rows": 3,
+          "position": {
+            "height": 160,
+            "left": 370,
+            "top": 50,
+            "width": 100
+          },
+          "item": {
+            "alignment": 37,
+            "caption": "item",
+            "colorTab": {
+              "color0": 12632256,
+              "color2": 16777215
+            },
+            "fontSize": 20,
+            "iconPosition": {
+              "height": 11,
+              "left": 0,
+              "top": 0,
+              "width": 44
+            },
+            "position": {
+              "height": 53,
+              "left": 0,
+              "top": 0,
+              "width": 100
+            },
+            "text": "11",
+            "subItem": [
+              {
+                "alignment": 36,
+                "backgroundColor": 6727307,
+                "caption": "Subd",
+                "colorTab": {
+                  "color0": 16777215
+                },
+                "iconPosition": {
+                  "height": 5,
+                  "left": 0,
+                  "top": 0,
+                  "width": 105
+                },
+                "id": 24017,
+                "visible": false,
+                "position": {
+                  "height": 2,
+                  "left": 10,
+                  "top": 38,
+                  "width": 90
+                }
+              }
+            ]
+          }
+        },
+        "button__74": {
+          "alignment": 37,
+          "caption": "SetTimeSureBtn",
+          "colorTab": {
+            "color0": 16777215
+          },
+          "fontSize": 15,
+          "id": 20006,
+          "picTab": {
+            "pic0": "setting/set_btn_s_n.png",
+            "pic1": "setting/set_btn_s_f.png"
+          },
+          "text": "@confir_text",
+          "position": {
+            "height": 50,
+            "left": 800,
+            "top": 105,
+            "width": 100
+          }
+        },
+        "radiogroup__75": {
+          "caption": "TimeSelectRadioGroup",
+          "id": 94003,
+          "position": {
+            "height": 50,
+            "left": 300,
+            "top": 240,
+            "width": 270
+          },
+          "radiobuttons": [
+            {
+              "alignment": 38,
+              "caption": "TimeModeRadioButton1",
+              "checked": false,
+              "colorTab": {
+                "color0": 16777215
+              },
+              "fontSize": 15,
+              "iconPosition": {
+                "height": 35,
+                "left": 0,
+                "top": 0,
+                "width": 35
+              },
+              "id": 22011,
+              "picTab": {
+                "pic0": "setting/set_time_select_n.png",
+                "pic1": "setting/set_time_select_f.png",
+                "pic2": "setting/set_time_select_f.png"
+              },
+              "text": "@time_mode1",
+              "position": {
+                "height": 35,
+                "left": 35,
+                "top": 10,
+                "width": 85
+              }
+            },
+            {
+              "alignment": 38,
+              "caption": "TimeModeRadioButton2",
+              "checked": false,
+              "colorTab": {
+                "color0": 16777215
+              },
+              "fontSize": 15,
+              "iconPosition": {
+                "height": 35,
+                "left": 0,
+                "top": 0,
+                "width": 35
+              },
+              "id": 22012,
+              "picTab": {
+                "pic0": "setting/set_time_select_n.png",
+                "pic1": "setting/set_time_select_f.png",
+                "pic2": "setting/set_time_select_f.png"
+              },
+              "text": "@time_mode2",
+              "position": {
+                "height": 35,
+                "left": 150,
+                "top": 10,
+                "width": 85
+              }
+            }
+          ]
+        },
+        "textview__76": {
+          "alignment": 37,
+          "caption": "YearTextView",
+          "colorTab": {
+            "color0": 16777215
+          },
+          "fontSize": 20,
+          "id": 50022,
+          "text": "@year_text",
+          "touchable": false,
+          "position": {
+            "height": 40,
+            "left": 80,
+            "top": 0,
+            "width": 80
+          }
+        },
+        "textview__77": {
+          "alignment": 37,
+          "caption": "MouthTextView",
+          "colorTab": {
+            "color0": 16777215
+          },
+          "fontSize": 20,
+          "id": 50024,
+          "text": "@mouth_text",
+          "touchable": false,
+          "position": {
+            "height": 40,
+            "left": 230,
+            "top": 0,
+            "width": 80
+          }
+        },
+        "textview__78": {
+          "alignment": 37,
+          "caption": "DayTextView",
+          "colorTab": {
+            "color0": 16777215
+          },
+          "fontSize": 20,
+          "id": 50025,
+          "text": "@day_text",
+          "touchable": false,
+          "position": {
+            "height": 40,
+            "left": 380,
+            "top": 0,
+            "width": 80
+          }
+        },
+        "textview__79": {
+          "alignment": 37,
+          "caption": "HourTextView",
+          "colorTab": {
+            "color0": 16777215
+          },
+          "fontSize": 20,
+          "id": 50028,
+          "text": "@hour_text",
+          "touchable": false,
+          "position": {
+            "height": 40,
+            "left": 530,
+            "top": 0,
+            "width": 80
+          }
+        },
+        "textview__80": {
+          "alignment": 37,
+          "caption": "MinTextView",
+          "colorTab": {
+            "color0": 16777215
+          },
+          "fontSize": 20,
+          "id": 50029,
+          "text": "@min_text",
+          "touchable": false,
+          "position": {
+            "height": 40,
+            "left": 680,
+            "top": 0,
+            "width": 80
+          }
+        },
+        "button__81": {
+          "alignment": 37,
+          "caption": "timeSwitchButton",
+          "colorTab": {
+            "color0": 16777215
+          },
+          "fontSize": 15,
+          "id": 20010,
+          "picTab": {
+            "pic0": "setting/set_btn_s_n.png",
+            "pic1": "setting/set_btn_s_f.png"
+          },
+          "text": "@confir_text",
+          "position": {
+            "height": 50,
+            "left": 800,
+            "top": 240,
+            "width": 100
+          }
+        }
+      }
+    }
+  },
+  "window__82": {
+    "beepEnable": true,
+    "caption": "backCarWnd",
+    "id": 110006,
+    "visible": false,
+    "position": {
+      "height": 360,
+      "left": 330,
+      "top": 110,
+      "width": 955
+    },
+    "radiogroup__83": {
+      "caption": "SetBackCarRadioGroup",
+      "id": 94001,
+      "visible": false,
+      "position": {
+        "height": 464,
+        "left": 0,
+        "top": 0,
+        "width": 1424
+      },
+      "radiobuttons": [
+        {
+          "alignment": 38,
+          "caption": "TurnLeftRightSwitchSelectRadioButton",
+          "checked": false,
+          "colorTab": {
+            "color0": 16777215
+          },
+          "id": 22001,
+          "picTab": {
+            "pic2": "setting/set_first_menu_select.png"
+          },
+          "position": {
+            "height": 50,
+            "left": 550,
+            "top": 15,
+            "width": 390
+          }
+        },
+        {
+          "alignment": 38,
+          "caption": "RadarSwitchSelectRadioButton",
+          "checked": false,
+          "colorTab": {
+            "color0": 16777215
+          },
+          "id": 22002,
+          "picTab": {
+            "pic2": "setting/set_first_menu_select.png"
+          },
+          "position": {
+            "height": 50,
+            "left": 550,
+            "top": 85,
+            "width": 390
+          }
+        },
+        {
+          "alignment": 38,
+          "caption": "RadarDisplaytSwitchSelectRadioButton",
+          "checked": false,
+          "colorTab": {
+            "color0": 16777215
+          },
+          "id": 22003,
+          "picTab": {
+            "pic2": "setting/set_first_menu_select.png"
+          },
+          "position": {
+            "height": 50,
+            "left": 550,
+            "top": 155,
+            "width": 390
+          }
+        },
+        {
+          "alignment": 38,
+          "caption": "TrackDisplaytSwitchSelectRadioButton",
+          "checked": false,
+          "colorTab": {
+            "color0": 16777215
+          },
+          "id": 22004,
+          "picTab": {
+            "pic2": "setting/set_first_menu_select.png"
+          },
+          "position": {
+            "height": 50,
+            "left": 550,
+            "top": 225,
+            "width": 390
+          }
+        }
+      ]
+    },
+    "listview__84": {
+      "beepEnable": true,
+      "caption": "BackCarListView",
+      "cols": 1,
+      "id": 80004,
+      "rows": 5,
+      "position": {
+        "height": 290,
+        "left": 50,
+        "top": 0,
+        "width": 420
+      },
+      "colSpacing": 5,
+      "rowSpacing": 5,
+      "item": {
+        "alignment": 37,
+        "caption": "item",
+        "colorTab": {
+          "color0": 16777215
+        },
+        "iconPosition": {
+          "height": 12,
+          "left": 0,
+          "top": 45,
+          "width": 550
+        },
+        "picTab": {
+          "pic0": "setting/set_line.png"
+        },
+        "position": {
+          "height": 53,
+          "left": 0,
+          "top": 0,
+          "width": 415
+        },
+        "subItem": [
+          {
+            "alignment": 37,
+            "caption": "BackCarTextSubItem",
+            "colorTab": {
+              "color0": 16777215
+            },
+            "fontSize": 20,
+            "id": 24009,
+            "picTab": {
+              "pic1": "setting/set_language_btn_f.png",
+              "pic2": "setting/set_language_btn_f.png"
+            },
+            "text": "ListViewItem",
+            "position": {
+              "height": 60,
+              "left": 0,
+              "top": -8,
+              "width": 420
+            }
+          },
+          {
+            "alignment": 36,
+            "caption": "BackCarSelectSubItem",
+            "colorTab": {
+              "color0": 16777215
+            },
+            "id": 24006,
+            "position": {
+              "height": 60,
+              "left": 0,
+              "top": -8,
+              "width": 420
+            }
+          }
+        ]
+      }
+    },
+    "textview__86": {
+      "alignment": 36,
+      "caption": "RadarBakDisplayView",
+      "colorTab": {
+        "color0": 16777215
+      },
+      "fontSize": 20,
+      "id": 50075,
+      "text": "@radar_display_switch",
+      "touchable": false,
+      "position": {
+        "height": 40,
+        "left": 580,
+        "top": 20,
+        "width": 260
+      }
+    },
+    "textview__87": {
+      "alignment": 36,
+      "caption": "RadarDisplayView",
+      "colorTab": {
+        "color0": 16777215
+      },
+      "fontSize": 20,
+      "id": 50009,
+      "text": "@radar_display_switch",
+      "touchable": false,
+      "visible": false,
+      "position": {
+        "height": 40,
+        "left": 580,
+        "top": 20,
+        "width": 260
+      }
+    },
+    "textview__88": {
+      "alignment": 36,
+      "caption": "TrackDisplayTextView",
+      "colorTab": {
+        "color0": 16777215
+      },
+      "fontSize": 20,
+      "id": 50033,
+      "text": "@track_display_switch",
+      "touchable": false,
+      "position": {
+        "height": 40,
+        "left": 580,
+        "top": 90,
+        "width": 260
+      }
+    },
+    "textview__89": {
+      "alignment": 36,
+      "caption": "BackDisplayTextView",
+      "colorTab": {
+        "color0": 16777215
+      },
+      "fontSize": 20,
+      "id": 50067,
+      "text": "@back_display_switch",
+      "touchable": false,
+      "position": {
+        "height": 40,
+        "left": 580,
+        "top": 160,
+        "width": 260
+      }
+    },
+    "button__90": {
+      "alignment": 37,
+      "caption": "radarDisplaySwitchButton",
+      "colorTab": {
+        "color0": 16777215
+      },
+      "iconPosition": {
+        "height": 39,
+        "left": 30,
+        "top": 0,
+        "width": 73
+      },
+      "id": 20011,
+      "picTab": {
+        "pic0": "setting/off.png",
+        "pic2": "setting/on.png"
+      },
+      "position": {
+        "height": 55,
+        "left": 830,
+        "top": 20,
+        "width": 123
+      }
+    },
+    "button__91": {
+      "alignment": 37,
+      "caption": "trackDisplaySwitchButton",
+      "colorTab": {
+        "color0": 16777215
+      },
+      "iconPosition": {
+        "height": 39,
+        "left": 30,
+        "top": 0,
+        "width": 73
+      },
+      "id": 20012,
+      "picTab": {
+        "pic0": "setting/off.png",
+        "pic2": "setting/on.png"
+      },
+      "position": {
+        "height": 55,
+        "left": 830,
+        "top": 90,
+        "width": 123
+      }
+    },
+    "button__92": {
+      "alignment": 37,
+      "caption": "backDisplaySwitchButton",
+      "colorTab": {
+        "color0": 16777215
+      },
+      "iconPosition": {
+        "height": 39,
+        "left": 30,
+        "top": 0,
+        "width": 73
+      },
+      "id": 20085,
+      "picTab": {
+        "pic0": "setting/off.png",
+        "pic2": "setting/on.png"
+      },
+      "position": {
+        "height": 55,
+        "left": 830,
+        "top": 160,
+        "width": 123
+      }
+    },
+    "textview__93": {
+      "alignment": 36,
+      "backgroundPic": "bt/bt_line_s.png",
+      "caption": "barTextView",
+      "colorTab": {
+        "color0": 16777215
+      },
+      "id": 50012,
+      "touchable": false,
+      "position": {
+        "height": 310,
+        "left": 500,
+        "top": 0,
+        "width": 8
+      }
+    },
+    "textview__94": {
+      "alignment": 36,
+      "backgroundPic": "setting/list_remind.png",
+      "caption": "listDownRemindTextView",
+      "colorTab": {
+        "color0": 16777215
+      },
+      "id": 50066,
+      "touchable": false,
+      "position": {
+        "height": 69,
+        "left": 220,
+        "top": 300,
+        "width": 69
+      }
+    }
+  },
+  "window__95": {
+    "beepEnable": true,
+    "caption": "SystemWnd",
+    "id": 110004,
+    "visible": false,
+    "position": {
+      "height": 370,
+      "left": 300,
+      "top": 110,
+      "width": 980
+    },
+    "window__96": {
+      "beepEnable": true,
+      "caption": "CameraWnd",
+      "id": 110010,
+      "position": {
+        "height": 520,
+        "left": 0,
+        "top": 0,
+        "width": 1424
+      },
+      "button__97": {
+        "alignment": 37,
+        "caption": "testButton",
+        "colorTab": {
+          "color0": 16777215
+        },
+        "fontSize": 12,
+        "id": 20041,
+        "picTab": {
+          "pic0": "setting/set_btn_s_n.png",
+          "pic1": "setting/set_btn_s_f.png"
+        },
+        "text": "@mcu_update_text",
+        "position": {
+          "height": 43,
+          "left": 130,
+          "top": 260,
+          "width": 130
+        }
+      },
+      "button__98": {
+        "alignment": 37,
+        "caption": "mcuUpadate2Button",
+        "colorTab": {
+          "color0": 16777215
+        },
+        "fontSize": 12,
+        "id": 20007,
+        "picTab": {
+          "pic0": "setting/set_btn_s_n.png",
+          "pic1": "setting/set_btn_s_f.png"
+        },
+        "text": "@mcu_107_update_text",
+        "position": {
+          "height": 43,
+          "left": 270,
+          "top": 260,
+          "width": 130
+        }
+      },
+      "button__99": {
+        "alignment": 37,
+        "caption": "mcuUpadate3Button",
+        "colorTab": {
+          "color0": 16777215
+        },
+        "fontSize": 12,
+        "id": 20008,
+        "picTab": {
+          "pic0": "setting/set_btn_s_n.png",
+          "pic1": "setting/set_btn_s_f.png"
+        },
+        "text": "@mcu_can_update_text",
+        "position": {
+          "height": 43,
+          "left": 410,
+          "top": 260,
+          "width": 130
+        }
+      },
+      "button__100": {
+        "alignment": 37,
+        "caption": "enterFactoryButton",
+        "colorTab": {
+          "color0": 16777215
+        },
+        "fontSize": 12,
+        "id": 20001,
+        "picTab": {
+          "pic0": "setting/set_btn_s_n.png",
+          "pic1": "setting/set_btn_s_f.png"
+        },
+        "text": "@set_factory_menu",
+        "position": {
+          "height": 43,
+          "left": 550,
+          "top": 260,
+          "width": 130
+        }
+      },
+      "button__101": {
+        "alignment": 37,
+        "caption": "RebootButton",
+        "colorTab": {
+          "color0": 16777215
+        },
+        "fontSize": 12,
+        "id": 20004,
+        "picTab": {
+          "pic0": "setting/set_btn_s_n.png",
+          "pic1": "setting/set_btn_s_f.png"
+        },
+        "text": "@set_reboot_menu",
+        "position": {
+          "height": 43,
+          "left": 690,
+          "top": 260,
+          "width": 130
+        }
+      },
+      "button__102": {
+        "alignment": 37,
+        "caption": "otaButton",
+        "colorTab": {
+          "color0": 16777215
+        },
+        "fontSize": 12,
+        "id": 20005,
+        "picTab": {
+          "pic0": "setting/set_btn_s_n.png",
+          "pic1": "setting/set_btn_s_f.png"
+        },
+        "text": "OTA",
+        "position": {
+          "height": 43,
+          "left": 830,
+          "top": 260,
+          "width": 130
+        }
+      },
+      "button__103": {
+        "alignment": 37,
+        "caption": "linkAdjustButton",
+        "colorTab": {
+          "color0": 16777215
+        },
+        "fontSize": 12,
+        "id": 20080,
+        "picTab": {
+          "pic0": "setting/set_btn_s_n.png",
+          "pic1": "setting/set_btn_s_f.png"
+        },
+        "text": "@set_link_adjust",
+        "position": {
+          "height": 43,
+          "left": 130,
+          "top": 310,
+          "width": 130
+        }
+      },
+      "button__104": {
+        "alignment": 37,
+        "caption": "resetFactoryButton",
+        "colorTab": {
+          "color0": 16777215
+        },
+        "fontSize": 12,
+        "id": 20086,
+        "picTab": {
+          "pic0": "setting/set_btn_s_n.png",
+          "pic1": "setting/set_btn_s_f.png"
+        },
+        "text": "@set_reset_factory",
+        "position": {
+          "height": 43,
+          "left": 270,
+          "top": 310,
+          "width": 130
+        }
+      },
+      "textview__105": {
+        "alignment": 36,
+        "caption": "SystemVersionTextView",
+        "colorTab": {
+          "color0": 16777215
+        },
+        "fontSize": 20,
+        "id": 50005,
+        "text": "@system_version_test",
+        "touchable": false,
+        "position": {
+          "height": 30,
+          "left": 150,
+          "top": 10,
+          "width": 433
+        }
+      },
+      "textview__106": {
+        "alignment": 36,
+        "caption": "AppVersionTextView",
+        "colorTab": {
+          "color0": 16777215
+        },
+        "fontSize": 20,
+        "id": 50002,
+        "text": "@app_version_test",
+        "touchable": false,
+        "position": {
+          "height": 30,
+          "left": 150,
+          "top": 60,
+          "width": 433
+        }
+      },
+      "textview__107": {
+        "alignment": 36,
+        "caption": "McuVersionTextView",
+        "colorTab": {
+          "color0": 16777215
+        },
+        "fontSize": 20,
+        "id": 50019,
+        "text": "@mcu_version_test",
+        "touchable": false,
+        "position": {
+          "height": 30,
+          "left": 150,
+          "top": 110,
+          "width": 433
+        }
+      },
+      "textview__108": {
+        "alignment": 36,
+        "caption": "Mcu107VersionTextView",
+        "colorTab": {
+          "color0": 16777215
+        },
+        "fontSize": 20,
+        "id": 50006,
+        "text": "@107_version_test",
+        "touchable": false,
+        "position": {
+          "height": 30,
+          "left": 150,
+          "top": 160,
+          "width": 433
+        }
+      },
+      "textview__109": {
+        "alignment": 36,
+        "caption": "McuCanVersionTextView",
+        "colorTab": {
+          "color0": 16777215
+        },
+        "fontSize": 20,
+        "id": 50007,
+        "text": "@can_version_test",
+        "touchable": false,
+        "position": {
+          "height": 30,
+          "left": 150,
+          "top": 210,
+          "width": 433
+        }
+      },
+      "textview__110": {
+        "alignment": 36,
+        "caption": "SystemVersionRemindTextView",
+        "colorTab": {
+          "color0": 16777215
+        },
+        "fontSize": 20,
+        "id": 50013,
+        "touchable": false,
+        "position": {
+          "height": 30,
+          "left": 450,
+          "top": 10,
+          "width": 327
+        }
+      },
+      "textview__111": {
+        "alignment": 36,
+        "caption": "AppVersionRemindTextView",
+        "colorTab": {
+          "color0": 16777215
+        },
+        "fontSize": 20,
+        "id": 50014,
+        "text": "T113-01-02-20240808-01",
+        "touchable": false,
+        "position": {
+          "height": 30,
+          "left": 450,
+          "top": 60,
+          "width": 500
+        }
+      },
+      "textview__112": {
+        "alignment": 36,
+        "caption": "McuVersionRemindTextView",
+        "colorTab": {
+          "color0": 16777215
+        },
+        "fontSize": 20,
+        "id": 50015,
+        "touchable": false,
+        "position": {
+          "height": 30,
+          "left": 450,
+          "top": 110,
+          "width": 327
+        }
+      },
+      "textview__113": {
+        "alignment": 36,
+        "caption": "Mcu107VersionRemindTextView",
+        "colorTab": {
+          "color0": 16777215
+        },
+        "fontSize": 20,
+        "id": 50020,
+        "touchable": false,
+        "position": {
+          "height": 30,
+          "left": 450,
+          "top": 160,
+          "width": 327
+        }
+      },
+      "textview__114": {
+        "alignment": 36,
+        "caption": "McuCanVersionRemindTextView",
+        "colorTab": {
+          "color0": 16777215
+        },
+        "fontSize": 20,
+        "id": 50031,
+        "touchable": false,
+        "position": {
+          "height": 30,
+          "left": 450,
+          "top": 210,
+          "width": 327
+        }
+      },
+      "textview__115": {
+        "alignment": 36,
+        "backgroundPic": "setting/language_confir_select.png",
+        "caption": "McuUpdateConfirTextView",
+        "colorTab": {
+          "color0": 16777215
+        },
+        "id": 50030,
+        "touchable": false,
+        "visible": false,
+        "position": {
+          "height": 43,
+          "left": 130,
+          "top": 260,
+          "width": 130
+        }
+      },
+      "textview__116": {
+        "alignment": 36,
+        "backgroundPic": "setting/language_confir_select.png",
+        "caption": "Mcu107UpdateConfirTextView",
+        "colorTab": {
+          "color0": 16777215
+        },
+        "id": 50003,
+        "touchable": false,
+        "visible": false,
+        "position": {
+          "height": 43,
+          "left": 270,
+          "top": 260,
+          "width": 130
+        }
+      },
+      "textview__117": {
+        "alignment": 36,
+        "backgroundPic": "setting/language_confir_select.png",
+        "caption": "McuCanUpdateConfirTextView",
+        "colorTab": {
+          "color0": 16777215
+        },
+        "id": 50004,
+        "touchable": false,
+        "visible": false,
+        "position": {
+          "height": 43,
+          "left": 410,
+          "top": 260,
+          "width": 130
+        }
+      },
+      "textview__118": {
+        "alignment": 36,
+        "backgroundPic": "setting/language_confir_select.png",
+        "caption": "FactoryConfirTextView",
+        "colorTab": {
+          "color0": 16777215
+        },
+        "id": 50001,
+        "touchable": false,
+        "visible": false,
+        "position": {
+          "height": 43,
+          "left": 550,
+          "top": 260,
+          "width": 130
+        }
+      },
+      "textview__119": {
+        "alignment": 36,
+        "backgroundPic": "setting/language_confir_select.png",
+        "caption": "RebootConfirTextView",
+        "colorTab": {
+          "color0": 16777215
+        },
+        "id": 50034,
+        "touchable": false,
+        "visible": false,
+        "position": {
+          "height": 43,
+          "left": 690,
+          "top": 260,
+          "width": 130
+        }
+      },
+      "window__120": {
+        "backgroundPic": "setting/ota_bg.png",
+        "beepEnable": true,
+        "caption": "otaWindow",
+        "id": 110007,
+        "visible": false,
+        "position": {
+          "height": 350,
+          "left": 100,
+          "top": 0,
+          "width": 800
+        },
+        "window__121": {
+          "beepEnable": true,
+          "caption": "wifiWindow",
+          "id": 110009,
+          "visible": false,
+          "position": {
+            "height": 335,
+            "left": 300,
+            "top": 10,
+            "width": 450
+          },
+          "window__122": {
+            "beepEnable": true,
+            "caption": "Window2",
+            "id": 100004,
+            "position": {
+              "height": 335,
+              "left": 0,
+              "top": 0,
+              "width": 450
+            },
+            "listview__123": {
+              "beepEnable": true,
+              "caption": "ListViewWifiInfo",
+              "cols": 1,
+              "id": 80000,
+              "rows": 5,
+              "position": {
+                "height": 300,
+                "left": 0,
+                "top": 40,
+                "width": 450
+              },
+              "item": {
+                "bgColorTab": {
+                  "color1": 8421504,
+                  "color2": 8421504
+                },
+                "caption": "Item1",
+                "colorTab": {
+                  "color0": 16777215
+                },
+                "position": {
+                  "height": 60,
+                  "left": 0,
+                  "top": 0,
+                  "width": 450
+                },
+                "textPosition": {
+                  "height": -24,
+                  "left": 10,
+                  "top": 0,
+                  "width": -136
+                },
+                "subItem": [
+                  {
+                    "caption": "LISTSUBITEM_LEVEL",
+                    "charsetTab": [
+                      {
+                        "char": 48,
+                        "pic": "wifi/ic_wifi_lock_signal_0_teal.png",
+                        "size": {
+                          "height": 24,
+                          "width": 26
+                        }
+                      },
+                      {
+                        "char": 49,
+                        "pic": "wifi/ic_wifi_lock_signal_1_teal.png",
+                        "size": {
+                          "height": 24,
+                          "width": 26
+                        }
+                      },
+                      {
+                        "char": 50,
+                        "pic": "wifi/ic_wifi_lock_signal_2_teal.png",
+                        "size": {
+                          "height": 24,
+                          "width": 26
+                        }
+                      },
+                      {
+                        "char": 51,
+                        "pic": "wifi/ic_wifi_lock_signal_3_teal.png",
+                        "size": {
+                          "height": 24,
+                          "width": 26
+                        }
+                      },
+                      {
+                        "char": 52,
+                        "pic": "wifi/ic_wifi_lock_signal_4_teal.png",
+                        "size": {
+                          "height": 24,
+                          "width": 26
+                        }
+                      },
+                      {
+                        "char": 53,
+                        "pic": "wifi/ic_wifi_signal_0_teal.png",
+                        "size": {
+                          "height": 24,
+                          "width": 26
+                        }
+                      },
+                      {
+                        "char": 54,
+                        "pic": "wifi/ic_wifi_signal_1_teal.png",
+                        "size": {
+                          "height": 24,
+                          "width": 26
+                        }
+                      },
+                      {
+                        "char": 55,
+                        "pic": "wifi/ic_wifi_signal_2_teal.png",
+                        "size": {
+                          "height": 24,
+                          "width": 26
+                        }
+                      },
+                      {
+                        "char": 56,
+                        "pic": "wifi/ic_wifi_signal_3_teal.png",
+                        "size": {
+                          "height": 24,
+                          "width": 26
+                        }
+                      },
+                      {
+                        "char": 57,
+                        "pic": "wifi/ic_wifi_signal_4_teal.png",
+                        "size": {
+                          "height": 24,
+                          "width": 26
+                        }
+                      }
+                    ],
+                    "colorTab": {
+                      "color0": 16777215
+                    },
+                    "id": 70000,
+                    "touchable": false,
+                    "position": {
+                      "height": 24,
+                      "left": 400,
+                      "top": 20,
+                      "width": 26
+                    }
+                  },
+                  {
+                    "alignment": 36,
+                    "caption": "LISTSUBITEM_NAME",
+                    "colorTab": {
+                      "color0": 16777215,
+                      "color2": 16777215
+                    },
+                    "fontSize": 22,
+                    "iconPosition": {
+                      "height": 70,
+                      "left": 0,
+                      "top": 0,
+                      "width": 644
+                    },
+                    "id": 70001,
+                    "text": "WIFI name",
+                    "touchable": false,
+                    "position": {
+                      "height": 50,
+                      "left": 60,
+                      "top": -5,
+                      "width": 380
+                    }
+                  },
+                  {
+                    "alignment": 36,
+                    "caption": "LISTSUBITEM_SUB",
+                    "colorTab": {
+                      "color0": 16777215,
+                      "color2": 16777215
+                    },
+                    "iconPosition": {
+                      "height": 29,
+                      "left": 0,
+                      "top": 0,
+                      "width": 644
+                    },
+                    "id": 70002,
+                    "text": "WEP sec",
+                    "touchable": false,
+                    "position": {
+                      "height": 29,
+                      "left": 60,
+                      "top": 30,
+                      "width": 380
+                    }
+                  },
+                  {
+                    "alignment": 36,
+                    "backgroundColor": 14277081,
+                    "caption": "SubItem1",
+                    "colorTab": {
+                      "color0": 16777215
+                    },
+                    "iconPosition": {
+                      "height": 65,
+                      "left": 0,
+                      "top": 0,
+                      "width": 150
+                    },
+                    "id": 24005,
+                    "position": {
+                      "height": 1,
+                      "left": 30,
+                      "top": 55,
+                      "width": 400
+                    }
+                  }
+                ]
+              }
+            }
+          },
+          "window__125": {
+            "backgroundColor": 0,
+            "beepEnable": true,
+            "caption": "Window3",
+            "id": 100006,
+            "position": {
+              "height": 42,
+              "left": 0,
+              "top": 0,
+              "width": 450
+            },
+            "button__126": {
+              "alignment": 37,
+              "caption": "ButtonOnOff",
+              "colorTab": {
+                "color0": 16777215
+              },
+              "iconPosition": {
+                "height": 50,
+                "left": 10,
+                "top": -5,
+                "width": 50
+              },
+              "id": 20013,
+              "picTab": {
+                "pic0": "wifi/toggle-off.png",
+                "pic2": "wifi/toggle-on.png",
+                "pic4": "wifi/toggle-off-invalid.png"
+              },
+              "position": {
+                "height": 40,
+                "left": 370,
+                "top": 1,
+                "width": 71
+              }
+            },
+            "button__127": {
+              "alignment": 37,
+              "bgColorTab": {
+                "color1": 5601532
+              },
+              "caption": "wifi_back",
+              "colorTab": {
+                "color0": 16777215
+              },
+              "iconPosition": {
+                "height": 50,
+                "left": 0,
+                "top": -5,
+                "width": 80
+              },
+              "id": 20014,
+              "picTab": {
+                "pic0": "wifi/ic_sysbar_back.png"
+              },
+              "position": {
+                "height": 40,
+                "left": 0,
+                "top": 0,
+                "width": 90
+              }
+            },
+            "button__128": {
+              "alignment": 37,
+              "caption": "ButtonMenu",
+              "colorTab": {
+                "color0": 16777215
+              },
+              "iconPosition": {
+                "height": 40,
+                "left": 12,
+                "top": 10,
+                "width": 40
+              },
+              "id": 20015,
+              "picTab": {
+                "pic0": "wifi/menu_more_normal.png",
+                "pic1": "wifi/menu_more_pressed.png"
+              },
+              "visible": false,
+              "position": {
+                "height": 60,
+                "left": 1600,
+                "top": 0,
+                "width": 65
+              }
+            },
+            "textview__129": {
+              "alignment": 36,
+              "backgroundColor": 13421772,
+              "caption": "Textview8",
+              "id": 50035,
+              "touchable": false,
+              "position": {
+                "height": 1,
+                "left": 0,
+                "top": 40,
+                "width": 450
+              }
+            }
+          },
+          "window__130": {
+            "backgroundColor": 8421504,
+            "beepEnable": true,
+            "caption": "WindowSet",
+            "id": 100010,
+            "modal": true,
+            "visible": false,
+            "position": {
+              "height": 233,
+              "left": 30,
+              "top": 70,
+              "width": 416
+            },
+            "button__131": {
+              "alignment": 37,
+              "bgColorTab": {
+                "color0": 16250871,
+                "color1": 14737632
+              },
+              "caption": "ButtonConnect",
+              "colorTab": {
+                "color0": 0
+              },
+              "fontSize": 22,
+              "id": 20016,
+              "text": "@Connect",
+              "position": {
+                "height": 40,
+                "left": 230,
+                "top": 180,
+                "width": 130
+              }
+            },
+            "edittext__132": {
+              "alignment": 36,
+              "backgroundColor": 16777215,
+              "beepEnable": true,
+              "caption": "EdittextPwd",
+              "colorTab": {
+                "color0": 0
+              },
+              "fontSize": 22,
+              "hintTextColor": 0,
+              "id": 51000,
+              "isPassword": true,
+              "textType": 1,
+              "visible": false,
+              "position": {
+                "height": 32,
+                "left": 147,
+                "top": 129,
+                "width": 224
+              }
+            },
+            "textview__133": {
+              "alignment": 38,
+              "caption": "Textview5",
+              "colorTab": {
+                "color0": 0
+              },
+              "fontSize": 22,
+              "id": 50036,
+              "text": "@Ssid",
+              "touchable": false,
+              "position": {
+                "height": 32,
+                "left": 22,
+                "top": 25,
+                "width": 113
+              }
+            },
+            "textview__134": {
+              "alignment": 38,
+              "caption": "Textview7",
+              "colorTab": {
+                "color0": 0
+              },
+              "fontSize": 22,
+              "id": 50037,
+              "text": "@SecType",
+              "touchable": false,
+              "position": {
+                "height": 32,
+                "left": 22,
+                "top": 77,
+                "width": 113
+              }
+            },
+            "textview__135": {
+              "alignment": 38,
+              "caption": "Textview9",
+              "colorTab": {
+                "color0": 0
+              },
+              "fontSize": 22,
+              "id": 50038,
+              "text": "@WifiPwd",
+              "touchable": false,
+              "position": {
+                "height": 32,
+                "left": 22,
+                "top": 129,
+                "width": 113
+              }
+            },
+            "textview__136": {
+              "alignment": 36,
+              "caption": "TextSsid",
+              "colorTab": {
+                "color0": 0
+              },
+              "fontSize": 22,
+              "id": 50044,
+              "text": "zksewt",
+              "touchable": false,
+              "position": {
+                "height": 32,
+                "left": 147,
+                "top": 25,
+                "width": 260
+              }
+            },
+            "textview__137": {
+              "alignment": 36,
+              "caption": "TextSecType",
+              "colorTab": {
+                "color0": 0
+              },
+              "fontSize": 22,
+              "id": 50045,
+              "text": "WEP",
+              "touchable": false,
+              "position": {
+                "height": 32,
+                "left": 147,
+                "top": 77,
+                "width": 260
+              }
+            },
+            "button__138": {
+              "alignment": 36,
+              "caption": "editPwdButton",
+              "colorTab": {
+                "color0": 0
+              },
+              "fontSize": 22,
+              "id": 20017,
+              "picTab": {
+                "pic0": "setting/setfactory_btn1_n.png"
+              },
+              "text": "button",
+              "position": {
+                "height": 40,
+                "left": 147,
+                "top": 129,
+                "width": 200
+              }
+            }
+          },
+          "window__139": {
+            "backgroundColor": 8421504,
+            "beepEnable": true,
+            "caption": "WindowDisconnect",
+            "id": 100011,
+            "modal": true,
+            "visible": false,
+            "position": {
+              "height": 246,
+              "left": 30,
+              "top": 70,
+              "width": 455
+            },
+            "button__140": {
+              "alignment": 37,
+              "bgColorTab": {
+                "color0": 16250871,
+                "color1": 14737632
+              },
+              "caption": "ButtonDisconnect",
+              "colorTab": {
+                "color0": 0
+              },
+              "fontSize": 22,
+              "iconPosition": {
+                "height": 40,
+                "left": 0,
+                "top": 0,
+                "width": 130
+              },
+              "id": 20018,
+              "text": "@Disconnect",
+              "position": {
+                "height": 49,
+                "left": 254,
+                "top": 183,
+                "width": 143
+              }
+            },
+            "textview__141": {
+              "alignment": 38,
+              "caption": "Textview15",
+              "colorTab": {
+                "color0": 0
+              },
+              "fontSize": 22,
+              "id": 50046,
+              "text": "@Ssid",
+              "touchable": false,
+              "position": {
+                "height": 42,
+                "left": 22,
+                "top": 19,
+                "width": 139
+              }
+            },
+            "textview__142": {
+              "alignment": 38,
+              "caption": "Textview17",
+              "colorTab": {
+                "color0": 0
+              },
+              "fontSize": 22,
+              "id": 50041,
+              "text": "@SecType",
+              "touchable": false,
+              "position": {
+                "height": 42,
+                "left": 22,
+                "top": 73,
+                "width": 139
+              }
+            },
+            "textview__143": {
+              "alignment": 38,
+              "caption": "Textview19",
+              "colorTab": {
+                "color0": 0
+              },
+              "fontSize": 22,
+              "id": 50048,
+              "text": "@ConnectState",
+              "touchable": false,
+              "position": {
+                "height": 42,
+                "left": 22,
+                "top": 127,
+                "width": 139
+              }
+            },
+            "textview__144": {
+              "alignment": 36,
+              "caption": "TextConnectSsid",
+              "colorTab": {
+                "color0": 0
+              },
+              "fontSize": 22,
+              "id": 50042,
+              "text": "zksewt",
+              "touchable": false,
+              "position": {
+                "height": 42,
+                "left": 177,
+                "top": 19,
+                "width": 256
+              }
+            },
+            "textview__145": {
+              "alignment": 36,
+              "caption": "TextConnectSecType",
+              "colorTab": {
+                "color0": 0
+              },
+              "fontSize": 22,
+              "id": 50050,
+              "text": "WEP",
+              "touchable": false,
+              "position": {
+                "height": 42,
+                "left": 177,
+                "top": 73,
+                "width": 256
+              }
+            },
+            "textview__146": {
+              "alignment": 36,
+              "caption": "TextConnectState",
+              "colorTab": {
+                "color0": 0
+              },
+              "fontSize": 22,
+              "id": 50043,
+              "text": "@Connected",
+              "touchable": false,
+              "position": {
+                "height": 42,
+                "left": 177,
+                "top": 127,
+                "width": 216
+              }
+            }
+          },
+          "window__147": {
+            "backgroundColor": 8421504,
+            "beepEnable": true,
+            "caption": "WindowPasswordError",
+            "hideTimeOut": 2,
+            "id": 100012,
+            "modal": true,
+            "visible": false,
+            "position": {
+              "height": 50,
+              "left": 200,
+              "top": 200,
+              "width": 200
+            },
+            "textview__148": {
+              "alignment": 37,
+              "backgroundColor": 12632256,
+              "caption": "Textview27",
+              "colorTab": {
+                "color0": 0
+              },
+              "fontSize": 22,
+              "id": 50056,
+              "text": "@PwdError",
+              "touchable": false,
+              "position": {
+                "height": 50,
+                "left": 0,
+                "top": 0,
+                "width": 200
+              }
+            }
+          },
+          "window__149": {
+            "backgroundColor": 8421504,
+            "beepEnable": true,
+            "caption": "WindowMenuMore",
+            "id": 110012,
+            "modal": true,
+            "visible": false,
+            "position": {
+              "height": 178,
+              "left": 30,
+              "top": 100,
+              "width": 455
+            },
+            "textview__150": {
+              "alignment": 38,
+              "caption": "Textview2",
+              "colorTab": {
+                "color0": 0
+              },
+              "fontSize": 22,
+              "id": 50057,
+              "text": "@IPTip",
+              "touchable": false,
+              "position": {
+                "height": 43,
+                "left": 30,
+                "top": 40,
+                "width": 133
+              }
+            },
+            "textview__151": {
+              "alignment": 38,
+              "caption": "Textview6",
+              "colorTab": {
+                "color0": 0
+              },
+              "fontSize": 22,
+              "id": 50059,
+              "text": "@MACAddrTip",
+              "touchable": false,
+              "position": {
+                "height": 43,
+                "left": 30,
+                "top": 98,
+                "width": 133
+              }
+            },
+            "textview__152": {
+              "alignment": 36,
+              "caption": "TextIPAddr",
+              "colorTab": {
+                "color0": 0
+              },
+              "fontSize": 22,
+              "id": 50060,
+              "text": "0.0.0.0",
+              "touchable": false,
+              "position": {
+                "height": 43,
+                "left": 185,
+                "top": 40,
+                "width": 252
+              }
+            },
+            "textview__153": {
+              "alignment": 36,
+              "caption": "TextMacAddr",
+              "colorTab": {
+                "color0": 0
+              },
+              "fontSize": 22,
+              "id": 50061,
+              "text": "00:00:00:00:00:00",
+              "touchable": false,
+              "position": {
+                "height": 43,
+                "left": 185,
+                "top": 98,
+                "width": 252
+              }
+            }
+          }
+        },
+        "button__154": {
+          "alignment": 37,
+          "caption": "wifiButton",
+          "colorTab": {
+            "color0": 16777215
+          },
+          "id": 20079,
+          "picTab": {
+            "pic0": "setting/set_btn_s_n.png",
+            "pic1": "setting/set_btn_s_f.png"
+          },
+          "text": "wifi",
+          "position": {
+            "height": 43,
+            "left": 80,
+            "top": 250,
+            "width": 100
+          }
+        },
+        "button__155": {
+          "alignment": 37,
+          "caption": "mcu1Button",
+          "colorTab": {
+            "color0": 16777215
+          },
+          "id": 20081,
+          "picTab": {
+            "pic0": "setting/set_btn_s_n.png",
+            "pic1": "setting/set_btn_s_f.png"
+          },
+          "text": "@mcu_update_text",
+          "visible": false,
+          "position": {
+            "height": 65,
+            "left": 90,
+            "top": 80,
+            "width": 150
+          }
+        },
+        "button__156": {
+          "alignment": 37,
+          "caption": "mcu2Button",
+          "colorTab": {
+            "color0": 16777215
+          },
+          "id": 20082,
+          "picTab": {
+            "pic0": "setting/set_btn_s_n.png",
+            "pic1": "setting/set_btn_s_f.png"
+          },
+          "text": "@mcu_107_update_text",
+          "visible": false,
+          "position": {
+            "height": 65,
+            "left": 90,
+            "top": 150,
+            "width": 150
+          }
+        },
+        "button__157": {
+          "alignment": 37,
+          "caption": "mcu3Button",
+          "colorTab": {
+            "color0": 16777215
+          },
+          "id": 20083,
+          "picTab": {
+            "pic0": "setting/set_btn_s_n.png",
+            "pic1": "setting/set_btn_s_f.png"
+          },
+          "text": "@mcu_can_update_text",
+          "visible": false,
+          "position": {
+            "height": 65,
+            "left": 90,
+            "top": 220,
+            "width": 150
+          }
+        },
+        "button__158": {
+          "alignment": 37,
+          "caption": "appButton",
+          "colorTab": {
+            "color0": 16777215
+          },
+          "id": 20084,
+          "picTab": {
+            "pic0": "setting/set_btn_s_n.png",
+            "pic1": "setting/set_btn_s_f.png"
+          },
+          "text": "app update",
+          "position": {
+            "height": 43,
+            "left": 80,
+            "top": 50,
+            "width": 100
+          }
+        },
+        "circlebar__159": {
+          "beepEnable": true,
+          "caption": "otaDownloadCircleBar",
+          "id": 130002,
+          "max": 100,
+          "maxAngle": 360,
+          "progressPic": "media/scaning.png",
+          "progressPicPos": {
+            "height": 100,
+            "left": 0,
+            "top": 0,
+            "width": 100
+          },
+          "textSize": 25,
+          "textType": 0,
+          "touchRange": {
+            "lower": 0,
+            "upper": 50
+          },
+          "visible": false,
+          "position": {
+            "height": 100,
+            "left": 450,
+            "top": 80,
+            "width": 100
+          }
+        },
+        "textview__160": {
+          "alignment": 37,
+          "caption": "otaDownloadRemindTextView",
+          "colorTab": {
+            "color0": 16777215
+          },
+          "fontSize": 25,
+          "id": 50065,
+          "text": "@set_versions_download_remind4",
+          "touchable": false,
+          "visible": false,
+          "position": {
+            "height": 64,
+            "left": 250,
+            "top": 200,
+            "width": 550
+          }
+        },
+        "textview__161": {
+          "alignment": 36,
+          "caption": "wifiConnectStatusTextView",
+          "colorTab": {
+            "color0": 16777215
+          },
+          "fontSize": 20,
+          "id": 50064,
+          "text": "wifi未连接",
+          "touchable": false,
+          "position": {
+            "height": 50,
+            "left": 90,
+            "top": 300,
+            "width": 200
+          }
+        }
+      },
+      "window__162": {
+        "backgroundColor": 0,
+        "beepEnable": true,
+        "caption": "FactoryWindow",
+        "id": 110017,
+        "visible": false,
+        "position": {
+          "height": 360,
+          "left": 100,
+          "top": 0,
+          "width": 846
+        },
+        "textview__163": {
+          "alignment": 36,
+          "caption": "CodeRemindTextView",
+          "colorTab": {
+            "color0": 16777215
+          },
+          "fontSize": 25,
+          "id": 50062,
+          "text": "@enter_password",
+          "touchable": false,
+          "position": {
+            "height": 30,
+            "left": 0,
+            "top": 20,
+            "width": 220
+          }
+        },
+        "textview__164": {
+          "alignment": 36,
+          "caption": "CodeTextView",
+          "colorTab": {
+            "color0": 16777215
+          },
+          "fontSize": 25,
+          "id": 50063,
+          "touchable": false,
+          "position": {
+            "height": 30,
+            "left": 220,
+            "top": 20,
+            "width": 300
+          }
+        },
+        "button__165": {
+          "alignment": 37,
+          "caption": "Num1Button",
+          "colorTab": {
+            "color0": 16777215,
+            "color1": 6091519
+          },
+          "fontSize": 25,
+          "id": 20019,
+          "picTab": {
+            "pic0": "setting/setfactory_btn1_n.png",
+            "pic1": "setting/setfactory_btn1_f.png"
+          },
+          "text": "1",
+          "position": {
+            "height": 60,
+            "left": 65,
+            "top": 80,
+            "width": 60
+          }
+        },
+        "button__166": {
+          "alignment": 37,
+          "caption": "Num2Button",
+          "colorTab": {
+            "color0": 16777215,
+            "color1": 6091519
+          },
+          "fontSize": 25,
+          "id": 20020,
+          "picTab": {
+            "pic0": "setting/setfactory_btn1_n.png",
+            "pic1": "setting/setfactory_btn1_f.png"
+          },
+          "text": "2",
+          "position": {
+            "height": 60,
+            "left": 130,
+            "top": 80,
+            "width": 60
+          }
+        },
+        "button__167": {
+          "alignment": 37,
+          "caption": "Num3Button",
+          "colorTab": {
+            "color0": 16777215,
+            "color1": 6091519
+          },
+          "fontSize": 25,
+          "id": 20025,
+          "picTab": {
+            "pic0": "setting/setfactory_btn1_n.png",
+            "pic1": "setting/setfactory_btn1_f.png"
+          },
+          "text": "3",
+          "position": {
+            "height": 60,
+            "left": 195,
+            "top": 80,
+            "width": 60
+          }
+        },
+        "button__168": {
+          "alignment": 37,
+          "caption": "DeleteButton",
+          "colorTab": {
+            "color0": 16777215,
+            "color1": 6091519
+          },
+          "fontSize": 44,
+          "id": 20026,
+          "picTab": {
+            "pic0": "setting/setfactory_btn2_n.png",
+            "pic1": "setting/setfactory_btn2_f.png"
+          },
+          "position": {
+            "height": 60,
+            "left": 780,
+            "top": 220,
+            "width": 60
+          }
+        },
+        "button__169": {
+          "alignment": 37,
+          "caption": "Num4Button",
+          "colorTab": {
+            "color0": 16777215,
+            "color1": 6091519
+          },
+          "fontSize": 25,
+          "id": 20027,
+          "picTab": {
+            "pic0": "setting/setfactory_btn1_n.png",
+            "pic1": "setting/setfactory_btn1_f.png"
+          },
+          "text": "4",
+          "position": {
+            "height": 60,
+            "left": 260,
+            "top": 80,
+            "width": 60
+          }
+        },
+        "button__170": {
+          "alignment": 37,
+          "caption": "Num5Button",
+          "colorTab": {
+            "color0": 16777215,
+            "color1": 6091519
+          },
+          "fontSize": 25,
+          "id": 20028,
+          "picTab": {
+            "pic0": "setting/setfactory_btn1_n.png",
+            "pic1": "setting/setfactory_btn1_f.png"
+          },
+          "text": "5",
+          "position": {
+            "height": 60,
+            "left": 325,
+            "top": 80,
+            "width": 60
+          }
+        },
+        "button__171": {
+          "alignment": 37,
+          "caption": "Num6Button",
+          "colorTab": {
+            "color0": 16777215,
+            "color1": 6091519
+          },
+          "fontSize": 25,
+          "id": 20029,
+          "picTab": {
+            "pic0": "setting/setfactory_btn1_n.png",
+            "pic1": "setting/setfactory_btn1_f.png"
+          },
+          "text": "6",
+          "position": {
+            "height": 60,
+            "left": 390,
+            "top": 80,
+            "width": 60
+          }
+        },
+        "button__172": {
+          "alignment": 37,
+          "caption": "Num0Button",
+          "colorTab": {
+            "color0": 16777215,
+            "color1": 6091519
+          },
+          "fontSize": 25,
+          "id": 20035,
+          "picTab": {
+            "pic0": "setting/setfactory_btn1_n.png",
+            "pic1": "setting/setfactory_btn1_f.png"
+          },
+          "text": "0",
+          "position": {
+            "height": 60,
+            "left": 650,
+            "top": 80,
+            "width": 60
+          }
+        },
+        "button__173": {
+          "alignment": 37,
+          "caption": "Num7Button",
+          "colorTab": {
+            "color0": 16777215,
+            "color1": 6091519
+          },
+          "fontSize": 25,
+          "id": 20036,
+          "picTab": {
+            "pic0": "setting/setfactory_btn1_n.png",
+            "pic1": "setting/setfactory_btn1_f.png"
+          },
+          "text": "7",
+          "position": {
+            "height": 60,
+            "left": 455,
+            "top": 80,
+            "width": 60
+          }
+        },
+        "button__174": {
+          "alignment": 37,
+          "caption": "Num8Button",
+          "colorTab": {
+            "color0": 16777215,
+            "color1": 6091519
+          },
+          "fontSize": 25,
+          "id": 20037,
+          "picTab": {
+            "pic0": "setting/setfactory_btn1_n.png",
+            "pic1": "setting/setfactory_btn1_f.png"
+          },
+          "text": "8",
+          "position": {
+            "height": 60,
+            "left": 520,
+            "top": 80,
+            "width": 60
+          }
+        },
+        "button__175": {
+          "alignment": 37,
+          "caption": "Num9Button",
+          "colorTab": {
+            "color0": 16777215,
+            "color1": 6091519
+          },
+          "fontSize": 25,
+          "id": 20038,
+          "picTab": {
+            "pic0": "setting/setfactory_btn1_n.png",
+            "pic1": "setting/setfactory_btn1_f.png"
+          },
+          "text": "9",
+          "position": {
+            "height": 60,
+            "left": 585,
+            "top": 80,
+            "width": 60
+          }
+        },
+        "button__176": {
+          "alignment": 37,
+          "caption": "OkButton",
+          "colorTab": {
+            "color0": 16777215,
+            "color1": 6091519
+          },
+          "fontSize": 44,
+          "id": 20039,
+          "picTab": {
+            "pic0": "setting/set_factory_btn3_n.png",
+            "pic1": "setting/set_factory_btn3_f.png"
+          },
+          "position": {
+            "height": 60,
+            "left": 715,
+            "top": 290,
+            "width": 125
+          }
+        },
+        "button__177": {
+          "alignment": 37,
+          "caption": "shiftButton",
+          "colorTab": {
+            "color0": 16777215,
+            "color1": 6091519
+          },
+          "fontSize": 25,
+          "id": 20040,
+          "picTab": {
+            "pic0": "setting/setfactory_btn3_n.png",
+            "pic1": "setting/setfactory_btn3_f.png"
+          },
+          "text": "shift",
+          "position": {
+            "height": 140,
+            "left": 0,
+            "top": 215,
+            "width": 60
+          }
+        },
+        "button__178": {
+          "alignment": 37,
+          "caption": "qButton",
+          "colorTab": {
+            "color0": 16777215,
+            "color1": 6091519
+          },
+          "fontSize": 25,
+          "id": 20042,
+          "picTab": {
+            "pic0": "setting/setfactory_btn1_n.png",
+            "pic1": "setting/setfactory_btn1_f.png"
+          },
+          "text": "q",
+          "position": {
+            "height": 60,
+            "left": 0,
+            "top": 150,
+            "width": 60
+          }
+        },
+        "button__179": {
+          "alignment": 37,
+          "caption": "wButton",
+          "colorTab": {
+            "color0": 16777215,
+            "color1": 6091519
+          },
+          "fontSize": 25,
+          "id": 20043,
+          "picTab": {
+            "pic0": "setting/setfactory_btn1_n.png",
+            "pic1": "setting/setfactory_btn1_f.png"
+          },
+          "text": "w",
+          "position": {
+            "height": 60,
+            "left": 65,
+            "top": 150,
+            "width": 60
+          }
+        },
+        "button__180": {
+          "alignment": 37,
+          "caption": "eButton",
+          "colorTab": {
+            "color0": 16777215,
+            "color1": 6091519
+          },
+          "fontSize": 25,
+          "id": 20044,
+          "picTab": {
+            "pic0": "setting/setfactory_btn1_n.png",
+            "pic1": "setting/setfactory_btn1_f.png"
+          },
+          "text": "e",
+          "position": {
+            "height": 60,
+            "left": 130,
+            "top": 150,
+            "width": 60
+          }
+        },
+        "button__181": {
+          "alignment": 37,
+          "caption": "rButton",
+          "colorTab": {
+            "color0": 16777215,
+            "color1": 6091519
+          },
+          "fontSize": 25,
+          "id": 20045,
+          "picTab": {
+            "pic0": "setting/setfactory_btn1_n.png",
+            "pic1": "setting/setfactory_btn1_f.png"
+          },
+          "text": "r",
+          "position": {
+            "height": 60,
+            "left": 195,
+            "top": 150,
+            "width": 60
+          }
+        },
+        "button__182": {
+          "alignment": 37,
+          "caption": "tButton",
+          "colorTab": {
+            "color0": 16777215,
+            "color1": 6091519
+          },
+          "fontSize": 25,
+          "id": 20046,
+          "picTab": {
+            "pic0": "setting/setfactory_btn1_n.png",
+            "pic1": "setting/setfactory_btn1_f.png"
+          },
+          "text": "t",
+          "position": {
+            "height": 60,
+            "left": 260,
+            "top": 150,
+            "width": 60
+          }
+        },
+        "button__183": {
+          "alignment": 37,
+          "caption": "yButton",
+          "colorTab": {
+            "color0": 16777215,
+            "color1": 6091519
+          },
+          "fontSize": 25,
+          "id": 20047,
+          "picTab": {
+            "pic0": "setting/setfactory_btn1_n.png",
+            "pic1": "setting/setfactory_btn1_f.png"
+          },
+          "text": "y",
+          "position": {
+            "height": 60,
+            "left": 325,
+            "top": 150,
+            "width": 60
+          }
+        },
+        "button__184": {
+          "alignment": 37,
+          "caption": "uButton",
+          "colorTab": {
+            "color0": 16777215,
+            "color1": 6091519
+          },
+          "fontSize": 25,
+          "id": 20048,
+          "picTab": {
+            "pic0": "setting/setfactory_btn1_n.png",
+            "pic1": "setting/setfactory_btn1_f.png"
+          },
+          "text": "u",
+          "position": {
+            "height": 60,
+            "left": 390,
+            "top": 150,
+            "width": 60
+          }
+        },
+        "button__185": {
+          "alignment": 37,
+          "caption": "iButton",
+          "colorTab": {
+            "color0": 16777215,
+            "color1": 6091519
+          },
+          "fontSize": 25,
+          "id": 20049,
+          "picTab": {
+            "pic0": "setting/setfactory_btn1_n.png",
+            "pic1": "setting/setfactory_btn1_f.png"
+          },
+          "text": "i",
+          "position": {
+            "height": 60,
+            "left": 455,
+            "top": 150,
+            "width": 60
+          }
+        },
+        "button__186": {
+          "alignment": 37,
+          "caption": "oButton",
+          "colorTab": {
+            "color0": 16777215,
+            "color1": 6091519
+          },
+          "fontSize": 25,
+          "id": 20050,
+          "picTab": {
+            "pic0": "setting/setfactory_btn1_n.png",
+            "pic1": "setting/setfactory_btn1_f.png"
+          },
+          "text": "o",
+          "position": {
+            "height": 60,
+            "left": 520,
+            "top": 150,
+            "width": 60
+          }
+        },
+        "button__187": {
+          "alignment": 37,
+          "caption": "pButton",
+          "colorTab": {
+            "color0": 16777215,
+            "color1": 6091519
+          },
+          "fontSize": 25,
+          "id": 20051,
+          "picTab": {
+            "pic0": "setting/setfactory_btn1_n.png",
+            "pic1": "setting/setfactory_btn1_f.png"
+          },
+          "text": "p",
+          "position": {
+            "height": 60,
+            "left": 585,
+            "top": 150,
+            "width": 60
+          }
+        },
+        "button__188": {
+          "alignment": 37,
+          "caption": "aButton",
+          "colorTab": {
+            "color0": 16777215,
+            "color1": 6091519
+          },
+          "fontSize": 25,
+          "id": 20052,
+          "picTab": {
+            "pic0": "setting/setfactory_btn1_n.png",
+            "pic1": "setting/setfactory_btn1_f.png"
+          },
+          "text": "a",
+          "position": {
+            "height": 60,
+            "left": 65,
+            "top": 220,
+            "width": 60
+          }
+        },
+        "button__189": {
+          "alignment": 37,
+          "caption": "sButton",
+          "colorTab": {
+            "color0": 16777215,
+            "color1": 6091519
+          },
+          "fontSize": 25,
+          "id": 20053,
+          "picTab": {
+            "pic0": "setting/setfactory_btn1_n.png",
+            "pic1": "setting/setfactory_btn1_f.png"
+          },
+          "text": "s",
+          "position": {
+            "height": 60,
+            "left": 130,
+            "top": 220,
+            "width": 60
+          }
+        },
+        "button__190": {
+          "alignment": 37,
+          "caption": "dButton",
+          "colorTab": {
+            "color0": 16777215,
+            "color1": 6091519
+          },
+          "fontSize": 25,
+          "id": 20054,
+          "picTab": {
+            "pic0": "setting/setfactory_btn1_n.png",
+            "pic1": "setting/setfactory_btn1_f.png"
+          },
+          "text": "d",
+          "position": {
+            "height": 60,
+            "left": 195,
+            "top": 220,
+            "width": 60
+          }
+        },
+        "button__191": {
+          "alignment": 37,
+          "caption": "fButton",
+          "colorTab": {
+            "color0": 16777215,
+            "color1": 6091519
+          },
+          "fontSize": 25,
+          "id": 20055,
+          "picTab": {
+            "pic0": "setting/setfactory_btn1_n.png",
+            "pic1": "setting/setfactory_btn1_f.png"
+          },
+          "text": "f",
+          "position": {
+            "height": 60,
+            "left": 260,
+            "top": 220,
+            "width": 60
+          }
+        },
+        "button__192": {
+          "alignment": 37,
+          "caption": "gButton",
+          "colorTab": {
+            "color0": 16777215,
+            "color1": 6091519
+          },
+          "fontSize": 25,
+          "id": 20056,
+          "picTab": {
+            "pic0": "setting/setfactory_btn1_n.png",
+            "pic1": "setting/setfactory_btn1_f.png"
+          },
+          "text": "g",
+          "position": {
+            "height": 60,
+            "left": 325,
+            "top": 220,
+            "width": 60
+          }
+        },
+        "button__193": {
+          "alignment": 37,
+          "caption": "hButton",
+          "colorTab": {
+            "color0": 16777215,
+            "color1": 6091519
+          },
+          "fontSize": 25,
+          "id": 20057,
+          "picTab": {
+            "pic0": "setting/setfactory_btn1_n.png",
+            "pic1": "setting/setfactory_btn1_f.png"
+          },
+          "text": "h",
+          "position": {
+            "height": 60,
+            "left": 390,
+            "top": 220,
+            "width": 60
+          }
+        },
+        "button__194": {
+          "alignment": 37,
+          "caption": "jButton",
+          "colorTab": {
+            "color0": 16777215,
+            "color1": 6091519
+          },
+          "fontSize": 25,
+          "id": 20058,
+          "picTab": {
+            "pic0": "setting/setfactory_btn1_n.png",
+            "pic1": "setting/setfactory_btn1_f.png"
+          },
+          "text": "j",
+          "position": {
+            "height": 60,
+            "left": 455,
+            "top": 220,
+            "width": 60
+          }
+        },
+        "button__195": {
+          "alignment": 37,
+          "caption": "kButton",
+          "colorTab": {
+            "color0": 16777215,
+            "color1": 6091519
+          },
+          "fontSize": 25,
+          "id": 20059,
+          "picTab": {
+            "pic0": "setting/setfactory_btn1_n.png",
+            "pic1": "setting/setfactory_btn1_f.png"
+          },
+          "text": "k",
+          "position": {
+            "height": 60,
+            "left": 520,
+            "top": 220,
+            "width": 60
+          }
+        },
+        "button__196": {
+          "alignment": 37,
+          "caption": "lButton",
+          "colorTab": {
+            "color0": 16777215,
+            "color1": 6091519
+          },
+          "fontSize": 25,
+          "id": 20060,
+          "picTab": {
+            "pic0": "setting/setfactory_btn1_n.png",
+            "pic1": "setting/setfactory_btn1_f.png"
+          },
+          "text": "l",
+          "position": {
+            "height": 60,
+            "left": 585,
+            "top": 220,
+            "width": 60
+          }
+        },
+        "button__197": {
+          "alignment": 37,
+          "caption": "zButton",
+          "colorTab": {
+            "color0": 16777215,
+            "color1": 6091519
+          },
+          "fontSize": 25,
+          "id": 20061,
+          "picTab": {
+            "pic0": "setting/setfactory_btn1_n.png",
+            "pic1": "setting/setfactory_btn1_f.png"
+          },
+          "text": "z",
+          "position": {
+            "height": 60,
+            "left": 65,
+            "top": 290,
+            "width": 60
+          }
+        },
+        "button__198": {
+          "alignment": 37,
+          "caption": "xButton",
+          "colorTab": {
+            "color0": 16777215,
+            "color1": 6091519
+          },
+          "fontSize": 25,
+          "id": 20062,
+          "picTab": {
+            "pic0": "setting/setfactory_btn1_n.png",
+            "pic1": "setting/setfactory_btn1_f.png"
+          },
+          "text": "x",
+          "position": {
+            "height": 60,
+            "left": 130,
+            "top": 290,
+            "width": 60
+          }
+        },
+        "button__199": {
+          "alignment": 37,
+          "caption": "cButton",
+          "colorTab": {
+            "color0": 16777215,
+            "color1": 6091519
+          },
+          "fontSize": 25,
+          "id": 20063,
+          "picTab": {
+            "pic0": "setting/setfactory_btn1_n.png",
+            "pic1": "setting/setfactory_btn1_f.png"
+          },
+          "text": "c",
+          "position": {
+            "height": 60,
+            "left": 195,
+            "top": 290,
+            "width": 60
+          }
+        },
+        "button__200": {
+          "alignment": 37,
+          "caption": "vButton",
+          "colorTab": {
+            "color0": 16777215,
+            "color1": 6091519
+          },
+          "fontSize": 25,
+          "id": 20064,
+          "picTab": {
+            "pic0": "setting/setfactory_btn1_n.png",
+            "pic1": "setting/setfactory_btn1_f.png"
+          },
+          "text": "v",
+          "position": {
+            "height": 60,
+            "left": 260,
+            "top": 290,
+            "width": 60
+          }
+        },
+        "button__201": {
+          "alignment": 37,
+          "caption": "bButton",
+          "colorTab": {
+            "color0": 16777215,
+            "color1": 6091519
+          },
+          "fontSize": 25,
+          "id": 20065,
+          "picTab": {
+            "pic0": "setting/setfactory_btn1_n.png",
+            "pic1": "setting/setfactory_btn1_f.png"
+          },
+          "text": "b",
+          "position": {
+            "height": 60,
+            "left": 325,
+            "top": 290,
+            "width": 60
+          }
+        },
+        "button__202": {
+          "alignment": 37,
+          "caption": "nButton",
+          "colorTab": {
+            "color0": 16777215,
+            "color1": 6091519
+          },
+          "fontSize": 25,
+          "id": 20066,
+          "picTab": {
+            "pic0": "setting/setfactory_btn1_n.png",
+            "pic1": "setting/setfactory_btn1_f.png"
+          },
+          "text": "n",
+          "position": {
+            "height": 60,
+            "left": 390,
+            "top": 290,
+            "width": 60
+          }
+        },
+        "button__203": {
+          "alignment": 37,
+          "caption": "mButton",
+          "colorTab": {
+            "color0": 16777215,
+            "color1": 6091519
+          },
+          "fontSize": 25,
+          "id": 20067,
+          "picTab": {
+            "pic0": "setting/setfactory_btn1_n.png",
+            "pic1": "setting/setfactory_btn1_f.png"
+          },
+          "text": "m",
+          "position": {
+            "height": 60,
+            "left": 455,
+            "top": 290,
+            "width": 60
+          }
+        },
+        "button__204": {
+          "alignment": 37,
+          "caption": "specificButton1",
+          "colorTab": {
+            "color0": 16777215,
+            "color1": 6091519
+          },
+          "fontSize": 25,
+          "id": 20068,
+          "picTab": {
+            "pic0": "setting/setfactory_btn1_n.png",
+            "pic1": "setting/setfactory_btn1_f.png"
+          },
+          "text": "~",
+          "position": {
+            "height": 60,
+            "left": 0,
+            "top": 80,
+            "width": 60
+          }
+        },
+        "button__205": {
+          "alignment": 37,
+          "caption": "specificButton2",
+          "colorTab": {
+            "color0": 16777215,
+            "color1": 6091519
+          },
+          "fontSize": 25,
+          "id": 20069,
+          "picTab": {
+            "pic0": "setting/setfactory_btn1_n.png",
+            "pic1": "setting/setfactory_btn1_f.png"
+          },
+          "text": "_",
+          "position": {
+            "height": 60,
+            "left": 715,
+            "top": 80,
+            "width": 60
+          }
+        },
+        "button__206": {
+          "alignment": 37,
+          "caption": "specificButton3",
+          "colorTab": {
+            "color0": 16777215,
+            "color1": 6091519
+          },
+          "fontSize": 25,
+          "id": 20070,
+          "picTab": {
+            "pic0": "setting/setfactory_btn1_n.png",
+            "pic1": "setting/setfactory_btn1_f.png"
+          },
+          "text": "+",
+          "position": {
+            "height": 60,
+            "left": 780,
+            "top": 80,
+            "width": 60
+          }
+        },
+        "button__207": {
+          "alignment": 37,
+          "caption": "specificButton4",
+          "colorTab": {
+            "color0": 16777215,
+            "color1": 6091519
+          },
+          "fontSize": 25,
+          "id": 20071,
+          "picTab": {
+            "pic0": "setting/setfactory_btn1_n.png",
+            "pic1": "setting/setfactory_btn1_f.png"
+          },
+          "text": "{",
+          "position": {
+            "height": 60,
+            "left": 650,
+            "top": 150,
+            "width": 60
+          }
+        },
+        "button__208": {
+          "alignment": 37,
+          "caption": "specificButton5",
+          "colorTab": {
+            "color0": 16777215,
+            "color1": 6091519
+          },
+          "fontSize": 25,
+          "id": 20072,
+          "picTab": {
+            "pic0": "setting/setfactory_btn1_n.png",
+            "pic1": "setting/setfactory_btn1_f.png"
+          },
+          "text": "}",
+          "position": {
+            "height": 60,
+            "left": 715,
+            "top": 150,
+            "width": 60
+          }
+        },
+        "button__209": {
+          "alignment": 37,
+          "caption": "specificButton6",
+          "colorTab": {
+            "color0": 16777215,
+            "color1": 6091519
+          },
+          "fontSize": 25,
+          "id": 20073,
+          "picTab": {
+            "pic0": "setting/setfactory_btn1_n.png",
+            "pic1": "setting/setfactory_btn1_f.png"
+          },
+          "text": "|",
+          "position": {
+            "height": 60,
+            "left": 780,
+            "top": 150,
+            "width": 60
+          }
+        },
+        "button__210": {
+          "alignment": 37,
+          "caption": "specificButton7",
+          "colorTab": {
+            "color0": 16777215,
+            "color1": 6091519
+          },
+          "fontSize": 25,
+          "id": 20074,
+          "picTab": {
+            "pic0": "setting/setfactory_btn1_n.png",
+            "pic1": "setting/setfactory_btn1_f.png"
+          },
+          "text": ":",
+          "position": {
+            "height": 60,
+            "left": 650,
+            "top": 220,
+            "width": 60
+          }
+        },
+        "button__211": {
+          "alignment": 37,
+          "caption": "specificButton8",
+          "colorTab": {
+            "color0": 16777215,
+            "color1": 6091519
+          },
+          "fontSize": 25,
+          "id": 20075,
+          "picTab": {
+            "pic0": "setting/setfactory_btn1_n.png",
+            "pic1": "setting/setfactory_btn1_f.png"
+          },
+          "text": "\"",
+          "position": {
+            "height": 60,
+            "left": 715,
+            "top": 220,
+            "width": 60
+          }
+        },
+        "button__212": {
+          "alignment": 37,
+          "caption": "specificButton9",
+          "colorTab": {
+            "color0": 16777215,
+            "color1": 6091519
+          },
+          "fontSize": 25,
+          "id": 20076,
+          "picTab": {
+            "pic0": "setting/setfactory_btn1_n.png",
+            "pic1": "setting/setfactory_btn1_f.png"
+          },
+          "text": "<",
+          "position": {
+            "height": 60,
+            "left": 520,
+            "top": 290,
+            "width": 60
+          }
+        },
+        "button__213": {
+          "alignment": 37,
+          "caption": "specificButton10",
+          "colorTab": {
+            "color0": 16777215,
+            "color1": 6091519
+          },
+          "fontSize": 25,
+          "id": 20077,
+          "picTab": {
+            "pic0": "setting/setfactory_btn1_n.png",
+            "pic1": "setting/setfactory_btn1_f.png"
+          },
+          "text": ">",
+          "position": {
+            "height": 60,
+            "left": 585,
+            "top": 290,
+            "width": 60
+          }
+        },
+        "button__214": {
+          "alignment": 37,
+          "caption": "specificButton11",
+          "colorTab": {
+            "color0": 16777215,
+            "color1": 6091519
+          },
+          "fontSize": 25,
+          "id": 20078,
+          "picTab": {
+            "pic0": "setting/setfactory_btn1_n.png",
+            "pic1": "setting/setfactory_btn1_f.png"
+          },
+          "text": "?",
+          "position": {
+            "height": 60,
+            "left": 650,
+            "top": 290,
+            "width": 60
+          }
+        }
+      },
+      "window__215": {
+        "backgroundColor": 0,
+        "beepEnable": true,
+        "caption": "McuUpdateWindow",
+        "id": 110025,
+        "visible": false,
+        "position": {
+          "height": 230,
+          "left": 250,
+          "top": 0,
+          "width": 400
+        },
+        "textview__216": {
+          "alignment": 37,
+          "caption": "McuUpdateRemindTextView",
+          "colorTab": {
+            "color0": 16777215
+          },
+          "fontSize": 20,
+          "id": 50021,
+          "text": "@mcu_update_now",
+          "touchable": false,
+          "position": {
+            "height": 30,
+            "left": 0,
+            "top": 130,
+            "width": 400
+          }
+        },
+        "circlebar__217": {
+          "beepEnable": true,
+          "caption": "McuUpdateCircleBar",
+          "id": 130001,
+          "max": 100,
+          "maxAngle": 360,
+          "progressPic": "media/scaning.png",
+          "progressPicPos": {
+            "height": 100,
+            "left": 0,
+            "top": 0,
+            "width": 100
+          },
+          "touchRange": {
+            "lower": 0,
+            "upper": 50
+          },
+          "position": {
+            "height": 100,
+            "left": 150,
+            "top": 20,
+            "width": 100
+          }
+        },
+        "textview__218": {
+          "alignment": 37,
+          "caption": "McuUpdateRemind2TextView",
+          "colorTab": {
+            "color0": 16777215
+          },
+          "fontSize": 20,
+          "id": 50008,
+          "text": "@mcu_update_remind",
+          "touchable": false,
+          "position": {
+            "height": 30,
+            "left": 10,
+            "top": 180,
+            "width": 400
+          }
+        }
+      },
+      "window__219": {
+        "backgroundColor": 0,
+        "beepEnable": true,
+        "caption": "McuUpdateErrorWindow",
+        "id": 110026,
+        "visible": false,
+        "position": {
+          "height": 230,
+          "left": 250,
+          "top": 0,
+          "width": 400
+        },
+        "textview__220": {
+          "alignment": 37,
+          "caption": "McuUpdateErrorRemindTextView",
+          "colorTab": {
+            "color0": 16777215
+          },
+          "fontSize": 15,
+          "id": 50023,
+          "text": "@mcu_update_error",
+          "touchable": false,
+          "position": {
+            "height": 30,
+            "left": 0,
+            "top": 100,
+            "width": 400
+          }
+        }
+      },
+      "window__221": {
+        "backgroundColor": 0,
+        "beepEnable": true,
+        "caption": "resetRemindWindow",
+        "id": 110013,
+        "visible": false,
+        "position": {
+          "height": 300,
+          "left": 250,
+          "top": 0,
+          "width": 500
+        },
+        "textview__222": {
+          "alignment": 37,
+          "caption": "TextView2",
+          "colorTab": {
+            "color0": 16777215
+          },
+          "fontSize": 20,
+          "id": 50076,
+          "text": "@reset_remind",
+          "touchable": false,
+          "position": {
+            "height": 65,
+            "left": 59,
+            "top": 70,
+            "width": 398
+          }
+        },
+        "button__223": {
+          "alignment": 37,
+          "caption": "resetConfirButton",
+          "colorTab": {
+            "color0": 16777215
+          },
+          "id": 20087,
+          "picTab": {
+            "pic0": "setting/set_btn_s_n.png",
+            "pic1": "setting/set_btn_s_f.png"
+          },
+          "text": "yes",
+          "position": {
+            "height": 65,
+            "left": 60,
+            "top": 200,
+            "width": 150
+          }
+        },
+        "button__224": {
+          "alignment": 37,
+          "caption": "resetCancelButton",
+          "colorTab": {
+            "color0": 16777215
+          },
+          "id": 20088,
+          "picTab": {
+            "pic0": "setting/set_btn_s_n.png",
+            "pic1": "setting/set_btn_s_f.png"
+          },
+          "text": "no",
+          "position": {
+            "height": 65,
+            "left": 280,
+            "top": 200,
+            "width": 150
+          }
+        }
+      }
+    }
+  }
+}

@@ -1,0 +1,334 @@
+{
+  "backgroundColor": 12632256,
+  "hideTimeOut": -1,
+  "id": 0,
+  "modal": false,
+  "resolution": {
+    "height": 600,
+    "width": 1024
+  },
+  "topmost": true,
+  "touchable": false,
+  "visible": true,
+  "position": {
+    "height": 72,
+    "left": 250,
+    "top": 5,
+    "width": 524
+  },
+  "radiogroup__1": {
+    "backgroundColor": -1,
+    "caption": "IncomingSelectRadioGroup",
+    "id": 94001,
+    "radiobuttons": [
+      {
+        "alignment": 38,
+        "backgroundColor": -1,
+        "beepEnable": true,
+        "bgColorTab": {
+          "color0": -1,
+          "color1": -1,
+          "color2": -1,
+          "color3": -1,
+          "color4": -1
+        },
+        "bold": false,
+        "caption": "SetIncomingRejectRadioButton",
+        "checked": false,
+        "colorTab": {
+          "color0": 16777215,
+          "color1": -1,
+          "color2": -1,
+          "color3": -1,
+          "color4": -1
+        },
+        "fontSize": 16,
+        "iconPosition": {
+          "height": 72,
+          "left": 0,
+          "top": 0,
+          "width": 75
+        },
+        "id": 22048,
+        "italic": false,
+        "picTab": {
+          "pic2": "setting/set_first_menu_select.png"
+        },
+        "rollDirection": 1,
+        "rollEnable": false,
+        "rollIntervalTime": 150,
+        "rollStep": 5,
+        "text": "",
+        "touchable": true,
+        "visible": true,
+        "position": {
+          "height": 72,
+          "left": 0,
+          "top": 0,
+          "width": 75
+        },
+        "textPosition": {
+          "height": 72,
+          "left": 0,
+          "top": 0,
+          "width": 75
+        }
+      },
+      {
+        "alignment": 38,
+        "backgroundColor": -1,
+        "beepEnable": true,
+        "bgColorTab": {
+          "color0": -1,
+          "color1": -1,
+          "color2": -1,
+          "color3": -1,
+          "color4": -1
+        },
+        "bold": false,
+        "caption": "SetIncomingAnswerRadioButton",
+        "checked": false,
+        "colorTab": {
+          "color0": 16777215,
+          "color1": -1,
+          "color2": -1,
+          "color3": -1,
+          "color4": -1
+        },
+        "fontSize": 16,
+        "iconPosition": {
+          "height": 72,
+          "left": 0,
+          "top": 0,
+          "width": 75
+        },
+        "id": 22001,
+        "italic": false,
+        "picTab": {
+          "pic2": "setting/set_first_menu_select.png"
+        },
+        "rollDirection": 1,
+        "rollEnable": false,
+        "rollIntervalTime": 150,
+        "rollStep": 5,
+        "text": "",
+        "touchable": true,
+        "visible": true,
+        "position": {
+          "height": 72,
+          "left": 444,
+          "top": 0,
+          "width": 75
+        },
+        "textPosition": {
+          "height": 72,
+          "left": 0,
+          "top": 0,
+          "width": 75
+        }
+      }
+    ],
+    "touchable": true,
+    "visible": true,
+    "position": {
+      "height": 72,
+      "left": 5,
+      "top": 0,
+      "width": 519
+    }
+  },
+  "button__2": {
+    "alignment": 37,
+    "backgroundColor": -1,
+    "backgroundPic": "",
+    "beepEnable": true,
+    "bgColorTab": {
+      "color0": -1,
+      "color1": -1,
+      "color2": -1,
+      "color3": -1,
+      "color4": -1
+    },
+    "bold": false,
+    "caption": "rejectButton",
+    "colorTab": {
+      "color0": 16777215,
+      "color1": -1,
+      "color2": -1,
+      "color3": -1,
+      "color4": -1
+    },
+    "fontSize": 26,
+    "iconPosition": {
+      "height": 60,
+      "left": 0,
+      "top": 0,
+      "width": 80
+    },
+    "id": 20004,
+    "italic": false,
+    "longClickIntervalTime": -1,
+    "longClickTimeOut": -1,
+    "picTab": {
+      "pic0": "bt/hang_up.png"
+    },
+    "rollDirection": 1,
+    "rollEnable": false,
+    "rollIntervalTime": 150,
+    "rollStep": 5,
+    "text": "",
+    "touchable": true,
+    "visible": true,
+    "position": {
+      "height": 80,
+      "left": 2,
+      "top": 5,
+      "width": 80
+    },
+    "textPosition": {
+      "height": 80,
+      "left": 0,
+      "top": 0,
+      "width": 80
+    }
+  },
+  "button__3": {
+    "alignment": 37,
+    "backgroundColor": -1,
+    "backgroundPic": "",
+    "beepEnable": true,
+    "bgColorTab": {
+      "color0": -1,
+      "color1": -1,
+      "color2": -1,
+      "color3": -1,
+      "color4": -1
+    },
+    "bold": false,
+    "caption": "answerButton",
+    "colorTab": {
+      "color0": 16777215,
+      "color1": -1,
+      "color2": -1,
+      "color3": -1,
+      "color4": -1
+    },
+    "fontSize": 26,
+    "iconPosition": {
+      "height": 60,
+      "left": 0,
+      "top": 0,
+      "width": 80
+    },
+    "id": 20002,
+    "italic": false,
+    "longClickIntervalTime": -1,
+    "longClickTimeOut": -1,
+    "picTab": {
+      "pic0": "bt/incoming.png"
+    },
+    "rollDirection": 1,
+    "rollEnable": false,
+    "rollIntervalTime": 150,
+    "rollStep": 5,
+    "text": "",
+    "touchable": true,
+    "visible": true,
+    "position": {
+      "height": 80,
+      "left": 444,
+      "top": 5,
+      "width": 80
+    },
+    "textPosition": {
+      "height": 80,
+      "left": 0,
+      "top": 0,
+      "width": 80
+    }
+  },
+  "textview__4": {
+    "alignment": 37,
+    "backgroundColor": -1,
+    "bgColorTab": {
+      "color0": -1,
+      "color1": -1,
+      "color2": -1,
+      "color3": -1,
+      "color4": -1
+    },
+    "bold": false,
+    "caption": "nameTextView",
+    "colorTab": {
+      "color0": 0,
+      "color1": -1,
+      "color2": -1,
+      "color3": -1,
+      "color4": -1
+    },
+    "fontSize": 30,
+    "id": 50004,
+    "italic": false,
+    "rollDirection": 1,
+    "rollEnable": false,
+    "rollIntervalTime": 150,
+    "rollStep": 5,
+    "text": "name",
+    "touchable": false,
+    "visible": true,
+    "position": {
+      "height": 40,
+      "left": 83,
+      "top": 1,
+      "width": 358
+    },
+    "textPosition": {
+      "height": 40,
+      "left": 0,
+      "top": 0,
+      "width": 358
+    }
+  },
+  "textview__5": {
+    "alignment": 37,
+    "backgroundColor": -1,
+    "bgColorTab": {
+      "color0": -1,
+      "color1": -1,
+      "color2": -1,
+      "color3": -1,
+      "color4": -1
+    },
+    "bold": false,
+    "caption": "numberTextView",
+    "colorTab": {
+      "color0": 0,
+      "color1": -1,
+      "color2": -1,
+      "color3": -1,
+      "color4": -1
+    },
+    "fontSize": 20,
+    "id": 50002,
+    "italic": false,
+    "rollDirection": 1,
+    "rollEnable": false,
+    "rollIntervalTime": 150,
+    "rollStep": 5,
+    "text": "number",
+    "touchable": false,
+    "visible": true,
+    "position": {
+      "height": 24,
+      "left": 83,
+      "top": 45,
+      "width": 358
+    },
+    "textPosition": {
+      "height": 24,
+      "left": 0,
+      "top": 0,
+      "width": 358
+    }
+  }
+}

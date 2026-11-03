@@ -1,0 +1,200 @@
+{
+  "backgroundColor": 0,
+  "beepEnable": true,
+  "id": 0,
+  "resolution": {
+    "height": 600,
+    "width": 1024
+  },
+  "topmost": false,
+  "position": {
+    "height": 600,
+    "left": 0,
+    "top": 0,
+    "width": 1024
+  },
+  "textview__1": {
+    "alignment": 36,
+    "backgroundPic": "link/link_adjust_left.png",
+    "caption": "adjustLeftRemindTextView",
+    "colorTab": {
+      "color0": 16777215
+    },
+    "id": 50001,
+    "touchable": false,
+    "position": {
+      "height": 92,
+      "left": 0,
+      "top": 260,
+      "width": 125
+    }
+  },
+  "textview__2": {
+    "alignment": 36,
+    "backgroundPic": "link/link_adjust_up.png",
+    "caption": "adjustUpRemindTextView",
+    "colorTab": {
+      "color0": 16777215
+    },
+    "id": 50002,
+    "touchable": false,
+    "position": {
+      "height": 125,
+      "left": 448,
+      "top": 0,
+      "width": 92
+    }
+  },
+  "textview__3": {
+    "alignment": 36,
+    "backgroundPic": "link/link_adjust_down.png",
+    "caption": "adjustDownRemindTextView",
+    "colorTab": {
+      "color0": 16777215
+    },
+    "id": 50003,
+    "touchable": false,
+    "position": {
+      "height": 125,
+      "left": 448,
+      "top": 475,
+      "width": 92
+    }
+  },
+  "textview__4": {
+    "alignment": 36,
+    "backgroundPic": "link/link_adjust_right.png",
+    "caption": "adjustRightRemindTextView",
+    "colorTab": {
+      "color0": 16777215
+    },
+    "id": 50004,
+    "touchable": false,
+    "position": {
+      "height": 92,
+      "left": 900,
+      "top": 260,
+      "width": 125
+    }
+  },
+  "window__5": {
+    "beepEnable": true,
+    "caption": "CarAdjustWindow",
+    "id": 110002,
+    "position": {
+      "height": 232,
+      "left": 387,
+      "top": 190,
+      "width": 231
+    },
+    "textview__6": {
+      "alignment": 36,
+      "backgroundPic": "car/car_adjust_bg.png",
+      "caption": "AdjustBgTextView",
+      "colorTab": {
+        "color0": 16777215
+      },
+      "id": 50011,
+      "touchable": false,
+      "position": {
+        "height": 217,
+        "left": 0,
+        "top": 0,
+        "width": 216
+      }
+    },
+    "button__7": {
+      "alignment": 37,
+      "caption": "AdjustUoButton",
+      "colorTab": {
+        "color0": 16777215
+      },
+      "id": 20001,
+      "picTab": {
+        "pic0": "car/car_adjust_up_n.png",
+        "pic1": "car/car_adjust_up_f.png",
+        "pic2": "car/car_adjust_up_f.png"
+      },
+      "position": {
+        "height": 47,
+        "left": 53,
+        "top": 21,
+        "width": 109
+      }
+    },
+    "button__8": {
+      "alignment": 37,
+      "caption": "AdjustDownButton",
+      "colorTab": {
+        "color0": 16777215
+      },
+      "id": 20004,
+      "picTab": {
+        "pic0": "car/car_adjust_down_n.png",
+        "pic1": "car/car_adjust_down_f.png"
+      },
+      "position": {
+        "height": 47,
+        "left": 53,
+        "top": 155,
+        "width": 109
+      }
+    },
+    "button__9": {
+      "alignment": 37,
+      "caption": "AdjustLeftButton",
+      "colorTab": {
+        "color0": 16777215
+      },
+      "id": 20005,
+      "picTab": {
+        "pic0": "car/car_adjust_left_n.png",
+        "pic1": "car/car_adjust_left_f.png",
+        "pic2": "car/car_adjust_left_f.png"
+      },
+      "position": {
+        "height": 110,
+        "left": 22,
+        "top": 54,
+        "width": 46
+      }
+    },
+    "button__10": {
+      "alignment": 37,
+      "caption": "AdjustRightButton",
+      "colorTab": {
+        "color0": 16777215
+      },
+      "id": 20006,
+      "picTab": {
+        "pic0": "car/car_adjust_right_n.png",
+        "pic1": "car/car_adjust_right_f.png",
+        "pic2": "car/car_adjust_left_f.png"
+      },
+      "position": {
+        "height": 110,
+        "left": 154,
+        "top": 54,
+        "width": 46
+      }
+    },
+    "button__11": {
+      "alignment": 37,
+      "caption": "AdjustOkButton",
+      "colorTab": {
+        "color0": 16777215
+      },
+      "id": 20007,
+      "picTab": {
+        "pic0": "car/car_adjust_ok_n.png",
+        "pic1": "car/car_adjust_ok_f.png"
+      },
+      "position": {
+        "height": 64,
+        "left": 76,
+        "top": 77,
+        "width": 64
+      }
+    }
+  }
+}

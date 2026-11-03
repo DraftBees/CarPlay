@@ -1,0 +1,889 @@
+{
+  "backgroundColor": 0,
+  "beepEnable": true,
+  "id": 0,
+  "resolution": {
+    "height": 480,
+    "width": 1280
+  },
+  "topmost": false,
+  "position": {
+    "height": 480,
+    "left": 0,
+    "top": 0,
+    "width": 1280
+  },
+  "cameraview__1": {
+    "autoPreview": false,
+    "backgroundColor": 0,
+    "beepEnable": true,
+    "caption": "CarFullCameraView",
+    "cvbs": false,
+    "formatSize": {
+      "height": 1080,
+      "width": 1920
+    },
+    "id": 97002,
+    "mirror": 0,
+    "touchable": false,
+    "visible": false,
+    "position": {
+      "height": 464,
+      "left": 0,
+      "top": 16,
+      "width": 1280
+    }
+  },
+  "cameraview__2": {
+    "autoPreview": false,
+    "backgroundColor": 0,
+    "beepEnable": true,
+    "caption": "CarHalfCameraView",
+    "cvbs": false,
+    "formatSize": {
+      "height": 1080,
+      "width": 1920
+    },
+    "id": 97001,
+    "mirror": 0,
+    "touchable": false,
+    "visible": false,
+    "position": {
+      "height": 464,
+      "left": 0,
+      "top": 16,
+      "width": 885
+    }
+  },
+  "textview__3": {
+    "alignment": 36,
+    "caption": "signalHalfRemindTextView",
+    "colorTab": {
+      "color0": 16777215
+    },
+    "fontSize": 50,
+    "id": 50005,
+    "text": "No signal",
+    "touchable": false,
+    "visible": false,
+    "position": {
+      "height": 70,
+      "left": 300,
+      "top": 200,
+      "width": 400
+    }
+  },
+  "textview__4": {
+    "alignment": 36,
+    "caption": "signalFullRemindTextView",
+    "colorTab": {
+      "color0": 16777215
+    },
+    "fontSize": 50,
+    "id": 50006,
+    "text": "No signal",
+    "touchable": false,
+    "visible": false,
+    "position": {
+      "height": 70,
+      "left": 540,
+      "top": 200,
+      "width": 400
+    }
+  },
+  "listview__5": {
+    "backgroundPic": "car/car_list_bg.png",
+    "beepEnable": true,
+    "caption": "CarParamListView",
+    "cols": 1,
+    "id": 80004,
+    "rows": 5,
+    "visible": false,
+    "position": {
+      "height": 290,
+      "left": 270,
+      "top": 100,
+      "width": 420
+    },
+    "colSpacing": 5,
+    "rowSpacing": 5,
+    "item": {
+      "alignment": 37,
+      "caption": "item",
+      "colorTab": {
+        "color0": 16777215
+      },
+      "iconPosition": {
+        "height": 8,
+        "left": 0,
+        "top": 48,
+        "width": 420
+      },
+      "picTab": {
+        "pic0": "setting/set_line.png"
+      },
+      "position": {
+        "height": 53,
+        "left": 0,
+        "top": 0,
+        "width": 415
+      },
+      "subItem": [
+        {
+          "alignment": 37,
+          "caption": "CarParamTextSubItem",
+          "colorTab": {
+            "color0": 16777215
+          },
+          "fontSize": 20,
+          "iconPosition": {
+            "height": 55,
+            "left": 0,
+            "top": 0,
+            "width": 420
+          },
+          "id": 24009,
+          "picTab": {
+            "pic1": "setting/set_language_btn_f.png",
+            "pic2": "setting/set_language_btn_f.png"
+          },
+          "text": "ListViewItem",
+          "position": {
+            "height": 60,
+            "left": 0,
+            "top": 0,
+            "width": 420
+          }
+        },
+        {
+          "alignment": 36,
+          "caption": "CarParamSelectSubItem",
+          "colorTab": {
+            "color0": 16777215
+          },
+          "id": 24006,
+          "position": {
+            "height": 60,
+            "left": 0,
+            "top": 0,
+            "width": 420
+          }
+        }
+      ]
+    }
+  },
+  "window__7": {
+    "backgroundPic": "car/car_bg.png",
+    "beepEnable": true,
+    "caption": "CarHalfScreenWindow",
+    "id": 110001,
+    "visible": false,
+    "position": {
+      "height": 480,
+      "left": 885,
+      "top": 0,
+      "width": 395
+    },
+    "textview__8": {
+      "alignment": 36,
+      "backgroundPic": "car/parking_n.png",
+      "caption": "ParkingTextView",
+      "colorTab": {
+        "color0": 16777215
+      },
+      "id": 50001,
+      "touchable": false,
+      "position": {
+        "height": 50,
+        "left": 66,
+        "top": 400,
+        "width": 65
+      }
+    },
+    "textview__9": {
+      "alignment": 36,
+      "backgroundPic": "car/safety_n.png",
+      "caption": "carSafetyTextView",
+      "colorTab": {
+        "color0": 16777215
+      },
+      "id": 50002,
+      "touchable": false,
+      "position": {
+        "height": 50,
+        "left": 178,
+        "top": 400,
+        "width": 47
+      }
+    },
+    "textview__10": {
+      "alignment": 36,
+      "backgroundPic": "car/fuel_n.png",
+      "caption": "carConsumptionIconTextView",
+      "colorTab": {
+        "color0": 16777215
+      },
+      "id": 50003,
+      "touchable": false,
+      "position": {
+        "height": 45,
+        "left": 280,
+        "top": 400,
+        "width": 40
+      }
+    },
+    "textview__11": {
+      "alignment": 37,
+      "caption": "carConsumptionTextView",
+      "colorTab": {
+        "color0": 16777215
+      },
+      "fontSize": 20,
+      "id": 50010,
+      "text": "0/L",
+      "touchable": false,
+      "position": {
+        "height": 30,
+        "left": 310,
+        "top": 410,
+        "width": 80
+      }
+    }
+  },
+  "button__12": {
+    "alignment": 37,
+    "caption": "carOpenSetButton",
+    "colorTab": {
+      "color0": 16777215
+    },
+    "iconPosition": {
+      "height": 108,
+      "left": 58,
+      "top": 0,
+      "width": 22
+    },
+    "id": 20002,
+    "picTab": {
+      "pic0": "car/car_close.png"
+    },
+    "position": {
+      "height": 108,
+      "left": 1200,
+      "top": 180,
+      "width": 80
+    }
+  },
+  "button__13": {
+    "alignment": 37,
+    "caption": "carCloseSetButton",
+    "colorTab": {
+      "color0": 16777215
+    },
+    "id": 20003,
+    "picTab": {
+      "pic0": "car/car_open.png"
+    },
+    "visible": false,
+    "position": {
+      "height": 79,
+      "left": 1201,
+      "top": 200,
+      "width": 79
+    }
+  },
+  "window__14": {
+    "beepEnable": true,
+    "caption": "CarAdjustWindow",
+    "id": 110002,
+    "visible": false,
+    "position": {
+      "height": 232,
+      "left": 870,
+      "top": 100,
+      "width": 231
+    },
+    "textview__15": {
+      "alignment": 36,
+      "backgroundPic": "car/car_adjust_bg.png",
+      "caption": "AdjustBgTextView",
+      "colorTab": {
+        "color0": 16777215
+      },
+      "id": 50004,
+      "touchable": false,
+      "position": {
+        "height": 217,
+        "left": 0,
+        "top": 0,
+        "width": 216
+      }
+    },
+    "button__16": {
+      "alignment": 37,
+      "caption": "AdjustUoButton",
+      "colorTab": {
+        "color0": 16777215
+      },
+      "id": 20001,
+      "picTab": {
+        "pic0": "car/car_adjust_up_n.png",
+        "pic1": "car/car_adjust_up_f.png",
+        "pic2": "car/car_adjust_up_f.png"
+      },
+      "position": {
+        "height": 47,
+        "left": 53,
+        "top": 21,
+        "width": 109
+      }
+    },
+    "button__17": {
+      "alignment": 37,
+      "caption": "AdjustDownButton",
+      "colorTab": {
+        "color0": 16777215
+      },
+      "id": 20004,
+      "picTab": {
+        "pic0": "car/car_adjust_down_n.png",
+        "pic1": "car/car_adjust_down_f.png"
+      },
+      "position": {
+        "height": 47,
+        "left": 53,
+        "top": 155,
+        "width": 109
+      }
+    },
+    "button__18": {
+      "alignment": 37,
+      "caption": "AdjustLeftButton",
+      "colorTab": {
+        "color0": 16777215
+      },
+      "id": 20005,
+      "picTab": {
+        "pic0": "car/car_adjust_left_n.png",
+        "pic1": "car/car_adjust_left_f.png",
+        "pic2": "car/car_adjust_left_f.png"
+      },
+      "position": {
+        "height": 110,
+        "left": 22,
+        "top": 54,
+        "width": 46
+      }
+    },
+    "button__19": {
+      "alignment": 37,
+      "caption": "AdjustRightButton",
+      "colorTab": {
+        "color0": 16777215
+      },
+      "id": 20006,
+      "picTab": {
+        "pic0": "car/car_adjust_right_n.png",
+        "pic1": "car/car_adjust_right_f.png",
+        "pic2": "car/car_adjust_left_f.png"
+      },
+      "position": {
+        "height": 110,
+        "left": 154,
+        "top": 54,
+        "width": 46
+      }
+    },
+    "button__20": {
+      "alignment": 37,
+      "caption": "AdjustOkButton",
+      "colorTab": {
+        "color0": 16777215
+      },
+      "id": 20007,
+      "picTab": {
+        "pic0": "car/car_adjust_ok_n.png",
+        "pic1": "car/car_adjust_ok_f.png"
+      },
+      "position": {
+        "height": 64,
+        "left": 76,
+        "top": 77,
+        "width": 64
+      }
+    }
+  },
+  "textview__21": {
+    "alignment": 36,
+    "backgroundPic": "car/list_remind.png",
+    "caption": "listRemindTextView",
+    "colorTab": {
+      "color0": 16777215
+    },
+    "id": 50007,
+    "touchable": false,
+    "visible": false,
+    "position": {
+      "height": 30,
+      "left": 465,
+      "top": 386,
+      "width": 30
+    }
+  },
+  "window__22": {
+    "backgroundColor": 5264238,
+    "beepEnable": true,
+    "caption": "diagnosisWindow",
+    "id": 110003,
+    "visible": false,
+    "position": {
+      "height": 350,
+      "left": 350,
+      "top": 160,
+      "width": 1200
+    },
+    "button__23": {
+      "alignment": 37,
+      "bgColorTab": {
+        "color0": 7896739,
+        "color1": 43764
+      },
+      "caption": "diagnosisCancelButton",
+      "colorTab": {
+        "color0": 16777215
+      },
+      "id": 20008,
+      "text": "Cancel",
+      "position": {
+        "height": 65,
+        "left": 982,
+        "top": 265,
+        "width": 150
+      }
+    },
+    "textview__24": {
+      "alignment": 37,
+      "caption": "diagnosisRemindTextView",
+      "colorTab": {
+        "color0": 16777215
+      },
+      "fontSize": 30,
+      "id": 50008,
+      "text": "Diagnosis",
+      "touchable": false,
+      "position": {
+        "height": 50,
+        "left": 450,
+        "top": 0,
+        "width": 300
+      }
+    },
+    "textview__25": {
+      "alignment": 38,
+      "caption": "clockRemindTextView1",
+      "colorTab": {
+        "color0": 16777215
+      },
+      "fontSize": 20,
+      "id": 50009,
+      "text": "SensorSize:",
+      "touchable": false,
+      "position": {
+        "height": 30,
+        "left": 200,
+        "top": 80,
+        "width": 150
+      }
+    },
+    "textview__26": {
+      "alignment": 36,
+      "caption": "clockTextView",
+      "colorTab": {
+        "color0": 16777215
+      },
+      "fontSize": 20,
+      "id": 50011,
+      "text": "0",
+      "touchable": false,
+      "position": {
+        "height": 30,
+        "left": 700,
+        "top": 80,
+        "width": 150
+      }
+    },
+    "textview__27": {
+      "alignment": 38,
+      "caption": "signalRemindTextView",
+      "colorTab": {
+        "color0": 16777215
+      },
+      "fontSize": 20,
+      "id": 50012,
+      "text": "Signal:",
+      "touchable": false,
+      "position": {
+        "height": 30,
+        "left": 200,
+        "top": 130,
+        "width": 150
+      }
+    },
+    "textview__28": {
+      "alignment": 36,
+      "caption": "SignalTextView",
+      "colorTab": {
+        "color0": 16777215
+      },
+      "fontSize": 20,
+      "id": 50013,
+      "text": "0",
+      "touchable": false,
+      "position": {
+        "height": 30,
+        "left": 700,
+        "top": 130,
+        "width": 150
+      }
+    },
+    "textview__29": {
+      "alignment": 38,
+      "caption": "hfpRemindTextView",
+      "colorTab": {
+        "color0": 16777215
+      },
+      "fontSize": 20,
+      "id": 50014,
+      "text": "H_FP:",
+      "touchable": false,
+      "position": {
+        "height": 30,
+        "left": 150,
+        "top": 180,
+        "width": 100
+      }
+    },
+    "textview__30": {
+      "alignment": 36,
+      "caption": "hfpTextView",
+      "colorTab": {
+        "color0": 16777215
+      },
+      "fontSize": 20,
+      "id": 50015,
+      "text": "0",
+      "touchable": false,
+      "position": {
+        "height": 30,
+        "left": 250,
+        "top": 180,
+        "width": 80
+      }
+    },
+    "textview__31": {
+      "alignment": 38,
+      "caption": "hsRemindTextView",
+      "colorTab": {
+        "color0": 16777215
+      },
+      "fontSize": 20,
+      "id": 50016,
+      "text": "H_S:",
+      "touchable": false,
+      "position": {
+        "height": 30,
+        "left": 300,
+        "top": 180,
+        "width": 70
+      }
+    },
+    "textview__32": {
+      "alignment": 36,
+      "caption": "hsTextView",
+      "colorTab": {
+        "color0": 16777215
+      },
+      "fontSize": 20,
+      "id": 50017,
+      "text": "0",
+      "touchable": false,
+      "position": {
+        "height": 30,
+        "left": 370,
+        "top": 180,
+        "width": 70
+      }
+    },
+    "textview__33": {
+      "alignment": 38,
+      "caption": "hbpRemindTextView",
+      "colorTab": {
+        "color0": 16777215
+      },
+      "fontSize": 20,
+      "id": 50018,
+      "text": "H_BP:",
+      "touchable": false,
+      "position": {
+        "height": 30,
+        "left": 450,
+        "top": 180,
+        "width": 70
+      }
+    },
+    "textview__34": {
+      "alignment": 36,
+      "caption": "hbpTextView",
+      "colorTab": {
+        "color0": 16777215
+      },
+      "fontSize": 20,
+      "id": 50019,
+      "text": "0",
+      "touchable": false,
+      "position": {
+        "height": 30,
+        "left": 520,
+        "top": 180,
+        "width": 70
+      }
+    },
+    "textview__35": {
+      "alignment": 38,
+      "caption": "hactRemindTextView",
+      "colorTab": {
+        "color0": 16777215
+      },
+      "fontSize": 20,
+      "id": 50020,
+      "text": "H_ACT:",
+      "touchable": false,
+      "position": {
+        "height": 30,
+        "left": 600,
+        "top": 180,
+        "width": 70
+      }
+    },
+    "textview__36": {
+      "alignment": 36,
+      "caption": "hactTextView",
+      "colorTab": {
+        "color0": 16777215
+      },
+      "fontSize": 20,
+      "id": 50021,
+      "text": "0",
+      "touchable": false,
+      "position": {
+        "height": 30,
+        "left": 670,
+        "top": 180,
+        "width": 70
+      }
+    },
+    "textview__37": {
+      "alignment": 38,
+      "caption": "htotalRemindTextView",
+      "colorTab": {
+        "color0": 16777215
+      },
+      "fontSize": 20,
+      "id": 50022,
+      "text": "H_TOTAL:",
+      "touchable": false,
+      "position": {
+        "height": 30,
+        "left": 750,
+        "top": 180,
+        "width": 100
+      }
+    },
+    "textview__38": {
+      "alignment": 36,
+      "caption": "htotalTextView",
+      "colorTab": {
+        "color0": 16777215
+      },
+      "fontSize": 20,
+      "id": 50023,
+      "text": "0",
+      "touchable": false,
+      "position": {
+        "height": 30,
+        "left": 850,
+        "top": 180,
+        "width": 70
+      }
+    },
+    "textview__39": {
+      "alignment": 38,
+      "caption": "vfpRemindTextView",
+      "colorTab": {
+        "color0": 16777215
+      },
+      "fontSize": 20,
+      "id": 50024,
+      "text": "V_FP:",
+      "touchable": false,
+      "position": {
+        "height": 30,
+        "left": 150,
+        "top": 230,
+        "width": 100
+      }
+    },
+    "textview__40": {
+      "alignment": 36,
+      "caption": "vfpTextView",
+      "colorTab": {
+        "color0": 16777215
+      },
+      "fontSize": 20,
+      "id": 50025,
+      "text": "0",
+      "touchable": false,
+      "position": {
+        "height": 30,
+        "left": 250,
+        "top": 230,
+        "width": 80
+      }
+    },
+    "textview__41": {
+      "alignment": 38,
+      "caption": "vsRemindTextView",
+      "colorTab": {
+        "color0": 16777215
+      },
+      "fontSize": 20,
+      "id": 50026,
+      "text": "V_S:",
+      "touchable": false,
+      "position": {
+        "height": 30,
+        "left": 300,
+        "top": 230,
+        "width": 70
+      }
+    },
+    "textview__42": {
+      "alignment": 36,
+      "caption": "vsTextView",
+      "colorTab": {
+        "color0": 16777215
+      },
+      "fontSize": 20,
+      "id": 50027,
+      "text": "0",
+      "touchable": false,
+      "position": {
+        "height": 30,
+        "left": 370,
+        "top": 230,
+        "width": 70
+      }
+    },
+    "textview__43": {
+      "alignment": 38,
+      "caption": "vbpRemindTextView",
+      "colorTab": {
+        "color0": 16777215
+      },
+      "fontSize": 20,
+      "id": 50028,
+      "text": "V_BP:",
+      "touchable": false,
+      "position": {
+        "height": 30,
+        "left": 450,
+        "top": 230,
+        "width": 70
+      }
+    },
+    "textview__44": {
+      "alignment": 36,
+      "caption": "vbpTextView",
+      "colorTab": {
+        "color0": 16777215
+      },
+      "fontSize": 20,
+      "id": 50029,
+      "text": "0",
+      "touchable": false,
+      "position": {
+        "height": 30,
+        "left": 520,
+        "top": 230,
+        "width": 70
+      }
+    },
+    "textview__45": {
+      "alignment": 38,
+      "caption": "vactRemindTextView",
+      "colorTab": {
+        "color0": 16777215
+      },
+      "fontSize": 20,
+      "id": 50030,
+      "text": "V_ACT:",
+      "touchable": false,
+      "position": {
+        "height": 30,
+        "left": 600,
+        "top": 230,
+        "width": 70
+      }
+    },
+    "textview__46": {
+      "alignment": 36,
+      "caption": "vactTextView",
+      "colorTab": {
+        "color0": 16777215
+      },
+      "fontSize": 20,
+      "id": 50031,
+      "text": "0",
+      "touchable": false,
+      "position": {
+        "height": 30,
+        "left": 670,
+        "top": 230,
+        "width": 70
+      }
+    },
+    "textview__47": {
+      "alignment": 38,
+      "caption": "vtotalRemindTextView",
+      "colorTab": {
+        "color0": 16777215
+      },
+      "fontSize": 20,
+      "id": 50032,
+      "text": "V_TOTAL:",
+      "touchable": false,
+      "position": {
+        "height": 30,
+        "left": 750,
+        "top": 230,
+        "width": 100
+      }
+    },
+    "textview__48": {
+      "alignment": 36,
+      "caption": "vtotalTextView",
+      "colorTab": {
+        "color0": 16777215
+      },
+      "fontSize": 20,
+      "id": 50033,
+      "text": "0",
+      "touchable": false,
+      "position": {
+        "height": 30,
+        "left": 850,
+        "top": 230,
+        "width": 70
+      }
+    }
+  }
+}

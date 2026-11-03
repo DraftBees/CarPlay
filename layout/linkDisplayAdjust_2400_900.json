@@ -1,0 +1,527 @@
+{
+  "backgroundColor": 0,
+  "hideTimeOut": -1,
+  "id": 0,
+  "modal": false,
+  "resolution": {
+    "height": 900,
+    "width": 2400
+  },
+  "topmost": false,
+  "touchable": false,
+  "visible": true,
+  "position": {
+    "height": 900,
+    "left": 0,
+    "top": 0,
+    "width": 2400
+  },
+  "textview__1": {
+    "alignment": 36,
+    "backgroundColor": -1,
+    "backgroundPic": "link/link_adjust_left.png",
+    "bgColorTab": {
+      "color0": -1,
+      "color1": -1,
+      "color2": -1,
+      "color3": -1,
+      "color4": -1
+    },
+    "bold": false,
+    "caption": "adjustLeftRemindTextView",
+    "colorTab": {
+      "color0": 16777215,
+      "color1": -1,
+      "color2": -1,
+      "color3": -1,
+      "color4": -1
+    },
+    "fontSize": 16,
+    "id": 50001,
+    "italic": false,
+    "rollDirection": 1,
+    "rollEnable": false,
+    "rollIntervalTime": 150,
+    "rollStep": 5,
+    "text": "",
+    "touchable": false,
+    "visible": true,
+    "position": {
+      "height": 184,
+      "left": 0,
+      "top": 358,
+      "width": 249
+    },
+    "textPosition": {
+      "height": 184,
+      "left": 0,
+      "top": 0,
+      "width": 249
+    }
+  },
+  "textview__2": {
+    "alignment": 36,
+    "backgroundColor": -1,
+    "backgroundPic": "link/link_adjust_up.png",
+    "bgColorTab": {
+      "color0": -1,
+      "color1": -1,
+      "color2": -1,
+      "color3": -1,
+      "color4": -1
+    },
+    "bold": false,
+    "caption": "adjustUpRemindTextView",
+    "colorTab": {
+      "color0": 16777215,
+      "color1": -1,
+      "color2": -1,
+      "color3": -1,
+      "color4": -1
+    },
+    "fontSize": 16,
+    "id": 50002,
+    "italic": false,
+    "rollDirection": 1,
+    "rollEnable": false,
+    "rollIntervalTime": 150,
+    "rollStep": 5,
+    "text": "",
+    "touchable": false,
+    "visible": true,
+    "position": {
+      "height": 249,
+      "left": 1060,
+      "top": 0,
+      "width": 184
+    },
+    "textPosition": {
+      "height": 249,
+      "left": 0,
+      "top": 0,
+      "width": 184
+    }
+  },
+  "textview__3": {
+    "alignment": 36,
+    "backgroundColor": -1,
+    "backgroundPic": "link/link_adjust_down.png",
+    "bgColorTab": {
+      "color0": -1,
+      "color1": -1,
+      "color2": -1,
+      "color3": -1,
+      "color4": -1
+    },
+    "bold": false,
+    "caption": "adjustDownRemindTextView",
+    "colorTab": {
+      "color0": 16777215,
+      "color1": -1,
+      "color2": -1,
+      "color3": -1,
+      "color4": -1
+    },
+    "fontSize": 16,
+    "id": 50003,
+    "italic": false,
+    "rollDirection": 1,
+    "rollEnable": false,
+    "rollIntervalTime": 150,
+    "rollStep": 5,
+    "text": "",
+    "touchable": false,
+    "visible": true,
+    "position": {
+      "height": 249,
+      "left": 1060,
+      "top": 651,
+      "width": 184
+    },
+    "textPosition": {
+      "height": 249,
+      "left": 0,
+      "top": 0,
+      "width": 184
+    }
+  },
+  "textview__4": {
+    "alignment": 36,
+    "backgroundColor": -1,
+    "backgroundPic": "link/link_adjust_right.png",
+    "bgColorTab": {
+      "color0": -1,
+      "color1": -1,
+      "color2": -1,
+      "color3": -1,
+      "color4": -1
+    },
+    "bold": false,
+    "caption": "adjustRightRemindTextView",
+    "colorTab": {
+      "color0": 16777215,
+      "color1": -1,
+      "color2": -1,
+      "color3": -1,
+      "color4": -1
+    },
+    "fontSize": 16,
+    "id": 50004,
+    "italic": false,
+    "rollDirection": 1,
+    "rollEnable": false,
+    "rollIntervalTime": 150,
+    "rollStep": 5,
+    "text": "",
+    "touchable": false,
+    "visible": true,
+    "position": {
+      "height": 184,
+      "left": 2151,
+      "top": 358,
+      "width": 249
+    },
+    "textPosition": {
+      "height": 184,
+      "left": 0,
+      "top": 0,
+      "width": 249
+    }
+  },
+  "window__5": {
+    "backgroundColor": -1,
+    "caption": "CarAdjustWindow",
+    "hideTimeOut": -1,
+    "id": 110002,
+    "modal": false,
+    "touchable": false,
+    "visible": true,
+    "position": {
+      "height": 232,
+      "left": 1040,
+      "top": 334,
+      "width": 231
+    },
+    "textview__6": {
+      "alignment": 36,
+      "backgroundColor": -1,
+      "backgroundPic": "car/car_adjust_bg.png",
+      "bgColorTab": {
+        "color0": -1,
+        "color1": -1,
+        "color2": -1,
+        "color3": -1,
+        "color4": -1
+      },
+      "bold": false,
+      "caption": "AdjustBgTextView",
+      "colorTab": {
+        "color0": 16777215,
+        "color1": -1,
+        "color2": -1,
+        "color3": -1,
+        "color4": -1
+      },
+      "fontSize": 16,
+      "id": 50011,
+      "italic": false,
+      "rollDirection": 1,
+      "rollEnable": false,
+      "rollIntervalTime": 150,
+      "rollStep": 5,
+      "text": "",
+      "touchable": false,
+      "visible": true,
+      "position": {
+        "height": 217,
+        "left": 0,
+        "top": 0,
+        "width": 216
+      },
+      "textPosition": {
+        "height": 217,
+        "left": 0,
+        "top": 0,
+        "width": 216
+      }
+    },
+    "button__7": {
+      "alignment": 37,
+      "backgroundColor": -1,
+      "beepEnable": true,
+      "bgColorTab": {
+        "color0": -1,
+        "color1": -1,
+        "color2": -1,
+        "color3": -1,
+        "color4": -1
+      },
+      "bold": false,
+      "caption": "AdjustUoButton",
+      "colorTab": {
+        "color0": 16777215,
+        "color1": -1,
+        "color2": -1,
+        "color3": -1,
+        "color4": -1
+      },
+      "fontSize": 16,
+      "iconPosition": {
+        "height": 47,
+        "left": 0,
+        "top": 0,
+        "width": 109
+      },
+      "id": 20001,
+      "italic": false,
+      "longClickIntervalTime": -1,
+      "longClickTimeOut": -1,
+      "picTab": {
+        "pic0": "car/car_adjust_up_n.png",
+        "pic1": "car/car_adjust_up_f.png",
+        "pic2": "car/car_adjust_up_f.png"
+      },
+      "rollDirection": 1,
+      "rollEnable": false,
+      "rollIntervalTime": 150,
+      "rollStep": 5,
+      "text": "",
+      "touchable": true,
+      "visible": true,
+      "position": {
+        "height": 47,
+        "left": 53,
+        "top": 21,
+        "width": 109
+      },
+      "textPosition": {
+        "height": 47,
+        "left": 0,
+        "top": 0,
+        "width": 109
+      }
+    },
+    "button__8": {
+      "alignment": 37,
+      "backgroundColor": -1,
+      "beepEnable": true,
+      "bgColorTab": {
+        "color0": -1,
+        "color1": -1,
+        "color2": -1,
+        "color3": -1,
+        "color4": -1
+      },
+      "bold": false,
+      "caption": "AdjustDownButton",
+      "colorTab": {
+        "color0": 16777215,
+        "color1": -1,
+        "color2": -1,
+        "color3": -1,
+        "color4": -1
+      },
+      "fontSize": 16,
+      "iconPosition": {
+        "height": 47,
+        "left": 0,
+        "top": 0,
+        "width": 109
+      },
+      "id": 20004,
+      "italic": false,
+      "longClickIntervalTime": -1,
+      "longClickTimeOut": -1,
+      "picTab": {
+        "pic0": "car/car_adjust_down_n.png",
+        "pic1": "car/car_adjust_down_f.png"
+      },
+      "rollDirection": 1,
+      "rollEnable": false,
+      "rollIntervalTime": 150,
+      "rollStep": 5,
+      "text": "",
+      "touchable": true,
+      "visible": true,
+      "position": {
+        "height": 47,
+        "left": 53,
+        "top": 155,
+        "width": 109
+      },
+      "textPosition": {
+        "height": 47,
+        "left": 0,
+        "top": 0,
+        "width": 109
+      }
+    },
+    "button__9": {
+      "alignment": 37,
+      "backgroundColor": -1,
+      "beepEnable": true,
+      "bgColorTab": {
+        "color0": -1,
+        "color1": -1,
+        "color2": -1,
+        "color3": -1,
+        "color4": -1
+      },
+      "bold": false,
+      "caption": "AdjustLeftButton",
+      "colorTab": {
+        "color0": 16777215,
+        "color1": -1,
+        "color2": -1,
+        "color3": -1,
+        "color4": -1
+      },
+      "fontSize": 16,
+      "iconPosition": {
+        "height": 110,
+        "left": 0,
+        "top": 0,
+        "width": 46
+      },
+      "id": 20005,
+      "italic": false,
+      "longClickIntervalTime": -1,
+      "longClickTimeOut": -1,
+      "picTab": {
+        "pic0": "car/car_adjust_left_n.png",
+        "pic1": "car/car_adjust_left_f.png",
+        "pic2": "car/car_adjust_left_f.png"
+      },
+      "rollDirection": 1,
+      "rollEnable": false,
+      "rollIntervalTime": 150,
+      "rollStep": 5,
+      "text": "",
+      "touchable": true,
+      "visible": true,
+      "position": {
+        "height": 110,
+        "left": 22,
+        "top": 54,
+        "width": 46
+      },
+      "textPosition": {
+        "height": 110,
+        "left": 0,
+        "top": 0,
+        "width": 46
+      }
+    },
+    "button__10": {
+      "alignment": 37,
+      "backgroundColor": -1,
+      "beepEnable": true,
+      "bgColorTab": {
+        "color0": -1,
+        "color1": -1,
+        "color2": -1,
+        "color3": -1,
+        "color4": -1
+      },
+      "bold": false,
+      "caption": "AdjustRightButton",
+      "colorTab": {
+        "color0": 16777215,
+        "color1": -1,
+        "color2": -1,
+        "color3": -1,
+        "color4": -1
+      },
+      "fontSize": 16,
+      "iconPosition": {
+        "height": 110,
+        "left": 0,
+        "top": 0,
+        "width": 46
+      },
+      "id": 20006,
+      "italic": false,
+      "longClickIntervalTime": -1,
+      "longClickTimeOut": -1,
+      "picTab": {
+        "pic0": "car/car_adjust_right_n.png",
+        "pic1": "car/car_adjust_right_f.png",
+        "pic2": "car/car_adjust_left_f.png"
+      },
+      "rollDirection": 1,
+      "rollEnable": false,
+      "rollIntervalTime": 150,
+      "rollStep": 5,
+      "text": "",
+      "touchable": true,
+      "visible": true,
+      "position": {
+        "height": 110,
+        "left": 154,
+        "top": 54,
+        "width": 46
+      },
+      "textPosition": {
+        "height": 110,
+        "left": 0,
+        "top": 0,
+        "width": 46
+      }
+    },
+    "button__11": {
+      "alignment": 37,
+      "backgroundColor": -1,
+      "beepEnable": true,
+      "bgColorTab": {
+        "color0": -1,
+        "color1": -1,
+        "color2": -1,
+        "color3": -1,
+        "color4": -1
+      },
+      "bold": false,
+      "caption": "AdjustOkButton",
+      "colorTab": {
+        "color0": 16777215,
+        "color1": -1,
+        "color2": -1,
+        "color3": -1,
+        "color4": -1
+      },
+      "fontSize": 16,
+      "iconPosition": {
+        "height": 64,
+        "left": 0,
+        "top": 0,
+        "width": 64
+      },
+      "id": 20007,
+      "italic": false,
+      "longClickIntervalTime": -1,
+      "longClickTimeOut": -1,
+      "picTab": {
+        "pic0": "car/car_adjust_ok_n.png",
+        "pic1": "car/car_adjust_ok_f.png"
+      },
+      "rollDirection": 1,
+      "rollEnable": false,
+      "rollIntervalTime": 150,
+      "rollStep": 5,
+      "text": "",
+      "touchable": true,
+      "visible": true,
+      "position": {
+        "height": 64,
+        "left": 76,
+        "top": 77,
+        "width": 64
+      },
+      "textPosition": {
+        "height": 64,
+        "left": 0,
+        "top": 0,
+        "width": 64
+      }
+    }
+  }
+}

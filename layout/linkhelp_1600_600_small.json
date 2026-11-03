@@ -1,0 +1,1149 @@
+{
+  "backgroundPic": "setting/backgoun.png",
+  "beepEnable": true,
+  "id": 0,
+  "resolution": {
+    "height": 600,
+    "width": 1600
+  },
+  "topmost": false,
+  "position": {
+    "height": 600,
+    "left": 0,
+    "top": 0,
+    "width": 1600
+  },
+  "window__1": {
+    "backgroundColor": 2434090,
+    "beepEnable": true,
+    "caption": "mcWindow",
+    "id": 110007,
+    "visible": false,
+    "position": {
+      "height": 600,
+      "left": 0,
+      "top": 0,
+      "width": 1600
+    },
+    "textview__2": {
+      "alignment": 36,
+      "caption": "mcTextView",
+      "colorTab": {
+        "color0": 16777215
+      },
+      "fontSize": 32,
+      "id": 50005,
+      "text": "@miracast_help_remind1",
+      "touchable": false,
+      "position": {
+        "height": 45,
+        "left": 300,
+        "top": 215,
+        "width": 483
+      }
+    },
+    "textview__3": {
+      "alignment": 36,
+      "caption": "mc1TextView",
+      "colorTab": {
+        "color0": 16777215
+      },
+      "fontSize": 20,
+      "id": 50010,
+      "text": "@miracast_help_remind2",
+      "touchable": false,
+      "position": {
+        "height": 45,
+        "left": 300,
+        "top": 314,
+        "width": 700
+      }
+    },
+    "textview__4": {
+      "alignment": 36,
+      "caption": "mc2TextView",
+      "colorTab": {
+        "color0": 16777215
+      },
+      "fontSize": 20,
+      "id": 50006,
+      "text": "@miracast_help_remind3",
+      "touchable": false,
+      "position": {
+        "height": 51,
+        "left": 300,
+        "top": 363,
+        "width": 700
+      }
+    },
+    "textview__5": {
+      "alignment": 36,
+      "caption": "mc3TextView",
+      "colorTab": {
+        "color0": 16777215
+      },
+      "fontSize": 20,
+      "id": 50004,
+      "text": "@miracast_help_remind4",
+      "touchable": false,
+      "position": {
+        "height": 45,
+        "left": 300,
+        "top": 418,
+        "width": 700
+      }
+    },
+    "textview__6": {
+      "alignment": 36,
+      "caption": "mc4TextView",
+      "colorTab": {
+        "color0": 16777215
+      },
+      "fontSize": 20,
+      "id": 50008,
+      "text": "@miracast_help_remind5",
+      "touchable": false,
+      "position": {
+        "height": 51,
+        "left": 300,
+        "top": 467,
+        "width": 700
+      }
+    }
+  },
+  "window__7": {
+    "backgroundColor": 2434090,
+    "beepEnable": true,
+    "caption": "cpWindow",
+    "id": 110002,
+    "visible": false,
+    "position": {
+      "height": 600,
+      "left": 0,
+      "top": 0,
+      "width": 1600
+    },
+    "textview__8": {
+      "alignment": 36,
+      "caption": "cpTextView",
+      "colorTab": {
+        "color0": 16777215
+      },
+      "fontSize": 32,
+      "id": 50015,
+      "text": "@carplay_help_remind1",
+      "touchable": false,
+      "position": {
+        "height": 45,
+        "left": 300,
+        "top": 100,
+        "width": 1000
+      }
+    },
+    "textview__9": {
+      "alignment": 36,
+      "caption": "cp1TextView",
+      "colorTab": {
+        "color0": 16777215
+      },
+      "fontSize": 20,
+      "id": 50007,
+      "text": "@carplay_help_remind2",
+      "touchable": false,
+      "position": {
+        "height": 45,
+        "left": 300,
+        "top": 140,
+        "width": 1000
+      }
+    },
+    "textview__10": {
+      "alignment": 36,
+      "caption": "cp2TextView",
+      "colorTab": {
+        "color0": 16777215
+      },
+      "fontSize": 20,
+      "id": 50002,
+      "text": "@carplay_help_remind3",
+      "touchable": false,
+      "position": {
+        "height": 51,
+        "left": 300,
+        "top": 170,
+        "width": 1000
+      }
+    },
+    "textview__11": {
+      "alignment": 36,
+      "caption": "cp3TextView",
+      "colorTab": {
+        "color0": 16777215
+      },
+      "fontSize": 20,
+      "id": 50013,
+      "text": "@carplay_help_remind4",
+      "touchable": false,
+      "position": {
+        "height": 45,
+        "left": 300,
+        "top": 200,
+        "width": 1000
+      }
+    },
+    "textview__12": {
+      "alignment": 36,
+      "caption": "cp4TextView",
+      "colorTab": {
+        "color0": 16777215
+      },
+      "fontSize": 32,
+      "id": 50003,
+      "text": "@carplay_help_remind5",
+      "touchable": false,
+      "position": {
+        "height": 51,
+        "left": 300,
+        "top": 250,
+        "width": 1000
+      }
+    },
+    "textview__13": {
+      "alignment": 36,
+      "caption": "cp5TextView",
+      "colorTab": {
+        "color0": 16777215
+      },
+      "fontSize": 20,
+      "id": 50001,
+      "text": "@carplay_help_remind6",
+      "touchable": false,
+      "position": {
+        "height": 51,
+        "left": 300,
+        "top": 290,
+        "width": 1000
+      }
+    },
+    "textview__14": {
+      "alignment": 36,
+      "caption": "cp6TextView",
+      "colorTab": {
+        "color0": 16777215
+      },
+      "fontSize": 20,
+      "id": 50030,
+      "text": "@carplay_help_remind7",
+      "touchable": false,
+      "position": {
+        "height": 51,
+        "left": 300,
+        "top": 330,
+        "width": 1000
+      }
+    },
+    "textview__15": {
+      "alignment": 36,
+      "caption": "TextView2",
+      "colorTab": {
+        "color0": 16777215
+      },
+      "fontSize": 32,
+      "id": 50039,
+      "text": "@carplay_help_remind8",
+      "touchable": false,
+      "position": {
+        "height": 51,
+        "left": 300,
+        "top": 370,
+        "width": 1000
+      }
+    },
+    "textview__16": {
+      "alignment": 36,
+      "caption": "TextView5",
+      "colorTab": {
+        "color0": 16777215
+      },
+      "fontSize": 20,
+      "id": 50040,
+      "text": "@carplay_help_remind9",
+      "touchable": false,
+      "position": {
+        "height": 51,
+        "left": 300,
+        "top": 420,
+        "width": 1000
+      }
+    },
+    "textview__17": {
+      "alignment": 36,
+      "caption": "TextView6",
+      "colorTab": {
+        "color0": 16777215
+      },
+      "fontSize": 20,
+      "id": 50041,
+      "text": "@carplay_help_remind10",
+      "touchable": false,
+      "position": {
+        "height": 51,
+        "left": 300,
+        "top": 460,
+        "width": 1000
+      }
+    },
+    "textview__18": {
+      "alignment": 36,
+      "caption": "TextView12",
+      "colorTab": {
+        "color0": 16777215
+      },
+      "fontSize": 20,
+      "id": 50042,
+      "text": "@carplay_help_remind11",
+      "touchable": false,
+      "position": {
+        "height": 51,
+        "left": 300,
+        "top": 500,
+        "width": 1000
+      }
+    }
+  },
+  "window__19": {
+    "backgroundColor": 2434090,
+    "beepEnable": true,
+    "caption": "apWindow",
+    "id": 110005,
+    "visible": false,
+    "position": {
+      "height": 600,
+      "left": 0,
+      "top": 0,
+      "width": 1600
+    },
+    "textview__20": {
+      "alignment": 36,
+      "caption": "apTextView",
+      "colorTab": {
+        "color0": 16777215
+      },
+      "fontSize": 32,
+      "id": 50020,
+      "text": "@airplay_help_remind1",
+      "touchable": false,
+      "position": {
+        "height": 45,
+        "left": 300,
+        "top": 215,
+        "width": 900
+      }
+    },
+    "textview__21": {
+      "alignment": 36,
+      "caption": "ap1TextView",
+      "colorTab": {
+        "color0": 16777215
+      },
+      "fontSize": 20,
+      "id": 50011,
+      "text": "@airplay_help_remind2",
+      "touchable": false,
+      "position": {
+        "height": 45,
+        "left": 300,
+        "top": 314,
+        "width": 900
+      }
+    },
+    "textview__22": {
+      "alignment": 36,
+      "caption": "ap2TextView",
+      "colorTab": {
+        "color0": 16777215
+      },
+      "fontSize": 20,
+      "id": 50022,
+      "text": "@airplay_help_remind3",
+      "touchable": false,
+      "position": {
+        "height": 51,
+        "left": 300,
+        "top": 360,
+        "width": 900
+      }
+    },
+    "textview__23": {
+      "alignment": 36,
+      "caption": "ap3TextView",
+      "colorTab": {
+        "color0": 16777215
+      },
+      "fontSize": 20,
+      "id": 50023,
+      "text": "@airplay_help_remind4",
+      "touchable": false,
+      "position": {
+        "height": 45,
+        "left": 300,
+        "top": 418,
+        "width": 900
+      }
+    },
+    "textview__24": {
+      "alignment": 36,
+      "caption": "ap4TextView",
+      "colorTab": {
+        "color0": 16777215
+      },
+      "fontSize": 20,
+      "id": 50012,
+      "text": "@airplay_help_remind5",
+      "touchable": false,
+      "position": {
+        "height": 51,
+        "left": 300,
+        "top": 467,
+        "width": 900
+      }
+    },
+    "textview__25": {
+      "alignment": 36,
+      "caption": "ap5TextView",
+      "colorTab": {
+        "color0": 16777215
+      },
+      "fontSize": 20,
+      "id": 50014,
+      "text": "@airplay_help_remind6",
+      "touchable": false,
+      "position": {
+        "height": 51,
+        "left": 300,
+        "top": 523,
+        "width": 900
+      }
+    }
+  },
+  "window__26": {
+    "backgroundColor": 2434090,
+    "beepEnable": true,
+    "caption": "aaWindow",
+    "id": 110004,
+    "visible": false,
+    "position": {
+      "height": 600,
+      "left": 0,
+      "top": 0,
+      "width": 1600
+    },
+    "textview__27": {
+      "alignment": 36,
+      "caption": "aaTextView",
+      "colorTab": {
+        "color0": 16777215
+      },
+      "fontSize": 32,
+      "id": 50019,
+      "text": "@aa_help_remind1",
+      "touchable": false,
+      "position": {
+        "height": 45,
+        "left": 162,
+        "top": 150,
+        "width": 1300
+      }
+    },
+    "textview__28": {
+      "alignment": 36,
+      "caption": "aa1TextView",
+      "colorTab": {
+        "color0": 16777215
+      },
+      "fontSize": 20,
+      "id": 50016,
+      "text": "@aa_help_remind2",
+      "touchable": false,
+      "position": {
+        "height": 45,
+        "left": 162,
+        "top": 200,
+        "width": 1300
+      }
+    },
+    "textview__29": {
+      "alignment": 36,
+      "caption": "aa2TextView",
+      "colorTab": {
+        "color0": 16777215
+      },
+      "fontSize": 20,
+      "id": 50021,
+      "text": "@aa_help_remind3",
+      "touchable": false,
+      "position": {
+        "height": 51,
+        "left": 162,
+        "top": 250,
+        "width": 1300
+      }
+    },
+    "textview__30": {
+      "alignment": 36,
+      "caption": "aa3TextView",
+      "colorTab": {
+        "color0": 16777215
+      },
+      "fontSize": 32,
+      "id": 50024,
+      "text": "@aa_help_remind4",
+      "touchable": false,
+      "position": {
+        "height": 45,
+        "left": 162,
+        "top": 300,
+        "width": 1300
+      }
+    },
+    "textview__31": {
+      "alignment": 36,
+      "caption": "aa4TextView",
+      "colorTab": {
+        "color0": 16777215
+      },
+      "fontSize": 20,
+      "id": 50017,
+      "text": "@aa_help_remind5",
+      "touchable": false,
+      "position": {
+        "height": 51,
+        "left": 162,
+        "top": 350,
+        "width": 1300
+      }
+    },
+    "textview__32": {
+      "alignment": 36,
+      "caption": "aa5TextView",
+      "colorTab": {
+        "color0": 16777215
+      },
+      "fontSize": 32,
+      "id": 50018,
+      "text": "@aa_help_remind6",
+      "touchable": false,
+      "position": {
+        "height": 51,
+        "left": 162,
+        "top": 400,
+        "width": 1300
+      }
+    },
+    "textview__33": {
+      "alignment": 36,
+      "caption": "aa6TextView",
+      "colorTab": {
+        "color0": 16777215
+      },
+      "fontSize": 20,
+      "id": 50027,
+      "text": "@aa_help_remind7",
+      "touchable": false,
+      "position": {
+        "height": 51,
+        "left": 162,
+        "top": 450,
+        "width": 1300
+      }
+    },
+    "textview__34": {
+      "alignment": 36,
+      "caption": "TextView13",
+      "colorTab": {
+        "color0": 16777215
+      },
+      "fontSize": 20,
+      "id": 50043,
+      "text": "@aa_help_remind8",
+      "touchable": false,
+      "position": {
+        "height": 51,
+        "left": 162,
+        "top": 500,
+        "width": 1300
+      }
+    },
+    "textview__35": {
+      "alignment": 36,
+      "caption": "TextView14",
+      "colorTab": {
+        "color0": 16777215
+      },
+      "fontSize": 20,
+      "id": 50044,
+      "text": "@aa_help_remind9",
+      "touchable": false,
+      "position": {
+        "height": 51,
+        "left": 162,
+        "top": 550,
+        "width": 1300
+      }
+    }
+  },
+  "window__36": {
+    "backgroundColor": 2434090,
+    "beepEnable": true,
+    "caption": "cfWindow",
+    "id": 110001,
+    "visible": false,
+    "position": {
+      "height": 600,
+      "left": 0,
+      "top": 0,
+      "width": 1600
+    },
+    "textview__37": {
+      "alignment": 36,
+      "caption": "cfTextView",
+      "colorTab": {
+        "color0": 16777215
+      },
+      "fontSize": 32,
+      "id": 50009,
+      "text": "@carlife_help_remind1",
+      "touchable": false,
+      "position": {
+        "height": 45,
+        "left": 162,
+        "top": 150,
+        "width": 483
+      }
+    },
+    "textview__38": {
+      "alignment": 36,
+      "caption": "cf1TextView",
+      "colorTab": {
+        "color0": 16777215
+      },
+      "fontSize": 20,
+      "id": 50028,
+      "text": "@carlife_help_remind2",
+      "touchable": false,
+      "position": {
+        "height": 45,
+        "left": 162,
+        "top": 250,
+        "width": 700
+      }
+    },
+    "textview__39": {
+      "alignment": 36,
+      "caption": "cf2TextView",
+      "colorTab": {
+        "color0": 16777215
+      },
+      "fontSize": 20,
+      "id": 50026,
+      "text": "@carlife_help_remind3",
+      "touchable": false,
+      "position": {
+        "height": 51,
+        "left": 162,
+        "top": 300,
+        "width": 700
+      }
+    },
+    "textview__40": {
+      "alignment": 36,
+      "caption": "cf3TextView",
+      "colorTab": {
+        "color0": 16777215
+      },
+      "fontSize": 20,
+      "id": 50025,
+      "text": "@carlife_help_remind4",
+      "touchable": false,
+      "position": {
+        "height": 45,
+        "left": 162,
+        "top": 350,
+        "width": 700
+      }
+    },
+    "textview__41": {
+      "alignment": 36,
+      "caption": "cf4TextView",
+      "colorTab": {
+        "color0": 16777215
+      },
+      "fontSize": 20,
+      "id": 50029,
+      "text": "@carlife_help_remind5",
+      "touchable": false,
+      "position": {
+        "height": 45,
+        "left": 162,
+        "top": 400,
+        "width": 700
+      }
+    },
+    "textview__42": {
+      "alignment": 36,
+      "caption": "TextView1",
+      "colorTab": {
+        "color0": 8421631
+      },
+      "fontSize": 20,
+      "id": 50031,
+      "text": "@carlife_help_remind6",
+      "touchable": false,
+      "position": {
+        "height": 51,
+        "left": 162,
+        "top": 500,
+        "width": 700
+      }
+    }
+  },
+  "window__43": {
+    "backgroundColor": 2434090,
+    "beepEnable": true,
+    "caption": "hcWindow",
+    "id": 110008,
+    "visible": false,
+    "position": {
+      "height": 600,
+      "left": 0,
+      "top": 0,
+      "width": 1600
+    },
+    "textview__44": {
+      "alignment": 36,
+      "caption": "TextView4",
+      "colorTab": {
+        "color0": 16777215
+      },
+      "fontSize": 32,
+      "id": 50033,
+      "text": "@hicar_help_remind1",
+      "touchable": false,
+      "position": {
+        "height": 45,
+        "left": 162,
+        "top": 185,
+        "width": 483
+      }
+    },
+    "textview__45": {
+      "alignment": 36,
+      "caption": "TextView7",
+      "colorTab": {
+        "color0": 16777215
+      },
+      "fontSize": 20,
+      "id": 50034,
+      "text": "@hicar_help_remind4",
+      "touchable": false,
+      "position": {
+        "height": 45,
+        "left": 162,
+        "top": 428,
+        "width": 700
+      }
+    },
+    "textview__46": {
+      "alignment": 36,
+      "caption": "TextView8",
+      "colorTab": {
+        "color0": 16777215
+      },
+      "fontSize": 20,
+      "id": 50035,
+      "text": "@hicar_help_remind3",
+      "touchable": false,
+      "position": {
+        "height": 51,
+        "left": 162,
+        "top": 353,
+        "width": 700
+      }
+    },
+    "textview__47": {
+      "alignment": 36,
+      "caption": "TextView9",
+      "colorTab": {
+        "color0": 8553090
+      },
+      "fontSize": 20,
+      "id": 50036,
+      "text": "4.连接完成",
+      "touchable": false,
+      "visible": false,
+      "position": {
+        "height": 51,
+        "left": 162,
+        "top": 317,
+        "width": 700
+      }
+    },
+    "textview__48": {
+      "alignment": 36,
+      "caption": "TextView10",
+      "colorTab": {
+        "color0": 16777215
+      },
+      "fontSize": 20,
+      "id": 50037,
+      "text": "@hicar_help_remind2",
+      "touchable": false,
+      "position": {
+        "height": 45,
+        "left": 162,
+        "top": 284,
+        "width": 700
+      }
+    },
+    "window__49": {
+      "beepEnable": true,
+      "caption": "hicarQRWindow",
+      "id": 110003,
+      "position": {
+        "height": 238,
+        "left": 1000,
+        "top": 220,
+        "width": 205
+      },
+      "textview__50": {
+        "alignment": 36,
+        "backgroundColor": 16777215,
+        "caption": "TextView3",
+        "colorTab": {
+          "color0": 16777215
+        },
+        "id": 50032,
+        "touchable": false,
+        "position": {
+          "height": 200,
+          "left": 2,
+          "top": 0,
+          "width": 200
+        }
+      },
+      "qrcode__51": {
+        "backgroundColor": 16777215,
+        "caption": "hicarQRCode",
+        "codeStr": "http://www.zkswe.com/",
+        "id": 92001,
+        "padding": -1,
+        "touchable": false,
+        "visible": false,
+        "position": {
+          "height": 200,
+          "left": 2,
+          "top": 0,
+          "width": 200
+        }
+      },
+      "button__52": {
+        "alignment": 37,
+        "caption": "updateQRCode",
+        "iconPosition": {
+          "height": 40,
+          "left": 0,
+          "top": 0,
+          "width": 108
+        },
+        "id": 20024,
+        "position": {
+          "height": 200,
+          "left": 2,
+          "top": 0,
+          "width": 200
+        }
+      },
+      "textview__53": {
+        "alignment": 37,
+        "caption": "TextView11",
+        "colorTab": {
+          "color0": 16777215
+        },
+        "fontSize": 18,
+        "id": 50038,
+        "text": "@hicar_help_remind5",
+        "touchable": false,
+        "position": {
+          "height": 26,
+          "left": 22,
+          "top": 206,
+          "width": 160
+        }
+      }
+    }
+  },
+  "window__54": {
+    "backgroundPic": "HomePage/home_top_bg.png",
+    "beepEnable": true,
+    "caption": "headWindow",
+    "id": 110006,
+    "position": {
+      "height": 80,
+      "left": 0,
+      "top": 0,
+      "width": 1600
+    },
+    "button__55": {
+      "alignment": 37,
+      "caption": "auxButton",
+      "colorTab": {
+        "color0": 16777215
+      },
+      "id": 20022,
+      "picTab": {
+        "pic0": "status/aux_.png"
+      },
+      "touchable": false,
+      "visible": false,
+      "position": {
+        "height": 20,
+        "left": 743,
+        "top": 19,
+        "width": 20
+      }
+    },
+    "button__56": {
+      "alignment": 37,
+      "caption": "fmButton",
+      "colorTab": {
+        "color0": 16777215
+      },
+      "id": 20012,
+      "picTab": {
+        "pic0": "status/fm.png"
+      },
+      "touchable": false,
+      "visible": false,
+      "position": {
+        "height": 20,
+        "left": 773,
+        "top": 19,
+        "width": 20
+      }
+    },
+    "button__57": {
+      "alignment": 37,
+      "caption": "linkButton",
+      "colorTab": {
+        "color0": 16777215
+      },
+      "id": 20029,
+      "picTab": {
+        "pic0": "status/link.png"
+      },
+      "touchable": false,
+      "visible": false,
+      "position": {
+        "height": 20,
+        "left": 803,
+        "top": 19,
+        "width": 20
+      }
+    },
+    "button__58": {
+      "alignment": 37,
+      "caption": "sdButton",
+      "colorTab": {
+        "color0": 16777215
+      },
+      "id": 20030,
+      "picTab": {
+        "pic0": "status/sd.png"
+      },
+      "touchable": false,
+      "position": {
+        "height": 64,
+        "left": 970,
+        "top": 10,
+        "width": 64
+      }
+    },
+    "button__59": {
+      "alignment": 37,
+      "caption": "NetButton",
+      "colorTab": {
+        "color0": 16777215
+      },
+      "id": 20033,
+      "picTab": {
+        "pic0": "status/wifi.png"
+      },
+      "touchable": false,
+      "visible": false,
+      "position": {
+        "height": 20,
+        "left": 1345,
+        "top": 19,
+        "width": 20
+      }
+    },
+    "button__60": {
+      "alignment": 37,
+      "caption": "soundButton",
+      "colorTab": {
+        "color0": 16777215
+      },
+      "id": 20034,
+      "picTab": {
+        "pic0": "status/sound.png",
+        "pic2": "status/sound0.png"
+      },
+      "touchable": false,
+      "visible": false,
+      "position": {
+        "height": 20,
+        "left": 1377,
+        "top": 19,
+        "width": 20
+      }
+    },
+    "button__61": {
+      "alignment": 37,
+      "caption": "LinkHomeButton",
+      "colorTab": {
+        "color0": 8421504,
+        "color1": 8388863
+      },
+      "id": 20013,
+      "picTab": {
+        "pic0": "status/home_home_n.png",
+        "pic1": "status/home_home_f.png"
+      },
+      "position": {
+        "height": 80,
+        "left": 0,
+        "top": 0,
+        "width": 154
+      }
+    },
+    "button__62": {
+      "alignment": 37,
+      "caption": "btStatusButton",
+      "colorTab": {
+        "color0": 16777215
+      },
+      "id": 20032,
+      "picTab": {
+        "pic0": "status/home_bt.png",
+        "pic2": "status/home_bt_f.png"
+      },
+      "touchable": false,
+      "position": {
+        "height": 64,
+        "left": 900,
+        "top": 10,
+        "width": 64
+      }
+    },
+    "button__63": {
+      "alignment": 37,
+      "caption": "usb1Button",
+      "colorTab": {
+        "color0": 16777215
+      },
+      "id": 20031,
+      "picTab": {
+        "pic0": "status/usb1.png"
+      },
+      "touchable": false,
+      "position": {
+        "height": 64,
+        "left": 1040,
+        "top": 10,
+        "width": 66
+      }
+    },
+    "button__64": {
+      "alignment": 37,
+      "caption": "usb2Button",
+      "colorTab": {
+        "color0": 16777215
+      },
+      "id": 20005,
+      "picTab": {
+        "pic0": "status/usb2.png"
+      },
+      "touchable": false,
+      "position": {
+        "height": 64,
+        "left": 1110,
+        "top": 10,
+        "width": 66
+      }
+    },
+    "digitalclock__65": {
+      "beat": true,
+      "caption": "DigitalClock24Hour",
+      "fontSize": 32,
+      "id": 93002,
+      "touchable": false,
+      "position": {
+        "height": 49,
+        "left": 1330,
+        "top": 15,
+        "width": 139
+      }
+    },
+    "digitalclock__66": {
+      "beat": true,
+      "caption": "DigitalClock12Hour",
+      "fontSize": 32,
+      "format": "hh:MM",
+      "id": 93001,
+      "touchable": false,
+      "visible": false,
+      "position": {
+        "height": 49,
+        "left": 1330,
+        "top": 15,
+        "width": 139
+      }
+    },
+    "button__67": {
+      "alignment": 37,
+      "caption": "LinkBackButton",
+      "colorTab": {
+        "color0": 8421504,
+        "color1": 8388863
+      },
+      "id": 20014,
+      "picTab": {
+        "pic0": "status/home_back_n.png",
+        "pic1": "status/home_back_f.png"
+      },
+      "position": {
+        "height": 80,
+        "left": 1420,
+        "top": 0,
+        "width": 154
+      }
+    },
+    "textview__68": {
+      "alignment": 37,
+      "caption": "timeAmPmTextView",
+      "colorTab": {
+        "color0": 16777215
+      },
+      "fontSize": 25,
+      "id": 50045,
+      "text": "AM",
+      "touchable": false,
+      "position": {
+        "height": 30,
+        "left": 1230,
+        "top": 20,
+        "width": 100
+      }
+    }
+  }
+}

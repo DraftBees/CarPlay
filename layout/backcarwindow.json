@@ -1,0 +1,374 @@
+{
+  "backgroundColor": 0,
+  "beepEnable": true,
+  "id": 0,
+  "resolution": {
+    "height": 720,
+    "width": 1920
+  },
+  "topmost": false,
+  "position": {
+    "height": 720,
+    "left": 0,
+    "top": 0,
+    "width": 1920
+  },
+  "cameraview__1": {
+    "autoPreview": false,
+    "backgroundColor": 0,
+    "beepEnable": true,
+    "caption": "CameraView1",
+    "cvbs": false,
+    "formatSize": {
+      "height": 1080,
+      "width": 1920
+    },
+    "id": 97001,
+    "mirror": 0,
+    "touchable": false,
+    "position": {
+      "height": 720,
+      "left": 0,
+      "top": 0,
+      "width": 1500
+    }
+  },
+  "textview__2": {
+    "alignment": 36,
+    "backgroundPic": "car/car.png",
+    "caption": "carTextView",
+    "colorTab": {
+      "color0": 16777215
+    },
+    "id": 50001,
+    "touchable": false,
+    "position": {
+      "height": 338,
+      "left": 1600,
+      "top": 190,
+      "width": 231
+    }
+  },
+  "textview__3": {
+    "alignment": 36,
+    "backgroundPic": "car/fll_1.png",
+    "caption": "frontRadarTextView1",
+    "colorTab": {
+      "color0": 16777215
+    },
+    "id": 50002,
+    "touchable": false,
+    "position": {
+      "height": 192,
+      "left": 1600,
+      "top": 0,
+      "width": 226
+    }
+  },
+  "textview__4": {
+    "alignment": 36,
+    "backgroundPic": "car/flm_1.png",
+    "caption": "frontRadarTextView2",
+    "colorTab": {
+      "color0": 16777215
+    },
+    "id": 50003,
+    "touchable": false,
+    "position": {
+      "height": 192,
+      "left": 1600,
+      "top": 0,
+      "width": 226
+    }
+  },
+  "textview__5": {
+    "alignment": 36,
+    "backgroundPic": "car/frm_1.png",
+    "caption": "frontRadarTextView3",
+    "colorTab": {
+      "color0": 16777215
+    },
+    "id": 50004,
+    "touchable": false,
+    "position": {
+      "height": 192,
+      "left": 1600,
+      "top": 0,
+      "width": 226
+    }
+  },
+  "textview__6": {
+    "alignment": 36,
+    "backgroundPic": "car/frr_1.png",
+    "caption": "frontRadarTextView4",
+    "colorTab": {
+      "color0": 16777215
+    },
+    "id": 50005,
+    "touchable": false,
+    "position": {
+      "height": 192,
+      "left": 1600,
+      "top": 0,
+      "width": 226
+    }
+  },
+  "textview__7": {
+    "alignment": 36,
+    "backgroundPic": "car/rll_1.png",
+    "caption": "backRadarTextView1",
+    "colorTab": {
+      "color0": 16777215
+    },
+    "id": 50006,
+    "touchable": false,
+    "position": {
+      "height": 190,
+      "left": 1600,
+      "top": 531,
+      "width": 226
+    }
+  },
+  "textview__8": {
+    "alignment": 36,
+    "backgroundPic": "car/rlm_1.png",
+    "caption": "backRadarTextView2",
+    "colorTab": {
+      "color0": 16777215
+    },
+    "id": 50007,
+    "touchable": false,
+    "position": {
+      "height": 190,
+      "left": 1600,
+      "top": 531,
+      "width": 226
+    }
+  },
+  "textview__9": {
+    "alignment": 36,
+    "backgroundPic": "car/rrm_1.png",
+    "caption": "backRadarTextView3",
+    "colorTab": {
+      "color0": 16777215
+    },
+    "id": 50008,
+    "touchable": false,
+    "position": {
+      "height": 190,
+      "left": 1600,
+      "top": 531,
+      "width": 226
+    }
+  },
+  "textview__10": {
+    "alignment": 36,
+    "backgroundPic": "car/rrr_1.png",
+    "caption": "backRadarTextView4",
+    "colorTab": {
+      "color0": 16777215
+    },
+    "id": 50009,
+    "touchable": false,
+    "position": {
+      "height": 190,
+      "left": 1600,
+      "top": 531,
+      "width": 226
+    }
+  },
+  "textview__11": {
+    "alignment": 36,
+    "backgroundPic": "car/trl_29.png",
+    "caption": "trackTextView",
+    "colorTab": {
+      "color0": 16777215
+    },
+    "id": 50010,
+    "touchable": false,
+    "position": {
+      "height": 390,
+      "left": 146,
+      "top": 270,
+      "width": 1253
+    }
+  },
+  "window__12": {
+    "beepEnable": true,
+    "caption": "CarAdjustWindow",
+    "id": 110002,
+    "visible": false,
+    "position": {
+      "height": 232,
+      "left": 800,
+      "top": 211,
+      "width": 231
+    },
+    "textview__13": {
+      "alignment": 36,
+      "backgroundPic": "car/car_adjust_bg.png",
+      "caption": "AdjustBgTextView",
+      "colorTab": {
+        "color0": 16777215
+      },
+      "id": 50011,
+      "touchable": false,
+      "position": {
+        "height": 217,
+        "left": 0,
+        "top": 0,
+        "width": 216
+      }
+    },
+    "button__14": {
+      "alignment": 37,
+      "caption": "AdjustUoButton",
+      "colorTab": {
+        "color0": 16777215
+      },
+      "id": 20001,
+      "picTab": {
+        "pic0": "car/car_adjust_up_n.png",
+        "pic1": "car/car_adjust_up_f.png",
+        "pic2": "car/car_adjust_up_f.png"
+      },
+      "position": {
+        "height": 47,
+        "left": 53,
+        "top": 21,
+        "width": 109
+      }
+    },
+    "button__15": {
+      "alignment": 37,
+      "caption": "AdjustDownButton",
+      "colorTab": {
+        "color0": 16777215
+      },
+      "id": 20004,
+      "picTab": {
+        "pic0": "car/car_adjust_down_n.png",
+        "pic1": "car/car_adjust_down_f.png"
+      },
+      "position": {
+        "height": 47,
+        "left": 53,
+        "top": 155,
+        "width": 109
+      }
+    },
+    "button__16": {
+      "alignment": 37,
+      "caption": "AdjustLeftButton",
+      "colorTab": {
+        "color0": 16777215
+      },
+      "id": 20005,
+      "picTab": {
+        "pic0": "car/car_adjust_left_n.png",
+        "pic1": "car/car_adjust_left_f.png",
+        "pic2": "car/car_adjust_left_f.png"
+      },
+      "position": {
+        "height": 110,
+        "left": 22,
+        "top": 54,
+        "width": 46
+      }
+    },
+    "button__17": {
+      "alignment": 37,
+      "caption": "AdjustRightButton",
+      "colorTab": {
+        "color0": 16777215
+      },
+      "id": 20006,
+      "picTab": {
+        "pic0": "car/car_adjust_right_n.png",
+        "pic1": "car/car_adjust_right_f.png",
+        "pic2": "car/car_adjust_left_f.png"
+      },
+      "position": {
+        "height": 110,
+        "left": 154,
+        "top": 54,
+        "width": 46
+      }
+    },
+    "button__18": {
+      "alignment": 37,
+      "caption": "AdjustOkButton",
+      "colorTab": {
+        "color0": 16777215
+      },
+      "id": 20007,
+      "picTab": {
+        "pic0": "car/car_adjust_ok_n.png",
+        "pic1": "car/car_adjust_ok_f.png"
+      },
+      "position": {
+        "height": 64,
+        "left": 76,
+        "top": 77,
+        "width": 64
+      }
+    }
+  },
+  "seekbar__19": {
+    "backgroundPic": "setting/set_adjust_bg.png",
+    "caption": "trackDisplaySeekBar",
+    "id": 91001,
+    "max": 40,
+    "progressPic": "setting/set_adjust.png",
+    "thumb": {
+      "normalPic": "setting/set_adjust_click.png",
+      "size": {
+        "height": 57,
+        "width": 101
+      }
+    },
+    "visible": false,
+    "position": {
+      "height": 42,
+      "left": 689,
+      "top": 109,
+      "width": 500
+    }
+  },
+  "textview__20": {
+    "alignment": 36,
+    "caption": "trackScaleDisplayTextView",
+    "colorTab": {
+      "color0": 16777215
+    },
+    "fontSize": 20,
+    "id": 50012,
+    "text": "20",
+    "touchable": false,
+    "visible": false,
+    "position": {
+      "height": 30,
+      "left": 1203,
+      "top": 116,
+      "width": 120
+    }
+  },
+  "button__21": {
+    "alignment": 37,
+    "caption": "backOpenSetButton",
+    "colorTab": {
+      "color0": 16777215
+    },
+    "id": 20002,
+    "picTab": {
+      "pic0": "back/set_ic_common_n.png",
+      "pic2": "back/set_ic_common_f.png"
+    },
+    "position": {
+      "height": 80,
+      "left": 1800,
+      "top": 320,
+      "width": 120
+    }
+  }
+}

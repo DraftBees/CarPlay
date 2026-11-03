@@ -1,0 +1,579 @@
+{
+  "backgroundColor": 0,
+  "backgroundPic": "",
+  "hideTimeOut": -1,
+  "id": 0,
+  "modal": false,
+  "resolution": {
+    "height": 900,
+    "width": 2400
+  },
+  "topmost": false,
+  "touchable": false,
+  "visible": true,
+  "position": {
+    "height": 480,
+    "left": 870,
+    "top": 260,
+    "width": 664
+  },
+  "textview__1": {
+    "alignment": 36,
+    "backgroundColor": -1,
+    "backgroundPic": "/door/alert_car.png",
+    "bgColorTab": {
+      "color0": -1,
+      "color1": -1,
+      "color2": -1,
+      "color3": -1,
+      "color4": -1
+    },
+    "bold": false,
+    "caption": "carTextView",
+    "colorTab": {
+      "color0": 16777215,
+      "color1": -1,
+      "color2": -1,
+      "color3": -1,
+      "color4": -1
+    },
+    "fontSize": 16,
+    "id": 50001,
+    "italic": false,
+    "rollDirection": 1,
+    "rollEnable": false,
+    "rollIntervalTime": 150,
+    "rollStep": 5,
+    "text": "",
+    "touchable": false,
+    "visible": true,
+    "position": {
+      "height": 480,
+      "left": 0,
+      "top": 0,
+      "width": 664
+    },
+    "textPosition": {
+      "height": 480,
+      "left": 0,
+      "top": 0,
+      "width": 664
+    }
+  },
+  "textview__2": {
+    "alignment": 36,
+    "backgroundColor": -1,
+    "backgroundPic": "/door/alert_car_engine.png",
+    "bgColorTab": {
+      "color0": -1,
+      "color1": -1,
+      "color2": -1,
+      "color3": -1,
+      "color4": -1
+    },
+    "bold": false,
+    "caption": "frontBonnetTextView",
+    "colorTab": {
+      "color0": 16777215,
+      "color1": -1,
+      "color2": -1,
+      "color3": -1,
+      "color4": -1
+    },
+    "fontSize": 16,
+    "id": 50002,
+    "italic": false,
+    "rollDirection": 1,
+    "rollEnable": false,
+    "rollIntervalTime": 150,
+    "rollStep": 5,
+    "text": "",
+    "touchable": false,
+    "visible": true,
+    "position": {
+      "height": 480,
+      "left": 0,
+      "top": 0,
+      "width": 664
+    },
+    "textPosition": {
+      "height": 480,
+      "left": 0,
+      "top": 0,
+      "width": 664
+    }
+  },
+  "textview__3": {
+    "alignment": 36,
+    "backgroundColor": -1,
+    "backgroundPic": "/door/alert_car_engine_open.png",
+    "bgColorTab": {
+      "color0": -1,
+      "color1": -1,
+      "color2": -1,
+      "color3": -1,
+      "color4": -1
+    },
+    "bold": false,
+    "caption": "frontBonnetOpenTextView",
+    "colorTab": {
+      "color0": 16777215,
+      "color1": -1,
+      "color2": -1,
+      "color3": -1,
+      "color4": -1
+    },
+    "fontSize": 16,
+    "id": 50003,
+    "italic": false,
+    "rollDirection": 1,
+    "rollEnable": false,
+    "rollIntervalTime": 150,
+    "rollStep": 5,
+    "text": "",
+    "touchable": false,
+    "visible": false,
+    "position": {
+      "height": 480,
+      "left": 0,
+      "top": 0,
+      "width": 664
+    },
+    "textPosition": {
+      "height": 480,
+      "left": 0,
+      "top": 0,
+      "width": 664
+    }
+  },
+  "textview__4": {
+    "alignment": 36,
+    "backgroundColor": -1,
+    "backgroundPic": "/door/alert_car_left_front_door.png",
+    "bgColorTab": {
+      "color0": -1,
+      "color1": -1,
+      "color2": -1,
+      "color3": -1,
+      "color4": -1
+    },
+    "bold": false,
+    "caption": "frontLeftDoorTextView",
+    "colorTab": {
+      "color0": 16777215,
+      "color1": -1,
+      "color2": -1,
+      "color3": -1,
+      "color4": -1
+    },
+    "fontSize": 16,
+    "id": 50004,
+    "italic": false,
+    "rollDirection": 1,
+    "rollEnable": false,
+    "rollIntervalTime": 150,
+    "rollStep": 5,
+    "text": "",
+    "touchable": false,
+    "visible": false,
+    "position": {
+      "height": 480,
+      "left": 0,
+      "top": 0,
+      "width": 664
+    },
+    "textPosition": {
+      "height": 480,
+      "left": 0,
+      "top": 0,
+      "width": 664
+    }
+  },
+  "textview__5": {
+    "alignment": 36,
+    "backgroundColor": -1,
+    "backgroundPic": "/door/alert_car_left_rear_door.png",
+    "bgColorTab": {
+      "color0": -1,
+      "color1": -1,
+      "color2": -1,
+      "color3": -1,
+      "color4": -1
+    },
+    "bold": false,
+    "caption": "backLeftDoorTextView",
+    "colorTab": {
+      "color0": 16777215,
+      "color1": -1,
+      "color2": -1,
+      "color3": -1,
+      "color4": -1
+    },
+    "fontSize": 16,
+    "id": 50005,
+    "italic": false,
+    "rollDirection": 1,
+    "rollEnable": false,
+    "rollIntervalTime": 150,
+    "rollStep": 5,
+    "text": "",
+    "touchable": false,
+    "visible": false,
+    "position": {
+      "height": 480,
+      "left": 0,
+      "top": 0,
+      "width": 664
+    },
+    "textPosition": {
+      "height": 480,
+      "left": 0,
+      "top": 0,
+      "width": 664
+    }
+  },
+  "textview__6": {
+    "alignment": 36,
+    "backgroundColor": -1,
+    "backgroundPic": "/door/alert_car_right_front_door.png",
+    "bgColorTab": {
+      "color0": -1,
+      "color1": -1,
+      "color2": -1,
+      "color3": -1,
+      "color4": -1
+    },
+    "bold": false,
+    "caption": "frontRightDoorTextView",
+    "colorTab": {
+      "color0": 16777215,
+      "color1": -1,
+      "color2": -1,
+      "color3": -1,
+      "color4": -1
+    },
+    "fontSize": 16,
+    "id": 50006,
+    "italic": false,
+    "rollDirection": 1,
+    "rollEnable": false,
+    "rollIntervalTime": 150,
+    "rollStep": 5,
+    "text": "",
+    "touchable": false,
+    "visible": false,
+    "position": {
+      "height": 480,
+      "left": 0,
+      "top": 0,
+      "width": 664
+    },
+    "textPosition": {
+      "height": 480,
+      "left": 0,
+      "top": 0,
+      "width": 664
+    }
+  },
+  "textview__7": {
+    "alignment": 36,
+    "backgroundColor": -1,
+    "backgroundPic": "/door/alert_car_right_rear_door.png",
+    "bgColorTab": {
+      "color0": -1,
+      "color1": -1,
+      "color2": -1,
+      "color3": -1,
+      "color4": -1
+    },
+    "bold": false,
+    "caption": "backRightDoorTextView",
+    "colorTab": {
+      "color0": 16777215,
+      "color1": -1,
+      "color2": -1,
+      "color3": -1,
+      "color4": -1
+    },
+    "fontSize": 16,
+    "id": 50007,
+    "italic": false,
+    "rollDirection": 1,
+    "rollEnable": false,
+    "rollIntervalTime": 150,
+    "rollStep": 5,
+    "text": "",
+    "touchable": false,
+    "visible": false,
+    "position": {
+      "height": 480,
+      "left": 0,
+      "top": 0,
+      "width": 664
+    },
+    "textPosition": {
+      "height": 480,
+      "left": 0,
+      "top": 0,
+      "width": 664
+    }
+  },
+  "textview__8": {
+    "alignment": 36,
+    "backgroundColor": -1,
+    "backgroundPic": "/door/alert_car_rear.png",
+    "bgColorTab": {
+      "color0": -1,
+      "color1": -1,
+      "color2": -1,
+      "color3": -1,
+      "color4": -1
+    },
+    "bold": false,
+    "caption": "backBonnetTextView",
+    "colorTab": {
+      "color0": 16777215,
+      "color1": -1,
+      "color2": -1,
+      "color3": -1,
+      "color4": -1
+    },
+    "fontSize": 16,
+    "id": 50008,
+    "italic": false,
+    "rollDirection": 1,
+    "rollEnable": false,
+    "rollIntervalTime": 150,
+    "rollStep": 5,
+    "text": "",
+    "touchable": false,
+    "visible": false,
+    "position": {
+      "height": 480,
+      "left": 0,
+      "top": 0,
+      "width": 664
+    },
+    "textPosition": {
+      "height": 480,
+      "left": 0,
+      "top": 0,
+      "width": 664
+    }
+  },
+  "textview__9": {
+    "alignment": 36,
+    "backgroundColor": -1,
+    "backgroundPic": "/door/alert_car_left_front_door_open.png",
+    "bgColorTab": {
+      "color0": -1,
+      "color1": -1,
+      "color2": -1,
+      "color3": -1,
+      "color4": -1
+    },
+    "bold": false,
+    "caption": "frontLeftDoorOpenTextView",
+    "colorTab": {
+      "color0": 16777215,
+      "color1": -1,
+      "color2": -1,
+      "color3": -1,
+      "color4": -1
+    },
+    "fontSize": 16,
+    "id": 50009,
+    "italic": false,
+    "rollDirection": 1,
+    "rollEnable": false,
+    "rollIntervalTime": 150,
+    "rollStep": 5,
+    "text": "",
+    "touchable": false,
+    "visible": false,
+    "position": {
+      "height": 480,
+      "left": 0,
+      "top": 0,
+      "width": 664
+    },
+    "textPosition": {
+      "height": 480,
+      "left": 0,
+      "top": 0,
+      "width": 664
+    }
+  },
+  "textview__10": {
+    "alignment": 36,
+    "backgroundColor": -1,
+    "backgroundPic": "/door/alert_car_left_rear_door_open.png",
+    "bgColorTab": {
+      "color0": -1,
+      "color1": -1,
+      "color2": -1,
+      "color3": -1,
+      "color4": -1
+    },
+    "bold": false,
+    "caption": "backLeftDoorOpenTextView",
+    "colorTab": {
+      "color0": 16777215,
+      "color1": -1,
+      "color2": -1,
+      "color3": -1,
+      "color4": -1
+    },
+    "fontSize": 16,
+    "id": 50010,
+    "italic": false,
+    "rollDirection": 1,
+    "rollEnable": false,
+    "rollIntervalTime": 150,
+    "rollStep": 5,
+    "text": "",
+    "touchable": false,
+    "visible": false,
+    "position": {
+      "height": 480,
+      "left": 0,
+      "top": 0,
+      "width": 664
+    },
+    "textPosition": {
+      "height": 480,
+      "left": 0,
+      "top": 0,
+      "width": 664
+    }
+  },
+  "textview__11": {
+    "alignment": 36,
+    "backgroundColor": -1,
+    "backgroundPic": "/door/alert_car_right_front_door_open.png",
+    "bgColorTab": {
+      "color0": -1,
+      "color1": -1,
+      "color2": -1,
+      "color3": -1,
+      "color4": -1
+    },
+    "bold": false,
+    "caption": "frontRightDoorOpenTextView",
+    "colorTab": {
+      "color0": 16777215,
+      "color1": -1,
+      "color2": -1,
+      "color3": -1,
+      "color4": -1
+    },
+    "fontSize": 16,
+    "id": 50011,
+    "italic": false,
+    "rollDirection": 1,
+    "rollEnable": false,
+    "rollIntervalTime": 150,
+    "rollStep": 5,
+    "text": "",
+    "touchable": false,
+    "visible": false,
+    "position": {
+      "height": 480,
+      "left": 0,
+      "top": 0,
+      "width": 664
+    },
+    "textPosition": {
+      "height": 480,
+      "left": 0,
+      "top": 0,
+      "width": 664
+    }
+  },
+  "textview__12": {
+    "alignment": 36,
+    "backgroundColor": -1,
+    "backgroundPic": "/door/alert_car_right_rear_door_open.png",
+    "bgColorTab": {
+      "color0": -1,
+      "color1": -1,
+      "color2": -1,
+      "color3": -1,
+      "color4": -1
+    },
+    "bold": false,
+    "caption": "backRightDoorOpenTextView",
+    "colorTab": {
+      "color0": 16777215,
+      "color1": -1,
+      "color2": -1,
+      "color3": -1,
+      "color4": -1
+    },
+    "fontSize": 16,
+    "id": 50012,
+    "italic": false,
+    "rollDirection": 1,
+    "rollEnable": false,
+    "rollIntervalTime": 150,
+    "rollStep": 5,
+    "text": "",
+    "touchable": false,
+    "visible": false,
+    "position": {
+      "height": 480,
+      "left": 0,
+      "top": 0,
+      "width": 664
+    },
+    "textPosition": {
+      "height": 480,
+      "left": 0,
+      "top": 0,
+      "width": 664
+    }
+  },
+  "textview__13": {
+    "alignment": 36,
+    "backgroundColor": -1,
+    "backgroundPic": "/door/alert_car_rear_open.png",
+    "bgColorTab": {
+      "color0": -1,
+      "color1": -1,
+      "color2": -1,
+      "color3": -1,
+      "color4": -1
+    },
+    "bold": false,
+    "caption": "backBonnetOpenTextView",
+    "colorTab": {
+      "color0": 16777215,
+      "color1": -1,
+      "color2": -1,
+      "color3": -1,
+      "color4": -1
+    },
+    "fontSize": 16,
+    "id": 50013,
+    "italic": false,
+    "rollDirection": 1,
+    "rollEnable": false,
+    "rollIntervalTime": 150,
+    "rollStep": 5,
+    "text": "",
+    "touchable": false,
+    "visible": false,
+    "position": {
+      "height": 480,
+      "left": 0,
+      "top": 0,
+      "width": 664
+    },
+    "textPosition": {
+      "height": 480,
+      "left": 0,
+      "top": 0,
+      "width": 664
+    }
+  }
+}

@@ -1,0 +1,314 @@
+{
+  "backgroundPic": "aircontrol/airinfobg.png",
+  "beepEnable": true,
+  "id": 0,
+  "resolution": {
+    "height": 600,
+    "width": 1024
+  },
+  "topmost": false,
+  "position": {
+    "height": 100,
+    "left": 0,
+    "top": 500,
+    "width": 1024
+  },
+  "textview__1": {
+    "alignment": 36,
+    "backgroundPic": "aircontrol/left_1.png",
+    "caption": "windDirectionLeftTextView",
+    "colorTab": {
+      "color0": 16777215
+    },
+    "id": 50001,
+    "touchable": false,
+    "position": {
+      "height": 100,
+      "left": 210,
+      "top": 0,
+      "width": 100
+    }
+  },
+  "textview__2": {
+    "alignment": 37,
+    "caption": "tempLeftTextView",
+    "colorTab": {
+      "color0": 16777215
+    },
+    "fontSize": 20,
+    "id": 50002,
+    "text": "18℃",
+    "touchable": false,
+    "position": {
+      "height": 30,
+      "left": 30,
+      "top": 40,
+      "width": 120
+    }
+  },
+  "textview__3": {
+    "alignment": 37,
+    "caption": "tempRightTextView",
+    "colorTab": {
+      "color0": 16777215
+    },
+    "fontSize": 20,
+    "id": 50003,
+    "text": "19℃",
+    "touchable": false,
+    "position": {
+      "height": 30,
+      "left": 880,
+      "top": 40,
+      "width": 120
+    }
+  },
+  "textview__4": {
+    "alignment": 36,
+    "backgroundPic": "aircontrol/inside_cycle.png",
+    "caption": "insideTextView",
+    "colorTab": {
+      "color0": 16777215
+    },
+    "id": 50004,
+    "touchable": false,
+    "position": {
+      "height": 19,
+      "left": 750,
+      "top": 45,
+      "width": 40
+    }
+  },
+  "textview__5": {
+    "alignment": 36,
+    "backgroundPic": "aircontrol/out_cycle.png",
+    "caption": "outTextView",
+    "colorTab": {
+      "color0": 16777215
+    },
+    "id": 50005,
+    "touchable": false,
+    "visible": false,
+    "position": {
+      "height": 19,
+      "left": 750,
+      "top": 45,
+      "width": 40
+    }
+  },
+  "textview__6": {
+    "alignment": 36,
+    "backgroundPic": "aircontrol/ac_off.png",
+    "caption": "accOffTextView",
+    "colorTab": {
+      "color0": 16777215
+    },
+    "id": 50006,
+    "touchable": false,
+    "position": {
+      "height": 60,
+      "left": 550,
+      "top": 30,
+      "width": 100
+    }
+  },
+  "textview__7": {
+    "alignment": 36,
+    "backgroundPic": "aircontrol/ac_on.png",
+    "caption": "accOnTextView",
+    "colorTab": {
+      "color0": 16777215
+    },
+    "id": 50007,
+    "touchable": false,
+    "visible": false,
+    "position": {
+      "height": 60,
+      "left": 550,
+      "top": 30,
+      "width": 100
+    }
+  },
+  "textview__8": {
+    "alignment": 37,
+    "caption": "progressLeftTextView",
+    "colorTab": {
+      "color0": 16777215
+    },
+    "fontSize": 25,
+    "id": 50008,
+    "text": "1",
+    "touchable": false,
+    "position": {
+      "height": 50,
+      "left": 430,
+      "top": 25,
+      "width": 80
+    }
+  },
+  "textview__9": {
+    "alignment": 37,
+    "caption": "autoRemindTextView",
+    "colorTab": {
+      "color0": 16777215
+    },
+    "fontSize": 15,
+    "id": 50013,
+    "text": "AUTO",
+    "touchable": false,
+    "position": {
+      "height": 30,
+      "left": 540,
+      "top": 20,
+      "width": 120
+    }
+  },
+  "textview__10": {
+    "alignment": 36,
+    "backgroundPic": "aircontrol/line.png",
+    "caption": "line1TextView",
+    "colorTab": {
+      "color0": 16777215
+    },
+    "id": 50009,
+    "touchable": false,
+    "position": {
+      "height": 98,
+      "left": 170,
+      "top": 0,
+      "width": 12
+    }
+  },
+  "textview__11": {
+    "alignment": 36,
+    "backgroundPic": "aircontrol/line.png",
+    "caption": "line2TextView",
+    "colorTab": {
+      "color0": 16777215
+    },
+    "id": 50014,
+    "touchable": false,
+    "position": {
+      "height": 98,
+      "left": 340,
+      "top": 0,
+      "width": 12
+    }
+  },
+  "textview__12": {
+    "alignment": 36,
+    "backgroundPic": "aircontrol/line.png",
+    "caption": "line3TextView",
+    "colorTab": {
+      "color0": 16777215
+    },
+    "id": 50015,
+    "touchable": false,
+    "position": {
+      "height": 98,
+      "left": 510,
+      "top": 0,
+      "width": 12
+    }
+  },
+  "textview__13": {
+    "alignment": 36,
+    "backgroundPic": "aircontrol/line.png",
+    "caption": "line4TextView",
+    "colorTab": {
+      "color0": 16777215
+    },
+    "id": 50016,
+    "touchable": false,
+    "position": {
+      "height": 98,
+      "left": 680,
+      "top": 0,
+      "width": 12
+    }
+  },
+  "textview__14": {
+    "alignment": 36,
+    "backgroundPic": "aircontrol/line.png",
+    "caption": "line5TextView",
+    "colorTab": {
+      "color0": 16777215
+    },
+    "id": 50017,
+    "touchable": false,
+    "position": {
+      "height": 148,
+      "left": 850,
+      "top": 0,
+      "width": 12
+    }
+  },
+  "textview__15": {
+    "alignment": 36,
+    "backgroundPic": "aircontrol/feng.png",
+    "caption": "windLeftIconTextView",
+    "colorTab": {
+      "color0": 16777215
+    },
+    "id": 50020,
+    "touchable": false,
+    "position": {
+      "height": 100,
+      "left": 380,
+      "top": 0,
+      "width": 60
+    }
+  },
+  "textview__16": {
+    "alignment": 36,
+    "backgroundPic": "aircontrol/left_1.png",
+    "caption": "windDirectionRightTextView",
+    "colorTab": {
+      "color0": 16777215
+    },
+    "id": 50010,
+    "touchable": false,
+    "visible": false,
+    "position": {
+      "height": 140,
+      "left": 1000,
+      "top": 10,
+      "width": 140
+    }
+  },
+  "textview__17": {
+    "alignment": 36,
+    "backgroundPic": "aircontrol/feng.png",
+    "caption": "windRightIconTextView",
+    "colorTab": {
+      "color0": 16777215
+    },
+    "id": 50011,
+    "touchable": false,
+    "visible": false,
+    "position": {
+      "height": 140,
+      "left": 800,
+      "top": 10,
+      "width": 80
+    }
+  },
+  "textview__18": {
+    "alignment": 37,
+    "caption": "progressRightTextView",
+    "colorTab": {
+      "color0": 16777215
+    },
+    "fontSize": 36,
+    "id": 50012,
+    "text": "1",
+    "touchable": false,
+    "visible": false,
+    "position": {
+      "height": 50,
+      "left": 1546,
+      "top": 55,
+      "width": 126
+    }
+  }
+}

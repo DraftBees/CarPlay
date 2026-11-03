@@ -1,0 +1,109 @@
+{
+  "beepEnable": true,
+  "id": 0,
+  "resolution": {
+    "height": 720,
+    "width": 1920
+  },
+  "topmost": false,
+  "position": {
+    "height": 720,
+    "left": 0,
+    "top": 0,
+    "width": 1920
+  },
+  "videoview__1": {
+    "backgroundColor": 0,
+    "beepEnable": true,
+    "caption": "VideoView1",
+    "defaultVolume": 5,
+    "id": 95001,
+    "loopPlayback": true,
+    "rotation": 0,
+    "position": {
+      "height": 720,
+      "left": 0,
+      "top": 0,
+      "width": 1920
+    }
+  },
+  "window__2": {
+    "beepEnable": true,
+    "caption": "LoadingWindow",
+    "id": 110001,
+    "visible": false,
+    "position": {
+      "height": 200,
+      "left": 332,
+      "top": 200,
+      "width": 360
+    },
+    "textview__3": {
+      "alignment": 41,
+      "caption": "LoadingTextView",
+      "colorTab": {
+        "color0": 16777215
+      },
+      "fontSize": 26,
+      "id": 50012,
+      "text": "@Loading",
+      "touchable": false,
+      "position": {
+        "height": 200,
+        "left": 0,
+        "top": 0,
+        "width": 360
+      },
+      "textPosition": {
+        "height": 190,
+        "left": 0,
+        "top": 0,
+        "width": 360
+      }
+    },
+    "pointer__4": {
+      "animatable": false,
+      "caption": "syncPointer",
+      "clockwise": true,
+      "fixedPoint": {
+        "x": 50,
+        "y": 50
+      },
+      "id": 90001,
+      "pointerPic": "media/scaning.png",
+      "pointerSize": {
+        "height": 100,
+        "width": 100
+      },
+      "rotateSpeed": 1,
+      "rotationPoint": {
+        "x": 50,
+        "y": 50
+      },
+      "startAngle": 0,
+      "touchable": false,
+      "position": {
+        "height": 100,
+        "left": 130,
+        "top": 25,
+        "width": 100
+      }
+    }
+  },
+  "textview__5": {
+    "alignment": 36,
+    "backgroundPic": "link/incom_remind.png",
+    "caption": "incomRemindTextView",
+    "colorTab": {
+      "color0": 16777215
+    },
+    "id": 50001,
+    "touchable": false,
+    "position": {
+      "height": 114,
+      "left": 1550,
+      "top": 560,
+      "width": 178
+    }
+  }
+}

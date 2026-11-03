@@ -1,0 +1,1063 @@
+{
+  "beepEnable": true,
+  "id": 0,
+  "resolution": {
+    "height": 600,
+    "width": 1600
+  },
+  "topmost": false,
+  "position": {
+    "height": 600,
+    "left": 0,
+    "top": 0,
+    "width": 1600
+  },
+  "window__1": {
+    "beepEnable": true,
+    "caption": "videoListWindow",
+    "id": 110001,
+    "position": {
+      "height": 600,
+      "left": 0,
+      "top": 0,
+      "width": 1600
+    },
+    "window__2": {
+      "backgroundPic": "/bg/bg1.png",
+      "beepEnable": true,
+      "caption": "VideoBgWindow",
+      "id": 110007,
+      "position": {
+        "height": 600,
+        "left": 0,
+        "top": 0,
+        "width": 1600
+      }
+    },
+    "window__3": {
+      "beepEnable": true,
+      "caption": "VideoMenuWindow",
+      "id": 110019,
+      "position": {
+        "height": 310,
+        "left": 340,
+        "top": 144,
+        "width": 280
+      },
+      "listview__4": {
+        "beepEnable": true,
+        "caption": "VideoMenuListView",
+        "cols": 1,
+        "id": 80001,
+        "rows": 2,
+        "position": {
+          "height": 200,
+          "left": 0,
+          "top": 0,
+          "width": 270
+        },
+        "colSpacing": 5,
+        "rowSpacing": 7,
+        "item": {
+          "alignment": 37,
+          "caption": "item",
+          "iconPosition": {
+            "height": 55,
+            "left": 0,
+            "top": 0,
+            "width": 195
+          },
+          "position": {
+            "height": 93,
+            "left": 0,
+            "top": 0,
+            "width": 265
+          },
+          "subItem": [
+            {
+              "alignment": 36,
+              "caption": "SubItem20",
+              "colorTab": {
+                "color0": 16777215
+              },
+              "id": 24006,
+              "picTab": {
+                "pic1": "setting/set_btn_f.png",
+                "pic2": "setting/set_btn_f.png"
+              },
+              "position": {
+                "height": 50,
+                "left": 0,
+                "top": 0,
+                "width": 240
+              }
+            },
+            {
+              "alignment": 37,
+              "caption": "VideoTextSub",
+              "colorTab": {
+                "color0": 16777215,
+                "color1": 6091519,
+                "color2": 6091519
+              },
+              "fontSize": 20,
+              "id": 24007,
+              "picTab": {
+                "pic0": "setting/set_btn_n.png",
+                "pic1": "setting/set_btn_f.png"
+              },
+              "text": "SD",
+              "touchable": false,
+              "position": {
+                "height": 50,
+                "left": 0,
+                "top": 0,
+                "width": 240
+              }
+            },
+            {
+              "caption": "VideoPicSub",
+              "colorTab": {
+                "color0": 16777215
+              },
+              "id": 24008,
+              "touchable": false,
+              "position": {
+                "height": 29,
+                "left": 49,
+                "top": 9,
+                "width": 30
+              }
+            },
+            {
+              "alignment": 36,
+              "caption": "VideoListSelectSubItem",
+              "colorTab": {
+                "color0": 16777215
+              },
+              "id": 24003,
+              "position": {
+                "height": 50,
+                "left": 0,
+                "top": 0,
+                "width": 240
+              }
+            }
+          ]
+        }
+      }
+    },
+    "window__6": {
+      "beepEnable": true,
+      "caption": "VideoListWindow",
+      "id": 110009,
+      "position": {
+        "height": 370,
+        "left": 600,
+        "top": 140,
+        "width": 800
+      },
+      "listview__7": {
+        "beepEnable": true,
+        "caption": "videoListView",
+        "cols": 1,
+        "id": 80003,
+        "rows": 5,
+        "position": {
+          "height": 320,
+          "left": 40,
+          "top": 25,
+          "width": 650
+        },
+        "rowSpacing": 2,
+        "item": {
+          "alignment": 36,
+          "caption": "item",
+          "colorTab": {
+            "color0": 16777215,
+            "color2": 6091519
+          },
+          "fontSize": 18,
+          "iconPosition": {
+            "height": 60,
+            "left": 0,
+            "top": 0,
+            "width": 640
+          },
+          "picTab": {
+            "pic2": "MusicPlayer/file_choice.png"
+          },
+          "position": {
+            "height": 62,
+            "left": 0,
+            "top": 0,
+            "width": 650
+          },
+          "text": "ListViewItem",
+          "textPosition": {
+            "height": 62,
+            "left": 120,
+            "top": 0,
+            "width": 530
+          },
+          "subItem": [
+            {
+              "alignment": 37,
+              "caption": "SubItemID",
+              "colorTab": {
+                "color0": 16777215,
+                "color2": 6091519
+              },
+              "fontSize": 18,
+              "iconPosition": {
+                "height": 32,
+                "left": 0,
+                "top": 0,
+                "width": 38
+              },
+              "id": 24001,
+              "text": "1",
+              "position": {
+                "height": 32,
+                "left": 70,
+                "top": 15,
+                "width": 40
+              }
+            },
+            {
+              "alignment": 36,
+              "caption": "VideoFilepicSub",
+              "colorTab": {
+                "color0": 16777215
+              },
+              "id": 24002,
+              "picTab": {
+                "pic0": "media/file_vedio_n.png",
+                "pic2": "media/file_vedio_f.png"
+              },
+              "position": {
+                "height": 36,
+                "left": 12,
+                "top": 10,
+                "width": 36
+              }
+            },
+            {
+              "alignment": 36,
+              "caption": "VideoFileListSelectSubItem",
+              "colorTab": {
+                "color0": 16777215
+              },
+              "iconPosition": {
+                "height": 60,
+                "left": 0,
+                "top": 0,
+                "width": 600
+              },
+              "id": 24004,
+              "position": {
+                "height": 60,
+                "left": 0,
+                "top": 0,
+                "width": 650
+              }
+            },
+            {
+              "alignment": 36,
+              "caption": "VideoLineSubItem",
+              "colorTab": {
+                "color0": 16777215
+              },
+              "id": 24005,
+              "picTab": {
+                "pic0": "setting/set_line.png"
+              },
+              "position": {
+                "height": 5,
+                "left": 0,
+                "top": 60,
+                "width": 650
+              }
+            }
+          ]
+        }
+      }
+    },
+    "window__9": {
+      "beepEnable": true,
+      "caption": "scaningWindow",
+      "id": 110003,
+      "modal": true,
+      "visible": false,
+      "position": {
+        "height": 200,
+        "left": 750,
+        "top": 220,
+        "width": 360
+      },
+      "textview__10": {
+        "alignment": 41,
+        "backgroundColor": 0,
+        "caption": "scaningTextView",
+        "colorTab": {
+          "color0": 16777215
+        },
+        "fontSize": 26,
+        "id": 50012,
+        "text": "@scaning",
+        "touchable": false,
+        "position": {
+          "height": 200,
+          "left": 0,
+          "top": 0,
+          "width": 360
+        },
+        "textPosition": {
+          "height": 190,
+          "left": 0,
+          "top": 0,
+          "width": 360
+        }
+      },
+      "pointer__11": {
+        "animatable": false,
+        "caption": "syncPointer",
+        "clockwise": true,
+        "fixedPoint": {
+          "x": 50,
+          "y": 50
+        },
+        "id": 90001,
+        "pointerPic": "media/scaning.png",
+        "pointerSize": {
+          "height": 100,
+          "width": 100
+        },
+        "rotateSpeed": 1,
+        "rotationPoint": {
+          "x": 50,
+          "y": 50
+        },
+        "startAngle": 0,
+        "touchable": false,
+        "position": {
+          "height": 100,
+          "left": 130,
+          "top": 25,
+          "width": 100
+        }
+      }
+    },
+    "window__12": {
+      "beepEnable": true,
+      "caption": "videoPlayWindow",
+      "id": 110002,
+      "position": {
+        "height": 600,
+        "left": 0,
+        "top": 0,
+        "width": 1600
+      },
+      "videoview__13": {
+        "backgroundColor": 0,
+        "beepEnable": true,
+        "caption": "VideoviewTT",
+        "defaultVolume": 5,
+        "id": 95001,
+        "loopPlayback": false,
+        "rotation": 0,
+        "position": {
+          "height": 600,
+          "left": 0,
+          "top": 0,
+          "width": 1550
+        }
+      },
+      "window__14": {
+        "backgroundColor": 0,
+        "beepEnable": true,
+        "caption": "WindowMask",
+        "id": 110006,
+        "position": {
+          "height": 600,
+          "left": 0,
+          "top": 0,
+          "width": 1600
+        }
+      },
+      "button__15": {
+        "alignment": 37,
+        "caption": "VideoCtrlButton",
+        "colorTab": {
+          "color0": 16777215
+        },
+        "iconPosition": {
+          "height": 600,
+          "left": 0,
+          "top": 0,
+          "width": 1024
+        },
+        "id": 20012,
+        "position": {
+          "height": 600,
+          "left": 0,
+          "top": 0,
+          "width": 1600
+        }
+      },
+      "window__16": {
+        "beepEnable": true,
+        "caption": "VideoCtrlWindow",
+        "hideTimeOut": 8,
+        "id": 110004,
+        "modal": true,
+        "position": {
+          "height": 600,
+          "left": 0,
+          "top": 0,
+          "width": 1600
+        },
+        "button__17": {
+          "alignment": 37,
+          "caption": "hideButton",
+          "colorTab": {
+            "color0": 16777215
+          },
+          "iconPosition": {
+            "height": 720,
+            "left": 0,
+            "top": 0,
+            "width": 1920
+          },
+          "id": 20006,
+          "position": {
+            "height": 600,
+            "left": 0,
+            "top": 0,
+            "width": 1600
+          }
+        },
+        "textview__18": {
+          "alignment": 37,
+          "caption": "tittleTextView",
+          "colorTab": {
+            "color0": 16777215
+          },
+          "fontSize": 18,
+          "id": 50003,
+          "touchable": false,
+          "position": {
+            "height": 30,
+            "left": 500,
+            "top": 67,
+            "width": 675
+          }
+        },
+        "textview__19": {
+          "alignment": 36,
+          "backgroundPic": "media/vedio_btn_bg.png",
+          "caption": "bagTextView",
+          "colorTab": {
+            "color0": 16777215
+          },
+          "id": 50001,
+          "touchable": false,
+          "position": {
+            "height": 105,
+            "left": 320,
+            "top": 495,
+            "width": 960
+          }
+        },
+        "textview__20": {
+          "alignment": 38,
+          "bold": true,
+          "caption": "CurPosTextView",
+          "colorTab": {
+            "color0": 16777215
+          },
+          "fontSize": 15,
+          "id": 50002,
+          "text": "00:00",
+          "touchable": false,
+          "position": {
+            "height": 20,
+            "left": 370,
+            "top": 510,
+            "width": 60
+          }
+        },
+        "radiogroup__21": {
+          "caption": "VideoPlaySelectRadioGroup",
+          "id": 94001,
+          "position": {
+            "height": 600,
+            "left": 300,
+            "top": 0,
+            "width": 1024
+          },
+          "radiobuttons": [
+            {
+              "alignment": 38,
+              "caption": "SetVideoPrevRadioButton",
+              "checked": false,
+              "colorTab": {
+                "color0": 16777215
+              },
+              "id": 22048,
+              "picTab": {
+                "pic2": "setting/set_first_menu_select.png"
+              },
+              "position": {
+                "height": 50,
+                "left": 55,
+                "top": 540,
+                "width": 110
+              }
+            },
+            {
+              "alignment": 38,
+              "caption": "SetVideoPlayRadioButton",
+              "checked": false,
+              "colorTab": {
+                "color0": 16777215
+              },
+              "id": 22001,
+              "picTab": {
+                "pic2": "setting/set_first_menu_select.png"
+              },
+              "position": {
+                "height": 50,
+                "left": 215,
+                "top": 540,
+                "width": 110
+              }
+            },
+            {
+              "alignment": 38,
+              "caption": "SetVideoNextRadioButton",
+              "checked": false,
+              "colorTab": {
+                "color0": 16777215
+              },
+              "id": 22002,
+              "picTab": {
+                "pic2": "setting/set_first_menu_select.png"
+              },
+              "position": {
+                "height": 50,
+                "left": 370,
+                "top": 540,
+                "width": 110
+              }
+            },
+            {
+              "alignment": 38,
+              "caption": "SetVideoFullScreenRadioButton",
+              "checked": false,
+              "colorTab": {
+                "color0": 16777215
+              },
+              "id": 22003,
+              "picTab": {
+                "pic2": "setting/set_first_menu_select.png"
+              },
+              "position": {
+                "height": 50,
+                "left": 525,
+                "top": 540,
+                "width": 110
+              }
+            },
+            {
+              "alignment": 38,
+              "caption": "SetVideoModeRadioButton",
+              "checked": false,
+              "colorTab": {
+                "color0": 16777215
+              },
+              "id": 22004,
+              "picTab": {
+                "pic2": "setting/set_first_menu_select.png"
+              },
+              "position": {
+                "height": 50,
+                "left": 670,
+                "top": 540,
+                "width": 110
+              }
+            },
+            {
+              "alignment": 38,
+              "caption": "SetVideoBackRadioButton",
+              "checked": false,
+              "colorTab": {
+                "color0": 16777215
+              },
+              "id": 22005,
+              "picTab": {
+                "pic2": "setting/set_first_menu_select.png"
+              },
+              "position": {
+                "height": 50,
+                "left": 840,
+                "top": 540,
+                "width": 110
+              }
+            }
+          ]
+        },
+        "seekbar__22": {
+          "backgroundPic": "MusicPlayer/music_slide_bg.png",
+          "caption": "PlayProgressSeekbar",
+          "id": 91001,
+          "max": 100,
+          "progressPic": "MusicPlayer/video_slide.png",
+          "thumb": {
+            "normalPic": "MusicPlayer/video_slide_btn.png",
+            "size": {
+              "height": 32,
+              "width": 32
+            }
+          },
+          "position": {
+            "height": 20,
+            "left": 450,
+            "top": 510,
+            "width": 710
+          }
+        },
+        "textview__23": {
+          "alignment": 36,
+          "bold": true,
+          "caption": "DurationTextView",
+          "colorTab": {
+            "color0": 16777215
+          },
+          "fontSize": 15,
+          "id": 50007,
+          "text": "00:00",
+          "touchable": false,
+          "position": {
+            "height": 20,
+            "left": 1180,
+            "top": 510,
+            "width": 60
+          }
+        },
+        "button__24": {
+          "alignment": 37,
+          "caption": "videoListButton",
+          "id": 20007,
+          "picTab": {
+            "pic0": "media/music_btn_list_n.png",
+            "pic1": "media/music_btn_list_f.png"
+          },
+          "position": {
+            "height": 51,
+            "left": 1170,
+            "top": 540,
+            "width": 51
+          }
+        },
+        "button__25": {
+          "alignment": 37,
+          "caption": "playModeButton",
+          "id": 20008,
+          "position": {
+            "height": 51,
+            "left": 1010,
+            "top": 540,
+            "width": 51
+          }
+        },
+        "button__26": {
+          "alignment": 37,
+          "caption": "PrevButton",
+          "colorTab": {
+            "color0": 16777215
+          },
+          "id": 20005,
+          "picTab": {
+            "pic0": "media/video_btn_previous_n.png",
+            "pic1": "media/video_btn_previous_f.png"
+          },
+          "position": {
+            "height": 51,
+            "left": 385,
+            "top": 540,
+            "width": 51
+          }
+        },
+        "button__27": {
+          "alignment": 37,
+          "caption": "PlayButton",
+          "colorTab": {
+            "color0": 16777215
+          },
+          "id": 20009,
+          "picTab": {
+            "pic0": "media/video_btn_pause_n.png",
+            "pic2": "media/video_btn_play_n.png"
+          },
+          "position": {
+            "height": 51,
+            "left": 545,
+            "top": 540,
+            "width": 51
+          }
+        },
+        "button__28": {
+          "alignment": 37,
+          "caption": "NextButton",
+          "colorTab": {
+            "color0": 16777215
+          },
+          "id": 20010,
+          "picTab": {
+            "pic0": "media/video_btn_next_n.png",
+            "pic1": "media/video_btn_next_f.png"
+          },
+          "position": {
+            "height": 51,
+            "left": 700,
+            "top": 540,
+            "width": 51
+          }
+        },
+        "button__29": {
+          "alignment": 37,
+          "caption": "FullScreenButton",
+          "colorTab": {
+            "color0": 16777215
+          },
+          "id": 20001,
+          "picTab": {
+            "pic0": "MusicPlayer/video_btn_screen_n.png",
+            "pic1": "MusicPlayer/video_btn_screen_f.png"
+          },
+          "position": {
+            "height": 51,
+            "left": 855,
+            "top": 540,
+            "width": 51
+          }
+        }
+      }
+    },
+    "textview__30": {
+      "alignment": 37,
+      "caption": "DevicesRemindTextView",
+      "colorTab": {
+        "color0": 16777215
+      },
+      "fontSize": 25,
+      "id": 50010,
+      "text": "@no_devices",
+      "touchable": false,
+      "visible": false,
+      "position": {
+        "height": 60,
+        "left": 640,
+        "top": 260,
+        "width": 500
+      }
+    },
+    "window__31": {
+      "beepEnable": true,
+      "caption": "errorWindow",
+      "hideTimeOut": 3,
+      "id": 110005,
+      "modal": true,
+      "visible": false,
+      "position": {
+        "height": 54,
+        "left": 800,
+        "top": 200,
+        "width": 472
+      },
+      "textview__32": {
+        "alignment": 37,
+        "backgroundColor": 12632256,
+        "caption": "errorTextView",
+        "colorTab": {
+          "color0": 16711680
+        },
+        "fontSize": 18,
+        "id": 50014,
+        "text": "@file_error",
+        "touchable": false,
+        "position": {
+          "height": 54,
+          "left": 0,
+          "top": 0,
+          "width": 472
+        }
+      }
+    },
+    "window__33": {
+      "backgroundPic": "HomePage/home_top_bg.png",
+      "beepEnable": true,
+      "caption": "headWindow",
+      "id": 110008,
+      "position": {
+        "height": 80,
+        "left": 0,
+        "top": 0,
+        "width": 1920
+      },
+      "button__34": {
+        "alignment": 37,
+        "caption": "auxButton",
+        "colorTab": {
+          "color0": 16777215
+        },
+        "id": 20022,
+        "picTab": {
+          "pic0": "status/aux_.png"
+        },
+        "touchable": false,
+        "visible": false,
+        "position": {
+          "height": 20,
+          "left": 743,
+          "top": 19,
+          "width": 20
+        }
+      },
+      "button__35": {
+        "alignment": 37,
+        "caption": "fmButton",
+        "colorTab": {
+          "color0": 16777215
+        },
+        "id": 20011,
+        "picTab": {
+          "pic0": "status/fm.png"
+        },
+        "touchable": false,
+        "visible": false,
+        "position": {
+          "height": 20,
+          "left": 773,
+          "top": 19,
+          "width": 20
+        }
+      },
+      "button__36": {
+        "alignment": 37,
+        "caption": "linkButton",
+        "colorTab": {
+          "color0": 16777215
+        },
+        "id": 20029,
+        "picTab": {
+          "pic0": "status/link.png"
+        },
+        "touchable": false,
+        "visible": false,
+        "position": {
+          "height": 20,
+          "left": 803,
+          "top": 19,
+          "width": 20
+        }
+      },
+      "button__37": {
+        "alignment": 37,
+        "caption": "sdButton",
+        "colorTab": {
+          "color0": 16777215
+        },
+        "id": 20030,
+        "picTab": {
+          "pic0": "status/sd.png"
+        },
+        "touchable": false,
+        "position": {
+          "height": 64,
+          "left": 900,
+          "top": 10,
+          "width": 64
+        }
+      },
+      "button__38": {
+        "alignment": 37,
+        "caption": "btStatusButton",
+        "colorTab": {
+          "color0": 16777215
+        },
+        "id": 20032,
+        "picTab": {
+          "pic0": "status/home_bt.png",
+          "pic2": "status/home_bt_f.png"
+        },
+        "touchable": false,
+        "position": {
+          "height": 64,
+          "left": 830,
+          "top": 10,
+          "width": 64
+        }
+      },
+      "button__39": {
+        "alignment": 37,
+        "caption": "NetButton",
+        "colorTab": {
+          "color0": 16777215
+        },
+        "id": 20033,
+        "picTab": {
+          "pic0": "status/wifi.png"
+        },
+        "touchable": false,
+        "visible": false,
+        "position": {
+          "height": 20,
+          "left": 1345,
+          "top": 19,
+          "width": 20
+        }
+      },
+      "button__40": {
+        "alignment": 37,
+        "caption": "soundButton",
+        "colorTab": {
+          "color0": 16777215
+        },
+        "id": 20034,
+        "picTab": {
+          "pic0": "status/sound.png",
+          "pic2": "status/sound0.png"
+        },
+        "touchable": false,
+        "visible": false,
+        "position": {
+          "height": 20,
+          "left": 1377,
+          "top": 19,
+          "width": 20
+        }
+      },
+      "button__41": {
+        "alignment": 37,
+        "caption": "VideoHomeButton",
+        "colorTab": {
+          "color0": 8421504,
+          "color1": 8388863
+        },
+        "id": 20013,
+        "picTab": {
+          "pic0": "status/home_home_n.png",
+          "pic1": "status/home_home_f.png"
+        },
+        "position": {
+          "height": 80,
+          "left": 0,
+          "top": 0,
+          "width": 154
+        }
+      },
+      "button__42": {
+        "alignment": 37,
+        "caption": "usb1Button",
+        "colorTab": {
+          "color0": 16777215
+        },
+        "id": 20031,
+        "picTab": {
+          "pic0": "status/usb1.png"
+        },
+        "touchable": false,
+        "position": {
+          "height": 64,
+          "left": 970,
+          "top": 10,
+          "width": 66
+        }
+      },
+      "button__43": {
+        "alignment": 37,
+        "caption": "usb2Button",
+        "colorTab": {
+          "color0": 16777215
+        },
+        "id": 20002,
+        "picTab": {
+          "pic0": "status/usb2.png"
+        },
+        "touchable": false,
+        "position": {
+          "height": 64,
+          "left": 1040,
+          "top": 10,
+          "width": 66
+        }
+      },
+      "digitalclock__44": {
+        "beat": true,
+        "caption": "DigitalClock24Hour",
+        "fontSize": 32,
+        "id": 93002,
+        "touchable": false,
+        "position": {
+          "height": 49,
+          "left": 1330,
+          "top": 15,
+          "width": 139
+        }
+      },
+      "digitalclock__45": {
+        "beat": true,
+        "caption": "DigitalClock12Hour",
+        "fontSize": 32,
+        "format": "hh:MM",
+        "id": 93001,
+        "touchable": false,
+        "visible": false,
+        "position": {
+          "height": 49,
+          "left": 1330,
+          "top": 15,
+          "width": 139
+        }
+      },
+      "button__46": {
+        "alignment": 37,
+        "caption": "VideoBackButton",
+        "colorTab": {
+          "color0": 8421504,
+          "color1": 8388863
+        },
+        "id": 20014,
+        "picTab": {
+          "pic0": "status/home_back_n.png",
+          "pic1": "status/home_back_f.png"
+        },
+        "position": {
+          "height": 80,
+          "left": 1420,
+          "top": 0,
+          "width": 154
+        }
+      },
+      "textview__47": {
+        "alignment": 37,
+        "caption": "timeAmPmTextView",
+        "colorTab": {
+          "color0": 16777215
+        },
+        "fontSize": 25,
+        "id": 50004,
+        "text": "AM",
+        "touchable": false,
+        "position": {
+          "height": 40,
+          "left": 1230,
+          "top": 20,
+          "width": 100
+        }
+      }
+    }
+  }
+}

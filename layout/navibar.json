@@ -1,0 +1,19 @@
+{
+  "backgroundColor": -1,
+  "hideTimeOut": -1,
+  "id": 0,
+  "modal": false,
+  "resolution": {
+    "height": 100,
+    "width": 1920
+  },
+  "topmost": true,
+  "touchable": false,
+  "visible": true,
+  "position": {
+    "height": 100,
+    "left": 0,
+    "top": 0,
+    "width": 1920
+  }
+}

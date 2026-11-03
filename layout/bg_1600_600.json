@@ -1,0 +1,763 @@
+{
+  "beepEnable": true,
+  "id": 0,
+  "resolution": {
+    "height": 600,
+    "width": 1600
+  },
+  "topmost": false,
+  "position": {
+    "height": 600,
+    "left": 0,
+    "top": 0,
+    "width": 1600
+  },
+  "window__1": {
+    "backgroundPic": "/bg/bg1.png",
+    "beepEnable": true,
+    "caption": "BBgWindow",
+    "id": 110022,
+    "position": {
+      "height": 600,
+      "left": 0,
+      "top": 0,
+      "width": 1600
+    },
+    "window__2": {
+      "beepEnable": true,
+      "caption": "BgWindow",
+      "id": 110021,
+      "position": {
+        "height": 462,
+        "left": -100,
+        "top": 100,
+        "width": 1500
+      },
+      "radiogroup__3": {
+        "caption": "RotaryBgRadioGroup",
+        "id": 94009,
+        "position": {
+          "height": 462,
+          "left": 0,
+          "top": 0,
+          "width": 1802
+        },
+        "radiobuttons": [
+          {
+            "alignment": 38,
+            "caption": "SetBg1RadioButton",
+            "checked": false,
+            "colorTab": {
+              "color0": 16777215
+            },
+            "id": 22040,
+            "picTab": {
+              "pic2": "setting/set_first_menu_select.png"
+            },
+            "position": {
+              "height": 130,
+              "left": 309,
+              "top": 91,
+              "width": 320
+            }
+          },
+          {
+            "alignment": 38,
+            "caption": "SetBg2RadioButton",
+            "checked": false,
+            "colorTab": {
+              "color0": 16777215
+            },
+            "id": 22041,
+            "picTab": {
+              "pic2": "setting/set_first_menu_select.png"
+            },
+            "position": {
+              "height": 130,
+              "left": 741,
+              "top": 93,
+              "width": 320
+            }
+          },
+          {
+            "alignment": 38,
+            "caption": "SetBg3RadioButton",
+            "checked": false,
+            "colorTab": {
+              "color0": 16777215
+            },
+            "id": 22042,
+            "picTab": {
+              "pic2": "setting/set_first_menu_select.png"
+            },
+            "position": {
+              "height": 130,
+              "left": 1160,
+              "top": 93,
+              "width": 320
+            }
+          },
+          {
+            "alignment": 38,
+            "caption": "SetBg4RadioButton",
+            "checked": false,
+            "colorTab": {
+              "color0": 16777215
+            },
+            "id": 22043,
+            "picTab": {
+              "pic2": "setting/set_first_menu_select.png"
+            },
+            "position": {
+              "height": 130,
+              "left": 309,
+              "top": 261,
+              "width": 320
+            }
+          },
+          {
+            "alignment": 38,
+            "caption": "SetBg5RadioButton",
+            "checked": false,
+            "colorTab": {
+              "color0": 16777215
+            },
+            "id": 22044,
+            "picTab": {
+              "pic2": "setting/set_first_menu_select.png"
+            },
+            "position": {
+              "height": 130,
+              "left": 741,
+              "top": 261,
+              "width": 320
+            }
+          },
+          {
+            "alignment": 38,
+            "caption": "SetBg6RadioButton",
+            "checked": false,
+            "colorTab": {
+              "color0": 16777215
+            },
+            "id": 22045,
+            "picTab": {
+              "pic2": "setting/set_first_menu_select.png"
+            },
+            "position": {
+              "height": 130,
+              "left": 1160,
+              "top": 261,
+              "width": 320
+            }
+          }
+        ]
+      },
+      "radiogroup__4": {
+        "caption": "BgRadioGroup",
+        "id": 94002,
+        "position": {
+          "height": 462,
+          "left": 0,
+          "top": 0,
+          "width": 1802
+        },
+        "radiobuttons": [
+          {
+            "alignment": 38,
+            "bgColorTab": {
+              "color2": 5601532
+            },
+            "caption": "BgRadioButton1",
+            "checked": false,
+            "colorTab": {
+              "color0": 16777215
+            },
+            "id": 22005,
+            "picTab": {
+              "pic0": "bg/home_bg1_n.png",
+              "pic1": "bg/home_bg1_f.png",
+              "pic2": "bg/home_bg1_f.png"
+            },
+            "position": {
+              "height": 116,
+              "left": 315,
+              "top": 100,
+              "width": 310
+            }
+          },
+          {
+            "alignment": 38,
+            "bgColorTab": {
+              "color2": 5601532
+            },
+            "caption": "BgRadioButton2",
+            "checked": false,
+            "colorTab": {
+              "color0": 16777215
+            },
+            "id": 22006,
+            "picTab": {
+              "pic0": "bg/home_bg2_n.png",
+              "pic1": "bg/home_bg2_f.png",
+              "pic2": "bg/home_bg2_f.png"
+            },
+            "position": {
+              "height": 116,
+              "left": 746,
+              "top": 100,
+              "width": 310
+            }
+          },
+          {
+            "alignment": 38,
+            "bgColorTab": {
+              "color2": 5601532
+            },
+            "caption": "BgRadioButton3",
+            "checked": false,
+            "colorTab": {
+              "color0": 16777215
+            },
+            "id": 22007,
+            "picTab": {
+              "pic0": "bg/home_bg3_n.png",
+              "pic1": "bg/home_bg3_f.png",
+              "pic2": "bg/home_bg3_f.png"
+            },
+            "position": {
+              "height": 116,
+              "left": 1165,
+              "top": 100,
+              "width": 310
+            }
+          },
+          {
+            "alignment": 38,
+            "bgColorTab": {
+              "color2": 5601532
+            },
+            "caption": "BgRadioButton4",
+            "checked": false,
+            "colorTab": {
+              "color0": 16777215
+            },
+            "id": 22008,
+            "picTab": {
+              "pic0": "bg/home_bg4_n.png",
+              "pic1": "bg/home_bg4_f.png",
+              "pic2": "bg/home_bg4_f.png"
+            },
+            "position": {
+              "height": 116,
+              "left": 315,
+              "top": 268,
+              "width": 310
+            }
+          },
+          {
+            "alignment": 38,
+            "bgColorTab": {
+              "color2": 5601532
+            },
+            "caption": "BgRadioButton5",
+            "checked": false,
+            "colorTab": {
+              "color0": 16777215
+            },
+            "id": 22009,
+            "picTab": {
+              "pic0": "bg/home_bg5_n.png",
+              "pic1": "bg/home_bg5_f.png",
+              "pic2": "bg/home_bg5_f.png"
+            },
+            "position": {
+              "height": 116,
+              "left": 746,
+              "top": 268,
+              "width": 310
+            }
+          },
+          {
+            "alignment": 37,
+            "bgColorTab": {
+              "color2": 5601532
+            },
+            "caption": "BgRadioButton6",
+            "checked": false,
+            "colorTab": {
+              "color0": 16777215
+            },
+            "id": 22010,
+            "picTab": {
+              "pic0": "bg/home_bg6_n.png",
+              "pic1": "bg/home_bg6_f.png",
+              "pic2": "bg/home_bg6_f.png"
+            },
+            "text": "@set_bg_custom",
+            "position": {
+              "height": 116,
+              "left": 1165,
+              "top": 268,
+              "width": 310
+            }
+          }
+        ]
+      }
+    },
+    "window__5": {
+      "backgroundColor": 0,
+      "beepEnable": true,
+      "caption": "customWindow",
+      "id": 110001,
+      "visible": false,
+      "position": {
+        "height": 350,
+        "left": 400,
+        "top": 130,
+        "width": 600
+      },
+      "radiogroup__6": {
+        "caption": "customBgSelectRadioGroup",
+        "id": 94004,
+        "position": {
+          "height": 350,
+          "left": 0,
+          "top": 0,
+          "width": 600
+        },
+        "radiobuttons": [
+          {
+            "alignment": 38,
+            "caption": "SetCustomBgConfirRadioButton",
+            "checked": false,
+            "colorTab": {
+              "color0": 16777215
+            },
+            "id": 22014,
+            "picTab": {
+              "pic2": "setting/set_first_menu_select.png"
+            },
+            "position": {
+              "height": 65,
+              "left": 80,
+              "top": 275,
+              "width": 150
+            }
+          },
+          {
+            "alignment": 38,
+            "caption": "SetCustomBgImportRadioButton",
+            "checked": false,
+            "colorTab": {
+              "color0": 16777215
+            },
+            "iconPosition": {
+              "height": 68,
+              "left": 0,
+              "top": 0,
+              "width": 284
+            },
+            "id": 22015,
+            "picTab": {
+              "pic2": "setting/set_first_menu_select.png"
+            },
+            "position": {
+              "height": 65,
+              "left": 407,
+              "top": 275,
+              "width": 150
+            }
+          }
+        ]
+      },
+      "textview__7": {
+        "alignment": 36,
+        "caption": "customRemindTextView1",
+        "colorTab": {
+          "color0": 16777215
+        },
+        "fontSize": 20,
+        "id": 50001,
+        "text": "@set_bg_custom_remind1",
+        "touchable": false,
+        "position": {
+          "height": 30,
+          "left": 100,
+          "top": 30,
+          "width": 500
+        }
+      },
+      "textview__8": {
+        "alignment": 36,
+        "caption": "customRemindTextView2",
+        "colorTab": {
+          "color0": 16777215
+        },
+        "fontSize": 20,
+        "id": 50002,
+        "text": "@set_bg_custom_remind2",
+        "touchable": false,
+        "position": {
+          "height": 30,
+          "left": 100,
+          "top": 80,
+          "width": 500
+        }
+      },
+      "textview__9": {
+        "alignment": 36,
+        "caption": "customRemindTextView3",
+        "colorTab": {
+          "color0": 16777215
+        },
+        "fontSize": 20,
+        "id": 50003,
+        "text": "@set_bg_custom_remind3",
+        "touchable": false,
+        "position": {
+          "height": 30,
+          "left": 100,
+          "top": 130,
+          "width": 500
+        }
+      },
+      "textview__10": {
+        "alignment": 36,
+        "caption": "customRemindTextView4",
+        "colorTab": {
+          "color0": 16777215
+        },
+        "fontSize": 20,
+        "id": 50004,
+        "text": "@set_bg_custom_remind4",
+        "touchable": false,
+        "position": {
+          "height": 30,
+          "left": 99,
+          "top": 180,
+          "width": 500
+        }
+      },
+      "textview__11": {
+        "alignment": 36,
+        "caption": "customRemindTextView5",
+        "colorTab": {
+          "color0": 16777215
+        },
+        "fontSize": 20,
+        "id": 50005,
+        "text": "@set_bg_custom_remind5",
+        "touchable": false,
+        "position": {
+          "height": 30,
+          "left": 99,
+          "top": 230,
+          "width": 500
+        }
+      },
+      "button__12": {
+        "alignment": 37,
+        "caption": "customImportButton",
+        "colorTab": {
+          "color0": 16777215
+        },
+        "id": 20002,
+        "picTab": {
+          "pic0": "setting/set_btn_s_n.png",
+          "pic1": "setting/set_btn_s_f.png"
+        },
+        "text": "@set_bg_custom_import",
+        "position": {
+          "height": 65,
+          "left": 408,
+          "top": 275,
+          "width": 150
+        }
+      },
+      "button__13": {
+        "alignment": 37,
+        "caption": "customExitButton",
+        "colorTab": {
+          "color0": 16777215
+        },
+        "id": 20004,
+        "picTab": {
+          "pic0": "setting/set_btn_s_n.png",
+          "pic1": "setting/set_btn_s_f.png"
+        },
+        "text": "@set_bg_custom_exit",
+        "position": {
+          "height": 65,
+          "left": 79,
+          "top": 275,
+          "width": 150
+        }
+      }
+    },
+    "window__14": {
+      "backgroundPic": "HomePage/home_top_bg.png",
+      "beepEnable": true,
+      "caption": "headWindow",
+      "id": 110018,
+      "position": {
+        "height": 80,
+        "left": 0,
+        "top": 0,
+        "width": 1600
+      },
+      "button__15": {
+        "alignment": 37,
+        "caption": "auxButton",
+        "colorTab": {
+          "color0": 16777215
+        },
+        "id": 20022,
+        "picTab": {
+          "pic0": "status/aux_.png"
+        },
+        "touchable": false,
+        "visible": false,
+        "position": {
+          "height": 20,
+          "left": 743,
+          "top": 19,
+          "width": 20
+        }
+      },
+      "button__16": {
+        "alignment": 37,
+        "caption": "fmButton",
+        "colorTab": {
+          "color0": 16777215
+        },
+        "id": 20003,
+        "picTab": {
+          "pic0": "status/fm.png"
+        },
+        "touchable": false,
+        "visible": false,
+        "position": {
+          "height": 20,
+          "left": 773,
+          "top": 19,
+          "width": 20
+        }
+      },
+      "button__17": {
+        "alignment": 37,
+        "caption": "linkButton",
+        "colorTab": {
+          "color0": 16777215
+        },
+        "id": 20021,
+        "picTab": {
+          "pic0": "status/link.png"
+        },
+        "touchable": false,
+        "visible": false,
+        "position": {
+          "height": 20,
+          "left": 803,
+          "top": 19,
+          "width": 20
+        }
+      },
+      "button__18": {
+        "alignment": 37,
+        "caption": "sdButton",
+        "colorTab": {
+          "color0": 16777215
+        },
+        "id": 20030,
+        "picTab": {
+          "pic0": "status/sd.png"
+        },
+        "touchable": false,
+        "position": {
+          "height": 64,
+          "left": 970,
+          "top": 10,
+          "width": 64
+        }
+      },
+      "button__19": {
+        "alignment": 37,
+        "caption": "NetButton",
+        "colorTab": {
+          "color0": 16777215
+        },
+        "id": 20033,
+        "picTab": {
+          "pic0": "status/wifi.png"
+        },
+        "touchable": false,
+        "visible": false,
+        "position": {
+          "height": 20,
+          "left": 1345,
+          "top": 19,
+          "width": 20
+        }
+      },
+      "button__20": {
+        "alignment": 37,
+        "caption": "soundButton",
+        "colorTab": {
+          "color0": 16777215
+        },
+        "id": 20034,
+        "picTab": {
+          "pic0": "status/sound.png",
+          "pic2": "status/sound0.png"
+        },
+        "touchable": false,
+        "visible": false,
+        "position": {
+          "height": 20,
+          "left": 1377,
+          "top": 19,
+          "width": 20
+        }
+      },
+      "button__21": {
+        "alignment": 37,
+        "caption": "bgHomeButton",
+        "colorTab": {
+          "color0": 8421504,
+          "color1": 8388863
+        },
+        "id": 20023,
+        "picTab": {
+          "pic0": "status/home_home_n.png",
+          "pic1": "status/home_home_f.png"
+        },
+        "position": {
+          "height": 80,
+          "left": 0,
+          "top": 0,
+          "width": 154
+        }
+      },
+      "button__22": {
+        "alignment": 37,
+        "caption": "btStatusButton",
+        "colorTab": {
+          "color0": 16777215
+        },
+        "id": 20032,
+        "picTab": {
+          "pic0": "status/home_bt.png",
+          "pic2": "status/home_bt_f.png"
+        },
+        "touchable": false,
+        "position": {
+          "height": 64,
+          "left": 900,
+          "top": 10,
+          "width": 64
+        }
+      },
+      "button__23": {
+        "alignment": 37,
+        "caption": "usb1Button",
+        "colorTab": {
+          "color0": 16777215
+        },
+        "id": 20031,
+        "picTab": {
+          "pic0": "status/usb1.png"
+        },
+        "touchable": false,
+        "position": {
+          "height": 64,
+          "left": 1040,
+          "top": 10,
+          "width": 66
+        }
+      },
+      "button__24": {
+        "alignment": 37,
+        "caption": "usb2Button",
+        "colorTab": {
+          "color0": 16777215
+        },
+        "id": 20005,
+        "picTab": {
+          "pic0": "status/usb2.png"
+        },
+        "touchable": false,
+        "position": {
+          "height": 64,
+          "left": 1110,
+          "top": 10,
+          "width": 66
+        }
+      },
+      "digitalclock__25": {
+        "beat": true,
+        "caption": "DigitalClock24Hour",
+        "fontSize": 32,
+        "id": 93002,
+        "touchable": false,
+        "position": {
+          "height": 49,
+          "left": 1350,
+          "top": 15,
+          "width": 139
+        }
+      },
+      "digitalclock__26": {
+        "beat": true,
+        "caption": "DigitalClock12Hour",
+        "fontSize": 32,
+        "format": "hh:MM",
+        "id": 93001,
+        "touchable": false,
+        "visible": false,
+        "position": {
+          "height": 49,
+          "left": 1350,
+          "top": 15,
+          "width": 139
+        }
+      },
+      "button__27": {
+        "alignment": 37,
+        "caption": "bgBackButton",
+        "colorTab": {
+          "color0": 8421504,
+          "color1": 8388863
+        },
+        "id": 20024,
+        "picTab": {
+          "pic0": "status/home_back_n.png",
+          "pic1": "status/home_back_f.png"
+        },
+        "position": {
+          "height": 80,
+          "left": 1440,
+          "top": 0,
+          "width": 154
+        }
+      },
+      "textview__28": {
+        "alignment": 37,
+        "caption": "timeAmPmTextView",
+        "colorTab": {
+          "color0": 16777215
+        },
+        "fontSize": 25,
+        "id": 50006,
+        "text": "AP",
+        "touchable": false,
+        "position": {
+          "height": 40,
+          "left": 1234,
+          "top": 20,
+          "width": 100
+        }
+      }
+    }
+  }
+}
