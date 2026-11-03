@@ -1,0 +1,44 @@
+<!doctype html>
+<html lang="it">
+<head>
+<meta charset="utf-8">
+<title>Simulatore DisplayAuto</title>
+<meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
+<meta name="claude:viewport-fit-sides" content="cover">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Barlow:wght@400;500;600&family=Barlow+Condensed:wght@500;600&family=JetBrains+Mono:wght@400&display=swap">
+<link rel="stylesheet" href="style.css">
+</head>
+<body>
+<div class="app">
+  <header class="topline">
+    <h1>DisplayAuto · Simulatore</h1>
+    <span class="meta">FlyThings V2.1 / ZKOS · Zkswe_T113_SPINOR · 1920×720 · NT113</span>
+    <span class="spacer"></span>
+    <button class="btn" id="btnEdit" type="button" aria-pressed="false" title="Tasto E">✎ Modifica sullo schermo</button>
+    <button class="btn primary" id="btnExport" type="button">Esporta per ADB</button>
+  </header>
+
+  <main class="stage">
+    <div class="bezel"><div class="viewport" id="viewport"><div id="screen"></div></div></div>
+    <div class="simbar" id="simbar"></div>
+    <p class="hint">Tocca le icone come sul display. Trascina o usa la rotellina per scorrere la home. <kbd>Esc</kbd> indietro · <kbd>H</kbd> home · <kbd>E</kbd> modalità modifica (clic su una scritta = cambia testo, clic su un'immagine = sostituisci).</p>
+  </main>
+
+  <aside class="panel" id="panel">
+    <div class="tabs" role="tablist" id="tabs">
+      <button role="tab" data-tab="testi" aria-selected="true" type="button">Testi <span class="count" id="cntTxt" hidden></span></button>
+      <button role="tab" data-tab="immagini" aria-selected="false" type="button">Immagini <span class="count" id="cntImg" hidden></span></button>
+      <button role="tab" data-tab="esporta" aria-selected="false" type="button">Esporta</button>
+    </div>
+    <div class="tabpane" id="pane"></div>
+  </aside>
+</div>
+
+<input type="file" id="filepick" accept="image/png,image/jpeg,image/webp" hidden>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/jszip/3.10.1/jszip.min.js"></script>
+<script src="data/strings.js"></script>
+<script src="data/images.js"></script>
+<script src="app.js"></script>
+</body>
+</html>
