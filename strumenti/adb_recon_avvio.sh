@@ -1,5 +1,5 @@
 #!/bin/bash
-# SOLO LETTURA: scopre come si avvia il display (logo di avvio, script di init, chi lancia fbviewer).
+# SOLO LETTURA (copia file dal display sul Mac, non scrive nulla sul display): scopre come si avvia il display (logo di avvio, script di init, chi lancia fbviewer).
 # Non scrive niente sul display. Lancialo connesso alla WiFi lylink_DBF07ACC: bash adb_recon_avvio.sh
 DIR="$(cd "$(dirname "$0")" && pwd)"
 ADB="$DIR/platform-tools/adb"; [ -x "$ADB" ] || ADB="$(command -v adb)"
@@ -35,6 +35,12 @@ sh df
 echo "=== copia di /etc sul Mac (per leggere gli script con calma) ==="
 mkdir -p "$BK"
 "$ADB" -s $IP pull /etc "$BK/etc"
+echo "=== librerie e programmi di sistema (libeasyui.so, libzkhardware.so, adbd...) ==="
+for d in /lib /usr/lib /bin /sbin /usr/bin /usr/sbin /system/bin /system/lib; do
+  sh ls -d $d >/dev/null 2>&1 && "$ADB" -s $IP pull $d "$BK$d" 2>&1 | tail -1
+done
+echo "=== chi avvia adbd e l'interfaccia (serve a sapere se adb resta vivo se la UI non parte) ==="
+grep -rnI -E "adbd|5555|libzkgui|EasyUI|zkgui|/res/bin|startup" "$BK/etc" 2>/dev/null
 echo "=== chi usa fbviewer / home.png / logo (ricerca sul Mac) ==="
 grep -rnI -E "fbviewer|home\.png|logo|zkgui|EasyUI|boot" "$BK/etc" 2>/dev/null
 echo "########## FINE: output in $OUT, copia di /etc in $BK ##########"
