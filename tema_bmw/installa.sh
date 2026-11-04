@@ -1,5 +1,5 @@
 #!/bin/bash
-# Installa il tema sul display: 1 file di testi + 262 immagini + 2 file di sistema (layout .ftu e font).
+# Installa il tema sul display: 1 file di testi + 277 immagini + 2 file di sistema (layout .ftu e font).
 #   bash installa.sh                    tema completo (con layout del cruscotto e font)
 #   bash installa.sh --solo-immagini    solo testi e immagini, niente layout né font: il rischio minore
 # 1) Collega il Mac alla WiFi lylink_DBF07ACC   2) lancia lo script
@@ -36,6 +36,7 @@ mkdir -p "$BK/res/ui/bg"
 mkdir -p "$BK/res/ui/bt"
 mkdir -p "$BK/res/ui/car"
 mkdir -p "$BK/res/ui/dash"
+mkdir -p "$BK/res/ui/door"
 mkdir -p "$BK/res/ui/link"
 mkdir -p "$BK/res/ui/media"
 mkdir -p "$BK/res/ui/setting"
@@ -201,6 +202,7 @@ mkdir -p "$BK/res/ui/wifi"
 "$ADB" -s $IP pull "/res/ui/bt/head.png" "$BK/res/ui/bt/head.png" >/dev/null || { echo "Backup fallito: /res/ui/bt/head.png. Interrompo senza toccare nulla."; exit 1; }
 "$ADB" -s $IP pull "/res/ui/bt/set_fullscreen_bg.png" "$BK/res/ui/bt/set_fullscreen_bg.png" >/dev/null || { echo "Backup fallito: /res/ui/bt/set_fullscreen_bg.png. Interrompo senza toccare nulla."; exit 1; }
 "$ADB" -s $IP pull "/res/ui/bt/za_btmusic_defaultcover.png" "$BK/res/ui/bt/za_btmusic_defaultcover.png" >/dev/null || { echo "Backup fallito: /res/ui/bt/za_btmusic_defaultcover.png. Interrompo senza toccare nulla."; exit 1; }
+"$ADB" -s $IP pull "/res/ui/car/car.png" "$BK/res/ui/car/car.png" >/dev/null || { echo "Backup fallito: /res/ui/car/car.png. Interrompo senza toccare nulla."; exit 1; }
 "$ADB" -s $IP pull "/res/ui/car/car_adjust_bg.png" "$BK/res/ui/car/car_adjust_bg.png" >/dev/null || { echo "Backup fallito: /res/ui/car/car_adjust_bg.png. Interrompo senza toccare nulla."; exit 1; }
 "$ADB" -s $IP pull "/res/ui/car/car_adjust_down_f.png" "$BK/res/ui/car/car_adjust_down_f.png" >/dev/null || { echo "Backup fallito: /res/ui/car/car_adjust_down_f.png. Interrompo senza toccare nulla."; exit 1; }
 "$ADB" -s $IP pull "/res/ui/car/car_adjust_down_n.png" "$BK/res/ui/car/car_adjust_down_n.png" >/dev/null || { echo "Backup fallito: /res/ui/car/car_adjust_down_n.png. Interrompo senza toccare nulla."; exit 1; }
@@ -218,6 +220,20 @@ mkdir -p "$BK/res/ui/wifi"
 "$ADB" -s $IP pull "/res/ui/dash/dash_bg_china.png" "$BK/res/ui/dash/dash_bg_china.png" >/dev/null || { echo "Backup fallito: /res/ui/dash/dash_bg_china.png. Interrompo senza toccare nulla."; exit 1; }
 "$ADB" -s $IP pull "/res/ui/dash/dash_bg_english.png" "$BK/res/ui/dash/dash_bg_english.png" >/dev/null || { echo "Backup fallito: /res/ui/dash/dash_bg_english.png. Interrompo senza toccare nulla."; exit 1; }
 "$ADB" -s $IP pull "/res/ui/dash/press_bg_yellow.png" "$BK/res/ui/dash/press_bg_yellow.png" >/dev/null || { echo "Backup fallito: /res/ui/dash/press_bg_yellow.png. Interrompo senza toccare nulla."; exit 1; }
+"$ADB" -s $IP pull "/res/ui/door/alert_car.png" "$BK/res/ui/door/alert_car.png" >/dev/null || { echo "Backup fallito: /res/ui/door/alert_car.png. Interrompo senza toccare nulla."; exit 1; }
+"$ADB" -s $IP pull "/res/ui/door/alert_car_engine.png" "$BK/res/ui/door/alert_car_engine.png" >/dev/null || { echo "Backup fallito: /res/ui/door/alert_car_engine.png. Interrompo senza toccare nulla."; exit 1; }
+"$ADB" -s $IP pull "/res/ui/door/alert_car_engine_open.png" "$BK/res/ui/door/alert_car_engine_open.png" >/dev/null || { echo "Backup fallito: /res/ui/door/alert_car_engine_open.png. Interrompo senza toccare nulla."; exit 1; }
+"$ADB" -s $IP pull "/res/ui/door/alert_car_left_front_door.png" "$BK/res/ui/door/alert_car_left_front_door.png" >/dev/null || { echo "Backup fallito: /res/ui/door/alert_car_left_front_door.png. Interrompo senza toccare nulla."; exit 1; }
+"$ADB" -s $IP pull "/res/ui/door/alert_car_left_front_door_open.png" "$BK/res/ui/door/alert_car_left_front_door_open.png" >/dev/null || { echo "Backup fallito: /res/ui/door/alert_car_left_front_door_open.png. Interrompo senza toccare nulla."; exit 1; }
+"$ADB" -s $IP pull "/res/ui/door/alert_car_left_rear_door.png" "$BK/res/ui/door/alert_car_left_rear_door.png" >/dev/null || { echo "Backup fallito: /res/ui/door/alert_car_left_rear_door.png. Interrompo senza toccare nulla."; exit 1; }
+"$ADB" -s $IP pull "/res/ui/door/alert_car_left_rear_door_open.png" "$BK/res/ui/door/alert_car_left_rear_door_open.png" >/dev/null || { echo "Backup fallito: /res/ui/door/alert_car_left_rear_door_open.png. Interrompo senza toccare nulla."; exit 1; }
+"$ADB" -s $IP pull "/res/ui/door/alert_car_rear.png" "$BK/res/ui/door/alert_car_rear.png" >/dev/null || { echo "Backup fallito: /res/ui/door/alert_car_rear.png. Interrompo senza toccare nulla."; exit 1; }
+"$ADB" -s $IP pull "/res/ui/door/alert_car_rear_open.png" "$BK/res/ui/door/alert_car_rear_open.png" >/dev/null || { echo "Backup fallito: /res/ui/door/alert_car_rear_open.png. Interrompo senza toccare nulla."; exit 1; }
+"$ADB" -s $IP pull "/res/ui/door/alert_car_right_front_door.png" "$BK/res/ui/door/alert_car_right_front_door.png" >/dev/null || { echo "Backup fallito: /res/ui/door/alert_car_right_front_door.png. Interrompo senza toccare nulla."; exit 1; }
+"$ADB" -s $IP pull "/res/ui/door/alert_car_right_front_door_open.png" "$BK/res/ui/door/alert_car_right_front_door_open.png" >/dev/null || { echo "Backup fallito: /res/ui/door/alert_car_right_front_door_open.png. Interrompo senza toccare nulla."; exit 1; }
+"$ADB" -s $IP pull "/res/ui/door/alert_car_right_rear_door.png" "$BK/res/ui/door/alert_car_right_rear_door.png" >/dev/null || { echo "Backup fallito: /res/ui/door/alert_car_right_rear_door.png. Interrompo senza toccare nulla."; exit 1; }
+"$ADB" -s $IP pull "/res/ui/door/alert_car_right_rear_door_open.png" "$BK/res/ui/door/alert_car_right_rear_door_open.png" >/dev/null || { echo "Backup fallito: /res/ui/door/alert_car_right_rear_door_open.png. Interrompo senza toccare nulla."; exit 1; }
+"$ADB" -s $IP pull "/res/ui/door/alert_carinfo_bg.png" "$BK/res/ui/door/alert_carinfo_bg.png" >/dev/null || { echo "Backup fallito: /res/ui/door/alert_carinfo_bg.png. Interrompo senza toccare nulla."; exit 1; }
 "$ADB" -s $IP pull "/res/ui/link/incom_remind.png" "$BK/res/ui/link/incom_remind.png" >/dev/null || { echo "Backup fallito: /res/ui/link/incom_remind.png. Interrompo senza toccare nulla."; exit 1; }
 "$ADB" -s $IP pull "/res/ui/media/file_vedio_f.png" "$BK/res/ui/media/file_vedio_f.png" >/dev/null || { echo "Backup fallito: /res/ui/media/file_vedio_f.png. Interrompo senza toccare nulla."; exit 1; }
 "$ADB" -s $IP pull "/res/ui/media/musicBtn.png" "$BK/res/ui/media/musicBtn.png" >/dev/null || { echo "Backup fallito: /res/ui/media/musicBtn.png. Interrompo senza toccare nulla."; exit 1; }
@@ -470,6 +486,7 @@ ERR=0
 "$ADB" -s $IP push "res/ui/bt/head.png" "/res/ui/bt/head.png" >/dev/null || { echo "Invio fallito: /res/ui/bt/head.png"; ERR=1; }
 "$ADB" -s $IP push "res/ui/bt/set_fullscreen_bg.png" "/res/ui/bt/set_fullscreen_bg.png" >/dev/null || { echo "Invio fallito: /res/ui/bt/set_fullscreen_bg.png"; ERR=1; }
 "$ADB" -s $IP push "res/ui/bt/za_btmusic_defaultcover.png" "/res/ui/bt/za_btmusic_defaultcover.png" >/dev/null || { echo "Invio fallito: /res/ui/bt/za_btmusic_defaultcover.png"; ERR=1; }
+"$ADB" -s $IP push "res/ui/car/car.png" "/res/ui/car/car.png" >/dev/null || { echo "Invio fallito: /res/ui/car/car.png"; ERR=1; }
 "$ADB" -s $IP push "res/ui/car/car_adjust_bg.png" "/res/ui/car/car_adjust_bg.png" >/dev/null || { echo "Invio fallito: /res/ui/car/car_adjust_bg.png"; ERR=1; }
 "$ADB" -s $IP push "res/ui/car/car_adjust_down_f.png" "/res/ui/car/car_adjust_down_f.png" >/dev/null || { echo "Invio fallito: /res/ui/car/car_adjust_down_f.png"; ERR=1; }
 "$ADB" -s $IP push "res/ui/car/car_adjust_down_n.png" "/res/ui/car/car_adjust_down_n.png" >/dev/null || { echo "Invio fallito: /res/ui/car/car_adjust_down_n.png"; ERR=1; }
@@ -489,6 +506,20 @@ ERR=0
 "$ADB" -s $IP push "res/ui/dash/press_bg_blue.png" "/res/ui/dash/press_bg_blue.png" >/dev/null || { echo "Invio fallito: /res/ui/dash/press_bg_blue.png"; ERR=1; }
 "$ADB" -s $IP push "res/ui/dash/press_bg_red.png" "/res/ui/dash/press_bg_red.png" >/dev/null || { echo "Invio fallito: /res/ui/dash/press_bg_red.png"; ERR=1; }
 "$ADB" -s $IP push "res/ui/dash/press_bg_yellow.png" "/res/ui/dash/press_bg_yellow.png" >/dev/null || { echo "Invio fallito: /res/ui/dash/press_bg_yellow.png"; ERR=1; }
+"$ADB" -s $IP push "res/ui/door/alert_car.png" "/res/ui/door/alert_car.png" >/dev/null || { echo "Invio fallito: /res/ui/door/alert_car.png"; ERR=1; }
+"$ADB" -s $IP push "res/ui/door/alert_car_engine.png" "/res/ui/door/alert_car_engine.png" >/dev/null || { echo "Invio fallito: /res/ui/door/alert_car_engine.png"; ERR=1; }
+"$ADB" -s $IP push "res/ui/door/alert_car_engine_open.png" "/res/ui/door/alert_car_engine_open.png" >/dev/null || { echo "Invio fallito: /res/ui/door/alert_car_engine_open.png"; ERR=1; }
+"$ADB" -s $IP push "res/ui/door/alert_car_left_front_door.png" "/res/ui/door/alert_car_left_front_door.png" >/dev/null || { echo "Invio fallito: /res/ui/door/alert_car_left_front_door.png"; ERR=1; }
+"$ADB" -s $IP push "res/ui/door/alert_car_left_front_door_open.png" "/res/ui/door/alert_car_left_front_door_open.png" >/dev/null || { echo "Invio fallito: /res/ui/door/alert_car_left_front_door_open.png"; ERR=1; }
+"$ADB" -s $IP push "res/ui/door/alert_car_left_rear_door.png" "/res/ui/door/alert_car_left_rear_door.png" >/dev/null || { echo "Invio fallito: /res/ui/door/alert_car_left_rear_door.png"; ERR=1; }
+"$ADB" -s $IP push "res/ui/door/alert_car_left_rear_door_open.png" "/res/ui/door/alert_car_left_rear_door_open.png" >/dev/null || { echo "Invio fallito: /res/ui/door/alert_car_left_rear_door_open.png"; ERR=1; }
+"$ADB" -s $IP push "res/ui/door/alert_car_rear.png" "/res/ui/door/alert_car_rear.png" >/dev/null || { echo "Invio fallito: /res/ui/door/alert_car_rear.png"; ERR=1; }
+"$ADB" -s $IP push "res/ui/door/alert_car_rear_open.png" "/res/ui/door/alert_car_rear_open.png" >/dev/null || { echo "Invio fallito: /res/ui/door/alert_car_rear_open.png"; ERR=1; }
+"$ADB" -s $IP push "res/ui/door/alert_car_right_front_door.png" "/res/ui/door/alert_car_right_front_door.png" >/dev/null || { echo "Invio fallito: /res/ui/door/alert_car_right_front_door.png"; ERR=1; }
+"$ADB" -s $IP push "res/ui/door/alert_car_right_front_door_open.png" "/res/ui/door/alert_car_right_front_door_open.png" >/dev/null || { echo "Invio fallito: /res/ui/door/alert_car_right_front_door_open.png"; ERR=1; }
+"$ADB" -s $IP push "res/ui/door/alert_car_right_rear_door.png" "/res/ui/door/alert_car_right_rear_door.png" >/dev/null || { echo "Invio fallito: /res/ui/door/alert_car_right_rear_door.png"; ERR=1; }
+"$ADB" -s $IP push "res/ui/door/alert_car_right_rear_door_open.png" "/res/ui/door/alert_car_right_rear_door_open.png" >/dev/null || { echo "Invio fallito: /res/ui/door/alert_car_right_rear_door_open.png"; ERR=1; }
+"$ADB" -s $IP push "res/ui/door/alert_carinfo_bg.png" "/res/ui/door/alert_carinfo_bg.png" >/dev/null || { echo "Invio fallito: /res/ui/door/alert_carinfo_bg.png"; ERR=1; }
 "$ADB" -s $IP push "res/ui/link/incom_remind.png" "/res/ui/link/incom_remind.png" >/dev/null || { echo "Invio fallito: /res/ui/link/incom_remind.png"; ERR=1; }
 "$ADB" -s $IP push "res/ui/media/file_vedio_f.png" "/res/ui/media/file_vedio_f.png" >/dev/null || { echo "Invio fallito: /res/ui/media/file_vedio_f.png"; ERR=1; }
 "$ADB" -s $IP push "res/ui/media/musicBtn.png" "/res/ui/media/musicBtn.png" >/dev/null || { echo "Invio fallito: /res/ui/media/musicBtn.png"; ERR=1; }

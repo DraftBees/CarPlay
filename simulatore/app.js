@@ -296,7 +296,7 @@ screens.car = () => {
       ${S.sw.radarDisp ? I('car/fradar_0.png', 'position:absolute;left:187px;top:20px') + I('car/rradar_0.png', 'position:absolute;left:187px;top:420px') : ''}
       ${I('car/car.png', 'position:absolute;left:185px;top:140px')}
     </div>
-    <div class="abs" style="left:720px;top:40px;width:664px;height:480px">${I('door/alert_carinfo_bg.png', 'position:absolute;inset:0;width:664px;height:480px')}${I('door/alert_car.png', 'position:absolute;inset:0;width:664px;height:480px')}${layers}</div>
+    <div class="abs" style="left:720px;top:40px;width:664px;height:480px">${I('door/alert_carinfo_bg.png', 'position:absolute;inset:0;width:664px;height:480px')}${I('door/alert_car.png', 'position:absolute;inset:0;width:664px;height:480px')}${d.hood ? '' : I('door/alert_car_engine.png', 'position:absolute;inset:0;width:664px;height:480px')}${layers}</div>
     <div class="abs" style="left:1440px;top:60px;width:440px;display:flex;flex-direction:column;gap:18px;font-size:28px">
       <div>${T('107_version_test', 'lbl', 'position:static')}<br><span class="dim">—</span></div>
       <div>${T('can_version_test', 'lbl', 'position:static')}<br><span class="dim">can-bm-02-bm113-hd43</span></div>

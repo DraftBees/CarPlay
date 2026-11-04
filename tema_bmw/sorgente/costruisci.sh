@@ -8,6 +8,7 @@ RAW="$(mktemp -d)"
 python3 -I prepara_logo.py
 [ -n "$LUCIDE" ] && python3 -I estrai_icone.py "$LUCIDE"   # opzionale: cartella lucide-static/package
 node build.js "$RAW"                                   # icone, card, pulsanti, sfondi (PNG alle misure originali)
+python3 -I porte.py auto/auto_top.webp "$RAW"                  # portiere, cofano, portellone e auto dall'alto dalla TUA immagine
 python3 -I ricolora.py "$BK/res/ui" "$RAW" ../../layout                # immagini originali rimaste: portate ai colori del tema
 python3 -I dash_da_immagine.py dash/cluster.webp "$RAW/dash"   # cruscotto: la TUA immagine, con finestre per le barre dinamiche
 python3 -I dash_fill.py "$RAW/dash"                    # riempimenti delle barre

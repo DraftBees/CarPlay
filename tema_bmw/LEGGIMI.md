@@ -9,6 +9,7 @@ tricolore come firma minima, il tuo **logo M** per avvio, cruscotto, copertine e
 | **262 immagini** | alle misure esatte degli originali, palette a 256 colori con libimagequant (niente aloni a gradini) |
 | **Card della home** | superficie nera con filo di luce, icona Lucide a tratto sottile, tricolore in basso; stato premuto in ciano |
 | **Cruscotto** | **la tua immagine** (`sorgente/dash/cluster.webp`) usata tale e quale, con i numeri veri sopra; barre dinamiche dalle sue fasce (vedi sotto) |
+| **Auto e portiere** | la **tua auto vista dall'alto** (`sorgente/auto/auto_top.webp`): schermata "Info veicolo" (`car/car.png`) e le 13 immagini di cofano, 4 portiere e portellone aperti (`door/`), più il pannello di sfondo nel tema |
 | **Icone** | set Lucide (licenza ISC, vedi `sorgente/LICENZA_lucide.txt`): coerenti, stesso tratto ovunque |
 | **91 immagini secondarie** | portate ai colori del tema in automatico (`ricolora.py`): gialli → ciano, blu → ciano/blu, pannelli → nero; radar, linee guida e auto restano originali |
 | **Font** | `font.ttf`: latini sostituiti con Inter Display (SIL OFL). **Font personale** (es. Sakana): vedi sotto; cinese, giapponese, coreano, arabo restano gli originali |
@@ -60,6 +61,15 @@ con un velo di opacità ≥ 0,45 così a riposo l'aspetto è quello dell'immagin
 - **Limiti della barra (dedotti dal layout originale, da verificare sul display):** sale da y=676 (zero) a y=146 (massimo), x 100–500 (velocità) e 1450–1850 (giri).
   Le finestre sono dentro questi limiti; la parte dell'arco in alto oltre x=500 (e prima di x=1450) resta statica.
 - Il layout (`dash.ftu`) porta `HomeBgWindow` a schermo intero, posiziona i numeri nelle due strisce nere e le informazioni (temperatura, carburante, spie) al centro.
+
+## Portiere, cofano e portellone
+Il display mostra, in un riquadro 664×480: la base dell'auto **senza cofano** (vano motore visibile), il cofano chiuso e, per ogni parte aperta, un livello "open".
+`porte.py` produce tutti i livelli dalla tua immagine, nelle stesse misure e con gli stessi nomi dell'originale:
+- le **portiere aperte** sono la rotazione della vera sagoma di ciascuna portiera attorno al suo cardine (la vista dall'alto non cambia forma);
+- **cofano e portellone** sono accorciati attorno alla cerniera, come in prospettiva; il vano motore è dipinto;
+- le parti aperte sono **rosse** (allerta, come l'originale); ogni livello "open" contiene anche l'apertura scura che copre la parte chiusa sotto, così il risultato è corretto
+  qualunque sia l'ordine con cui il programma mostra i livelli.
+**Da verificare sul display:** non conosco la logica del programma che accende i livelli; l'ho dedotta dai nomi e dalla visibilità nel layout. Gli specchietti restano fermi.
 
 ## Rigenerare il tema
 ```bash
