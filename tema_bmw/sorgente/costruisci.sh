@@ -9,7 +9,7 @@ python3 -I prepara_logo.py
 [ -n "$LUCIDE" ] && python3 -I estrai_icone.py "$LUCIDE"   # opzionale: cartella lucide-static/package
 node build.js "$RAW"                                   # icone, card, pulsanti, sfondi (PNG alle misure originali)
 python3 -I ricolora.py "$BK/res/ui" "$RAW" ../../layout                # immagini originali rimaste: portate ai colori del tema
-node dash_cluster.js "$RAW/dash" $FONT_NUMERI      # cruscotto da riferimento: finestre-binario (FONT_NUMERI=file .ttf opzionale)
+python3 -I dash_da_immagine.py dash/cluster.webp "$RAW/dash"   # cruscotto: la TUA immagine, con finestre per le barre dinamiche
 python3 -I dash_fill.py "$RAW/dash"                    # riempimenti delle barre
 python3 -I ottimizza.py "$RAW" ../res/ui "$BK/res/ui"  # palette + dimensioni, controlla le misure
 python3 -I font_merge.py "$BK/res/ui/font.ttf" /usr/share/fonts/opentype/inter/InterDisplay-Regular.otf ../res/ui/font.ttf

@@ -334,9 +334,9 @@
     "text": "km/h",
     "touchable": false,
     "position": {
-      "left": 436,
-      "top": 456,
-      "width": 120,
+      "left": 462,
+      "top": 446,
+      "width": 160,
       "height": 40
     }
   },
@@ -346,15 +346,15 @@
     "colorTab": {
       "color0": 16777215
     },
-    "fontSize": 120,
+    "fontSize": 104,
     "id": 50004,
     "text": "0",
     "touchable": false,
     "position": {
-      "left": 346,
+      "left": 392,
       "top": 322,
       "width": 300,
-      "height": 136
+      "height": 124
     }
   },
   "textview__21": {
@@ -363,15 +363,15 @@
     "colorTab": {
       "color0": 16735060
     },
-    "fontSize": 120,
+    "fontSize": 104,
     "id": 50005,
     "text": "0.0",
     "touchable": false,
     "position": {
-      "left": 1274,
+      "left": 1200,
       "top": 322,
       "width": 300,
-      "height": 136
+      "height": 124
     }
   },
   "textview__22": {
@@ -385,9 +385,9 @@
     "text": "1/min x1000",
     "touchable": false,
     "position": {
-      "left": 1304,
-      "top": 456,
-      "width": 240,
+      "left": 1220,
+      "top": 446,
+      "width": 260,
       "height": 40
     }
   },
@@ -402,8 +402,8 @@
     "id": 50006,
     "touchable": false,
     "position": {
-      "left": 140,
-      "top": 680,
+      "left": 872,
+      "top": 262,
       "width": 36,
       "height": 36
     }
@@ -418,8 +418,8 @@
     "id": 50007,
     "touchable": false,
     "position": {
-      "left": 600,
-      "top": 680,
+      "left": 888,
+      "top": 318,
       "width": 36,
       "height": 36
     }
@@ -434,27 +434,27 @@
     "id": 50008,
     "touchable": false,
     "position": {
-      "left": 1284,
-      "top": 680,
+      "left": 996,
+      "top": 318,
       "width": 36,
       "height": 36
     }
   },
   "textview__26": {
-    "alignment": 38,
+    "alignment": 37,
     "caption": "tempTextView",
     "colorTab": {
       "color0": 15398143
     },
-    "fontSize": 30,
+    "fontSize": 36,
     "id": 50009,
     "text": "26℃",
     "touchable": false,
     "position": {
-      "left": 1560,
-      "top": 680,
-      "width": 260,
-      "height": 36
+      "left": 840,
+      "top": 205,
+      "width": 240,
+      "height": 44
     }
   },
   "textview__27": {
@@ -468,9 +468,9 @@
     "text": "0/L",
     "touchable": false,
     "position": {
-      "left": 184,
-      "top": 680,
-      "width": 200,
+      "left": 914,
+      "top": 262,
+      "width": 170,
       "height": 36
     }
   }

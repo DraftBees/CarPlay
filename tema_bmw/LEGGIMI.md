@@ -8,7 +8,7 @@ tricolore come firma minima, il tuo **logo M** per avvio, cruscotto, copertine e
 |---|---|
 | **262 immagini** | alle misure esatte degli originali, palette a 256 colori con libimagequant (niente aloni a gradini) |
 | **Card della home** | superficie nera con filo di luce, icona Lucide a tratto sottile, tricolore in basso; stato premuto in ciano |
-| **Cruscotto** | ricostruito dalla tua foto di riferimento: doppio telaio esagonale blu/rosso, faccette blu, scala dei giri 1–8, linea in alto con tacche; barre dinamiche (vedi sotto) |
+| **Cruscotto** | **la tua immagine** (`sorgente/dash/cluster.webp`) usata tale e quale, con i numeri veri sopra; barre dinamiche dalle sue fasce (vedi sotto) |
 | **Icone** | set Lucide (licenza ISC, vedi `sorgente/LICENZA_lucide.txt`): coerenti, stesso tratto ovunque |
 | **91 immagini secondarie** | portate ai colori del tema in automatico (`ricolora.py`): gialli → ciano, blu → ciano/blu, pannelli → nero; radar, linee guida e auto restano originali |
 | **Font** | `font.ttf`: latini sostituiti con Inter Display (SIL OFL). **Font personale** (es. Sakana): vedi sotto; cinese, giapponese, coreano, arabo restano gli originali |
@@ -50,12 +50,16 @@ Il segno ° e i caratteri che manca vengono dal font di riserva. Con questo font
 (Telefono→Chiama, Luminosità→Luce, Bluetooth→BT, Auto-connetti→Auto, Standard→Base, Classica→Classic, Personale→Utente).
 
 ## Il cruscotto: come funziona davvero
-Le barre di velocità e giri sono immagini (`press_bg_*.png`) che salgono **dietro** lo sfondo `dash_bg_*.png` e si vedono solo dalle
-**finestre trasparenti** del PNG. `dash_cluster.js` disegna le finestre come "binari": una fascia lungo il telaio che sale fino a un arco in alto,
-con y sempre decrescente, così il riempimento a salita le percorre tutte. Le finestre hanno un velo (opacità 0,45) che a riposo mostra il binario.
-**Dinamico:** barra velocità, barra giri, numeri. **Fisso:** il resto (il programma non alimenta altro; carburante e temperatura animati non si possono aggiungere).
-**Ipotesi non verificata sul display:** la barra sale da y=676 (zero) a y=146 (massimo), con x 100–500 (velocità) e 1450–1850 (giri), come nell'originale;
-le finestre sono dentro questi limiti. Il layout sposta anche `HomeBgWindow` a schermo intero (PNG 1:1) e riposiziona i numeri.
+Lo sfondo è **la tua immagine, senza ridimensionarla**: la traslo nel quadro 1920×720 (x −40, y −124), quindi i pixel restano gli originali.
+Il fondo inferiore (la riga di parallelogrammi) resta fuori schermo.
+Sul display le barre di velocità e giri sono immagini (`press_bg_*.png`) che salgono **dietro** lo sfondo e si vedono solo dalle **finestre trasparenti** del PNG.
+`dash_da_immagine.py` ricava le finestre dai colori della tua immagine (la banda scura lungo il telaio e la barra sfumata in alto, a sinistra e a destra),
+con un velo di opacità ≥ 0,45 così a riposo l'aspetto è quello dell'immagine e, quando la barra sale, si vede il riempimento blu (velocità) o rosso (giri).
+- **Dinamico:** barra velocità, barra giri, numeri. **Fisso:** tutto il resto.
+- **Spenti apposta:** i segmenti accesi delle scale carburante e temperatura nell'immagine (ora grigi): il programma non li alimenta, e un livello di carburante fisso sarebbe falso.
+- **Limiti della barra (dedotti dal layout originale, da verificare sul display):** sale da y=676 (zero) a y=146 (massimo), x 100–500 (velocità) e 1450–1850 (giri).
+  Le finestre sono dentro questi limiti; la parte dell'arco in alto oltre x=500 (e prima di x=1450) resta statica.
+- Il layout (`dash.ftu`) porta `HomeBgWindow` a schermo intero, posiziona i numeri nelle due strisce nere e le informazioni (temperatura, carburante, spie) al centro.
 
 ## Rigenerare il tema
 ```bash

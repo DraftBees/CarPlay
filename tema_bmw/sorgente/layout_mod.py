@@ -33,16 +33,18 @@ def put(cap, left, top, w, h, **kw):
     for k, v in kw.items():
         if k == 'color': o['colorTab']['color0'] = rgb(v)
         else: o[k] = v
-CX_L, CX_R = 496, 1424                                   # centri dei due indicatori (come nel riferimento)
-put('speedTextView', CX_L - 150, 322, 300, 136, alignment=37, color='#ffffff')
-put('speedRemindTextView', CX_L - 60, 456, 120, 40, alignment=37, fontSize=30, color='#eaf4ff')
-put('rotateTextView', CX_R - 150, 322, 300, 136, alignment=37, color='#ff5b54')
-put('rotateRemindTextView', CX_R - 120, 456, 240, 40, alignment=37, fontSize=28, text='1/min x1000', color='#ffd8d5')
-put('consumptionIconTextView', 140, 680, 36, 36)
-put('consumptionTextView', 184, 680, 200, 36, alignment=36, fontSize=28, color='#eaf4ff')
-put('safetyTextView', 600, 680, 36, 36)
-put('pTextView', 1284, 680, 36, 36)
-put('tempTextView', 1560, 680, 260, 36, alignment=38, fontSize=30, color='#eaf4ff')
+CX_L, CX_R = 542, 1350                                   # centri delle due strisce nere dell'immagine (x_schermo = x_immagine - 40)
+CY = 384                                                  # centro verticale della striscia (y_schermo = y_immagine - 124)
+put('speedTextView', CX_L - 150, CY - 62, 300, 124, alignment=37, fontSize=104, color='#ffffff')
+put('speedRemindTextView', CX_L - 80, 446, 160, 40, alignment=37, fontSize=30, color='#eaf4ff')
+put('rotateTextView', CX_R - 150, CY - 62, 300, 124, alignment=37, fontSize=104, color='#ff5b54')
+put('rotateRemindTextView', CX_R - 130, 446, 260, 40, alignment=37, fontSize=28, text='1/min x1000', color='#ffd8d5')
+# informazioni al centro, nella zona libera tra i due telai
+put('tempTextView', 840, 205, 240, 44, alignment=37, fontSize=36, color='#eaf4ff')
+put('consumptionIconTextView', 872, 262, 36, 36)
+put('consumptionTextView', 914, 262, 170, 36, alignment=36, fontSize=28, color='#eaf4ff')
+put('safetyTextView', 888, 318, 36, 36)
+put('pTextView', 996, 318, 36, 36)
 
 # controllo: solo i campi ammessi sono cambiati
 def diff(a, b, path=''):
