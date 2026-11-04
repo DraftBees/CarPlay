@@ -73,7 +73,9 @@ echo "=== 1. backup degli originali in $BK ==="
 if [ $SOLO_IMG = 0 ]; then
 ''' + '\n'.join('  ' + pull(f) for f in ftu_files if f in esistenti) + '''
 fi
-echo "Backup completato."
+# copia "originale" permanente: contiene sempre i file com'erano PRIMA della prima modifica (cp -n non sovrascrive mai)
+mkdir -p backup_originale && cp -Rn "$BK/." backup_originale/
+echo "Backup completato (anche in backup_originale/)."
 
 echo "=== 2. invio: testi e immagini ==="
 ERR=0
@@ -91,9 +93,9 @@ exit 0
 '''
 rest = '''#!/bin/bash
 # Rimette sul display i file originali salvati da installa.sh.
-# Uso: bash ripristina.sh backup_prima_AAAAMMGG_HHMMSS
+# Uso: bash ripristina.sh                  (torna ai file ORIGINALI, da backup_originale/)\n#      bash ripristina.sh backup_prima_AAAAMMGG_HHMMSS   (torna allo stato di una specifica installazione)
 cd "$(dirname "$0")"
-BK="$1"; [ -d "$BK" ] || { echo "Indica la cartella di backup, es: bash ripristina.sh backup_prima_20261103_220000"; exit 1; }
+BK="${1:-backup_originale}"; [ -d "$BK" ] || { echo "Cartella di backup non trovata: $BK (lancia prima installa.sh, oppure indica la cartella)"; exit 1; }
 ADB="./platform-tools/adb"; [ -x "$ADB" ] || ADB="$(command -v adb)"
 IP=192.168.43.1:5555
 "$ADB" connect $IP; "$ADB" -s $IP wait-for-device

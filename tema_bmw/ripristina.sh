@@ -1,8 +1,9 @@
 #!/bin/bash
 # Rimette sul display i file originali salvati da installa.sh.
-# Uso: bash ripristina.sh backup_prima_AAAAMMGG_HHMMSS
+# Uso: bash ripristina.sh                  (torna ai file ORIGINALI, da backup_originale/)
+#      bash ripristina.sh backup_prima_AAAAMMGG_HHMMSS   (torna allo stato di una specifica installazione)
 cd "$(dirname "$0")"
-BK="$1"; [ -d "$BK" ] || { echo "Indica la cartella di backup, es: bash ripristina.sh backup_prima_20261103_220000"; exit 1; }
+BK="${1:-backup_originale}"; [ -d "$BK" ] || { echo "Cartella di backup non trovata: $BK (lancia prima installa.sh, oppure indica la cartella)"; exit 1; }
 ADB="./platform-tools/adb"; [ -x "$ADB" ] || ADB="$(command -v adb)"
 IP=192.168.43.1:5555
 "$ADB" connect $IP; "$ADB" -s $IP wait-for-device

@@ -322,7 +322,9 @@ if [ $SOLO_IMG = 0 ]; then
   "$ADB" -s $IP pull "/res/ui/dash.ftu" "$BK/res/ui/dash.ftu" >/dev/null || { echo "Backup fallito: /res/ui/dash.ftu. Interrompo senza toccare nulla."; exit 1; }
   "$ADB" -s $IP pull "/res/ui/font.ttf" "$BK/res/ui/font.ttf" >/dev/null || { echo "Backup fallito: /res/ui/font.ttf. Interrompo senza toccare nulla."; exit 1; }
 fi
-echo "Backup completato."
+# copia "originale" permanente: contiene sempre i file com'erano PRIMA della prima modifica (cp -n non sovrascrive mai)
+mkdir -p backup_originale && cp -Rn "$BK/." backup_originale/
+echo "Backup completato (anche in backup_originale/)."
 
 echo "=== 2. invio: testi e immagini ==="
 ERR=0

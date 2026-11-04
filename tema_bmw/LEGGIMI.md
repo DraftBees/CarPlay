@@ -33,11 +33,11 @@ tricolore come firma minima, il tuo **logo M** per avvio, cruscotto, copertine e
 Lo script copia prima dal display **ogni** file che sostituirà in `backup_prima_<data>/` e si ferma se un backup fallisce.
 Per tornare indietro: `bash ripristina.sh backup_prima_<data>`, oppure dal display Sistema → Fabbrica.
 
-## Video di avvio: stato
-Il video è pronto (1920×720, H.264, 5 s, con audio). **Non viene installato dagli script**: il display non ha
-ancora un modo noto per riprodurre un video all'accensione. Il logo di avvio di fabbrica è un'immagine fissa in una zona
-separata della memoria. Per sapere se e come sostituirlo, o se si può far partire il video prima dell'interfaccia,
-serve l'output di `../strumenti/adb_recon_avvio.sh` (sola lettura). Nel simulatore il video parte a ogni accensione.
+## Avvio
+- **Percorso guidato:** doppio clic su `AVVIA.command` (lettura, poi installazione sicura, poi completa, ogni passo chiede conferma).
+- **Logo fisso:** `avvio/boot_logo.JPG` (1920×720) si può mettere su una chiavetta: è il meccanismo del costruttore, da provare. Vedi `avvio/LEGGIMI_avvio.md`.
+- **Video:** pronto (`avvio/avvio_1920x720.mp4`) ma **non installabile con i soli file**: il lettore video del display parte solo da codice del programma. Nel simulatore parte a ogni accensione.
+- Tornare agli originali: `bash ripristina.sh` (usa `backup_originale/`, che non viene mai sovrascritto).
 
 ## Font personale (Sakana)
 Il tuo `Sakana.ttf` ha nella licenza **"Personal Use Only"** (Drizy Studio): non l'ho messo nel repository né nel simulatore online.
